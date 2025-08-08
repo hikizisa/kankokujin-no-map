@@ -64,11 +64,40 @@ export const MapperCard: React.FC<MapperCardProps> = ({
     }
   })
 
-  // Sort beatmapsets using global sorting criteria from main page
-  // For artist/title sorting, fall back to date sorting since beatmapsets don't support these
-  const effectiveSortBy = beatmapSortBy === 'artist' || beatmapSortBy === 'title' ? 'date' : 
-    (beatmapSortBy as 'date' | 'favorite' | 'playcount')
-  const sortedBeatmapsets = sortMapperBeatmapsetsV2(filteredBeatmapsets, effectiveSortBy)
+  // Handle different sorting approaches
+  let finalBeatmapsets: typeof filteredBeatmapsets
+  let sortingLabel: string
+
+  if (beatmapSortBy === 'artist' || beatmapSortBy === 'title') {
+    // For artist/title sorting, reconstruct beatmapsets from sorted individual beatmaps
+    const beatmapsetMap = new Map<string, typeof filteredBeatmapsets[0]>()
+    
+    // Create a map of beatmapset_id to beatmapset for quick lookup
+    filteredBeatmapsets.forEach(set => {
+      beatmapsetMap.set(set.beatmapset_id, set)
+    })
+    
+    // Reconstruct beatmapsets in the order of sorted beatmaps
+    const seenBeatmapsets = new Set<string>()
+    finalBeatmapsets = []
+    
+    sortedBeatmaps.forEach(beatmap => {
+      if (!seenBeatmapsets.has(beatmap.beatmapset_id)) {
+        const beatmapset = beatmapsetMap.get(beatmap.beatmapset_id)
+        if (beatmapset) {
+          finalBeatmapsets.push(beatmapset)
+          seenBeatmapsets.add(beatmap.beatmapset_id)
+        }
+      }
+    })
+    
+    sortingLabel = beatmapSortBy === 'artist' ? 'Artist' : 'Title'
+  } else {
+    // For other sorting criteria, use beatmapset-level sorting
+    const effectiveSortBy = beatmapSortBy as 'date' | 'favorite' | 'playcount'
+    finalBeatmapsets = sortMapperBeatmapsetsV2(filteredBeatmapsets, effectiveSortBy)
+    sortingLabel = effectiveSortBy === 'date' ? 'Date' : effectiveSortBy === 'favorite' ? 'Favorites' : 'Playcount'
+  }
 
   const displayName = mapper.username
   const aliases = mapper.aliases && mapper.aliases.length > 0 ? mapper.aliases : []
@@ -146,16 +175,16 @@ export const MapperCard: React.FC<MapperCardProps> = ({
           {/* Beatmapset sorting info */}
           <div className="flex items-center justify-between mb-4">
             <h4 className="text-lg font-semibold text-gray-800 dark:text-white">
-              Beatmapsets ({sortedBeatmapsets.length})
+              Beatmapsets ({finalBeatmapsets.length})
             </h4>
             <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
               <SortAsc className="h-4 w-4" />
-              <span>Sorted by: {effectiveSortBy === 'date' ? 'Date' : effectiveSortBy === 'favorite' ? 'Favorites' : 'Playcount'}</span>
+              <span>Sorted by: {sortingLabel}</span>
             </div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {sortedBeatmapsets.map(beatmapset => (
+            {finalBeatmapsets.map(beatmapset => (
               <BeatmapsetCard
                 key={beatmapset.beatmapset_id}
                 beatmapset={beatmapset}
