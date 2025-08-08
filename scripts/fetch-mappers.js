@@ -143,6 +143,9 @@ async function fetchKoreanMappers() {
   for (const mapperId of MANUAL_MAPPER_IDS) {
     await processUser(mapperId);
   }
+  
+  // Convert Map to array and return
+  return Array.from(mappers.values());
 }
 
 async function main() {
