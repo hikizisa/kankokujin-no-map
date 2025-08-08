@@ -11,6 +11,7 @@ const BASE_URL = 'https://osu.ppy.sh/api';
 const OUTPUT_DIR = path.join(__dirname, '..', 'public', 'data');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'mappers.json');
 const STATE_FILE = path.join(__dirname, '..', 'data', 'fetch-state.json');
+const CREATOR_MAPPING_FILE = path.join(__dirname, '..', 'data', 'creator-mappings.json');
 
 // API Configuration
 const MAX_BEATMAPS_PER_REQUEST = 500; // osu! API limit
@@ -68,6 +69,24 @@ async function loadFetchState() {
 // Save fetch state
 async function saveFetchState(state) {
     await fs.writeFile(STATE_FILE, JSON.stringify(state, null, 2));
+}
+
+// Load creator name mappings (creator_name -> user_id)
+async function loadCreatorMappings() {
+    try {
+        const data = await fs.readFile(CREATOR_MAPPING_FILE, 'utf8');
+        return JSON.parse(data);
+    } catch (error) {
+        // Return empty mapping if file doesn't exist
+        return {};
+    }
+}
+
+// Save creator name mappings
+async function saveCreatorMappings(mappings) {
+    // Ensure data directory exists
+    await fs.mkdir(path.dirname(CREATOR_MAPPING_FILE), { recursive: true });
+    await fs.writeFile(CREATOR_MAPPING_FILE, JSON.stringify(mappings, null, 2));
 }
 
 // Load existing mapper data
@@ -219,25 +238,25 @@ async function fetchAllBeatmapsForUser(userId, sinceDate = null) {
     return beatmaps;
 }
 
-// Discover Korean mappers by fetching recent ranked beatmaps and checking mapper countries
+// Discover Korean mappers by fetching ranked beatmaps over a longer period and checking mapper countries
 async function fetchKoreanMappersFromAPI() {
     const koreanMappers = new Set();
     const checkedUsers = new Set();
     
-    console.log('Discovering Korean mappers from recent ranked beatmaps...');
+    console.log('Discovering Korean mappers from ranked beatmaps...');
     
-    // Fetch recent ranked beatmaps to discover new Korean mappers
-    // We'll check the last 30 days of ranked maps
-    const thirtyDaysAgo = new Date();
-    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
-    const sinceDate = thirtyDaysAgo.toISOString().split('T')[0]; // YYYY-MM-DD format
+    // Fetch ranked beatmaps over a longer period to discover Korean mappers
+    // We'll check the last 180 days (6 months) to catch more mappers
+    const sixMonthsAgo = new Date();
+    sixMonthsAgo.setDate(sixMonthsAgo.getDate() - 180);
+    const sinceDate = sixMonthsAgo.toISOString().split('T')[0]; // YYYY-MM-DD format
     
     try {
         // Fetch recent ranked beatmaps
         let hasMore = true;
         let since = sinceDate;
         let requestCount = 0;
-        const maxRequests = 20; // Limit to prevent excessive API calls
+        const maxRequests = 50; // Increased limit to catch more mappers over 6 months
         
         while (hasMore && requestCount < maxRequests) {
             const beatmaps = await makeApiRequest(`${BASE_URL}/get_beatmaps`, {
@@ -308,9 +327,10 @@ async function fetchKoreanMappers() {
 
     console.log('Starting Korean mappers fetch with incremental updates...');
     
-    // Load previous state and existing data
+    // Load previous fetch state, existing data, and creator mappings
     const fetchState = await loadFetchState();
     const existingData = await loadExistingData();
+    const creatorMappings = await loadCreatorMappings();
     
     const mappers = new Map();
     const processedUsers = new Set();
@@ -321,6 +341,32 @@ async function fetchKoreanMappers() {
     });
     
     console.log(`Loaded ${existingData.mappers.length} existing mappers from previous run`);
+    
+    // Remove mappers that are in the ignore list
+    let removedCount = 0;
+    const mappersToRemove = [];
+    
+    for (const [userId, mapper] of mappers.entries()) {
+        if (IGNORE_MAPPER_IDS.includes(parseInt(userId))) {
+            mappersToRemove.push({ userId, username: mapper.username });
+            mappers.delete(userId);
+            removedCount++;
+        }
+    }
+    
+    if (removedCount > 0) {
+        console.log(`🗑️  Removed ${removedCount} mappers from database (in ignore list):`);
+        mappersToRemove.forEach(({ userId, username }) => {
+            console.log(`   - ${username} (ID: ${userId})`);
+        });
+        
+        // Also remove from fetch state
+        mappersToRemove.forEach(({ userId }) => {
+            if (fetchState.mapperStates[userId]) {
+                delete fetchState.mapperStates[userId];
+            }
+        });
+    }
     
     const currentTime = new Date().toISOString();
     
@@ -416,6 +462,24 @@ async function fetchKoreanMappers() {
                     const allBeatmaps = [...existingMapper.beatmaps, ...newBeatmaps];
                     const updatedCategorizedData = categorizeBeatmaps(allBeatmaps, user.username);
                     
+                    // Update aliases - collect all unique creator names from beatmaps
+                    const allCreatorNames = new Set();
+                    allBeatmaps.forEach(beatmap => {
+                        if (beatmap.creator && beatmap.creator.trim()) {
+                            const creatorName = beatmap.creator.trim();
+                            allCreatorNames.add(creatorName);
+                            // Update creator mapping for future reference
+                            creatorMappings[creatorName] = userId;
+                        }
+                    });
+                    // Add current username
+                    allCreatorNames.add(user.username);
+                    creatorMappings[user.username] = userId;
+                    // Remove current username from aliases and convert to array
+                    const aliases = Array.from(allCreatorNames).filter(name => name !== user.username).sort();
+                    
+                    existingMapper.username = user.username; // Update to current username
+                    existingMapper.aliases = aliases;
                     existingMapper.beatmaps = allBeatmaps.sort((a, b) => new Date(b.approved_date) - new Date(a.approved_date));
                     existingMapper.beatmapsets = updatedCategorizedData.beatmapsets;
                     existingMapper.guestDifficulties = updatedCategorizedData.guestDifficulties;
@@ -430,9 +494,26 @@ async function fetchKoreanMappers() {
                     console.log(`Updated mapper ${user.username}: +${newBeatmaps.length} new beatmaps (total: ${existingMapper.rankedBeatmaps}, ${existingMapper.rankedBeatmapsets} mapsets, ${existingMapper.totalGuestDiffs} guest diffs)`);
                 } else {
                     // Create new mapper entry
+                    // Collect aliases - all unique creator names from beatmaps
+                    const allCreatorNames = new Set();
+                    beatmaps.forEach(beatmap => {
+                        if (beatmap.creator && beatmap.creator.trim()) {
+                            const creatorName = beatmap.creator.trim();
+                            allCreatorNames.add(creatorName);
+                            // Update creator mapping for future reference
+                            creatorMappings[creatorName] = userId;
+                        }
+                    });
+                    // Add current username
+                    allCreatorNames.add(user.username);
+                    creatorMappings[user.username] = userId;
+                    // Remove current username from aliases and convert to array
+                    const aliases = Array.from(allCreatorNames).filter(name => name !== user.username).sort();
+                    
                     const mapper = {
                         user_id: userId,
                         username: user.username,
+                        aliases: aliases,
                         country: user.country,
                         rankedBeatmaps: categorizedData.stats.totalBeatmaps,
                         rankedBeatmapsets: categorizedData.stats.totalBeatmapsets,
@@ -496,8 +577,11 @@ async function fetchKoreanMappers() {
         fetchState.lastFullScan = currentTime;
     }
 
-    // Save updated state
+    // Save updated state and creator mappings
     await saveFetchState(fetchState);
+    await saveCreatorMappings(creatorMappings);
+    
+    console.log(`💾 Saved creator mappings: ${Object.keys(creatorMappings).length} creator names tracked`);
 
     // Calculate aggregate statistics
     const totalBeatmapsets = mappersArray.reduce((sum, mapper) => sum + (mapper.rankedBeatmapsets || 0), 0);
