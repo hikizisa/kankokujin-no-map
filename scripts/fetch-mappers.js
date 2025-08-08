@@ -250,25 +250,38 @@ async function fetchAllBeatmapsForUser(userId, sinceDate = null) {
     return beatmaps;
 }
 
-// Discover Korean mappers by fetching ranked beatmaps over a longer period and checking mapper countries
-async function fetchKoreanMappersFromAPI() {
+// Discover Korean mappers by fetching ranked beatmaps over a period and checking mapper countries
+async function fetchKoreanMappersFromAPI(isFullScan = false) {
     const koreanMappers = new Set();
     const checkedUsers = new Set();
     
     console.log('Discovering Korean mappers from ranked beatmaps...');
     
-    // Fetch ranked beatmaps over a longer period to discover Korean mappers
-    // We'll check the last 180 days (6 months) to catch more mappers
-    const sixMonthsAgo = new Date();
-    sixMonthsAgo.setDate(sixMonthsAgo.getDate() - 180);
-    const sinceDate = sixMonthsAgo.toISOString().split('T')[0]; // YYYY-MM-DD format
+    // Determine date range based on scan type:
+    // - Full scan (monthly): Check from 2020-01-01 to catch all Korean mappers
+    // - Incremental scan (daily): Check from a week ago to catch recent activity
+    let sinceDate;
+    let maxRequests;
+    
+    if (isFullScan) {
+        // Monthly reset: Check from 2020-01-01 to be comprehensive
+        sinceDate = '2020-01-01';
+        maxRequests = 200; // More requests for comprehensive scan
+        console.log('🔄 Full scan mode: Checking beatmaps since 2020-01-01 for comprehensive Korean mapper discovery');
+    } else {
+        // Daily update: Check from a week ago for recent activity
+        const weekAgo = new Date();
+        weekAgo.setDate(weekAgo.getDate() - 7);
+        sinceDate = weekAgo.toISOString().split('T')[0]; // YYYY-MM-DD format
+        maxRequests = 20; // Fewer requests for incremental scan
+        console.log('📅 Daily update mode: Checking beatmaps from the last week for new Korean mappers');
+    }
     
     try {
         // Fetch recent ranked beatmaps
         let hasMore = true;
         let since = sinceDate;
         let requestCount = 0;
-        const maxRequests = 50; // Increased limit to catch more mappers over 6 months
         
         while (hasMore && requestCount < maxRequests) {
             console.log(`Checking ${MAX_BEATMAPS_PER_REQUEST} beatmaps since ${since}...`)
@@ -636,8 +649,20 @@ async function fetchKoreanMappers() {
     // If it's a full scan, also fetch Korean mappers from API
     if (isFullScan) {
         try {
-            const apiKoreanMappers = await fetchKoreanMappersFromAPI();
+            const apiKoreanMappers = await fetchKoreanMappersFromAPI(true); // Pass true for full scan
             console.log(`Processing ${apiKoreanMappers.length} Korean mappers from API...`);
+            
+            for (const userId of apiKoreanMappers) {
+                await processUser(userId.toString());
+            }
+        } catch (error) {
+            console.error('Error fetching Korean mappers from API:', error.message);
+        }
+    } else {
+        // For daily updates, still check for new Korean mappers but with limited scope
+        try {
+            const apiKoreanMappers = await fetchKoreanMappersFromAPI(false); // Pass false for incremental scan
+            console.log(`Processing ${apiKoreanMappers.length} Korean mappers from recent activity...`);
             
             for (const userId of apiKoreanMappers) {
                 await processUser(userId.toString());
