@@ -2,20 +2,14 @@ name: Deploy Korean Mappers Map
 
 on:
   workflow_dispatch:
+  schedule:
+    # Run monthly on the 1st at 2 AM UTC to refresh data
+    - cron: '0 2 1 * *'
   push:
     branches: [ main ]
-    paths:
-      - 'public/data/mappers.json'
-      - 'app/**'
-      - 'components/**'
-      - 'pages/**'
-      - 'styles/**'
-      - 'next.config.js'
-      - 'package.json'
-      - 'package-lock.json'
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -40,18 +34,10 @@ jobs:
           npm install
         fi
       
-    - name: Verify data exists
-      run: |
-        if [ -f "./public/data/mappers.json" ]; then
-          echo "✅ mappers.json found in source directory"
-          echo "File size: $(du -h ./public/data/mappers.json | cut -f1)"
-          echo "Last modified: $(stat -c %y ./public/data/mappers.json)"
-        else
-          echo "❌ Error: mappers.json not found in ./public/data/"
-          echo "Contents of ./public/data/:"
-          ls -la ./public/data/ || echo "./public/data/ directory does not exist"
-          exit 1
-        fi
+    - name: Fetch mapper data
+      env:
+        OSU_API_KEY: ${{ secrets.OSU_API_KEY }}
+      run: node scripts/fetch-mappers.js
       
     - name: Build site
       run: npm run export

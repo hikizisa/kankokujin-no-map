@@ -210,8 +210,20 @@ async function fetchAllBeatmapsForUser(userId, sinceDate = null) {
         const rankedBeatmaps = allUserBeatmaps.filter(beatmap => {
             const isRankedOrLoved = beatmap.approved === '1' || beatmap.approved === '2' || beatmap.approved === '4';
             const isUnique = !allBeatmapIds.has(beatmap.beatmap_id);
+            const hasValidCreator = beatmap.creator && beatmap.creator.trim() !== '';
             
-            if (isRankedOrLoved && isUnique) {
+            // For banned/deleted accounts, creator_id might not match, but if the beatmap was returned
+            // by the API when querying this user ID, we should include it
+            const creatorIdMatches = beatmap.creator_id === userId.toString() || beatmap.creator_id === userId;
+            
+            // Log when creator_id doesn't match (common for banned accounts)
+            if (isRankedOrLoved && hasValidCreator && !creatorIdMatches) {
+                console.log(`   ℹ️  Including beatmap ${beatmap.beatmap_id} "${beatmap.title}" by ${beatmap.creator} (creator_id mismatch: ${beatmap.creator_id} vs ${userId})`);
+            }
+            
+            // Include beatmap if it's ranked/loved, unique, and has a valid creator name
+            // Don't require creator_id to match for banned/deleted accounts
+            if (isRankedOrLoved && isUnique && hasValidCreator) {
                 allBeatmapIds.add(beatmap.beatmap_id);
                 return true;
             }
@@ -259,6 +271,7 @@ async function fetchKoreanMappersFromAPI() {
         const maxRequests = 50; // Increased limit to catch more mappers over 6 months
         
         while (hasMore && requestCount < maxRequests) {
+            console.log(`Checking ${MAX_BEATMAPS_PER_REQUEST} beatmaps since ${since}...`)
             const beatmaps = await makeApiRequest(`${BASE_URL}/get_beatmaps`, {
                 k: OSU_API_KEY,
                 since: since,
@@ -305,7 +318,7 @@ async function fetchKoreanMappersFromAPI() {
             // Update since date to the last beatmap's date for pagination
             if (beatmaps.length > 0) {
                 const lastBeatmap = beatmaps[beatmaps.length - 1];
-                since = lastBeatmap.last_update || lastBeatmap.approved_date;
+                since = lastBeatmap.approved_date || lastBeatmap.last_update;
             }
             
             requestCount++;
@@ -416,23 +429,92 @@ async function fetchKoreanMappers() {
     // Internal function to process user without timeout wrapper
     async function processUserInternal(userId) {
         try {
+            let user = null;
+            let userFromBeatmaps = false;
 
-            // Get user data
-            const userData = await makeApiRequest(`${BASE_URL}/get_user`, {
-                k: OSU_API_KEY,
-                u: userId,
-                type: 'id'
-            });
+            // Try to get user data first
+            try {
+                const userData = await makeApiRequest(`${BASE_URL}/get_user`, {
+                    k: OSU_API_KEY,
+                    u: userId,
+                    type: 'id'
+                });
 
-            if (!userData || userData.length === 0) {
-                console.log(`No user data found for ID: ${userId}`);
-                return;
+                if (userData && userData.length > 0) {
+                    user = userData[0];
+                    console.log(`✅ User API: ${user.username} (${user.country})`);
+                } else {
+                    console.log(`⚠️  User API returned empty for ID: ${userId}`);
+                }
+            } catch (error) {
+                console.log(`⚠️  User API failed for ID: ${userId}: ${error.message}`);
             }
 
-            const user = userData[0];
+            // If user API failed but this is in manual list, try to get info from beatmaps
+            if (!user && MANUAL_MAPPER_IDS.includes(parseInt(userId))) {
+                console.log(`🔄 User in manual list but API failed, trying beatmap fallback...`);
+                
+                try {
+                    // Try to get beatmaps to see if user exists and get creator name
+                    const sampleBeatmaps = await makeApiRequest(`${BASE_URL}/get_beatmaps`, {
+                        k: OSU_API_KEY,
+                        u: userId,
+                        type: 'id',
+                        limit: 50 // Get more beatmaps to find the most recent creator name
+                    });
+                    
+                    if (sampleBeatmaps && sampleBeatmaps.length > 0) {
+                        // Filter beatmaps with valid creator names (non-empty)
+                        const beatmapsWithCreator = sampleBeatmaps.filter(b => 
+                            b.creator && b.creator.trim() !== ''
+                        );
+                        
+                        if (beatmapsWithCreator.length > 0) {
+                            // Sort by last_update or approved_date to get the most recent creator name
+                            const sortedBeatmaps = beatmapsWithCreator.sort((a, b) => {
+                                const dateA = new Date(a.last_update || a.approved_date || '1970-01-01');
+                                const dateB = new Date(b.last_update || b.approved_date || '1970-01-01');
+                                return dateB - dateA; // Most recent first
+                            });
+                            
+                            const mostRecentBeatmap = sortedBeatmaps[0];
+                            
+                            // Create a minimal user object from beatmap data
+                            user = {
+                                user_id: userId,
+                                username: mostRecentBeatmap.creator,
+                                country: 'KR', // Assume Korean since in manual list
+                                join_date: null,
+                                playcount: 0,
+                                pp_rank: null
+                            };
+                            userFromBeatmaps = true;
+                            console.log(`✅ Beatmap fallback: Found user as "${user.username}" (most recent name from ${beatmapsWithCreator.length} beatmaps, banned/deleted account)`);
+                            
+                            // Log if creator_id mismatches are common (for debugging)
+                            const mismatchCount = beatmapsWithCreator.filter(b => b.creator_id !== userId.toString()).length;
+                            if (mismatchCount > 0) {
+                                console.log(`   ℹ️  Note: ${mismatchCount}/${beatmapsWithCreator.length} beatmaps have creator_id mismatch (expected for banned accounts)`);
+                            }
+                        } else {
+                            console.log(`❌ No beatmaps with valid creator names found for user ${userId}`);
+                            return;
+                        }
+                    } else {
+                        console.log(`❌ No beatmaps found for user ${userId}`);
+                        return;
+                    }
+                } catch (error) {
+                    console.log(`❌ Beatmap fallback failed for user ${userId}: ${error.message}`);
+                    return;
+                }
+            } else if (!user) {
+                console.log(`❌ No user data found for ID: ${userId} and not in manual list`);
+                return;
+            }
             
-            // Check if user is Korean or in manual list
-            if (user.country !== 'KR' && !MANUAL_MAPPER_IDS.includes(parseInt(userId))) {
+            // Check if user is Korean or in manual list (skip country check for beatmap fallback)
+            if (!userFromBeatmaps && user.country !== 'KR' && !MANUAL_MAPPER_IDS.includes(parseInt(userId))) {
                 console.log(`User ${user.username} is not Korean (${user.country}), skipping`);
                 return;
             }

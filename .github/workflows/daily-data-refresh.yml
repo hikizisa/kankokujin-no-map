@@ -71,25 +71,12 @@ jobs:
         - Incremental refresh on $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
         git push
         
-    - name: Trigger deploy workflow
-      if: steps.verify-changed-files.outputs.changed == 'true'
-      uses: actions/github-script@v7
-      with:
-        script: |
-          github.rest.actions.createWorkflowDispatch({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            workflow_id: 'deploy.yml',
-            ref: 'main'
-          });
-          console.log('🚀 Deploy workflow triggered!');
-        
     - name: Create summary
       run: |
         if [ "${{ steps.verify-changed-files.outputs.changed }}" == "true" ]; then
           echo "🆕 Daily refresh completed - New beatmaps found!" >> $GITHUB_STEP_SUMMARY
           echo "📊 Incremental update applied successfully" >> $GITHUB_STEP_SUMMARY
-          echo "🚀 Deploy workflow triggered - Site will update shortly" >> $GITHUB_STEP_SUMMARY
+          echo "🚀 Site will auto-deploy with new data" >> $GITHUB_STEP_SUMMARY
         else
           echo "✅ Daily refresh completed - No new beatmaps" >> $GITHUB_STEP_SUMMARY
           echo "📊 All data is up to date" >> $GITHUB_STEP_SUMMARY
