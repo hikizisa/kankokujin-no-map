@@ -26,6 +26,7 @@ const MANUAL_MAPPER_IDS = [
 const IGNORE_MAPPER_IDS = [
     // Add user IDs here of mappers who have KR flag but are not actually Korean
     // Example: 123456, 789012
+    12469536, 2139130
 ];
 
 // Helper function to make API requests with retry logic
