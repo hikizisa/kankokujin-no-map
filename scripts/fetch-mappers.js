@@ -76,9 +76,71 @@ async function loadExistingData() {
             lastUpdated: new Date().toISOString(),
             totalMappers: 0,
             totalBeatmaps: 0,
+            totalBeatmapsets: 0,
+            totalGuestDiffs: 0,
             mappers: []
         };
     }
+}
+
+// Helper function to categorize beatmaps into mapsets and guest difficulties
+function categorizeBeatmaps(beatmaps, mapperUsername) {
+    const beatmapsets = new Map(); // beatmapset_id -> beatmapset info
+    const guestDifficulties = [];
+    const ownBeatmaps = [];
+    
+    beatmaps.forEach(beatmap => {
+        const beatmapsetId = beatmap.beatmapset_id;
+        const creator = beatmap.creator;
+        const isGuestDiff = creator !== mapperUsername;
+        
+        if (isGuestDiff) {
+            guestDifficulties.push({
+                ...beatmap,
+                isGuestDiff: true,
+                hostMapper: creator
+            });
+        } else {
+            ownBeatmaps.push(beatmap);
+        }
+        
+        // Track beatmapsets
+        if (!beatmapsets.has(beatmapsetId)) {
+            beatmapsets.set(beatmapsetId, {
+                beatmapset_id: beatmapsetId,
+                title: beatmap.title,
+                artist: beatmap.artist,
+                creator: creator,
+                approved_date: beatmap.approved_date,
+                difficulties: [],
+                isOwnMapset: !isGuestDiff
+            });
+        }
+        
+        // Add difficulty to beatmapset
+        const mapset = beatmapsets.get(beatmapsetId);
+        mapset.difficulties.push({
+            beatmap_id: beatmap.beatmap_id,
+            version: beatmap.version,
+            difficultyrating: beatmap.difficultyrating,
+            mode: beatmap.mode,
+            isGuestDiff: isGuestDiff
+        });
+    });
+    
+    return {
+        beatmapsets: Array.from(beatmapsets.values()),
+        guestDifficulties,
+        ownBeatmaps,
+        stats: {
+            totalBeatmaps: beatmaps.length,
+            totalBeatmapsets: beatmapsets.size,
+            ownBeatmapsets: Array.from(beatmapsets.values()).filter(ms => ms.isOwnMapset).length,
+            guestBeatmapsets: Array.from(beatmapsets.values()).filter(ms => !ms.isOwnMapset).length,
+            totalGuestDiffs: guestDifficulties.length,
+            ownDifficulties: ownBeatmaps.length
+        }
+    };
 }
 
 // Fetch all beatmaps for a specific user with pagination
@@ -276,6 +338,9 @@ async function fetchKoreanMappers() {
             const beatmaps = await fetchAllBeatmapsForUser(userId, sinceDate);
             
             if (beatmaps.length > 0) {
+                // Categorize beatmaps into mapsets and guest difficulties
+                const categorizedData = categorizeBeatmaps(beatmaps, user.username);
+                
                 // Update or create mapper entry
                 const existingMapper = mappers.get(userId);
                 
@@ -284,25 +349,43 @@ async function fetchKoreanMappers() {
                     const existingBeatmapIds = new Set(existingMapper.beatmaps.map(b => b.beatmap_id));
                     const newBeatmaps = beatmaps.filter(b => !existingBeatmapIds.has(b.beatmap_id));
                     
-                    existingMapper.beatmaps.push(...newBeatmaps);
-                    existingMapper.beatmaps.sort((a, b) => new Date(b.approved_date) - new Date(a.approved_date));
-                    existingMapper.rankedBeatmaps = existingMapper.beatmaps.length;
+                    // Merge and recategorize all beatmaps
+                    const allBeatmaps = [...existingMapper.beatmaps, ...newBeatmaps];
+                    const updatedCategorizedData = categorizeBeatmaps(allBeatmaps, user.username);
+                    
+                    existingMapper.beatmaps = allBeatmaps.sort((a, b) => new Date(b.approved_date) - new Date(a.approved_date));
+                    existingMapper.beatmapsets = updatedCategorizedData.beatmapsets;
+                    existingMapper.guestDifficulties = updatedCategorizedData.guestDifficulties;
+                    existingMapper.stats = updatedCategorizedData.stats;
+                    existingMapper.rankedBeatmaps = updatedCategorizedData.stats.totalBeatmaps;
+                    existingMapper.rankedBeatmapsets = updatedCategorizedData.stats.totalBeatmapsets;
+                    existingMapper.ownBeatmapsets = updatedCategorizedData.stats.ownBeatmapsets;
+                    existingMapper.guestBeatmapsets = updatedCategorizedData.stats.guestBeatmapsets;
+                    existingMapper.totalGuestDiffs = updatedCategorizedData.stats.totalGuestDiffs;
                     existingMapper.lastUpdated = currentTime;
                     
-                    console.log(`Updated mapper ${user.username}: +${newBeatmaps.length} new beatmaps (total: ${existingMapper.beatmaps.length})`);
+                    console.log(`Updated mapper ${user.username}: +${newBeatmaps.length} new beatmaps (total: ${existingMapper.rankedBeatmaps}, ${existingMapper.rankedBeatmapsets} mapsets, ${existingMapper.totalGuestDiffs} guest diffs)`);
                 } else {
                     // Create new mapper entry
                     const mapper = {
                         user_id: userId,
                         username: user.username,
                         country: user.country,
-                        rankedBeatmaps: beatmaps.length,
-                        beatmaps: beatmaps.sort((a, b) => new Date(b.approved_date) - new Date(a.approved_date)),
+                        rankedBeatmaps: categorizedData.stats.totalBeatmaps,
+                        rankedBeatmapsets: categorizedData.stats.totalBeatmapsets,
+                        ownBeatmapsets: categorizedData.stats.ownBeatmapsets,
+                        guestBeatmapsets: categorizedData.stats.guestBeatmapsets,
+                        totalGuestDiffs: categorizedData.stats.totalGuestDiffs,
+                        ownDifficulties: categorizedData.stats.ownDifficulties,
+                        beatmaps: categorizedData.ownBeatmaps.concat(categorizedData.guestDifficulties).sort((a, b) => new Date(b.approved_date) - new Date(a.approved_date)),
+                        beatmapsets: categorizedData.beatmapsets,
+                        guestDifficulties: categorizedData.guestDifficulties,
+                        stats: categorizedData.stats,
                         lastUpdated: currentTime
                     };
                     
                     mappers.set(userId, mapper);
-                    console.log(`Added new mapper ${user.username}: ${beatmaps.length} ranked beatmaps`);
+                    console.log(`Added new mapper ${user.username}: ${mapper.rankedBeatmaps} beatmaps, ${mapper.rankedBeatmapsets} mapsets (${mapper.ownBeatmapsets} own, ${mapper.guestBeatmapsets} guest), ${mapper.totalGuestDiffs} guest diffs`);
                 }
                 
                 // Update user state
@@ -353,11 +436,23 @@ async function fetchKoreanMappers() {
     // Save updated state
     await saveFetchState(fetchState);
 
+    // Calculate aggregate statistics
+    const totalBeatmapsets = mappersArray.reduce((sum, mapper) => sum + (mapper.rankedBeatmapsets || 0), 0);
+    const totalOwnBeatmapsets = mappersArray.reduce((sum, mapper) => sum + (mapper.ownBeatmapsets || 0), 0);
+    const totalGuestBeatmapsets = mappersArray.reduce((sum, mapper) => sum + (mapper.guestBeatmapsets || 0), 0);
+    const totalGuestDiffs = mappersArray.reduce((sum, mapper) => sum + (mapper.totalGuestDiffs || 0), 0);
+    const totalOwnDifficulties = mappersArray.reduce((sum, mapper) => sum + (mapper.ownDifficulties || 0), 0);
+
     // Prepare output data
     const outputData = {
         lastUpdated: currentTime,
         totalMappers: mappersArray.length,
         totalBeatmaps: fetchState.totalBeatmaps,
+        totalBeatmapsets: totalBeatmapsets,
+        totalOwnBeatmapsets: totalOwnBeatmapsets,
+        totalGuestBeatmapsets: totalGuestBeatmapsets,
+        totalGuestDiffs: totalGuestDiffs,
+        totalOwnDifficulties: totalOwnDifficulties,
         scanType: isFullScan ? 'full' : 'incremental',
         mappers: mappersArray
     };
@@ -371,6 +466,11 @@ async function fetchKoreanMappers() {
     console.log(`\n✅ Fetch completed successfully!`);
     console.log(`📊 Total mappers: ${outputData.totalMappers}`);
     console.log(`🎵 Total ranked beatmaps: ${outputData.totalBeatmaps}`);
+    console.log(`📦 Total beatmapsets: ${outputData.totalBeatmapsets}`);
+    console.log(`   ├─ Own mapsets: ${outputData.totalOwnBeatmapsets}`);
+    console.log(`   └─ Guest mapsets: ${outputData.totalGuestBeatmapsets}`);
+    console.log(`🎯 Total guest difficulties: ${outputData.totalGuestDiffs}`);
+    console.log(`🔧 Total own difficulties: ${outputData.totalOwnDifficulties}`);
     console.log(`📁 Data saved to: ${OUTPUT_FILE}`);
     console.log(`💾 State saved to: ${STATE_FILE}`);
 
