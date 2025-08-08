@@ -6,13 +6,17 @@ import { Search, User, Calendar, Trophy, ExternalLink, Github, ChevronDown, Chev
 import { Mapper, MapperSortOption, SortOption, BeatmapsetGroup } from './components/types'
 import { MapperCard } from './components/MapperCard'
 import { processMapperData } from './components/beatmapset-utils'
-import { getModeIcon, getModeName, formatNumber, formatDate, searchInMapper } from './components/utils'
+import { getModeIcon, formatNumber, formatDate, searchInMapper } from './components/utils'
 import { sortMappers, calculateMostRecentRankedDate } from './components/sorting'
 import { fetchData } from './components/api-utils'
+import { useLanguage } from './components/LanguageContext'
+import { LanguageToggle } from './components/LanguageToggle'
+import { getModeName } from './components/i18n'
 
 // Interfaces moved to shared components/types.ts
 
 export default function Home() {
+  const { language, t } = useLanguage()
   const [mappers, setMappers] = useState<Mapper[]>([])
   const [filteredMappers, setFilteredMappers] = useState<Mapper[]>([])
   const [searchTerm, setSearchTerm] = useState('')
@@ -126,12 +130,18 @@ export default function Home() {
       {/* Header */}
       <header className="bg-white dark:bg-gray-800 shadow-lg">
         <div className="container mx-auto px-4 py-6">
+          <div className="flex justify-end mb-4">
+            <LanguageToggle />
+          </div>
           <div className="text-center mb-12">
-            <h1 className="text-5xl font-bold text-gray-800 dark:text-white mb-4">
-              Korean Mapper's Map
-            </h1>
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <Github className="h-8 w-8 text-osu-pink" />
+              <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-osu-pink via-osu-purple to-osu-blue bg-clip-text text-transparent">
+                {t.title}
+              </h1>
+            </div>
             <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
-              Discover ranked beatmaps from talented Korean mappers in the osu! community
+              {t.subtitle}
             </p>
             <div className="flex justify-center gap-4 mb-8">
               <Link
@@ -139,16 +149,15 @@ export default function Home() {
                 className="px-6 py-3 bg-osu-pink text-white rounded-lg hover:bg-osu-purple transition-all duration-200 ease-in-out font-medium flex items-center gap-2 hover:scale-105 hover:shadow-lg"
               >
                 <Calendar className="h-5 w-5" />
-                Browse All Beatmaps
+                {t.browseAllBeatmaps}
               </Link>
             </div>
             <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Discover talented Korean osu! mappers and their ranked beatmaps. 
-              This site is automatically updated daily to showcase the latest contributions from the Korean mapping community.
+              {t.description}
             </p>
             {lastUpdated && (
               <p className="text-sm text-gray-500 mt-2">
-                Last updated: {formatDate(lastUpdated)}
+{t.lastUpdated}: {formatDate(lastUpdated)}
               </p>
             )}
           </div>
@@ -158,10 +167,10 @@ export default function Home() {
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
             <input
               type="text"
-              placeholder="Search mappers or beatmaps..."
-              className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-osu-pink focus:border-transparent dark:bg-gray-700 dark:border-gray-600 dark:text-white transition-all duration-200 ease-in-out"
+              placeholder={t.searchPlaceholder}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-osu-pink focus:border-transparent bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-200 ease-in-out"
             />
           </div>
         </div>
@@ -183,7 +192,7 @@ export default function Home() {
                 ).length
               })()}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">Korean Mappers</p>
+            <p className="text-sm text-gray-600 dark:text-gray-400">{language === 'ko' ? '한국 매퍼' : 'Korean Mappers'}</p>
           </div>
           <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg text-center">
             <Trophy className="h-6 w-6 text-osu-blue mx-auto mb-2" />
@@ -198,7 +207,7 @@ export default function Home() {
                 }, 0)
               })()}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">Total Beatmaps</p>
+            <p className="text-sm text-gray-600 dark:text-gray-400">{language === 'ko' ? '총 비트맵' : 'Total Beatmaps'}</p>
           </div>
           <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg text-center">
             <div className="h-6 w-6 text-osu-purple mx-auto mb-2 flex items-center justify-center font-bold text-lg">📦</div>
@@ -219,7 +228,7 @@ export default function Home() {
                 return beatmapsetIds.size
               })()}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">Total Beatmapsets</p>
+            <p className="text-sm text-gray-600 dark:text-gray-400">{t.totalBeatmapsets}</p>
           </div>
         </div>
 
@@ -229,7 +238,7 @@ export default function Home() {
             {/* Display Style */}
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                <label className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">Display:</label>
+                <label className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">{language === 'ko' ? '표시:' : 'Display:'}:</label>
                 <div className="flex bg-gray-100 dark:bg-gray-700 rounded-lg p-1">
                   <button
                     onClick={() => setDisplayStyle('card')}
@@ -239,7 +248,7 @@ export default function Home() {
                         : 'text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white'
                     }`}
                   >
-                    Card
+                    {t.cardView}
                   </button>
                   <button
                     onClick={() => setDisplayStyle('thumbnail')}
@@ -249,7 +258,7 @@ export default function Home() {
                         : 'text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white'
                     }`}
                   >
-                    Thumbnail
+                    {t.thumbnailView}
                   </button>
                   <button
                     onClick={() => setDisplayStyle('minimal')}
@@ -259,7 +268,7 @@ export default function Home() {
                         : 'text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white'
                     }`}
                   >
-                    Minimal
+                    {t.minimalView}
                   </button>
                 </div>
               </div>
@@ -269,7 +278,7 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
               {/* Status Filter */}
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                <label className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">Status:</label>
+                <label className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">{t.filterByStatus}:</label>
                 <div className="flex gap-3 flex-wrap">
                   <label className="flex items-center gap-2 cursor-pointer">
                     <input
@@ -286,7 +295,7 @@ export default function Home() {
                       }}
                       className="rounded border-gray-300 text-osu-pink focus:ring-osu-pink"
                     />
-                    <span className="text-sm text-gray-700 dark:text-gray-300 whitespace-nowrap">🏆 Ranked</span>
+                    <span className="text-sm text-gray-700 dark:text-gray-300 whitespace-nowrap">🏆 {t.ranked}</span>
                   </label>
                   <label className="flex items-center gap-2 cursor-pointer">
                     <input
@@ -303,14 +312,14 @@ export default function Home() {
                       }}
                       className="rounded border-gray-300 text-osu-pink focus:ring-osu-pink"
                     />
-                    <span className="text-sm text-gray-700 dark:text-gray-300 whitespace-nowrap">💖 Loved</span>
+                    <span className="text-sm text-gray-700 dark:text-gray-300 whitespace-nowrap">💖 {t.loved}</span>
                   </label>
                 </div>
               </div>
 
               {/* Game Mode Filter */}
               <div className="flex flex-col sm:flex-row sm:items-center gap-2">
-                <label className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">Modes:</label>
+                <label className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">{t.filterByMode}:</label>
                 <div className="flex gap-1 flex-wrap">
                   {['0', '1', '2', '3'].map((mode) => (
                     <button
@@ -321,7 +330,7 @@ export default function Home() {
                           ? 'bg-osu-pink text-white shadow-md'
                           : 'bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-500'
                       }`}
-                      title={getModeName(mode)}
+                       title={getModeName(mode, language)}
                     >
                       {getModeIcon(mode)}
                     </button>
@@ -334,32 +343,32 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row sm:items-center gap-4 pt-2 border-t border-gray-200 dark:border-gray-600">
               {/* Mapper Sort */}
               <div className="flex flex-col sm:flex-row sm:items-center gap-2">
-                <label className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">Sort mappers:</label>
+                <label className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">{t.sortMappers}:</label>
                 <select
                   value={mapperSortBy}
                   onChange={(e) => setMapperSortBy(e.target.value as MapperSortOption)}
                   className="px-3 py-1 border border-gray-300 rounded-md text-sm bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:ring-2 focus:ring-osu-pink focus:border-transparent transition-all duration-200 ease-in-out"
                 >
-                  <option value="name">Name</option>
-                  <option value="mapsets">Beatmapsets</option>
+                  <option value="name">{t.sortByName}</option>
+                  <option value="mapsets">{t.sortByBeatmapsets}</option>
                   {/* <option value="beatmaps">Total Beatmaps</option> */}
-                  <option value="recent">Most Recent</option>
+                  <option value="recent">{t.sortByRecent}</option>
                 </select>
               </div>
 
               {/* Beatmap Sort */}
               <div className="flex flex-col sm:flex-row sm:items-center gap-2">
-                <label className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">Sort beatmaps:</label>
+                <label className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">{t.sortBeatmaps}:</label>
                 <select
                   value={beatmapSortBy}
                   onChange={(e) => setBeatmapSortBy(e.target.value as SortOption)}
                   className="px-3 py-1 border border-gray-300 rounded-md text-sm bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:ring-2 focus:ring-osu-pink focus:border-transparent transition-all duration-200 ease-in-out"
                 >
-                  <option value="date">Date</option>
-                  <option value="artist">Artist</option>
-                  <option value="title">Title</option>
-                  <option value="favorite">Favorites</option>
-                  <option value="playcount">Playcount</option>
+                  <option value="date">{t.sortByDate}</option>
+                  <option value="artist">{t.sortByArtist}</option>
+                  <option value="title">{t.sortByTitle}</option>
+                  <option value="favorite">{t.sortByFavorites}</option>
+                  <option value="playcount">{t.sortByPlaycount}</option>
                 </select>
               </div>
             </div>
@@ -385,7 +394,7 @@ export default function Home() {
         {filteredMappers.length === 0 && !loading && (
           <div className="text-center py-12">
             <p className="text-xl text-gray-600 dark:text-gray-400">
-              No mappers found matching your search.
+{t.noMappersFound}
             </p>
           </div>
         )}
@@ -402,11 +411,11 @@ export default function Home() {
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-osu-pink transition-colors"
             >
-              View on GitHub
+{t.viewOnGitHub}
             </a>
           </div>
           <p className="text-sm text-gray-500">
-            Data sourced from osu! API • Updated daily via GitHub Actions
+{t.footerText}
           </p>
         </div>
       </footer>
