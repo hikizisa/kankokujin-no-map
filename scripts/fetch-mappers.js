@@ -1,0 +1,206 @@
+const axios = require('axios');
+const fs = require('fs').promises;
+const path = require('path');
+
+// Configuration
+const OSU_API_KEY = process.env.OSU_API_KEY;
+const BASE_URL = 'https://osu.ppy.sh/api';
+const OUTPUT_DIR = path.join(__dirname, '..', 'public', 'data');
+const OUTPUT_FILE = path.join(OUTPUT_DIR, 'mappers.json');
+
+// Manual list of additional Korean mapper user IDs to include
+const MANUAL_MAPPER_IDS = [
+  // Add user IDs here for mappers that might not have country set to KR
+  // Example: '123456', '789012'
+];
+
+// Rate limiting helper
+const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+async function fetchWithRetry(url, params, retries = 3) {
+  for (let i = 0; i < retries; i++) {
+    try {
+      await delay(100); // Rate limiting: ~600 requests per minute
+      const response = await axios.get(url, { params });
+      return response.data;
+    } catch (error) {
+      console.error(`Attempt ${i + 1} failed for ${url}:`, error.message);
+      if (i === retries - 1) throw error;
+      await delay(1000 * (i + 1)); // Exponential backoff
+    }
+  }
+}
+
+async function fetchKoreanMappers() {
+  if (!OSU_API_KEY) {
+    throw new Error('OSU_API_KEY environment variable is required');
+  }
+
+  console.log('Fetching Korean mappers...');
+  
+  const mappers = new Map();
+  const processedUsers = new Set();
+
+  // Function to process a single user
+  async function processUser(userId) {
+    if (processedUsers.has(userId)) return;
+    processedUsers.add(userId);
+
+    try {
+      console.log(`Fetching user data for ID: ${userId}`);
+      const userData = await fetchWithRetry(`${BASE_URL}/get_user`, {
+        k: OSU_API_KEY,
+        u: userId,
+        type: 'id'
+      });
+
+      if (!userData || userData.length === 0) {
+        console.log(`No user data found for ID: ${userId}`);
+        return;
+      }
+
+      const user = userData[0];
+      
+      // Check if user is Korean or in manual list
+      if (user.country !== 'KR' && !MANUAL_MAPPER_IDS.includes(userId)) {
+        console.log(`User ${user.username} is not Korean (${user.country}), skipping`);
+        return;
+      }
+
+      console.log(`Fetching beatmaps for ${user.username}...`);
+      const beatmaps = await fetchWithRetry(`${BASE_URL}/get_beatmaps`, {
+        k: OSU_API_KEY,
+        u: userId,
+        type: 'id'
+      });
+
+      // Filter for ranked/approved/loved beatmaps only
+      const rankedBeatmaps = beatmaps.filter(beatmap => 
+        ['1', '2', '3', '4'].includes(beatmap.approved)
+      );
+
+      if (rankedBeatmaps.length > 0) {
+        mappers.set(userId, {
+          user_id: user.user_id,
+          username: user.username,
+          country: user.country,
+          pp_rank: user.pp_rank || '0',
+          pp_raw: user.pp_raw || '0',
+          join_date: user.join_date,
+          playcount: user.playcount || '0',
+          beatmaps: rankedBeatmaps.sort((a, b) => 
+            new Date(b.approved_date) - new Date(a.approved_date)
+          )
+        });
+        console.log(`Added ${user.username} with ${rankedBeatmaps.length} ranked beatmaps`);
+      } else {
+        console.log(`${user.username} has no ranked beatmaps, skipping`);
+      }
+    } catch (error) {
+      console.error(`Error processing user ${userId}:`, error.message);
+    }
+  }
+
+  // Method 1: Find Korean mappers by searching recent beatmaps
+  console.log('Searching for Korean mappers through recent beatmaps...');
+  try {
+    const recentBeatmaps = await fetchWithRetry(`${BASE_URL}/get_beatmaps`, {
+      k: OSU_API_KEY,
+      since: '2020-01-01',
+      limit: 500
+    });
+
+    const koreanCreators = new Set();
+    for (const beatmap of recentBeatmaps) {
+      if (beatmap.creator_id) {
+        koreanCreators.add(beatmap.creator_id);
+      }
+    }
+
+    console.log(`Found ${koreanCreators.size} potential mappers from recent beatmaps`);
+
+    // Process each potential mapper
+    for (const creatorId of koreanCreators) {
+      await processUser(creatorId);
+    }
+  } catch (error) {
+    console.error('Error fetching recent beatmaps:', error.message);
+  }
+
+  // Method 2: Process manually specified mapper IDs
+  console.log('Processing manually specified mappers...');
+  for (const mapperId of MANUAL_MAPPER_IDS) {
+    await processUser(mapperId);
+  }
+
+  // Method 3: Search for known Korean mappers (from the forum post)
+  const knownKoreanMappers = [
+    'lepidopodus', 'KRZY', 'Kloyd', 'kjwkjw', 'K i A i', 'KDS', 'koreapenguin', 'LeiN-'
+  ];
+
+  console.log('Processing known Korean mappers...');
+  for (const username of knownKoreanMappers) {
+    try {
+      const userData = await fetchWithRetry(`${BASE_URL}/get_user`, {
+        k: OSU_API_KEY,
+        u: username,
+        type: 'string'
+      });
+
+      if (userData && userData.length > 0) {
+        await processUser(userData[0].user_id);
+      }
+    } catch (error) {
+      console.error(`Error fetching known mapper ${username}:`, error.message);
+    }
+  }
+
+  return Array.from(mappers.values()).sort((a, b) => 
+    parseInt(a.pp_rank || '999999') - parseInt(b.pp_rank || '999999')
+  );
+}
+
+async function main() {
+  try {
+    console.log('Starting Korean mapper data collection...');
+    
+    // Ensure output directory exists
+    await fs.mkdir(OUTPUT_DIR, { recursive: true });
+
+    // Fetch mapper data
+    const mappers = await fetchKoreanMappers();
+    
+    console.log(`\nCollected data for ${mappers.length} Korean mappers`);
+    console.log(`Total beatmaps: ${mappers.reduce((sum, mapper) => sum + mapper.beatmaps.length, 0)}`);
+
+    // Prepare output data
+    const outputData = {
+      lastUpdated: new Date().toISOString(),
+      totalMappers: mappers.length,
+      totalBeatmaps: mappers.reduce((sum, mapper) => sum + mapper.beatmaps.length, 0),
+      mappers: mappers
+    };
+
+    // Write to file
+    await fs.writeFile(OUTPUT_FILE, JSON.stringify(outputData, null, 2));
+    console.log(`\nData saved to ${OUTPUT_FILE}`);
+
+    // Print summary
+    console.log('\n=== SUMMARY ===');
+    console.log(`Korean mappers found: ${mappers.length}`);
+    mappers.slice(0, 10).forEach((mapper, index) => {
+      console.log(`${index + 1}. ${mapper.username} - ${mapper.beatmaps.length} beatmaps (Rank #${mapper.pp_rank})`);
+    });
+    if (mappers.length > 10) {
+      console.log(`... and ${mappers.length - 10} more mappers`);
+    }
+
+  } catch (error) {
+    console.error('Error in main process:', error.message);
+    process.exit(1);
+  }
+}
+
+if (require.main === module) {
+  main();
+}

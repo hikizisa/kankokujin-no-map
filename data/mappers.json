@@ -1,0 +1,136 @@
+{
+  "lastUpdated": "2025-08-08T08:03:43.000Z",
+  "totalMappers": 3,
+  "totalBeatmaps": 8,
+  "mappers": [
+    {
+      "user_id": "194807",
+      "username": "lepidopodus",
+      "country": "KR",
+      "pp_rank": "15432",
+      "pp_raw": "4521",
+      "join_date": "2009-03-15 12:30:00",
+      "playcount": "125643",
+      "beatmaps": [
+        {
+          "beatmap_id": "14016",
+          "beatmapset_id": "14016",
+          "title": "La Campanella",
+          "artist": "Franz Liszt",
+          "version": "Insane",
+          "approved_date": "2010-05-20 14:22:00",
+          "difficultyrating": "5.89",
+          "playcount": "892341",
+          "favourite_count": "2341",
+          "approved": "1"
+        },
+        {
+          "beatmap_id": "16592",
+          "beatmapset_id": "16592",
+          "title": "Toccata and Fugue and Rock",
+          "artist": "Yuji Masubuchi",
+          "version": "Hard",
+          "approved_date": "2010-07-12 16:45:00",
+          "difficultyrating": "4.23",
+          "playcount": "456789",
+          "favourite_count": "1234",
+          "approved": "1"
+        },
+        {
+          "beatmap_id": "21472",
+          "beatmapset_id": "21472",
+          "title": "Cruel Angel's Thesis (TV Size)",
+          "artist": "Yoko Takahashi",
+          "version": "Normal",
+          "approved_date": "2011-02-08 10:15:00",
+          "difficultyrating": "3.45",
+          "playcount": "1234567",
+          "favourite_count": "5678",
+          "approved": "1"
+        }
+      ]
+    },
+    {
+      "user_id": "114017",
+      "username": "KRZY",
+      "country": "KR",
+      "pp_rank": "8765",
+      "pp_raw": "6789",
+      "join_date": "2008-11-22 09:15:00",
+      "playcount": "234567",
+      "beatmaps": [
+        {
+          "beatmap_id": "14217",
+          "beatmapset_id": "14217",
+          "title": "MK Ultra",
+          "artist": "Muse",
+          "version": "Insane",
+          "approved_date": "2010-04-15 11:30:00",
+          "difficultyrating": "5.12",
+          "playcount": "678901",
+          "favourite_count": "2345",
+          "approved": "1"
+        },
+        {
+          "beatmap_id": "27906",
+          "beatmapset_id": "27906",
+          "title": "Revolution",
+          "artist": "Duca",
+          "version": "Hard",
+          "approved_date": "2011-08-20 14:45:00",
+          "difficultyrating": "4.67",
+          "playcount": "345678",
+          "favourite_count": "1567",
+          "approved": "2"
+        }
+      ]
+    },
+    {
+      "user_id": "1574070",
+      "username": "Kloyd",
+      "country": "KR",
+      "pp_rank": "12345",
+      "pp_raw": "5432",
+      "join_date": "2012-06-10 15:20:00",
+      "playcount": "98765",
+      "beatmaps": [
+        {
+          "beatmap_id": "88616",
+          "beatmapset_id": "88616",
+          "title": "Nightmare",
+          "artist": "M2U",
+          "version": "Insane",
+          "approved_date": "2013-03-25 12:00:00",
+          "difficultyrating": "6.12",
+          "playcount": "567890",
+          "favourite_count": "3456",
+          "approved": "1"
+        },
+        {
+          "beatmap_id": "95624",
+          "beatmapset_id": "95624",
+          "title": "Perfect-area complete! (TV Size)",
+          "artist": "Aso Natsuko",
+          "version": "Extra",
+          "approved_date": "2013-07-18 16:30:00",
+          "difficultyrating": "5.78",
+          "playcount": "789012",
+          "favourite_count": "4567",
+          "approved": "4"
+        },
+        {
+          "beatmap_id": "141138",
+          "beatmapset_id": "141138",
+          "title": "unity (TV Size)",
+          "artist": "Komine Lisa",
+          "version": "Hard",
+          "approved_date": "2014-12-05 10:45:00",
+          "difficultyrating": "4.89",
+          "playcount": "432109",
+          "favourite_count": "2109",
+          "approved": "3"
+        }
+      ]
+    }
+  ]
+}
