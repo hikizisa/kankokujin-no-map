@@ -42,16 +42,15 @@ jobs:
     - name: Build site
       run: npm run export
       
-    - name: Ensure data is in correct location for deployment
+    - name: Verify data exists in output
       run: |
-        # Make sure data directory exists in output
-        mkdir -p ./out/data
-        # Copy mappers.json to the correct location
-        if [ -f "./public/data/mappers.json" ]; then
-          cp ./public/data/mappers.json ./out/data/mappers.json
-          echo "✅ Copied mappers.json to deployment directory"
+        if [ -f "./out/data/mappers.json" ]; then
+          echo "✅ mappers.json found in output directory"
+          echo "File size: $(du -h ./out/data/mappers.json | cut -f1)"
         else
-          echo "⚠️ Warning: mappers.json not found in public/data/"
+          echo "⚠️ Warning: mappers.json not found in output directory"
+          echo "Contents of ./out/data/:"
+          ls -la ./out/data/ || echo "./out/data/ directory does not exist"
         fi
       
     - name: Deploy to GitHub Pages
