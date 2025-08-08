@@ -2,12 +2,15 @@ const axios = require('axios');
 const fs = require('fs').promises;
 const path = require('path');
 
+// Load environment variables from .env file
+require('dotenv').config();
+
 // Configuration
 const OSU_API_KEY = process.env.OSU_API_KEY;
 const BASE_URL = 'https://osu.ppy.sh/api';
-const OUTPUT_DIR = path.join(__dirname, '..', 'data');
+const OUTPUT_DIR = path.join(__dirname, '..', 'public', 'data');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'mappers.json');
-const STATE_FILE = path.join(OUTPUT_DIR, 'fetch-state.json');
+const STATE_FILE = path.join(__dirname, '..', 'data', 'fetch-state.json');
 
 // API Configuration
 const MAX_BEATMAPS_PER_REQUEST = 500; // osu! API limit
@@ -84,15 +87,19 @@ async function loadExistingData() {
 }
 
 // Helper function to categorize beatmaps into mapsets and guest difficulties
+// NOTE: Guest difficulty detection is disabled due to API limitations
+// The osu! API doesn't provide per-difficulty creator info, so accurate detection is impossible
 function categorizeBeatmaps(beatmaps, mapperUsername) {
     const beatmapsets = new Map(); // beatmapset_id -> beatmapset info
-    const guestDifficulties = [];
+    const guestDifficulties = []; // Placeholder - currently empty due to API limitations
     const ownBeatmaps = [];
     
     beatmaps.forEach(beatmap => {
         const beatmapsetId = beatmap.beatmapset_id;
         const creator = beatmap.creator;
-        const isGuestDiff = creator !== mapperUsername;
+        // DISABLED: Guest difficulty detection due to API limitations
+        // const isGuestDiff = creator !== mapperUsername;
+        const isGuestDiff = false; // All beatmaps treated as own beatmaps for now
         
         if (isGuestDiff) {
             guestDifficulties.push({

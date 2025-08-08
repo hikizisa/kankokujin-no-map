@@ -1,4 +1,4 @@
-# Korean Mappers Map | 한국인 매퍼 맵
+# Korean Mappers Map | 한국인의 비트맵
 
 A modern, automated website showcasing Korean osu! mappers and their ranked beatmaps. This project creates a beautiful, searchable directory of Korean mapping talent, automatically updated daily via GitHub Actions.
 

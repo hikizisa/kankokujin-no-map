@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Korean Mappers Map | 한국인 매퍼 맵',
+  title: 'Korean Mappers Map | 한국인의 비트맵',
   description: 'Discover Korean osu! mappers and their ranked beatmaps',
   keywords: 'osu, korean mappers, beatmaps, 한국인 매퍼, 비트맵',
 }
