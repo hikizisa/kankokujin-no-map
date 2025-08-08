@@ -7,6 +7,7 @@ import { BeatmapsetCard } from '../components/BeatmapsetCard'
 import { getModeIcon, getModeName, formatNumber, formatDate } from '../components/utils'
 import { sortBeatmapsets, filterBeatmapsetsByModes } from '../components/sorting'
 import { constructBeatmapsetsFromBeatmaps } from '../components/beatmapset-utils'
+import { fetchData } from '../components/api-utils'
 import Link from 'next/link'
 
 interface Mapper {
@@ -30,7 +31,7 @@ export default function AllMapsPage() {
   useEffect(() => {
     const fetchMappers = async () => {
       try {
-        const response = await fetch('/data/mappers.json')
+        const response = await fetchData('data/mappers.json')
         if (!response.ok) {
           throw new Error('Failed to fetch mappers data')
         }

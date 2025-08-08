@@ -8,6 +8,7 @@ import { MapperCard } from './components/MapperCard'
 import { processMapperData } from './components/beatmapset-utils'
 import { getModeIcon, getModeName, formatNumber, formatDate, searchInMapper } from './components/utils'
 import { sortMappers, calculateMostRecentRankedDate } from './components/sorting'
+import { fetchData } from './components/api-utils'
 
 // Interfaces moved to shared components/types.ts
 
@@ -29,7 +30,7 @@ export default function Home() {
 
   useEffect(() => {
     // Load mapper data from JSON file
-    fetch('/data/mappers.json')
+    fetchData('data/mappers.json')
       .then(res => res.json())
       .then(data => {
         // Process mappers using shared utility function
