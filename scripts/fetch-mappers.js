@@ -275,14 +275,17 @@ async function fetchKoreanMappers() {
     console.log(`Loaded ${existingData.mappers.length} existing mappers from previous run`);
     
     const currentTime = new Date().toISOString();
-    const isFullScan = !fetchState.lastFullScan || 
+    
+    // Check if force refresh is requested via environment variable
+    const forceRefresh = process.env.FORCE_REFRESH === 'true';
+    const isFullScan = forceRefresh || !fetchState.lastFullScan || 
         (Date.now() - new Date(fetchState.lastFullScan).getTime()) > 7 * 24 * 60 * 60 * 1000; // Weekly full scan
     
     // Force start date for data collection (set to 2020-01-01)
     const FORCE_START_DATE = '2020-01-01';
     console.log(`Forcing data collection from ${FORCE_START_DATE}...`);
     
-    console.log(`Running ${isFullScan ? 'FULL' : 'INCREMENTAL'} scan`);
+    console.log(`Running ${isFullScan ? 'FULL' : 'INCREMENTAL'} scan${forceRefresh ? ' (FORCE REFRESH REQUESTED)' : ''}`);
 
     // Function to process a single user with incremental updates
     async function processUser(userId) {

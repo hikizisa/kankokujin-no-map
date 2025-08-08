@@ -1,0 +1,83 @@
+name: Daily Data Refresh
+
+on:
+  schedule:
+    # Run daily at 2 AM UTC to catch new ranked maps
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      debug:
+        description: 'Enable debug logging'
+        required: false
+        default: 'false'
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  daily-refresh:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: |
+        if [ -f package-lock.json ]; then
+          npm ci
+        else
+          npm install
+        fi
+    
+    - name: Daily incremental data fetch
+      env:
+        OSU_API_KEY: ${{ secrets.OSU_API_KEY }}
+        FORCE_REFRESH: 'false'
+      run: |
+        echo "🔄 Starting daily incremental data refresh..."
+        echo "This will fetch only new beatmaps since last update"
+        node scripts/fetch-mappers.js
+        
+    - name: Check for changes
+      id: verify-changed-files
+      run: |
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "changed=true" >> $GITHUB_OUTPUT
+          echo "✅ New beatmaps detected!"
+        else
+          echo "changed=false" >> $GITHUB_OUTPUT
+          echo "ℹ️ No new beatmaps found"
+        fi
+        
+    - name: Commit and push changes
+      if: steps.verify-changed-files.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add public/data/mappers.json
+        git add data/fetch-state.json
+        git commit -m "🆕 Daily update: New beatmaps detected
+        
+        - Added newly ranked/loved beatmaps
+        - Updated mapper statistics
+        - Incremental refresh on $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+        git push
+        
+    - name: Create summary
+      run: |
+        if [ "${{ steps.verify-changed-files.outputs.changed }}" == "true" ]; then
+          echo "🆕 Daily refresh completed - New beatmaps found!" >> $GITHUB_STEP_SUMMARY
+          echo "📊 Incremental update applied successfully" >> $GITHUB_STEP_SUMMARY
+          echo "🚀 Site will auto-deploy with new data" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "✅ Daily refresh completed - No new beatmaps" >> $GITHUB_STEP_SUMMARY
+          echo "📊 All data is up to date" >> $GITHUB_STEP_SUMMARY
+        fi

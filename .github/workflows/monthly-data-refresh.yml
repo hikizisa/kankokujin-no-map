@@ -1,15 +1,15 @@
-name: Monthly Data Refresh
+name: Monthly Data Refresh (Full)
 
 on:
   schedule:
-    # Run on the 1st of every month at 1 AM UTC (before deployment)
-    - cron: '0 1 1 * *'
+    # Run on the 1st of every month at 3 AM UTC (after daily refresh)
+    - cron: '0 3 1 * *'
   workflow_dispatch:
     inputs:
       force_refresh:
         description: 'Force refresh all mapper data'
         required: false
-        default: 'false'
+        default: 'true'
         type: boolean
 
 permissions:
@@ -37,12 +37,13 @@ jobs:
           npm install
         fi
     
-    - name: Fetch updated mapper data
+    - name: Monthly full data refresh
       env:
         OSU_API_KEY: ${{ secrets.OSU_API_KEY }}
-        FORCE_REFRESH: ${{ github.event.inputs.force_refresh || 'false' }}
+        FORCE_REFRESH: ${{ github.event.inputs.force_refresh || 'true' }}
       run: |
-        echo "Starting monthly data refresh..."
+        echo "🔄 Starting monthly FULL data refresh..."
+        echo "This will update ALL mapper data including play counts, star ratings, etc."
         node scripts/fetch-mappers.js
         
     - name: Check for changes
@@ -63,22 +64,24 @@ jobs:
         git config --local user.name "GitHub Action"
         git add public/data/mappers.json
         git add data/fetch-state.json
-        git commit -m "🔄 Monthly data refresh: Update mapper and beatmap data
+        git commit -m "🔄 Monthly FULL refresh: Complete data update
 
         - Updated star ratings and difficulty information
         - Refreshed playcount and favorite count data
         - Updated mapper beatmap collections
+        - Full refresh of all existing data
         
-        Automated monthly refresh on $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+        Automated monthly full refresh on $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
         git push
         
     - name: Create summary
       run: |
         if [ "${{ steps.verify-changed-files.outputs.changed }}" == "true" ]; then
-          echo "✅ Monthly data refresh completed successfully" >> $GITHUB_STEP_SUMMARY
-          echo "📊 Mapper and beatmap data has been updated" >> $GITHUB_STEP_SUMMARY
-          echo "🚀 Deployment will trigger automatically" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Monthly FULL refresh completed successfully" >> $GITHUB_STEP_SUMMARY
+          echo "📊 All mapper and beatmap data has been refreshed" >> $GITHUB_STEP_SUMMARY
+          echo "🔄 Play counts, star ratings, and stats updated" >> $GITHUB_STEP_SUMMARY
+          echo "🚀 Site will auto-deploy with refreshed data" >> $GITHUB_STEP_SUMMARY
         else
-          echo "ℹ️ No changes detected in mapper data" >> $GITHUB_STEP_SUMMARY
-          echo "📊 All data is up to date" >> $GITHUB_STEP_SUMMARY
+          echo "ℹ️ Monthly refresh completed - No data changes" >> $GITHUB_STEP_SUMMARY
+          echo "📊 All data was already up to date" >> $GITHUB_STEP_SUMMARY
         fi
