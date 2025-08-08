@@ -1,25 +1,17 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import { Search, Calendar, Trophy, ExternalLink, Github, ArrowLeft } from 'lucide-react'
-import { BeatmapsetGroup, SortOption } from '../components/types'
+import { Search, Calendar, Trophy, ExternalLink, Github, ArrowLeft, ChevronUp, ChevronDown } from 'lucide-react'
+import { Mapper, BeatmapsetGroup, SortOption, SortDirection } from '../components/types'
 import { BeatmapsetCard } from '../components/BeatmapsetCard'
 import { getModeIcon, formatNumber, formatDate } from '../components/utils'
-import { sortBeatmapsets, filterBeatmapsetsByModes } from '../components/sorting'
-import { constructBeatmapsetsFromBeatmaps } from '../components/beatmapset-utils'
+import { sortBeatmapsets } from '../components/sorting'
 import { fetchData } from '../components/api-utils'
+import { getAllBeatmapsetsFromMappers, filterBeatmapsets } from '../components/page-utils'
 import { useLanguage } from '../components/LanguageContext'
 import { LanguageToggle } from '../components/LanguageToggle'
 import { getModeName } from '../components/i18n'
 import Link from 'next/link'
-
-interface Mapper {
-  user_id: string
-  username: string
-  aliases?: string[]
-  beatmaps: any[]
-  beatmapsets: any[]
-}
 
 export default function AllMapsPage() {
   const { language, t } = useLanguage()
@@ -29,6 +21,7 @@ export default function AllMapsPage() {
   const [selectedStatuses, setSelectedStatuses] = useState<Set<string>>(new Set(['1', '4'])) // ranked and loved
   const [displayStyle, setDisplayStyle] = useState<'card' | 'thumbnail' | 'minimal'>('card')
   const [sortBy, setSortBy] = useState<SortOption>('date')
+  const [sortDirection, setSortDirection] = useState<SortDirection>('desc')
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
@@ -81,63 +74,14 @@ export default function AllMapsPage() {
     setSelectedModes(newSelectedModes)
   }
 
-  // Get all beatmapsets from all mappers using shared utility
-  const getAllBeatmapsets = (): BeatmapsetGroup[] => {
-    // Ensure mappers is an array before iterating
-    if (!Array.isArray(mappers)) {
-      return []
-    }
-
-    // Collect all beatmaps from all mappers
-    const allBeatmaps: any[] = []
-    mappers.forEach(mapper => {
-      const beatmaps = mapper.beatmaps || []
-      allBeatmaps.push(...beatmaps)
-    })
-
-    // Use shared utility to construct beatmapsets
-    return constructBeatmapsetsFromBeatmaps(allBeatmaps)
-  }
-
   const filteredAndSortedBeatmapsets = (() => {
-    let beatmapsets = getAllBeatmapsets()
+    let beatmapsets = getAllBeatmapsetsFromMappers(mappers)
 
-    // Filter by search term
-    if (searchTerm) {
-      beatmapsets = beatmapsets.filter(set =>
-        (set.title || '').toLowerCase().includes(searchTerm.toLowerCase()) ||
-        (set.artist || '').toLowerCase().includes(searchTerm.toLowerCase()) ||
-        (set.creator || '').toLowerCase().includes(searchTerm.toLowerCase())
-      )
-    }
+    // Filter beatmapsets using shared utility
+    beatmapsets = filterBeatmapsets(beatmapsets, searchTerm, selectedModes, selectedStatuses)
 
-    // Filter by selected modes
-    beatmapsets = beatmapsets.filter(set =>
-      set.modes.some(mode => selectedModes.has(mode))
-    )
-
-    // Filter by selected statuses
-    beatmapsets = beatmapsets.filter(set =>
-      selectedStatuses.has(set.approved)
-    )
-
-    // Sort beatmapsets
-    beatmapsets.sort((a, b) => {
-      switch (sortBy) {
-        case 'date':
-          return new Date(b.approved_date).getTime() - new Date(a.approved_date).getTime()
-        case 'artist':
-          return a.artist.localeCompare(b.artist)
-        case 'title':
-          return a.title.localeCompare(b.title)
-        case 'favorite':
-          return parseInt(b.favourite_count) - parseInt(a.favourite_count)
-        case 'playcount':
-          return parseInt(b.playcount) - parseInt(a.playcount)
-        default:
-          return 0
-      }
-    })
+    // Sort beatmapsets using shared sorting utility
+    beatmapsets = sortBeatmapsets(beatmapsets, sortBy, sortDirection)
 
     return beatmapsets
   })()
@@ -227,6 +171,17 @@ export default function AllMapsPage() {
                   <option value="favorite">{t.sortByFavorites}</option>
                   <option value="playcount">{t.sortByPlaycount}</option>
                 </select>
+                <button
+                  onClick={() => setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc')}
+                  className="p-2 border border-gray-300 rounded-lg hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-700 transition-all duration-200 ease-in-out"
+                  title={sortDirection === 'asc' ? (language === 'ko' ? '오름차순' : 'Ascending') : (language === 'ko' ? '내림차순' : 'Descending')}
+                >
+                  {sortDirection === 'asc' ? (
+                    <ChevronUp className="h-4 w-4 text-gray-600 dark:text-gray-300" />
+                  ) : (
+                    <ChevronDown className="h-4 w-4 text-gray-600 dark:text-gray-300" />
+                  )}
+                </button>
               </div>
             </div>
 

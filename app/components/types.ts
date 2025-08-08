@@ -85,3 +85,14 @@ export interface BeatmapsetGroup {
 
 export type SortOption = 'date' | 'artist' | 'title' | 'favorite' | 'playcount'
 export type MapperSortOption = 'name' | 'beatmaps' | 'mapsets' | 'recent'
+export type SortDirection = 'asc' | 'desc'
+
+export interface SortConfig {
+  option: SortOption
+  direction: SortDirection
+}
+
+export interface MapperSortConfig {
+  option: MapperSortOption
+  direction: SortDirection
+}

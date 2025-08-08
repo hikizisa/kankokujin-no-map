@@ -1,6 +1,6 @@
 import React from 'react'
 import { User, ChevronDown, ChevronUp, Sparkles, SortAsc } from 'lucide-react'
-import { Mapper, SortOption } from './types'
+import { Mapper, SortOption, SortDirection } from './types'
 import { BeatmapsetCard } from './BeatmapsetCard'
 import { formatNumber } from './utils'
 import { hasRecentRankedMap, sortMapperBeatmapsetsV2 } from './sorting'
@@ -13,6 +13,7 @@ interface MapperCardProps {
   isExpanded: boolean
   onToggle: (mapperId: string) => void
   beatmapSortBy: SortOption
+  beatmapSortDirection: SortDirection
 }
 
 export const MapperCard: React.FC<MapperCardProps> = ({
@@ -22,7 +23,8 @@ export const MapperCard: React.FC<MapperCardProps> = ({
   displayStyle = 'card',
   isExpanded,
   onToggle,
-  beatmapSortBy
+  beatmapSortBy,
+  beatmapSortDirection
 }) => {
   // No longer need local state - using global sorting from main page
   const isNewMapper = hasRecentRankedMap(mapper, selectedModes, selectedStatuses)
@@ -52,16 +54,26 @@ export const MapperCard: React.FC<MapperCardProps> = ({
 
   // Sort beatmaps based on selected criteria
   const sortedBeatmaps = [...filteredBeatmaps].sort((a, b) => {
+    const multiplier = beatmapSortDirection === 'desc' ? -1 : 1
+    let result = 0
+    
     switch (beatmapSortBy) {
       case 'date':
-        return new Date(b.approved_date).getTime() - new Date(a.approved_date).getTime()
+        result = new Date(a.approved_date).getTime() - new Date(b.approved_date).getTime()
+        break
       case 'artist':
-        return a.artist.localeCompare(b.artist)
+        result = a.artist.localeCompare(b.artist)
+        // For text sorting, reverse the multiplier logic (asc by default makes more sense)
+        return result * (beatmapSortDirection === 'asc' ? 1 : -1)
       case 'title':
-        return a.title.localeCompare(b.title)
+        result = a.title.localeCompare(b.title)
+        // For text sorting, reverse the multiplier logic (asc by default makes more sense)
+        return result * (beatmapSortDirection === 'asc' ? 1 : -1)
       default:
-        return new Date(b.approved_date).getTime() - new Date(a.approved_date).getTime()
+        result = new Date(a.approved_date).getTime() - new Date(b.approved_date).getTime()
+        break
     }
+    return result * multiplier
   })
 
   // Handle different sorting approaches
@@ -95,7 +107,7 @@ export const MapperCard: React.FC<MapperCardProps> = ({
   } else {
     // For other sorting criteria, use beatmapset-level sorting
     const effectiveSortBy = beatmapSortBy as 'date' | 'favorite' | 'playcount'
-    finalBeatmapsets = sortMapperBeatmapsetsV2(filteredBeatmapsets, effectiveSortBy)
+    finalBeatmapsets = sortMapperBeatmapsetsV2(filteredBeatmapsets, effectiveSortBy, beatmapSortDirection)
     sortingLabel = effectiveSortBy === 'date' ? 'Date' : effectiveSortBy === 'favorite' ? 'Favorites' : 'Playcount'
   }
 

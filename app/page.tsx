@@ -6,9 +6,10 @@ import { Search, User, Calendar, Trophy, ExternalLink, Github, ChevronDown, Chev
 import { Mapper, MapperSortOption, SortOption, BeatmapsetGroup } from './components/types'
 import { MapperCard } from './components/MapperCard'
 import { processMapperData } from './components/beatmapset-utils'
-import { getModeIcon, formatNumber, formatDate, searchInMapper } from './components/utils'
+import { getModeIcon, formatNumber, formatDate } from './components/utils'
 import { sortMappers, calculateMostRecentRankedDate } from './components/sorting'
 import { fetchData } from './components/api-utils'
+import { filterMappers, calculateFilteredStats, toggleMode as toggleModeUtil } from './components/page-utils'
 import { useLanguage } from './components/LanguageContext'
 import { LanguageToggle } from './components/LanguageToggle'
 import { getModeName } from './components/i18n'
@@ -28,8 +29,10 @@ export default function Home() {
   const [displayStyle, setDisplayStyle] = useState<'card' | 'thumbnail' | 'minimal'>('card')
 
   const [beatmapSortBy, setBeatmapSortBy] = useState<SortOption>('date')
+  const [beatmapSortDirection, setBeatmapSortDirection] = useState<'asc' | 'desc'>('desc')
 
   const [mapperSortBy, setMapperSortBy] = useState<MapperSortOption>('name')
+  const [mapperSortDirection, setMapperSortDirection] = useState<'asc' | 'desc'>('asc')
   const [expandedMappers, setExpandedMappers] = useState<Set<string>>(new Set())
 
   useEffect(() => {
@@ -61,38 +64,14 @@ export default function Home() {
   }, [])
 
   useEffect(() => {
-    // Filter mappers based on search term using shared utility
-    let filtered = mappers.filter(mapper => searchInMapper(mapper, searchTerm))
-    
-    // Filter out mappers who have no beatmapsets matching the selected modes and statuses
-    filtered = filtered.filter(mapper => {
-      const matchingBeatmapsets = (mapper.beatmapsets || []).filter(set => {
-        // Check if beatmapset status is selected
-        const hasMatchingStatus = selectedStatuses.has(set.approved || '1')
-        
-        // Check if beatmapset has difficulties that match selected modes
-        // We need to check the difficulties array, not just the modes array
-        const hasMatchingMode = set.difficulties && set.difficulties.some(diff => 
-          selectedModes.has(diff.mode)
-        )
-        
-        // Fallback: if no difficulties array, check modes array
-        const hasModeInArray = !hasMatchingMode && set.modes && set.modes.some(mode => 
-          selectedModes.has(mode)
-        )
-        
-        return hasMatchingStatus && (hasMatchingMode || hasModeInArray)
-      })
-      
-      // Only show mapper if they have at least one matching beatmapset
-      return matchingBeatmapsets.length > 0
-    })
+    // Filter mappers using shared utility
+    let filtered = filterMappers(mappers, searchTerm, selectedModes, selectedStatuses)
     
     // Sort mappers using shared sorting utility (considering current filters)
-    filtered = sortMappers(filtered, mapperSortBy, selectedModes, selectedStatuses)
+    filtered = sortMappers(filtered, mapperSortBy, mapperSortDirection, selectedModes, selectedStatuses)
     
     setFilteredMappers(filtered)
-  }, [searchTerm, mappers, mapperSortBy, selectedModes, selectedStatuses])
+  }, [searchTerm, mappers, mapperSortBy, mapperSortDirection, selectedModes, selectedStatuses])
 
   const toggleMapper = (mapperId: string) => {
     const newExpanded = new Set(expandedMappers)
@@ -182,51 +161,21 @@ export default function Home() {
           <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg text-center">
             <User className="h-6 w-6 text-osu-pink mx-auto mb-2" />
             <h3 className="text-xl font-bold text-gray-800 dark:text-white">
-              {(() => {
-                // Count mappers who have beatmaps matching the current mode filter
-                if (selectedModes.size === 0) {
-                  return totalStats.totalMappers || filteredMappers.length
-                }
-                return filteredMappers.filter(mapper => 
-                  mapper.beatmaps?.some(beatmap => selectedModes.has(beatmap.mode || '0'))
-                ).length
-              })()}
+              {calculateFilteredStats(filteredMappers, selectedModes, totalStats).mapperCount}
             </h3>
             <p className="text-sm text-gray-600 dark:text-gray-400">{language === 'ko' ? '한국 매퍼' : 'Korean Mappers'}</p>
           </div>
           <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg text-center">
             <Trophy className="h-6 w-6 text-osu-blue mx-auto mb-2" />
             <h3 className="text-xl font-bold text-gray-800 dark:text-white">
-              {(() => {
-                if (selectedModes.size === 0) {
-                  return totalStats.totalBeatmaps || filteredMappers.reduce((total, mapper) => total + (mapper.rankedBeatmaps || mapper.beatmaps?.length || 0), 0)
-                }
-                return filteredMappers.reduce((total, mapper) => {
-                  const filteredBeatmaps = mapper.beatmaps?.filter(beatmap => selectedModes.has(beatmap.mode || '0')) || []
-                  return total + filteredBeatmaps.length
-                }, 0)
-              })()}
+              {calculateFilteredStats(filteredMappers, selectedModes, totalStats).beatmapCount}
             </h3>
             <p className="text-sm text-gray-600 dark:text-gray-400">{language === 'ko' ? '총 비트맵' : 'Total Beatmaps'}</p>
           </div>
           <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg text-center">
             <div className="h-6 w-6 text-osu-purple mx-auto mb-2 flex items-center justify-center font-bold text-lg">📦</div>
             <h3 className="text-xl font-bold text-gray-800 dark:text-white">
-              {(() => {
-                if (selectedModes.size === 0) {
-                  return totalStats.totalBeatmapsets || filteredMappers.reduce((total, mapper) => total + (mapper.rankedBeatmapsets || 0), 0)
-                }
-                // Count unique beatmapsets that have difficulties in selected modes
-                const beatmapsetIds = new Set()
-                filteredMappers.forEach(mapper => {
-                  mapper.beatmaps?.forEach(beatmap => {
-                    if (selectedModes.has(beatmap.mode || '0')) {
-                      beatmapsetIds.add(beatmap.beatmapset_id)
-                    }
-                  })
-                })
-                return beatmapsetIds.size
-              })()}
+              {calculateFilteredStats(filteredMappers, selectedModes, totalStats).beatmapsetCount}
             </h3>
             <p className="text-sm text-gray-600 dark:text-gray-400">{t.totalBeatmapsets}</p>
           </div>
@@ -344,32 +293,50 @@ export default function Home() {
               {/* Mapper Sort */}
               <div className="flex flex-col sm:flex-row sm:items-center gap-2">
                 <label className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">{t.sortMappers}:</label>
-                <select
-                  value={mapperSortBy}
-                  onChange={(e) => setMapperSortBy(e.target.value as MapperSortOption)}
-                  className="px-3 py-1 border border-gray-300 rounded-md text-sm bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:ring-2 focus:ring-osu-pink focus:border-transparent transition-all duration-200 ease-in-out"
-                >
-                  <option value="name">{t.sortByName}</option>
-                  <option value="mapsets">{t.sortByBeatmapsets}</option>
-                  {/* <option value="beatmaps">Total Beatmaps</option> */}
-                  <option value="recent">{t.sortByRecent}</option>
-                </select>
+                <div className="flex items-center gap-1">
+                  <select
+                    value={mapperSortBy}
+                    onChange={(e) => setMapperSortBy(e.target.value as MapperSortOption)}
+                    className="px-3 py-1 border border-gray-300 rounded-l-md text-sm bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:ring-2 focus:ring-osu-pink focus:border-transparent transition-all duration-200 ease-in-out"
+                  >
+                    <option value="name">{t.sortByName}</option>
+                    <option value="mapsets">{t.sortByBeatmapsets}</option>
+                    {/* <option value="beatmaps">Total Beatmaps</option> */}
+                    <option value="recent">{t.sortByRecent}</option>
+                  </select>
+                  <button
+                    onClick={() => setMapperSortDirection(mapperSortDirection === 'asc' ? 'desc' : 'asc')}
+                    className="px-2 py-1 border border-l-0 border-gray-300 rounded-r-md text-sm bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-600 focus:ring-2 focus:ring-osu-pink focus:border-transparent transition-all duration-200 ease-in-out"
+                    title={mapperSortDirection === 'asc' ? 'Ascending' : 'Descending'}
+                  >
+                    {mapperSortDirection === 'asc' ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+                  </button>
+                </div>
               </div>
 
               {/* Beatmap Sort */}
               <div className="flex flex-col sm:flex-row sm:items-center gap-2">
                 <label className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">{t.sortBeatmaps}:</label>
-                <select
-                  value={beatmapSortBy}
-                  onChange={(e) => setBeatmapSortBy(e.target.value as SortOption)}
-                  className="px-3 py-1 border border-gray-300 rounded-md text-sm bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:ring-2 focus:ring-osu-pink focus:border-transparent transition-all duration-200 ease-in-out"
-                >
-                  <option value="date">{t.sortByDate}</option>
-                  <option value="artist">{t.sortByArtist}</option>
-                  <option value="title">{t.sortByTitle}</option>
-                  <option value="favorite">{t.sortByFavorites}</option>
-                  <option value="playcount">{t.sortByPlaycount}</option>
-                </select>
+                <div className="flex items-center gap-1">
+                  <select
+                    value={beatmapSortBy}
+                    onChange={(e) => setBeatmapSortBy(e.target.value as SortOption)}
+                    className="px-3 py-1 border border-gray-300 rounded-l-md text-sm bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:ring-2 focus:ring-osu-pink focus:border-transparent transition-all duration-200 ease-in-out"
+                  >
+                    <option value="date">{t.sortByDate}</option>
+                    <option value="artist">{t.sortByArtist}</option>
+                    <option value="title">{t.sortByTitle}</option>
+                    <option value="favorite">{t.sortByFavorites}</option>
+                    <option value="playcount">{t.sortByPlaycount}</option>
+                  </select>
+                  <button
+                    onClick={() => setBeatmapSortDirection(beatmapSortDirection === 'asc' ? 'desc' : 'asc')}
+                    className="px-2 py-1 border border-l-0 border-gray-300 rounded-r-md text-sm bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-600 focus:ring-2 focus:ring-osu-pink focus:border-transparent transition-all duration-200 ease-in-out"
+                    title={beatmapSortDirection === 'asc' ? 'Ascending' : 'Descending'}
+                  >
+                    {beatmapSortDirection === 'asc' ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -387,6 +354,7 @@ export default function Home() {
               isExpanded={expandedMappers.has(mapper.user_id)}
               onToggle={toggleMapper}
               beatmapSortBy={beatmapSortBy}
+              beatmapSortDirection={beatmapSortDirection}
             />
           ))}
         </div>

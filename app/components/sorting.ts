@@ -1,4 +1,4 @@
-import { Mapper, BeatmapsetGroup, Beatmapset, SortOption, MapperSortOption } from './types'
+import { Mapper, BeatmapsetGroup, Beatmapset, SortOption, MapperSortOption, SortDirection, SortConfig, MapperSortConfig } from './types'
 
 /**
  * Check if a mapper has a recently ranked map (within last 30 days)
@@ -27,23 +27,31 @@ export const hasRecentRankedMap = (
  * Sort beatmapsets within a mapper by favorite count or playcount
  * @param beatmapsets Array of beatmapsets (BeatmapsetGroup)
  * @param sortBy Sort criteria ('favorite' or 'playcount')
+ * @param direction Sort direction ('asc' or 'desc')
  * @returns Sorted array of beatmapsets
  */
-export const sortMapperBeatmapsets = (beatmapsets: BeatmapsetGroup[], sortBy: 'favorite' | 'playcount' | 'date'): BeatmapsetGroup[] => {
+export const sortMapperBeatmapsets = (beatmapsets: BeatmapsetGroup[], sortBy: 'favorite' | 'playcount' | 'date', direction: SortDirection = 'desc'): BeatmapsetGroup[] => {
+  const multiplier = direction === 'desc' ? -1 : 1
+  
   return [...beatmapsets].sort((a, b) => {
+    let result = 0
     switch (sortBy) {
       case 'favorite':
         const aFav = parseInt(a.favourite_count || '0')
         const bFav = parseInt(b.favourite_count || '0')
-        return bFav - aFav
+        result = aFav - bFav
+        break
       case 'playcount':
         const aPlay = parseInt(a.playcount || '0')
         const bPlay = parseInt(b.playcount || '0')
-        return bPlay - aPlay
+        result = aPlay - bPlay
+        break
       case 'date':
       default:
-        return new Date(b.approved_date).getTime() - new Date(a.approved_date).getTime()
+        result = new Date(a.approved_date).getTime() - new Date(b.approved_date).getTime()
+        break
     }
+    return result * multiplier
   })
 }
 
@@ -51,77 +59,108 @@ export const sortMapperBeatmapsets = (beatmapsets: BeatmapsetGroup[], sortBy: 'f
  * Sort beatmapsets within a mapper by favorite count or playcount (for Beatmapset type)
  * @param beatmapsets Array of beatmapsets (Beatmapset)
  * @param sortBy Sort criteria ('favorite' or 'playcount')
+ * @param direction Sort direction ('asc' or 'desc')
  * @returns Sorted array of beatmapsets
  */
-export const sortMapperBeatmapsetsV2 = (beatmapsets: Beatmapset[], sortBy: 'favorite' | 'playcount' | 'date'): Beatmapset[] => {
+export const sortMapperBeatmapsetsV2 = (beatmapsets: Beatmapset[], sortBy: 'favorite' | 'playcount' | 'date', direction: SortDirection = 'desc'): Beatmapset[] => {
+  const multiplier = direction === 'desc' ? -1 : 1
+  
   return [...beatmapsets].sort((a, b) => {
+    let result = 0
     switch (sortBy) {
       case 'favorite':
         const aFav = parseInt(a.favourite_count || '0')
         const bFav = parseInt(b.favourite_count || '0')
-        return bFav - aFav
+        result = aFav - bFav
+        break
       case 'playcount':
         const aPlay = parseInt(a.playcount || '0')
         const bPlay = parseInt(b.playcount || '0')
-        return bPlay - aPlay
+        result = aPlay - bPlay
+        break
       case 'date':
       default:
-        return new Date(b.approved_date).getTime() - new Date(a.approved_date).getTime()
+        result = new Date(a.approved_date).getTime() - new Date(b.approved_date).getTime()
+        break
     }
+    return result * multiplier
   })
 }
 
 export const sortMappers = (
   mappers: Mapper[], 
   sortBy: MapperSortOption,
+  direction: SortDirection = 'desc',
   selectedModes?: Set<string>,
   selectedStatuses?: Set<string>
 ): Mapper[] => {
+  const multiplier = direction === 'desc' ? -1 : 1
+  
   return [...mappers].sort((a, b) => {
+    let result = 0
     switch (sortBy) {
       case 'name':
-        return a.username.localeCompare(b.username)
+        result = a.username.localeCompare(b.username)
+        // For name sorting, reverse the multiplier logic (asc by default makes more sense)
+        return result * (direction === 'asc' ? 1 : -1)
       case 'beatmaps':
         const aFilteredBeatmaps = getFilteredBeatmapCount(a, selectedModes, selectedStatuses)
         const bFilteredBeatmaps = getFilteredBeatmapCount(b, selectedModes, selectedStatuses)
-        return bFilteredBeatmaps - aFilteredBeatmaps
+        result = aFilteredBeatmaps - bFilteredBeatmaps
+        break
       case 'mapsets':
         const aFilteredMapsets = getFilteredBeatmapsetCount(a, selectedModes, selectedStatuses)
         const bFilteredMapsets = getFilteredBeatmapsetCount(b, selectedModes, selectedStatuses)
-        return bFilteredMapsets - aFilteredMapsets
+        result = aFilteredMapsets - bFilteredMapsets
+        break
       case 'recent':
         // Sort by most recently ranked beatmapset (considering filters)
         const aRecentDate = calculateMostRecentRankedDateFiltered(a, selectedModes, selectedStatuses)
         const bRecentDate = calculateMostRecentRankedDateFiltered(b, selectedModes, selectedStatuses)
-        return new Date(bRecentDate).getTime() - new Date(aRecentDate).getTime()
+        result = new Date(aRecentDate).getTime() - new Date(bRecentDate).getTime()
+        break
       default:
         const aDefaultMapsets = getFilteredBeatmapsetCount(a, selectedModes, selectedStatuses)
         const bDefaultMapsets = getFilteredBeatmapsetCount(b, selectedModes, selectedStatuses)
-        return bDefaultMapsets - aDefaultMapsets
+        result = aDefaultMapsets - bDefaultMapsets
+        break
     }
+    return result * multiplier
   })
 }
 
-export const sortBeatmapsets = (beatmapsets: BeatmapsetGroup[], sortBy: SortOption): BeatmapsetGroup[] => {
+export const sortBeatmapsets = (beatmapsets: BeatmapsetGroup[], sortBy: SortOption, direction: SortDirection = 'desc'): BeatmapsetGroup[] => {
+  const multiplier = direction === 'desc' ? -1 : 1
+  
   return [...beatmapsets].sort((a, b) => {
+    let result = 0
     switch (sortBy) {
       case 'date':
-        return new Date(b.approved_date).getTime() - new Date(a.approved_date).getTime()
+        result = new Date(a.approved_date).getTime() - new Date(b.approved_date).getTime()
+        break
       case 'artist':
-        return a.artist.localeCompare(b.artist)
+        result = a.artist.localeCompare(b.artist)
+        // For text sorting, reverse the multiplier logic (asc by default makes more sense)
+        return result * (direction === 'asc' ? 1 : -1)
       case 'title':
-        return a.title.localeCompare(b.title)
+        result = a.title.localeCompare(b.title)
+        // For text sorting, reverse the multiplier logic (asc by default makes more sense)
+        return result * (direction === 'asc' ? 1 : -1)
       case 'favorite':
         const aFav = parseInt(a.favourite_count || '0')
         const bFav = parseInt(b.favourite_count || '0')
-        return bFav - aFav
+        result = aFav - bFav
+        break
       case 'playcount':
         const aPlay = parseInt(a.playcount || '0')
         const bPlay = parseInt(b.playcount || '0')
-        return bPlay - aPlay
+        result = aPlay - bPlay
+        break
       default:
-        return new Date(b.approved_date).getTime() - new Date(a.approved_date).getTime()
+        result = new Date(a.approved_date).getTime() - new Date(b.approved_date).getTime()
+        break
     }
+    return result * multiplier
   })
 }
 
