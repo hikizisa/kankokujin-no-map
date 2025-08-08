@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { User, ChevronDown, ChevronUp, Sparkles, SortAsc } from 'lucide-react'
 import { Mapper, SortOption } from './types'
 import { BeatmapsetCard } from './BeatmapsetCard'
@@ -24,10 +24,7 @@ export const MapperCard: React.FC<MapperCardProps> = ({
   onToggle,
   beatmapSortBy
 }) => {
-  const [localBeatmapSortBy, setLocalBeatmapSortBy] = useState<'date' | 'favorite' | 'playcount'>(
-    beatmapSortBy === 'favorite' || beatmapSortBy === 'playcount' || beatmapSortBy === 'date' ? 
-      beatmapSortBy as 'date' | 'favorite' | 'playcount' : 'date'
-  )
+  // No longer need local state - using global sorting from main page
   const isNewMapper = hasRecentRankedMap(mapper)
   // Filter beatmapsets based on selected modes and statuses
   const filteredBeatmapsets = (mapper.beatmapsets || []).filter(set => {
@@ -67,8 +64,11 @@ export const MapperCard: React.FC<MapperCardProps> = ({
     }
   })
 
-  // Sort beatmapsets using local sorting state and shared utility
-  const sortedBeatmapsets = sortMapperBeatmapsetsV2(filteredBeatmapsets, localBeatmapSortBy)
+  // Sort beatmapsets using global sorting criteria from main page
+  // For artist/title sorting, fall back to date sorting since beatmapsets don't support these
+  const effectiveSortBy = beatmapSortBy === 'artist' || beatmapSortBy === 'title' ? 'date' : 
+    (beatmapSortBy as 'date' | 'favorite' | 'playcount')
+  const sortedBeatmapsets = sortMapperBeatmapsetsV2(filteredBeatmapsets, effectiveSortBy)
 
   const displayName = mapper.username
   const aliases = mapper.aliases && mapper.aliases.length > 0 ? mapper.aliases : []
@@ -143,22 +143,14 @@ export const MapperCard: React.FC<MapperCardProps> = ({
 
       {isExpanded && (
         <div className="border-t border-gray-200 dark:border-gray-700 p-6">
-          {/* Beatmapset sorting controls */}
+          {/* Beatmapset sorting info */}
           <div className="flex items-center justify-between mb-4">
             <h4 className="text-lg font-semibold text-gray-800 dark:text-white">
               Beatmapsets ({sortedBeatmapsets.length})
             </h4>
-            <div className="flex items-center gap-2">
-              <SortAsc className="h-4 w-4 text-gray-500" />
-              <select
-                value={localBeatmapSortBy}
-                onChange={(e) => setLocalBeatmapSortBy(e.target.value as 'date' | 'favorite' | 'playcount')}
-                className="text-sm border border-gray-300 dark:border-gray-600 rounded px-2 py-1 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 focus:outline-none focus:ring-2 focus:ring-osu-pink"
-              >
-                <option value="date">Date</option>
-                <option value="favorite">Favorites</option>
-                <option value="playcount">Playcount</option>
-              </select>
+            <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
+              <SortAsc className="h-4 w-4" />
+              <span>Sorted by: {effectiveSortBy === 'date' ? 'Date' : effectiveSortBy === 'favorite' ? 'Favorites' : 'Playcount'}</span>
             </div>
           </div>
           
