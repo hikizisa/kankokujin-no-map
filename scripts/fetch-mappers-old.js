@@ -26,15 +26,15 @@ const IGNORE_MAPPER_IDS = [
 ];
 
 // Helper function to make API requests with retry logic
-async function makeApiRequest(url, params = {}, retries = MAX_RETRIES) {
+async function makeApiRequest(url, retries = MAX_RETRIES) {
     try {
-        const response = await axios.get(url, { params });
+        const response = await axios.get(url);
         return response.data;
     } catch (error) {
         if (retries > 0 && (error.response?.status === 429 || error.response?.status >= 500)) {
             console.log(`API request failed, retrying... (${retries} retries left)`);
-            await delay(RATE_LIMIT_DELAY * 2);
-            return makeApiRequest(url, params, retries - 1);
+            await new Promise(resolve => setTimeout(resolve, RATE_LIMIT_DELAY * 2));
+            return makeApiRequest(url, retries - 1);
         }
         throw error;
     }
@@ -81,6 +81,20 @@ async function loadExistingData() {
     }
 }
 
+async function fetchWithRetry(url, params, retries = 3) {
+    for (let i = 0; i < retries; i++) {
+        try {
+            await delay(100); // Rate limiting: ~600 requests per minute
+            const response = await axios.get(url, { params });
+            return response.data;
+        } catch (error) {
+            console.error(`Attempt ${i + 1} failed for ${url}:`, error.message);
+            if (i === retries - 1) throw error;
+            await delay(1000 * (i + 1)); // Exponential backoff
+        }
+    }
+}
+
 // Fetch all beatmaps for a specific user with pagination
 async function fetchAllBeatmapsForUser(userId, sinceDate = null) {
     const beatmaps = [];
@@ -94,7 +108,8 @@ async function fetchAllBeatmapsForUser(userId, sinceDate = null) {
             k: OSU_API_KEY,
             u: userId,
             type: 'id',
-            limit: MAX_BEATMAPS_PER_REQUEST
+            limit: MAX_BEATMAPS_PER_REQUEST,
+            offset: offset
         };
         
         if (sinceDate) {
@@ -115,6 +130,7 @@ async function fetchAllBeatmapsForUser(userId, sinceDate = null) {
             );
             
             beatmaps.push(...rankedBeatmaps);
+            offset += MAX_BEATMAPS_PER_REQUEST;
             
             // If we got less than the limit, we've reached the end
             if (batch.length < MAX_BEATMAPS_PER_REQUEST) {
@@ -131,41 +147,6 @@ async function fetchAllBeatmapsForUser(userId, sinceDate = null) {
     
     console.log(`Found ${beatmaps.length} ranked beatmaps for user ${userId}`);
     return beatmaps;
-}
-
-// Fetch Korean mappers from API with country filter
-async function fetchKoreanMappersFromAPI() {
-    const koreanMappers = [];
-    let page = 1;
-    let hasMore = true;
-    
-    console.log('Fetching Korean mappers from API...');
-    
-    while (hasMore && page <= 10) { // Limit to prevent infinite loops
-        try {
-            const users = await makeApiRequest(`${BASE_URL}/get_user`, {
-                k: OSU_API_KEY,
-                type: 'country',
-                country: 'KR'
-            });
-            
-            if (!users || users.length === 0) {
-                hasMore = false;
-                break;
-            }
-            
-            koreanMappers.push(...users.map(user => user.user_id));
-            page++;
-            
-            await delay(RATE_LIMIT_DELAY);
-            
-        } catch (error) {
-            console.error('Error fetching Korean mappers from API:', error.message);
-            hasMore = false;
-        }
-    }
-    
-    return koreanMappers;
 }
 
 async function fetchKoreanMappers() {
@@ -192,8 +173,6 @@ async function fetchKoreanMappers() {
     const currentTime = new Date().toISOString();
     const isFullScan = !fetchState.lastFullScan || 
         (Date.now() - new Date(fetchState.lastFullScan).getTime()) > 7 * 24 * 60 * 60 * 1000; // Weekly full scan
-    
-    console.log(`Running ${isFullScan ? 'FULL' : 'INCREMENTAL'} scan`);
 
     // Function to process a single user with incremental updates
     async function processUser(userId) {
@@ -210,7 +189,7 @@ async function fetchKoreanMappers() {
             }
 
             // Get user data
-            const userData = await makeApiRequest(`${BASE_URL}/get_user`, {
+            const userData = await fetchWithRetry(`${BASE_URL}/get_user`, {
                 k: OSU_API_KEY,
                 u: userId,
                 type: 'id'
@@ -222,12 +201,6 @@ async function fetchKoreanMappers() {
             }
 
             const user = userData[0];
-            
-            // Check if user is Korean or in manual list
-            if (user.country !== 'KR' && !MANUAL_MAPPER_IDS.includes(parseInt(userId))) {
-                console.log(`User ${user.username} is not Korean (${user.country}), skipping`);
-                return;
-            }
             
             // Determine if we need to fetch new beatmaps for this user
             const userState = fetchState.mapperStates[userId] || {};
@@ -274,82 +247,125 @@ async function fetchKoreanMappers() {
             } else if (!mappers.has(userId)) {
                 console.log(`User ${user.username} has no ranked beatmaps, skipping`);
             }
-            
-        } catch (error) {
-            console.error(`Error processing user ${userId}:`, error.message);
-        }
+      }
+      
+      // Check if user is Korean or in manual list
+      if (user.country !== 'KR' && !MANUAL_MAPPER_IDS.includes(parseInt(userId))) {
+        console.log(`User ${user.username} is not Korean (${user.country}), skipping`);
+        return;
+      }
+
+      console.log(`Fetching beatmaps for ${user.username}...`);
+      const beatmaps = await fetchWithRetry(`${BASE_URL}/get_beatmaps`, {
+        k: OSU_API_KEY,
+        u: userId,
+        type: 'id'
+      });
+
+      // Filter for ranked/approved/loved beatmaps only
+      const rankedBeatmaps = beatmaps.filter(beatmap => 
+        ['1', '2', '3', '4'].includes(beatmap.approved)
+      );
+
+      if (rankedBeatmaps.length > 0) {
+        mappers.set(userId, {
+          user_id: user.user_id,
+          username: user.username,
+          country: user.country,
+          pp_rank: user.pp_rank || '0',
+          pp_raw: user.pp_raw || '0',
+          join_date: user.join_date,
+          playcount: user.playcount || '0',
+          beatmaps: rankedBeatmaps.sort((a, b) => 
+            new Date(b.approved_date) - new Date(a.approved_date)
+          )
+        });
+        console.log(`Added ${user.username} with ${rankedBeatmaps.length} ranked beatmaps`);
+      } else {
+        console.log(`${user.username} has no ranked beatmaps, skipping`);
+      }
+    } catch (error) {
+      console.error(`Error processing user ${userId}:`, error.message);
+    }
+  }
+
+  // Method 1: Find Korean mappers by searching recent beatmaps
+  console.log('Searching for Korean mappers through recent beatmaps...');
+  try {
+    const recentBeatmaps = await fetchWithRetry(`${BASE_URL}/get_beatmaps`, {
+      k: OSU_API_KEY,
+      since: '2020-01-01',
+      limit: 500
+    });
+
+    const koreanCreators = new Set();
+    for (const beatmap of recentBeatmaps) {
+      if (beatmap.creator_id) {
+        koreanCreators.add(beatmap.creator_id);
+      }
     }
 
-    // Process manual mapper IDs
-    console.log(`Processing ${MANUAL_MAPPER_IDS.length} manual mapper IDs...`);
-    for (const userId of MANUAL_MAPPER_IDS) {
-        await processUser(userId.toString());
+    console.log(`Found ${koreanCreators.size} potential mappers from recent beatmaps`);
+
+    // Process each potential mapper
+    for (const creatorId of koreanCreators) {
+      await processUser(creatorId);
     }
+  } catch (error) {
+    console.error('Error fetching recent beatmaps:', error.message);
+  }
 
-    // If it's a full scan, also fetch Korean mappers from API
-    if (isFullScan) {
-        try {
-            const apiKoreanMappers = await fetchKoreanMappersFromAPI();
-            console.log(`Processing ${apiKoreanMappers.length} Korean mappers from API...`);
-            
-            for (const userId of apiKoreanMappers) {
-                await processUser(userId.toString());
-            }
-        } catch (error) {
-            console.error('Error fetching Korean mappers from API:', error.message);
-        }
-    }
+  // Method 2: Process manually specified mapper IDs
+  console.log('Processing manually specified mappers...');
+  for (const mapperId of MANUAL_MAPPER_IDS) {
+    await processUser(mapperId);
+  }
+  
+  // Convert Map to array and return
+  return Array.from(mappers.values());
+}
 
-    // Convert Map back to array and sort by ranked beatmaps
-    const mappersArray = Array.from(mappers.values())
-        .filter(mapper => mapper.rankedBeatmaps > 0)
-        .sort((a, b) => b.rankedBeatmaps - a.rankedBeatmaps);
-
-    // Update fetch state
-    fetchState.lastChecked = currentTime;
-    fetchState.totalBeatmaps = mappersArray.reduce((sum, mapper) => sum + mapper.rankedBeatmaps, 0);
-    if (isFullScan) {
-        fetchState.lastFullScan = currentTime;
-    }
-
-    // Save updated state
-    await saveFetchState(fetchState);
-
-    // Prepare output data
-    const outputData = {
-        lastUpdated: currentTime,
-        totalMappers: mappersArray.length,
-        totalBeatmaps: fetchState.totalBeatmaps,
-        scanType: isFullScan ? 'full' : 'incremental',
-        mappers: mappersArray
-    };
-
+async function main() {
+  try {
+    console.log('Starting Korean mapper data collection...');
+    
     // Ensure output directory exists
     await fs.mkdir(OUTPUT_DIR, { recursive: true });
 
-    // Write the data to file
+    // Fetch mapper data
+    const mappers = await fetchKoreanMappers();
+    
+    console.log(`\nCollected data for ${mappers.length} Korean mappers`);
+    console.log(`Total beatmaps: ${mappers.reduce((sum, mapper) => sum + mapper.beatmaps.length, 0)}`);
+
+    // Prepare output data
+    const outputData = {
+      lastUpdated: new Date().toISOString(),
+      totalMappers: mappers.length,
+      totalBeatmaps: mappers.reduce((sum, mapper) => sum + mapper.beatmaps.length, 0),
+      mappers: mappers
+    };
+
+    // Write to file
     await fs.writeFile(OUTPUT_FILE, JSON.stringify(outputData, null, 2));
+    console.log(`\nData saved to ${OUTPUT_FILE}`);
 
-    console.log(`\n✅ Fetch completed successfully!`);
-    console.log(`📊 Total mappers: ${outputData.totalMappers}`);
-    console.log(`🎵 Total ranked beatmaps: ${outputData.totalBeatmaps}`);
-    console.log(`📁 Data saved to: ${OUTPUT_FILE}`);
-    console.log(`💾 State saved to: ${STATE_FILE}`);
+    // Print summary
+    console.log('\n=== SUMMARY ===');
+    console.log(`Korean mappers found: ${mappers.length}`);
+    mappers.slice(0, 10).forEach((mapper, index) => {
+      console.log(`${index + 1}. ${mapper.username} - ${mapper.beatmaps.length} beatmaps (Rank #${mapper.pp_rank})`);
+    });
+    if (mappers.length > 10) {
+      console.log(`... and ${mappers.length - 10} more mappers`);
+    }
 
-    return mappersArray;
+  } catch (error) {
+    console.error('Error in main process:', error.message);
+    process.exit(1);
+  }
 }
 
-// Main execution
 if (require.main === module) {
-    fetchKoreanMappers()
-        .then(() => {
-            console.log('Korean mappers data fetch completed successfully!');
-            process.exit(0);
-        })
-        .catch(error => {
-            console.error('Error fetching Korean mappers:', error);
-            process.exit(1);
-        });
+  main();
 }
-
-module.exports = { fetchKoreanMappers };
