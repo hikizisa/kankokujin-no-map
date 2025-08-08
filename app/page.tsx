@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Search, User, Calendar, Trophy, ExternalLink, Github } from 'lucide-react'
 
 interface Beatmap {
@@ -9,22 +9,58 @@ interface Beatmap {
   title: string
   artist: string
   version: string
+  creator: string
   approved_date: string
   difficultyrating: string
   playcount: string
   favourite_count: string
   approved: string
+  isGuestDiff?: boolean
+  hostMapper?: string
+}
+
+interface Difficulty {
+  beatmap_id: string
+  version: string
+  difficultyrating: string
+  mode: string
+  isGuestDiff: boolean
+}
+
+interface Beatmapset {
+  beatmapset_id: string
+  title: string
+  artist: string
+  creator: string
+  approved_date: string
+  difficulties: Difficulty[]
+  isOwnMapset: boolean
+}
+
+interface MapperStats {
+  totalBeatmaps: number
+  totalBeatmapsets: number
+  ownBeatmapsets: number
+  guestBeatmapsets: number
+  totalGuestDiffs: number
+  ownDifficulties: number
 }
 
 interface Mapper {
   user_id: string
   username: string
   country: string
-  pp_rank: string
-  pp_raw: string
-  join_date: string
-  playcount: string
+  rankedBeatmaps: number
+  rankedBeatmapsets: number
+  ownBeatmapsets: number
+  guestBeatmapsets: number
+  totalGuestDiffs: number
+  ownDifficulties: number
   beatmaps: Beatmap[]
+  beatmapsets: Beatmapset[]
+  guestDifficulties: Beatmap[]
+  stats: MapperStats
+  lastUpdated: string
 }
 
 export default function Home() {
@@ -33,6 +69,10 @@ export default function Home() {
   const [searchTerm, setSearchTerm] = useState('')
   const [loading, setLoading] = useState(true)
   const [lastUpdated, setLastUpdated] = useState<string>('')
+  const [totalStats, setTotalStats] = useState<any>({})
+  const [viewMode, setViewMode] = useState<'beatmaps' | 'mapsets'>('mapsets')
+  const [showGuestDiffs, setShowGuestDiffs] = useState(true)
+  const [sortBy, setSortBy] = useState<'beatmaps' | 'mapsets' | 'guestDiffs'>('mapsets')
 
   useEffect(() => {
     // Load mapper data from JSON file
@@ -42,6 +82,15 @@ export default function Home() {
         setMappers(data.mappers || [])
         setFilteredMappers(data.mappers || [])
         setLastUpdated(data.lastUpdated || '')
+        setTotalStats({
+          totalMappers: data.totalMappers || 0,
+          totalBeatmaps: data.totalBeatmaps || 0,
+          totalBeatmapsets: data.totalBeatmapsets || 0,
+          totalOwnBeatmapsets: data.totalOwnBeatmapsets || 0,
+          totalGuestBeatmapsets: data.totalGuestBeatmapsets || 0,
+          totalGuestDiffs: data.totalGuestDiffs || 0,
+          totalOwnDifficulties: data.totalOwnDifficulties || 0
+        })
         setLoading(false)
       })
       .catch(err => {
@@ -51,19 +100,31 @@ export default function Home() {
   }, [])
 
   useEffect(() => {
-    if (searchTerm) {
-      const filtered = mappers.filter(mapper =>
-        mapper.username.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        mapper.beatmaps.some(beatmap =>
-          beatmap.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          beatmap.artist.toLowerCase().includes(searchTerm.toLowerCase())
-        )
+    // Filter and sort mappers based on search term and sort criteria
+    let filtered = mappers.filter(mapper =>
+      mapper.username.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      mapper.beatmaps.some(beatmap =>
+        beatmap.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        beatmap.artist.toLowerCase().includes(searchTerm.toLowerCase())
       )
-      setFilteredMappers(filtered)
-    } else {
-      setFilteredMappers(mappers)
-    }
-  }, [searchTerm, mappers])
+    )
+    
+    // Sort mappers based on selected criteria
+    filtered.sort((a, b) => {
+      switch (sortBy) {
+        case 'beatmaps':
+          return (b.rankedBeatmaps || 0) - (a.rankedBeatmaps || 0)
+        case 'mapsets':
+          return (b.rankedBeatmapsets || 0) - (a.rankedBeatmapsets || 0)
+        case 'guestDiffs':
+          return (b.totalGuestDiffs || 0) - (a.totalGuestDiffs || 0)
+        default:
+          return (b.rankedBeatmapsets || 0) - (a.rankedBeatmapsets || 0)
+      }
+    })
+    
+    setFilteredMappers(filtered)
+  }, [searchTerm, mappers, sortBy])
 
   const getApprovedStatus = (approved: string) => {
     switch (approved) {
@@ -133,27 +194,88 @@ export default function Home() {
 
       {/* Stats */}
       <div className="container mx-auto px-4 py-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg text-center">
-            <User className="h-8 w-8 text-osu-pink mx-auto mb-2" />
-            <h3 className="text-2xl font-bold text-gray-800 dark:text-white">
-              {filteredMappers.length}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg text-center">
+            <User className="h-6 w-6 text-osu-pink mx-auto mb-2" />
+            <h3 className="text-xl font-bold text-gray-800 dark:text-white">
+              {totalStats.totalMappers || filteredMappers.length}
             </h3>
-            <p className="text-gray-600 dark:text-gray-400">Korean Mappers</p>
+            <p className="text-sm text-gray-600 dark:text-gray-400">Korean Mappers</p>
           </div>
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg text-center">
-            <Trophy className="h-8 w-8 text-osu-blue mx-auto mb-2" />
-            <h3 className="text-2xl font-bold text-gray-800 dark:text-white">
-              {filteredMappers.reduce((total, mapper) => total + mapper.beatmaps.length, 0)}
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg text-center">
+            <Trophy className="h-6 w-6 text-osu-blue mx-auto mb-2" />
+            <h3 className="text-xl font-bold text-gray-800 dark:text-white">
+              {totalStats.totalBeatmaps || filteredMappers.reduce((total, mapper) => total + (mapper.rankedBeatmaps || mapper.beatmaps?.length || 0), 0)}
             </h3>
-            <p className="text-gray-600 dark:text-gray-400">Total Beatmaps</p>
+            <p className="text-sm text-gray-600 dark:text-gray-400">Total Beatmaps</p>
           </div>
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg text-center">
-            <Calendar className="h-8 w-8 text-osu-purple mx-auto mb-2" />
-            <h3 className="text-2xl font-bold text-gray-800 dark:text-white">
-              {new Date().getFullYear()}
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg text-center">
+            <div className="h-6 w-6 text-osu-purple mx-auto mb-2 flex items-center justify-center font-bold text-lg">📦</div>
+            <h3 className="text-xl font-bold text-gray-800 dark:text-white">
+              {totalStats.totalBeatmapsets || filteredMappers.reduce((total, mapper) => total + (mapper.rankedBeatmapsets || 0), 0)}
             </h3>
-            <p className="text-gray-600 dark:text-gray-400">Active Year</p>
+            <p className="text-sm text-gray-600 dark:text-gray-400">Total Beatmapsets</p>
+          </div>
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg text-center">
+            <div className="h-6 w-6 text-osu-green mx-auto mb-2 flex items-center justify-center font-bold text-lg">🎯</div>
+            <h3 className="text-xl font-bold text-gray-800 dark:text-white">
+              {totalStats.totalGuestDiffs || filteredMappers.reduce((total, mapper) => total + (mapper.totalGuestDiffs || 0), 0)}
+            </h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">Guest Difficulties</p>
+          </div>
+        </div>
+
+        {/* View Controls */}
+        <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg mb-6">
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div className="flex items-center gap-4">
+              <label className="text-sm font-medium text-gray-700 dark:text-gray-300">View Mode:</label>
+              <div className="flex bg-gray-100 dark:bg-gray-700 rounded-lg p-1">
+                <button
+                  onClick={() => setViewMode('mapsets')}
+                  className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
+                    viewMode === 'mapsets'
+                      ? 'bg-osu-pink text-white'
+                      : 'text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white'
+                  }`}
+                >
+                  Beatmapsets
+                </button>
+                <button
+                  onClick={() => setViewMode('beatmaps')}
+                  className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
+                    viewMode === 'beatmaps'
+                      ? 'bg-osu-pink text-white'
+                      : 'text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white'
+                  }`}
+                >
+                  All Beatmaps
+                </button>
+              </div>
+            </div>
+            
+            <div className="flex items-center gap-4">
+              <label className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                <input
+                  type="checkbox"
+                  checked={showGuestDiffs}
+                  onChange={(e) => setShowGuestDiffs(e.target.checked)}
+                  className="rounded border-gray-300 text-osu-pink focus:ring-osu-pink"
+                />
+                Show Guest Difficulties
+              </label>
+              
+              <label className="text-sm font-medium text-gray-700 dark:text-gray-300">Sort by:</label>
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value as 'beatmaps' | 'mapsets' | 'guestDiffs')}
+                className="px-3 py-1 border border-gray-300 rounded-md text-sm bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:ring-2 focus:ring-osu-pink focus:border-transparent"
+              >
+                <option value="mapsets">Beatmapsets</option>
+                <option value="beatmaps">Total Beatmaps</option>
+                <option value="guestDiffs">Guest Difficulties</option>
+              </select>
+            </div>
           </div>
         </div>
 
@@ -185,60 +307,189 @@ export default function Home() {
                       </a>
                     </div>
                     <div className="flex flex-wrap gap-4 text-sm">
-                      <span>Rank: #{formatNumber(mapper.pp_rank)}</span>
-                      <span>PP: {formatNumber(mapper.pp_raw)}</span>
-                      <span>Joined: {formatDate(mapper.join_date)}</span>
-                      <span>Playcount: {formatNumber(mapper.playcount)}</span>
+                      <span>🎵 {mapper.rankedBeatmaps || mapper.beatmaps?.length || 0} Beatmaps</span>
+                      <span>📦 {mapper.rankedBeatmapsets || 0} Beatmapsets</span>
+                      <span>🎯 {mapper.totalGuestDiffs || 0} Guest Diffs</span>
+                      <span>🔧 {mapper.ownDifficulties || 0} Own Diffs</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Beatmaps */}
+              {/* Beatmaps/Beatmapsets Display */}
               <div className="p-6">
-                <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">
-                  Ranked Beatmaps ({mapper.beatmaps.length})
-                </h4>
-                <div className="grid gap-4">
-                  {mapper.beatmaps.map((beatmap) => {
-                    const status = getApprovedStatus(beatmap.approved)
-                    return (
-                      <div key={beatmap.beatmap_id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
-                        <div className="flex items-start justify-between">
-                          <div className="flex-1">
-                            <div className="flex items-center space-x-2 mb-2">
-                              <span className={`px-2 py-1 rounded-full text-xs text-white ${status.color}`}>
-                                {status.text}
-                              </span>
-                              <span className="text-xs text-gray-500">
-                                {formatDate(beatmap.approved_date)}
-                              </span>
-                            </div>
-                            <h5 className="font-semibold text-gray-800 dark:text-white">
-                              {beatmap.artist} - {beatmap.title}
-                            </h5>
-                            <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                              [{beatmap.version}]
-                            </p>
-                            <div className="flex flex-wrap gap-4 text-xs text-gray-500">
-                              <span>★ {parseFloat(beatmap.difficultyrating).toFixed(2)}</span>
-                              <span>▶ {formatNumber(beatmap.playcount)} plays</span>
-                              <span>♥ {formatNumber(beatmap.favourite_count)} favorites</span>
+                {viewMode === 'mapsets' ? (
+                  // Beatmapsets View
+                  <>
+                    <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">
+                      Beatmapsets ({(mapper.beatmapsets?.length || 0) + (showGuestDiffs && mapper.guestDifficulties ? mapper.guestDifficulties.reduce((acc, diff) => {
+                        const setId = diff.beatmapset_id;
+                        return acc.includes(setId) ? acc : [...acc, setId];
+                      }, [] as string[]).length : 0)})
+                    </h4>
+                    <div className="grid gap-4">
+                      {/* Own Beatmapsets */}
+                      {mapper.beatmapsets?.map((beatmapset) => {
+                        const status = getApprovedStatus(beatmapset.difficulties[0]?.mode || '1')
+                        return (
+                          <div key={beatmapset.beatmapset_id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                            <div className="flex items-start justify-between">
+                              <div className="flex-1">
+                                <div className="flex items-center space-x-2 mb-2">
+                                  <span className="px-2 py-1 rounded-full text-xs bg-blue-500 text-white">
+                                    Own Mapset
+                                  </span>
+                                  <span className="text-xs text-gray-500">
+                                    {formatDate(beatmapset.approved_date)}
+                                  </span>
+                                </div>
+                                <h5 className="font-semibold text-gray-800 dark:text-white">
+                                  {beatmapset.artist} - {beatmapset.title}
+                                </h5>
+                                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                                  {beatmapset.difficulties.length} difficulties
+                                </p>
+                                <div className="flex flex-wrap gap-2 text-xs">
+                                  {beatmapset.difficulties.map((diff, idx) => (
+                                    <span key={idx} className="px-2 py-1 bg-gray-100 dark:bg-gray-600 rounded text-gray-700 dark:text-gray-300">
+                                      {diff.version} (★{parseFloat(diff.difficultyrating).toFixed(1)})
+                                    </span>
+                                  ))}
+                                </div>
+                              </div>
+                              <a
+                                href={`https://osu.ppy.sh/beatmapsets/${beatmapset.beatmapset_id}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="ml-4 text-osu-pink hover:text-osu-purple transition-colors"
+                              >
+                                <ExternalLink className="h-5 w-5" />
+                              </a>
                             </div>
                           </div>
-                          <a
-                            href={`https://osu.ppy.sh/beatmapsets/${beatmap.beatmapset_id}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="ml-4 text-osu-pink hover:text-osu-purple transition-colors"
-                          >
-                            <ExternalLink className="h-5 w-5" />
-                          </a>
-                        </div>
-                      </div>
-                    )
-                  })}
-                </div>
+                        )
+                      })}
+                      
+                      {/* Guest Difficulties (grouped by beatmapset) */}
+                      {showGuestDiffs && mapper.guestDifficulties && (() => {
+                        const guestMapsets = mapper.guestDifficulties.reduce((acc, diff) => {
+                          const setId = diff.beatmapset_id;
+                          if (!acc[setId]) {
+                            acc[setId] = {
+                              beatmapset_id: setId,
+                              title: diff.title,
+                              artist: diff.artist,
+                              creator: diff.creator,
+                              approved_date: diff.approved_date,
+                              difficulties: []
+                            };
+                          }
+                          acc[setId].difficulties.push(diff);
+                          return acc;
+                        }, {} as Record<string, any>);
+                        
+                        return Object.values(guestMapsets).map((guestSet: any) => (
+                          <div key={guestSet.beatmapset_id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                            <div className="flex items-start justify-between">
+                              <div className="flex-1">
+                                <div className="flex items-center space-x-2 mb-2">
+                                  <span className="px-2 py-1 rounded-full text-xs bg-green-500 text-white">
+                                    Guest Diffs
+                                  </span>
+                                  <span className="text-xs text-gray-500">
+                                    Host: {guestSet.creator}
+                                  </span>
+                                  <span className="text-xs text-gray-500">
+                                    {formatDate(guestSet.approved_date)}
+                                  </span>
+                                </div>
+                                <h5 className="font-semibold text-gray-800 dark:text-white">
+                                  {guestSet.artist} - {guestSet.title}
+                                </h5>
+                                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                                  {guestSet.difficulties.length} guest {guestSet.difficulties.length === 1 ? 'difficulty' : 'difficulties'}
+                                </p>
+                                <div className="flex flex-wrap gap-2 text-xs">
+                                  {guestSet.difficulties.map((diff: Beatmap, idx: number) => (
+                                    <span key={idx} className="px-2 py-1 bg-green-100 dark:bg-green-800 rounded text-green-700 dark:text-green-300">
+                                      {diff.version} (★{parseFloat(diff.difficultyrating).toFixed(1)})
+                                    </span>
+                                  ))}
+                                </div>
+                              </div>
+                              <a
+                                href={`https://osu.ppy.sh/beatmapsets/${guestSet.beatmapset_id}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="ml-4 text-osu-pink hover:text-osu-purple transition-colors"
+                              >
+                                <ExternalLink className="h-5 w-5" />
+                              </a>
+                            </div>
+                          </div>
+                        ));
+                      })()}
+                    </div>
+                  </>
+                ) : (
+                  // All Beatmaps View
+                  <>
+                    <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">
+                      All Beatmaps ({(mapper.beatmaps?.length || 0)})
+                    </h4>
+                    <div className="grid gap-4">
+                      {mapper.beatmaps?.map((beatmap) => {
+                        const status = getApprovedStatus(beatmap.approved)
+                        const isGuest = beatmap.creator !== mapper.username
+                        return (
+                          <div key={beatmap.beatmap_id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                            <div className="flex items-start justify-between">
+                              <div className="flex-1">
+                                <div className="flex items-center space-x-2 mb-2">
+                                  <span className={`px-2 py-1 rounded-full text-xs text-white ${status.color}`}>
+                                    {status.text}
+                                  </span>
+                                  {isGuest && (
+                                    <span className="px-2 py-1 rounded-full text-xs bg-green-500 text-white">
+                                      Guest Diff
+                                    </span>
+                                  )}
+                                  <span className="text-xs text-gray-500">
+                                    {formatDate(beatmap.approved_date)}
+                                  </span>
+                                  {isGuest && (
+                                    <span className="text-xs text-gray-500">
+                                      Host: {beatmap.creator}
+                                    </span>
+                                  )}
+                                </div>
+                                <h5 className="font-semibold text-gray-800 dark:text-white">
+                                  {beatmap.artist} - {beatmap.title}
+                                </h5>
+                                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                                  [{beatmap.version}]
+                                </p>
+                                <div className="flex flex-wrap gap-4 text-xs text-gray-500">
+                                  <span>★ {parseFloat(beatmap.difficultyrating).toFixed(2)}</span>
+                                  <span>▶ {formatNumber(beatmap.playcount)} plays</span>
+                                  <span>♥ {formatNumber(beatmap.favourite_count)} favorites</span>
+                                </div>
+                              </div>
+                              <a
+                                href={`https://osu.ppy.sh/beatmapsets/${beatmap.beatmapset_id}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="ml-4 text-osu-pink hover:text-osu-purple transition-colors"
+                              >
+                                <ExternalLink className="h-5 w-5" />
+                              </a>
+                            </div>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  </>
+                )}
               </div>
             </div>
           ))}
