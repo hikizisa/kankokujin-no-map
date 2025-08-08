@@ -42,6 +42,18 @@ jobs:
     - name: Build site
       run: npm run export
       
+    - name: Ensure data is in correct location for deployment
+      run: |
+        # Make sure data directory exists in output
+        mkdir -p ./out/data
+        # Copy mappers.json to the correct location
+        if [ -f "./public/data/mappers.json" ]; then
+          cp ./public/data/mappers.json ./out/data/mappers.json
+          echo "✅ Copied mappers.json to deployment directory"
+        else
+          echo "⚠️ Warning: mappers.json not found in public/data/"
+        fi
+      
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:

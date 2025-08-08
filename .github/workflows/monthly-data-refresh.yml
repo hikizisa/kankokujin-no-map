@@ -46,6 +46,15 @@ jobs:
         echo "This will update ALL mapper data including play counts, star ratings, etc."
         node scripts/fetch-mappers.js
         
+    - name: Ensure data is accessible for frontend
+      run: |
+        # Copy data to root/data for GitHub Pages compatibility
+        mkdir -p ./data
+        if [ -f "./public/data/mappers.json" ]; then
+          cp ./public/data/mappers.json ./data/mappers.json
+          echo "✅ Copied mappers.json to root/data for GitHub Pages"
+        fi
+        
     - name: Check for changes
       id: verify-changed-files
       run: |
@@ -63,6 +72,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add public/data/mappers.json
+        git add data/mappers.json
         git add data/fetch-state.json
         git commit -m "🔄 Monthly FULL refresh: Complete data update
 
