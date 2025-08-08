@@ -5,7 +5,7 @@ const path = require('path');
 // Configuration
 const OSU_API_KEY = process.env.OSU_API_KEY;
 const BASE_URL = 'https://osu.ppy.sh/api';
-const OUTPUT_DIR = path.join(__dirname, '..', 'public', 'data');
+const OUTPUT_DIR = path.join(__dirname, '..', 'data');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'mappers.json');
 
 // Manual list of additional Korean mapper user IDs to include
@@ -132,32 +132,6 @@ async function fetchKoreanMappers() {
     await processUser(mapperId);
   }
 
-  // Method 3: Search for known Korean mappers (from the forum post)
-  const knownKoreanMappers = [
-    'lepidopodus', 'KRZY', 'Kloyd', 'kjwkjw', 'K i A i', 'KDS', 'koreapenguin', 'LeiN-'
-  ];
-
-  console.log('Processing known Korean mappers...');
-  for (const username of knownKoreanMappers) {
-    try {
-      const userData = await fetchWithRetry(`${BASE_URL}/get_user`, {
-        k: OSU_API_KEY,
-        u: username,
-        type: 'string'
-      });
-
-      if (userData && userData.length > 0) {
-        await processUser(userData[0].user_id);
-      }
-    } catch (error) {
-      console.error(`Error fetching known mapper ${username}:`, error.message);
-    }
-  }
-
-  return Array.from(mappers.values()).sort((a, b) => 
-    parseInt(a.pp_rank || '999999') - parseInt(b.pp_rank || '999999')
-  );
-}
 
 async function main() {
   try {

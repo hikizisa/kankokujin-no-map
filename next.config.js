@@ -4,10 +4,12 @@ const nextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true,
-    domains: ['a.ppy.sh', 'assets.ppy.sh']
+    domains: ['a.ppy.sh']
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/kankokujin-no-map' : '',
-  basePath: process.env.NODE_ENV === 'production' ? '/kankokujin-no-map' : ''
+  // For GitHub Pages deployment
+  basePath: process.env.NODE_ENV === 'production' ? '/kankokujin-no-map' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/kankokujin-no-map/' : '',
+  distDir: 'out'
 }
 
 module.exports = nextConfig
