@@ -58,11 +58,35 @@ export default function Home() {
     // Filter mappers based on search term using shared utility
     let filtered = mappers.filter(mapper => searchInMapper(mapper, searchTerm))
     
+    // Filter out mappers who have no beatmapsets matching the selected modes and statuses
+    filtered = filtered.filter(mapper => {
+      const matchingBeatmapsets = (mapper.beatmapsets || []).filter(set => {
+        // Check if beatmapset status is selected
+        const hasMatchingStatus = selectedStatuses.has(set.approved || '1')
+        
+        // Check if beatmapset has difficulties that match selected modes
+        // We need to check the difficulties array, not just the modes array
+        const hasMatchingMode = set.difficulties && set.difficulties.some(diff => 
+          selectedModes.has(diff.mode)
+        )
+        
+        // Fallback: if no difficulties array, check modes array
+        const hasModeInArray = !hasMatchingMode && set.modes && set.modes.some(mode => 
+          selectedModes.has(mode)
+        )
+        
+        return hasMatchingStatus && (hasMatchingMode || hasModeInArray)
+      })
+      
+      // Only show mapper if they have at least one matching beatmapset
+      return matchingBeatmapsets.length > 0
+    })
+    
     // Sort mappers using shared sorting utility
     filtered = sortMappers(filtered, mapperSortBy)
     
     setFilteredMappers(filtered)
-  }, [searchTerm, mappers, mapperSortBy])
+  }, [searchTerm, mappers, mapperSortBy, selectedModes, selectedStatuses])
 
   const toggleMapper = (mapperId: string) => {
     const newExpanded = new Set(expandedMappers)
