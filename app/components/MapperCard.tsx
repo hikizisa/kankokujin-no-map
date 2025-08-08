@@ -11,8 +11,7 @@ interface MapperCardProps {
   displayStyle?: 'card' | 'thumbnail' | 'minimal'
   isExpanded: boolean
   onToggle: (mapperId: string) => void
-  viewMode: 'beatmaps' | 'mapsets'
-  beatmapSortBy: 'date' | 'artist' | 'title'
+  beatmapSortBy: 'date' | 'artist' | 'title' | 'favorite' | 'playcount'
 }
 
 export const MapperCard: React.FC<MapperCardProps> = ({
@@ -22,17 +21,29 @@ export const MapperCard: React.FC<MapperCardProps> = ({
   displayStyle = 'card',
   isExpanded,
   onToggle,
-  viewMode,
   beatmapSortBy
 }) => {
   // Filter beatmapsets based on selected modes and statuses
-  const filteredBeatmapsets = mapper.beatmapsets.filter(set =>
-    (set.modes && set.modes.some(mode => selectedModes.has(mode))) &&
-    selectedStatuses.has(set.approved)
-  )
+  const filteredBeatmapsets = (mapper.beatmapsets || []).filter(set => {
+    // Check if beatmapset status is selected
+    const hasMatchingStatus = selectedStatuses.has(set.approved || '1')
+    
+    // Check if beatmapset has difficulties that match selected modes
+    // We need to check the difficulties array, not just the modes array
+    const hasMatchingMode = set.difficulties && set.difficulties.some(diff => 
+      selectedModes.has(diff.mode)
+    )
+    
+    // Fallback: if no difficulties array, check modes array
+    const hasModeInArray = !hasMatchingMode && set.modes && set.modes.some(mode => 
+      selectedModes.has(mode)
+    )
+    
+    return hasMatchingStatus && (hasMatchingMode || hasModeInArray)
+  })
 
   // Filter beatmaps based on selected modes
-  const filteredBeatmaps = mapper.beatmaps.filter(beatmap => 
+  const filteredBeatmaps = (mapper.beatmaps || []).filter(beatmap => 
     selectedModes.has(beatmap.mode || '0')
   )
 
@@ -59,6 +70,15 @@ export const MapperCard: React.FC<MapperCardProps> = ({
         return a.artist.localeCompare(b.artist)
       case 'title':
         return a.title.localeCompare(b.title)
+      case 'favorite':
+        const aFav = parseInt(a.favourite_count || '0')
+        const bFav = parseInt(b.favourite_count || '0')
+        return bFav - aFav
+      case 'playcount':
+        // Always aggregate playcount from difficulties for consistency
+        const aPlay = (a.difficulties || []).reduce((sum, diff) => sum + parseInt(diff.playcount || '0'), 0)
+        const bPlay = (b.difficulties || []).reduce((sum, diff) => sum + parseInt(diff.playcount || '0'), 0)
+        return bPlay - aPlay
       default:
         return new Date(b.approved_date).getTime() - new Date(a.approved_date).getTime()
     }
@@ -126,47 +146,18 @@ export const MapperCard: React.FC<MapperCardProps> = ({
 
       {isExpanded && (
         <div className="border-t border-gray-200 dark:border-gray-700 p-6">
-          {viewMode === 'mapsets' ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {sortedBeatmapsets.map(beatmapset => (
-                <BeatmapsetCard
-                  key={beatmapset.beatmapset_id}
-                  beatmapset={beatmapset}
-                  selectedModes={selectedModes}
-                  displayStyle={displayStyle}
-                  showMapperName={false}
-                  className="h-full"
-                />
-              ))}
-            </div>
-          ) : (
-            <div className="space-y-4">
-              {sortedBeatmaps.map(beatmap => (
-                <div key={beatmap.beatmap_id} className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
-                  <div className="flex items-center justify-between">
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-gray-800 dark:text-white">
-                        {beatmap.artist} - {beatmap.title} [{beatmap.version}]
-                      </h4>
-                      <div className="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-400 mt-1">
-                        <span>★{parseFloat(beatmap.difficultyrating).toFixed(1)}</span>
-                        <span>❤️ {formatNumber(beatmap.favourite_count)}</span>
-                        <span>▶️ {formatNumber(beatmap.playcount)}</span>
-                      </div>
-                    </div>
-                    <a
-                      href={`https://osu.ppy.sh/beatmapsets/${beatmap.beatmapset_id}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="ml-4 text-osu-pink hover:text-osu-pink-dark transition-colors"
-                    >
-                      View
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {sortedBeatmapsets.map(beatmapset => (
+              <BeatmapsetCard
+                key={beatmapset.beatmapset_id}
+                beatmapset={beatmapset}
+                selectedModes={selectedModes}
+                displayStyle={displayStyle}
+                showMapperName={false}
+                className="h-full"
+              />
+            ))}
+          </div>
         </div>
       )}
     </div>

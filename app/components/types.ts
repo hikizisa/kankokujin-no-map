@@ -22,7 +22,9 @@ export interface Difficulty {
   version: string
   difficultyrating: string
   mode: string
-  isGuestDiff: boolean
+  isGuestDiff?: boolean
+  playcount?: string
+  favourite_count?: string
 }
 
 export interface Beatmapset {
@@ -34,6 +36,9 @@ export interface Beatmapset {
   difficulties: Difficulty[]
   isOwnMapset: boolean
   approved: string
+  modes?: string[]
+  favourite_count?: string
+  playcount?: string
 }
 
 export interface MapperStats {
@@ -71,10 +76,11 @@ export interface BeatmapsetGroup {
   creator: string
   approved_date: string
   modes: string[]
-  favourite_count: number
-  total_playcount: number
+  favourite_count: string
+  playcount: string
   approved: string
-  difficulties: Beatmap[]
+  difficulties: Difficulty[]
+  isOwnMapset: boolean
 }
 
 export type SortOption = 'date' | 'artist' | 'title' | 'favorite' | 'playcount'

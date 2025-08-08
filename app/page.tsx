@@ -19,9 +19,9 @@ export default function Home() {
   const [selectedModes, setSelectedModes] = useState<Set<string>>(new Set(['0', '1', '2', '3']))
   const [selectedStatuses, setSelectedStatuses] = useState<Set<string>>(new Set(['1', '4'])) // ranked and loved
   const [displayStyle, setDisplayStyle] = useState<'card' | 'thumbnail' | 'minimal'>('card')
-  const [viewMode, setViewMode] = useState<'beatmaps' | 'mapsets'>('mapsets')
+
   const [beatmapSortBy, setBeatmapSortBy] = useState<SortOption>('date')
-  const [sortBy, setSortBy] = useState<'beatmaps' | 'mapsets' | 'guestDiffs'>('mapsets')
+
   const [mapperSortBy, setMapperSortBy] = useState<MapperSortOption>('name')
   const [expandedMappers, setExpandedMappers] = useState<Set<string>>(new Set())
 
@@ -31,11 +31,89 @@ export default function Home() {
       .then(res => res.json())
       .then(data => {
         // Process mappers to calculate most recent ranked date and add aliases support
-        const processedMappers = (data.mappers || []).map((mapper: Mapper) => ({
-          ...mapper,
-          mostRecentRankedDate: calculateMostRecentRankedDate(mapper),
-          aliases: mapper.aliases || [] // Ensure aliases array exists
-        }))
+        const processedMappers = data.mappers.map(mapper => {
+          let beatmapsets = mapper.beatmapsets || []
+          
+          // Always ensure favourite_count and playcount are properly set
+          if (mapper.beatmaps && mapper.beatmaps.length > 0) {
+            if (beatmapsets.length === 0) {
+              // Construct beatmapsets from scratch
+              const beatmapsetGroups = new Map()
+              
+              mapper.beatmaps.forEach(beatmap => {
+                const setId = beatmap.beatmapset_id
+                if (!beatmapsetGroups.has(setId)) {
+                  beatmapsetGroups.set(setId, {
+                    beatmapset_id: setId,
+                    title: beatmap.title,
+                    artist: beatmap.artist,
+                    creator: beatmap.creator,
+                    approved_date: beatmap.approved_date,
+                    approved: beatmap.approved,
+                    favourite_count: beatmap.favourite_count, // Use first beatmap's favorite count (same for all diffs in set)
+                    playcount: '0', // Will be summed from all difficulties as string
+                    modes: [],
+                    difficulties: []
+                  })
+                }
+                
+                const beatmapset = beatmapsetGroups.get(setId)
+                
+                // Add mode if not already present
+                if (!beatmapset.modes.includes(beatmap.mode)) {
+                  beatmapset.modes.push(beatmap.mode)
+                }
+                
+                // Add difficulty and sum playcount
+                beatmapset.difficulties.push({
+                  beatmap_id: beatmap.beatmap_id,
+                  version: beatmap.version,
+                  difficultyrating: beatmap.difficultyrating,
+                  mode: beatmap.mode,
+                  playcount: beatmap.playcount,
+                  favourite_count: beatmap.favourite_count
+                })
+                
+                // Sum playcount from all difficulties in the set
+                const currentPlaycount = parseInt(beatmapset.playcount || '0')
+                const additionalPlaycount = parseInt(beatmap.playcount || '0')
+                beatmapset.playcount = (currentPlaycount + additionalPlaycount).toString()
+              })
+              
+              beatmapsets = Array.from(beatmapsetGroups.values())
+            } else {
+              // Beatmapsets already exist, but ensure favourite_count and playcount are set
+              beatmapsets = beatmapsets.map(beatmapset => {
+                // If favourite_count or playcount are missing, calculate them from beatmaps
+                if (!beatmapset.favourite_count || !beatmapset.playcount) {
+                  const setId = beatmapset.beatmapset_id
+                  const beatmapsInSet = mapper.beatmaps.filter(beatmap => beatmap.beatmapset_id === setId)
+                  
+                  if (beatmapsInSet.length > 0) {
+                    const favourite_count = beatmapsInSet[0].favourite_count || '0'
+                    const playcount = beatmapsInSet.reduce((sum, beatmap) => {
+                      return sum + parseInt(beatmap.playcount || '0')
+                    }, 0).toString()
+                    
+                    return {
+                      ...beatmapset,
+                      favourite_count,
+                      playcount
+                    }
+                  }
+                }
+                return beatmapset
+              })
+            }
+          }
+          
+          return {
+            ...mapper,
+            beatmapsets,
+            mostRecentRankedDate: calculateMostRecentRankedDate(mapper),
+            aliases: mapper.aliases || [] // Ensure aliases array exists
+          }
+        })
         
         setMappers(processedMappers)
         setFilteredMappers(processedMappers)
@@ -146,7 +224,7 @@ export default function Home() {
 
       {/* Stats */}
       <div className="container mx-auto px-4 py-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
           <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg text-center">
             <User className="h-6 w-6 text-osu-pink mx-auto mb-2" />
             <h3 className="text-xl font-bold text-gray-800 dark:text-white">
@@ -203,35 +281,8 @@ export default function Home() {
         {/* Controls - Sticky */}
         <div className="sticky top-4 z-10 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 mb-8 border border-gray-200 dark:border-gray-700">
           <div className="space-y-4">
-            {/* First Row: View Mode and Display Style */}
+            {/* Display Style */}
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-              <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                <label className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">View Mode:</label>
-                <div className="flex bg-gray-100 dark:bg-gray-700 rounded-lg p-1">
-                  <button
-                    onClick={() => setViewMode('mapsets')}
-                    className={`px-3 py-1 rounded-md text-sm font-medium transition-all duration-200 ease-in-out ${
-                      viewMode === 'mapsets'
-                        ? 'bg-osu-pink text-white'
-                        : 'text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white'
-                    }`}
-                  >
-                    Beatmapsets
-                  </button>
-                  <button
-                    onClick={() => setViewMode('beatmaps')}
-                    className={`px-3 py-1 rounded-md text-sm font-medium transition-all duration-200 ease-in-out ${
-                      viewMode === 'beatmaps'
-                        ? 'bg-osu-pink text-white'
-                        : 'text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white'
-                    }`}
-                  >
-                    Individual Beatmaps
-                  </button>
-                </div>
-              </div>
-
-              {/* Display Style */}
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <label className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">Display:</label>
                 <div className="flex bg-gray-100 dark:bg-gray-700 rounded-lg p-1">
@@ -378,7 +429,6 @@ export default function Home() {
               displayStyle={displayStyle}
               isExpanded={expandedMappers.has(mapper.user_id)}
               onToggle={toggleMapper}
-              viewMode={viewMode}
               beatmapSortBy={beatmapSortBy}
             />
           ))}

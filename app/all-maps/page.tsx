@@ -116,7 +116,7 @@ export default function AllMapsPage() {
           const favourite_count = setOriginalBeatmaps.length > 0 
             ? parseInt(setOriginalBeatmaps[0].favourite_count || '0') 
             : 0
-          const total_playcount = setOriginalBeatmaps.length > 0
+          const playcount = setOriginalBeatmaps.length > 0
             ? setOriginalBeatmaps.reduce((sum, b) => sum + parseInt(b.playcount || '0'), 0)
             : 0
           const approved = setOriginalBeatmaps.length > 0 ? setOriginalBeatmaps[0].approved || '1' : '1'
@@ -128,9 +128,10 @@ export default function AllMapsPage() {
             creator: beatmapset.creator,
             approved_date: beatmapset.approved_date,
             modes: uniqueModes,
-            favourite_count,
-            total_playcount,
+            favourite_count: favourite_count.toString(),
+            playcount: playcount.toString(),
             approved,
+            isOwnMapset: true, // All beatmapsets in this context are own mapsets
             difficulties: beatmapset.difficulties?.map(diff => ({
               beatmap_id: diff.beatmap_id,
               beatmapset_id: setId,
@@ -182,9 +183,9 @@ export default function AllMapsPage() {
         case 'title':
           return a.title.localeCompare(b.title)
         case 'favorite':
-          return b.favourite_count - a.favourite_count
+          return parseInt(b.favourite_count) - parseInt(a.favourite_count)
         case 'playcount':
-          return b.total_playcount - a.total_playcount
+          return parseInt(b.playcount) - parseInt(a.playcount)
         default:
           return 0
       }

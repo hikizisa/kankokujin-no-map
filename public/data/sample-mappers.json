@@ -81,12 +81,18 @@
           "artist": "Franz Liszt",
           "creator": "lepidopodus",
           "approved_date": "2010-05-20 14:22:00",
+          "approved": "1",
+          "favourite_count": "2341",
+          "playcount": "892341",
+          "modes": ["0"],
           "difficulties": [
             {
               "beatmap_id": "14016",
               "version": "Insane",
               "difficultyrating": "5.89",
-              "mode": "0"
+              "mode": "0",
+              "playcount": "892341",
+              "favourite_count": "2341"
             }
           ]
         },
@@ -96,18 +102,26 @@
           "artist": "Yuji Masubuchi",
           "creator": "lepidopodus",
           "approved_date": "2010-07-12 16:45:00",
+          "approved": "1",
+          "favourite_count": "6912",
+          "playcount": "1691356",
+          "modes": ["0"],
           "difficulties": [
-            {
-              "beatmap_id": "16592",
-              "version": "Hard",
-              "difficultyrating": "4.23",
-              "mode": "0"
-            },
             {
               "beatmap_id": "21472",
               "version": "Normal",
               "difficultyrating": "3.45",
-              "mode": "0"
+              "mode": "0",
+              "playcount": "1234567",
+              "favourite_count": "5678"
+            },
+            {
+              "beatmap_id": "16592",
+              "version": "Hard",
+              "difficultyrating": "4.23",
+              "mode": "0",
+              "playcount": "456789",
+              "favourite_count": "1234"
             }
           ]
         }
@@ -178,12 +192,18 @@
           "artist": "M2U",
           "creator": "Kloyd",
           "approved_date": "2013-04-22 11:00:00",
+          "approved": "1",
+          "favourite_count": "3456",
+          "playcount": "678901",
+          "modes": ["0"],
           "difficulties": [
             {
               "beatmap_id": "88616",
               "version": "Insane",
               "difficultyrating": "5.67",
-              "mode": "0"
+              "mode": "0",
+              "playcount": "678901",
+              "favourite_count": "3456"
             }
           ]
         },
@@ -193,12 +213,18 @@
           "artist": "Test Artist",
           "creator": "Kloyd",
           "approved_date": "2013-08-15 14:30:00",
+          "approved": "1",
+          "favourite_count": "1789",
+          "playcount": "234567",
+          "modes": ["0"],
           "difficulties": [
             {
               "beatmap_id": "99999",
               "version": "Extra",
               "difficultyrating": "6.34",
-              "mode": "0"
+              "mode": "0",
+              "playcount": "234567",
+              "favourite_count": "1789"
             }
           ]
         }

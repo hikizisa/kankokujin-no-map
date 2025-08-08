@@ -19,23 +19,25 @@ export const BeatmapsetCard: React.FC<BeatmapsetCardProps> = ({
   className = ''
 }) => {
   const [showAllDifficulties, setShowAllDifficulties] = useState(false)
-  // Filter difficulties based on selected modes
-  const filteredDifficulties = beatmapset.difficulties.filter(diff => 
-    selectedModes.has(diff.mode)
-  )
+  // Filter and sort difficulties based on selected modes and star rating (descending)
+  const filteredDifficulties = beatmapset.difficulties
+    .filter(diff => selectedModes.has(diff.mode))
+    .sort((a, b) => parseFloat(b.difficultyrating) - parseFloat(a.difficultyrating))
 
   if (filteredDifficulties.length === 0) return null
 
   const status = getApprovedStatus(beatmapset.approved)
   
-  // Calculate total stats for the beatmapset
-  const totalPlaycount = filteredDifficulties.reduce((sum, diff) => {
-    const beatmap = beatmapset.difficulties.find(d => d.beatmap_id === diff.beatmap_id)
-    return sum + (beatmap ? parseInt((beatmap as any).playcount || '0') : 0)
-  }, 0)
+  // Always aggregate stats from difficulties to ensure accuracy
+  // Favorite count: use beatmapset-level if available, otherwise use first difficulty's value (shared across set)
+  const favoriteCount = beatmapset.favourite_count ? 
+    parseInt(beatmapset.favourite_count) : 
+    (filteredDifficulties.length > 0 ? parseInt(filteredDifficulties[0].favourite_count || '0') : 0)
   
-  const favoriteCount = filteredDifficulties.length > 0 ? 
-    parseInt((filteredDifficulties[0] as any).favourite_count || '0') : 0
+  // Playcount: use beatmapset-level if available (already aggregated), otherwise sum from difficulties
+  const totalPlaycount = beatmapset.playcount ? 
+    parseInt(beatmapset.playcount) : 
+    filteredDifficulties.reduce((sum, diff) => sum + parseInt(diff.playcount || '0'), 0)
 
   // Minimal display style
   if (displayStyle === 'minimal') {
@@ -208,6 +210,10 @@ export const BeatmapsetCard: React.FC<BeatmapsetCardProps> = ({
             <div key={difficulty.beatmap_id} className="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400">
               <span>{getModeIcon(difficulty.mode)}</span>
               <span className="truncate flex-1">{difficulty.version}</span>
+              <span className="flex items-center gap-1 text-gray-400">
+                <span>▶️</span>
+                <span>{formatNumber(parseInt(difficulty.playcount || '0'))}</span>
+              </span>
               <span className="px-1.5 py-0.5 rounded text-xs bg-blue-100 dark:bg-blue-800 text-blue-800 dark:text-blue-200">
                 ★{parseFloat(difficulty.difficultyrating).toFixed(1)}
               </span>
