@@ -3,7 +3,8 @@ name: Deploy Korean Mappers Map
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 2 * * *'
+    # Run monthly on the 1st at 2 AM UTC to refresh data
+    - cron: '0 2 1 * *'
   push:
     branches: [ main ]
 

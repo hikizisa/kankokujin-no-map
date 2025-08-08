@@ -2,8 +2,9 @@
 
 import React, { useState, useEffect } from 'react'
 import { Search, User, Calendar, Trophy, ExternalLink, Github, ChevronDown, ChevronUp } from 'lucide-react'
-import { Mapper, MapperSortOption, SortOption } from './components/types'
+import { Mapper, MapperSortOption, SortOption, BeatmapsetGroup } from './components/types'
 import { MapperCard } from './components/MapperCard'
+import { processMapperData } from './components/beatmapset-utils'
 import { getModeIcon, getModeName, formatNumber, formatDate, searchInMapper } from './components/utils'
 import { sortMappers, calculateMostRecentRankedDate } from './components/sorting'
 
@@ -30,64 +31,8 @@ export default function Home() {
     fetch('/data/mappers.json')
       .then(res => res.json())
       .then(data => {
-        // Process mappers to calculate most recent ranked date and add aliases support
-        const processedMappers = data.mappers.map(mapper => {
-          let beatmapsets = []
-          
-          // Always construct beatmapsets from individual beatmaps to ensure proper playcount/favourite_count
-          if (mapper.beatmaps && mapper.beatmaps.length > 0) {
-            const beatmapsetGroups = new Map()
-            
-            mapper.beatmaps.forEach(beatmap => {
-              const setId = beatmap.beatmapset_id
-              if (!beatmapsetGroups.has(setId)) {
-                beatmapsetGroups.set(setId, {
-                  beatmapset_id: setId,
-                  title: beatmap.title,
-                  artist: beatmap.artist,
-                  creator: beatmap.creator,
-                  approved_date: beatmap.approved_date,
-                  approved: beatmap.approved,
-                  favourite_count: beatmap.favourite_count, // Use first beatmap's favorite count (same for all diffs in set)
-                  playcount: '0', // Will be summed from all difficulties as string
-                  modes: [],
-                  difficulties: []
-                })
-              }
-              
-              const beatmapset = beatmapsetGroups.get(setId)
-              
-              // Add mode if not already present
-              if (!beatmapset.modes.includes(beatmap.mode)) {
-                beatmapset.modes.push(beatmap.mode)
-              }
-              
-              // Add difficulty and sum playcount
-              beatmapset.difficulties.push({
-                beatmap_id: beatmap.beatmap_id,
-                version: beatmap.version,
-                difficultyrating: beatmap.difficultyrating,
-                mode: beatmap.mode,
-                playcount: beatmap.playcount,
-                favourite_count: beatmap.favourite_count
-              })
-              
-              // Sum playcount from all difficulties in the set
-              const currentPlaycount = parseInt(beatmapset.playcount || '0')
-              const additionalPlaycount = parseInt(beatmap.playcount || '0')
-              beatmapset.playcount = (currentPlaycount + additionalPlaycount).toString()
-            })
-            
-            beatmapsets = Array.from(beatmapsetGroups.values())
-          }
-          
-          return {
-            ...mapper,
-            beatmapsets,
-            mostRecentRankedDate: calculateMostRecentRankedDate(mapper),
-            aliases: mapper.aliases || [] // Ensure aliases array exists
-          }
-        })
+        // Process mappers using shared utility function
+        const processedMappers = data.mappers.map(processMapperData)
         
         setMappers(processedMappers)
         setFilteredMappers(processedMappers)

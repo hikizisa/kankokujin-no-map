@@ -1,0 +1,84 @@
+name: Monthly Data Refresh
+
+on:
+  schedule:
+    # Run on the 1st of every month at 1 AM UTC (before deployment)
+    - cron: '0 1 1 * *'
+  workflow_dispatch:
+    inputs:
+      force_refresh:
+        description: 'Force refresh all mapper data'
+        required: false
+        default: 'false'
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: |
+        if [ -f package-lock.json ]; then
+          npm ci
+        else
+          npm install
+        fi
+    
+    - name: Fetch updated mapper data
+      env:
+        OSU_API_KEY: ${{ secrets.OSU_API_KEY }}
+        FORCE_REFRESH: ${{ github.event.inputs.force_refresh || 'false' }}
+      run: |
+        echo "Starting monthly data refresh..."
+        node scripts/fetch-mappers.js
+        
+    - name: Check for changes
+      id: verify-changed-files
+      run: |
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "changed=true" >> $GITHUB_OUTPUT
+          echo "Changes detected in mapper data"
+        else
+          echo "changed=false" >> $GITHUB_OUTPUT
+          echo "No changes in mapper data"
+        fi
+        
+    - name: Commit and push changes
+      if: steps.verify-changed-files.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add public/data/mappers.json
+        git add data/fetch-state.json
+        git commit -m "🔄 Monthly data refresh: Update mapper and beatmap data
+
+        - Updated star ratings and difficulty information
+        - Refreshed playcount and favorite count data
+        - Updated mapper beatmap collections
+        
+        Automated monthly refresh on $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+        git push
+        
+    - name: Create summary
+      run: |
+        if [ "${{ steps.verify-changed-files.outputs.changed }}" == "true" ]; then
+          echo "✅ Monthly data refresh completed successfully" >> $GITHUB_STEP_SUMMARY
+          echo "📊 Mapper and beatmap data has been updated" >> $GITHUB_STEP_SUMMARY
+          echo "🚀 Deployment will trigger automatically" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "ℹ️ No changes detected in mapper data" >> $GITHUB_STEP_SUMMARY
+          echo "📊 All data is up to date" >> $GITHUB_STEP_SUMMARY
+        fi

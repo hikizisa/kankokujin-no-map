@@ -6,7 +6,7 @@
     "dev": "npx next dev",
     "build": "npx next build",
     "start": "npx next start",
-    "export": "npx next build",
+    "export": "npx next build && npx next export",
     "fetch-data": "node scripts/fetch-mappers.js"
   },
   "dependencies": {

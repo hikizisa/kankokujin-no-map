@@ -6,6 +6,7 @@ import { BeatmapsetGroup, SortOption } from '../components/types'
 import { BeatmapsetCard } from '../components/BeatmapsetCard'
 import { getModeIcon, getModeName, formatNumber, formatDate } from '../components/utils'
 import { sortBeatmapsets, filterBeatmapsetsByModes } from '../components/sorting'
+import { constructBeatmapsetsFromBeatmaps } from '../components/beatmapset-utils'
 import Link from 'next/link'
 
 interface Mapper {
@@ -83,63 +84,22 @@ export default function AllMapsPage() {
     setSelectedModes(newSelectedModes)
   }
 
-  // Get all beatmapsets from all mappers by constructing them from individual beatmaps
+  // Get all beatmapsets from all mappers using shared utility
   const getAllBeatmapsets = (): BeatmapsetGroup[] => {
-    const beatmapsetGroups = new Map<string, BeatmapsetGroup>()
-
     // Ensure mappers is an array before iterating
     if (!Array.isArray(mappers)) {
       return []
     }
 
+    // Collect all beatmaps from all mappers
+    const allBeatmaps: any[] = []
     mappers.forEach(mapper => {
       const beatmaps = mapper.beatmaps || []
-      
-      beatmaps.forEach(beatmap => {
-        const setId = beatmap.beatmapset_id
-        
-        if (!beatmapsetGroups.has(setId)) {
-          // Create new beatmapset group
-          beatmapsetGroups.set(setId, {
-            beatmapset_id: setId,
-            title: beatmap.title,
-            artist: beatmap.artist,
-            creator: beatmap.creator,
-            approved_date: beatmap.approved_date,
-            modes: [beatmap.mode],
-            favourite_count: beatmap.favourite_count,
-            playcount: beatmap.playcount,
-            approved: beatmap.approved,
-            isOwnMapset: true,
-            difficulties: []
-          })
-        }
-        
-        const beatmapset = beatmapsetGroups.get(setId)!
-        
-        // Add mode if not already present
-        if (!beatmapset.modes.includes(beatmap.mode)) {
-          beatmapset.modes.push(beatmap.mode)
-        }
-        
-        // Add difficulty and sum playcount
-        beatmapset.difficulties.push({
-          beatmap_id: beatmap.beatmap_id,
-          version: beatmap.version,
-          difficultyrating: beatmap.difficultyrating,
-          mode: beatmap.mode,
-          playcount: beatmap.playcount,
-          favourite_count: beatmap.favourite_count
-        })
-        
-        // Sum playcount from all difficulties in the set
-        const currentPlaycount = parseInt(beatmapset.playcount || '0')
-        const additionalPlaycount = parseInt(beatmap.playcount || '0')
-        beatmapset.playcount = (currentPlaycount + additionalPlaycount).toString()
-      })
+      allBeatmaps.push(...beatmaps)
     })
 
-    return Array.from(beatmapsetGroups.values())
+    // Use shared utility to construct beatmapsets
+    return constructBeatmapsetsFromBeatmaps(allBeatmaps)
   }
 
   const filteredAndSortedBeatmapsets = (() => {
