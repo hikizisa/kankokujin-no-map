@@ -32,79 +32,53 @@ export default function Home() {
       .then(data => {
         // Process mappers to calculate most recent ranked date and add aliases support
         const processedMappers = data.mappers.map(mapper => {
-          let beatmapsets = mapper.beatmapsets || []
+          let beatmapsets = []
           
-          // Always ensure favourite_count and playcount are properly set
+          // Always construct beatmapsets from individual beatmaps to ensure proper playcount/favourite_count
           if (mapper.beatmaps && mapper.beatmaps.length > 0) {
-            if (beatmapsets.length === 0) {
-              // Construct beatmapsets from scratch
-              const beatmapsetGroups = new Map()
-              
-              mapper.beatmaps.forEach(beatmap => {
-                const setId = beatmap.beatmapset_id
-                if (!beatmapsetGroups.has(setId)) {
-                  beatmapsetGroups.set(setId, {
-                    beatmapset_id: setId,
-                    title: beatmap.title,
-                    artist: beatmap.artist,
-                    creator: beatmap.creator,
-                    approved_date: beatmap.approved_date,
-                    approved: beatmap.approved,
-                    favourite_count: beatmap.favourite_count, // Use first beatmap's favorite count (same for all diffs in set)
-                    playcount: '0', // Will be summed from all difficulties as string
-                    modes: [],
-                    difficulties: []
-                  })
-                }
-                
-                const beatmapset = beatmapsetGroups.get(setId)
-                
-                // Add mode if not already present
-                if (!beatmapset.modes.includes(beatmap.mode)) {
-                  beatmapset.modes.push(beatmap.mode)
-                }
-                
-                // Add difficulty and sum playcount
-                beatmapset.difficulties.push({
-                  beatmap_id: beatmap.beatmap_id,
-                  version: beatmap.version,
-                  difficultyrating: beatmap.difficultyrating,
-                  mode: beatmap.mode,
-                  playcount: beatmap.playcount,
-                  favourite_count: beatmap.favourite_count
+            const beatmapsetGroups = new Map()
+            
+            mapper.beatmaps.forEach(beatmap => {
+              const setId = beatmap.beatmapset_id
+              if (!beatmapsetGroups.has(setId)) {
+                beatmapsetGroups.set(setId, {
+                  beatmapset_id: setId,
+                  title: beatmap.title,
+                  artist: beatmap.artist,
+                  creator: beatmap.creator,
+                  approved_date: beatmap.approved_date,
+                  approved: beatmap.approved,
+                  favourite_count: beatmap.favourite_count, // Use first beatmap's favorite count (same for all diffs in set)
+                  playcount: '0', // Will be summed from all difficulties as string
+                  modes: [],
+                  difficulties: []
                 })
-                
-                // Sum playcount from all difficulties in the set
-                const currentPlaycount = parseInt(beatmapset.playcount || '0')
-                const additionalPlaycount = parseInt(beatmap.playcount || '0')
-                beatmapset.playcount = (currentPlaycount + additionalPlaycount).toString()
+              }
+              
+              const beatmapset = beatmapsetGroups.get(setId)
+              
+              // Add mode if not already present
+              if (!beatmapset.modes.includes(beatmap.mode)) {
+                beatmapset.modes.push(beatmap.mode)
+              }
+              
+              // Add difficulty and sum playcount
+              beatmapset.difficulties.push({
+                beatmap_id: beatmap.beatmap_id,
+                version: beatmap.version,
+                difficultyrating: beatmap.difficultyrating,
+                mode: beatmap.mode,
+                playcount: beatmap.playcount,
+                favourite_count: beatmap.favourite_count
               })
               
-              beatmapsets = Array.from(beatmapsetGroups.values())
-            } else {
-              // Beatmapsets already exist, but ensure favourite_count and playcount are set
-              beatmapsets = beatmapsets.map(beatmapset => {
-                // If favourite_count or playcount are missing, calculate them from beatmaps
-                if (!beatmapset.favourite_count || !beatmapset.playcount) {
-                  const setId = beatmapset.beatmapset_id
-                  const beatmapsInSet = mapper.beatmaps.filter(beatmap => beatmap.beatmapset_id === setId)
-                  
-                  if (beatmapsInSet.length > 0) {
-                    const favourite_count = beatmapsInSet[0].favourite_count || '0'
-                    const playcount = beatmapsInSet.reduce((sum, beatmap) => {
-                      return sum + parseInt(beatmap.playcount || '0')
-                    }, 0).toString()
-                    
-                    return {
-                      ...beatmapset,
-                      favourite_count,
-                      playcount
-                    }
-                  }
-                }
-                return beatmapset
-              })
-            }
+              // Sum playcount from all difficulties in the set
+              const currentPlaycount = parseInt(beatmapset.playcount || '0')
+              const additionalPlaycount = parseInt(beatmap.playcount || '0')
+              beatmapset.playcount = (currentPlaycount + additionalPlaycount).toString()
+            })
+            
+            beatmapsets = Array.from(beatmapsetGroups.values())
           }
           
           return {
