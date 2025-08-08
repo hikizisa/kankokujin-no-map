@@ -186,12 +186,12 @@ async function fetchAllBeatmapsForUser(userId, sinceDate = null) {
         
         console.log(`Found ${allUserBeatmaps.length} total beatmaps for user ${userId}`);
         
-        // Filter for ranked beatmaps only (approved = 1 for ranked, 2 for approved)
+        // Filter for ranked, approved, and loved beatmaps (approved = 1 for ranked, 2 for approved, 4 for loved)
         const rankedBeatmaps = allUserBeatmaps.filter(beatmap => {
-            const isRanked = beatmap.approved === '1' || beatmap.approved === '2';
+            const isRankedOrLoved = beatmap.approved === '1' || beatmap.approved === '2' || beatmap.approved === '4';
             const isUnique = !allBeatmapIds.has(beatmap.beatmap_id);
             
-            if (isRanked && isUnique) {
+            if (isRankedOrLoved && isUnique) {
                 allBeatmapIds.add(beatmap.beatmap_id);
                 return true;
             }
@@ -278,6 +278,10 @@ async function fetchKoreanMappers() {
     const isFullScan = !fetchState.lastFullScan || 
         (Date.now() - new Date(fetchState.lastFullScan).getTime()) > 7 * 24 * 60 * 60 * 1000; // Weekly full scan
     
+    // Force start date for data collection (set to 2020-01-01)
+    const FORCE_START_DATE = '2020-01-01';
+    console.log(`Forcing data collection from ${FORCE_START_DATE}...`);
+    
     console.log(`Running ${isFullScan ? 'FULL' : 'INCREMENTAL'} scan`);
 
     // Function to process a single user with incremental updates
@@ -339,7 +343,8 @@ async function fetchKoreanMappers() {
             // Determine if we need to fetch new beatmaps for this user
             const userState = fetchState.mapperStates[userId] || {};
             const lastBeatmapCheck = userState.lastBeatmapCheck;
-            const sinceDate = isFullScan ? null : lastBeatmapCheck;
+            // Use forced start date instead of null for full scans
+            const sinceDate = isFullScan ? FORCE_START_DATE : lastBeatmapCheck;
             
             // Fetch all beatmaps for this user with pagination
             const beatmaps = await fetchAllBeatmapsForUser(userId, sinceDate);
