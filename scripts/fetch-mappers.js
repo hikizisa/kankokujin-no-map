@@ -218,39 +218,86 @@ async function fetchAllBeatmapsForUser(userId, sinceDate = null) {
     return beatmaps;
 }
 
-// Fetch Korean mappers from API with country filter
+// Discover Korean mappers by fetching recent ranked beatmaps and checking mapper countries
 async function fetchKoreanMappersFromAPI() {
-    const koreanMappers = [];
-    let page = 1;
-    let hasMore = true;
+    const koreanMappers = new Set();
+    const checkedUsers = new Set();
     
-    console.log('Fetching Korean mappers from API...');
+    console.log('Discovering Korean mappers from recent ranked beatmaps...');
     
-    while (hasMore && page <= 10) { // Limit to prevent infinite loops
-        try {
-            const users = await makeApiRequest(`${BASE_URL}/get_user`, {
+    // Fetch recent ranked beatmaps to discover new Korean mappers
+    // We'll check the last 30 days of ranked maps
+    const thirtyDaysAgo = new Date();
+    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+    const sinceDate = thirtyDaysAgo.toISOString().split('T')[0]; // YYYY-MM-DD format
+    
+    try {
+        // Fetch recent ranked beatmaps
+        let hasMore = true;
+        let since = sinceDate;
+        let requestCount = 0;
+        const maxRequests = 20; // Limit to prevent excessive API calls
+        
+        while (hasMore && requestCount < maxRequests) {
+            const beatmaps = await makeApiRequest(`${BASE_URL}/get_beatmaps`, {
                 k: OSU_API_KEY,
-                type: 'country',
-                country: 'KR'
+                since: since,
+                limit: MAX_BEATMAPS_PER_REQUEST
             });
             
-            if (!users || users.length === 0) {
+            if (!beatmaps || beatmaps.length === 0) {
                 hasMore = false;
                 break;
             }
             
-            koreanMappers.push(...users.map(user => user.user_id));
-            page++;
+            console.log(`Checking ${beatmaps.length} recent beatmaps for Korean mappers...`);
             
+            // Check each unique creator
+            for (const beatmap of beatmaps) {
+                const creatorId = beatmap.creator_id;
+                
+                if (!checkedUsers.has(creatorId)) {
+                    checkedUsers.add(creatorId);
+                    
+                    try {
+                        // Get user data to check country
+                        const userData = await makeApiRequest(`${BASE_URL}/get_user`, {
+                            k: OSU_API_KEY,
+                            u: creatorId,
+                            type: 'id'
+                        });
+                        
+                        if (userData && userData.length > 0) {
+                            const user = userData[0];
+                            if (user.country === 'KR') {
+                                koreanMappers.add(creatorId);
+                                console.log(`Found Korean mapper: ${user.username} (${creatorId})`);
+                            }
+                        }
+                        
+                        await delay(RATE_LIMIT_DELAY);
+                    } catch (error) {
+                        console.error(`Error checking user ${creatorId}:`, error.message);
+                    }
+                }
+            }
+            
+            // Update since date to the last beatmap's date for pagination
+            if (beatmaps.length > 0) {
+                const lastBeatmap = beatmaps[beatmaps.length - 1];
+                since = lastBeatmap.last_update || lastBeatmap.approved_date;
+            }
+            
+            requestCount++;
             await delay(RATE_LIMIT_DELAY);
-            
-        } catch (error) {
-            console.error('Error fetching Korean mappers from API:', error.message);
-            hasMore = false;
         }
+        
+    } catch (error) {
+        console.error('Error discovering Korean mappers:', error.message);
     }
     
-    return koreanMappers;
+    console.log(`Discovered ${koreanMappers.size} Korean mappers from recent beatmaps`);
+    return Array.from(koreanMappers);
 }
 
 async function fetchKoreanMappers() {
