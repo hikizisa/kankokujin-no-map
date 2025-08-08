@@ -1,12 +1,11 @@
-name: Update Korean Mappers Data
+name: Deploy Korean Mappers Map
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '0 2 * * *'  # Run daily at 2 AM UTC (11 AM KST)
-  workflow_dispatch:  # Allow manual triggering
+    - cron: '0 2 * * *'
   push:
     branches: [ main ]
-    paths: [ 'scripts/**' ]
 
 permissions:
   contents: write
@@ -14,11 +13,11 @@ permissions:
   id-token: write
 
 jobs:
-  update-data:
+  deploy:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Checkout repository
+    - name: Checkout
       uses: actions/checkout@v4
       
     - name: Setup Node.js
@@ -34,28 +33,17 @@ jobs:
           npm install
         fi
       
-    - name: Fetch Korean mappers data
+    - name: Fetch mapper data
       env:
         OSU_API_KEY: ${{ secrets.OSU_API_KEY }}
       run: node scripts/fetch-mappers.js
       
-    - name: Build static site
+    - name: Build site
       run: npm run export
       
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
-      if: github.ref == 'refs/heads/main'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./out
         force_orphan: true
-        
-    - name: Commit updated data
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add data/mappers.json
-        git diff --staged --quiet || git commit -m "Update Korean mappers data - $(date +'%Y-%m-%d %H:%M:%S')"
-        git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
