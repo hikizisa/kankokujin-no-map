@@ -10,6 +10,11 @@ A modern, automated website showcasing Korean osu! mappers and their ranked beat
 - **Comprehensive Data**: Shows mapper stats, beatmap details, difficulty ratings, and play counts
 - **Mobile Friendly**: Fully responsive design that works on all devices
 - **Instant Preview**: Simple HTML version works immediately without setup
+- **Incremental Updates**: Smart daily updates that only fetch new/changed data since last run
+- **Complete API Pagination**: Fetches ALL ranked beatmaps for each mapper (no data missed)
+- **State Persistence**: Tracks last update times for efficient incremental processing
+- **Weekly Full Scans**: Automatic comprehensive data refresh to ensure completeness
+- **Performance Optimized**: First run comprehensive (~30-60 min), daily runs fast (~2-5 min)
 
 ## 🚀 Quick Start
 
