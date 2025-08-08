@@ -342,7 +342,7 @@ export default function Home() {
                 >
                   <option value="name">Name</option>
                   <option value="mapsets">Beatmapsets</option>
-                  <option value="beatmaps">Total Beatmaps</option>
+                  {/* <option value="beatmaps">Total Beatmaps</option> */}
                   <option value="recent">Most Recent</option>
                 </select>
               </div>
