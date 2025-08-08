@@ -84,48 +84,64 @@ async function loadExistingData() {
 // Fetch all beatmaps for a specific user with pagination
 async function fetchAllBeatmapsForUser(userId, sinceDate = null) {
     const beatmaps = [];
-    let offset = 0;
-    let hasMore = true;
+    const allBeatmapIds = new Set(); // Track unique beatmap IDs to avoid duplicates
+    let requestCount = 0;
+    const MAX_REQUESTS_PER_USER = 50; // Safety limit to prevent infinite loops
     
     console.log(`Fetching beatmaps for user ${userId}${sinceDate ? ` since ${sinceDate}` : ''}...`);
     
-    while (hasMore) {
+    // The osu! API doesn't support traditional pagination for get_beatmaps by user
+    // Instead, we need to fetch all beatmaps and filter them
+    // We'll use a different approach: fetch user's beatmaps in batches
+    
+    try {
+        // First, get all beatmaps by this user (not filtered by approval status)
         const params = {
             k: OSU_API_KEY,
             u: userId,
             type: 'id',
-            limit: MAX_BEATMAPS_PER_REQUEST
+            limit: 500 // Maximum allowed by API
         };
         
         if (sinceDate) {
             params.since = sinceDate;
         }
         
-        try {
-            const batch = await makeApiRequest(`${BASE_URL}/get_beatmaps`, params);
+        console.log(`Making API request for user ${userId} beatmaps...`);
+        const allUserBeatmaps = await makeApiRequest(`${BASE_URL}/get_beatmaps`, params);
+        
+        if (!allUserBeatmaps || allUserBeatmaps.length === 0) {
+            console.log(`No beatmaps found for user ${userId}`);
+            return [];
+        }
+        
+        console.log(`Found ${allUserBeatmaps.length} total beatmaps for user ${userId}`);
+        
+        // Filter for ranked beatmaps only (approved = 1 for ranked, 2 for approved)
+        const rankedBeatmaps = allUserBeatmaps.filter(beatmap => {
+            const isRanked = beatmap.approved === '1' || beatmap.approved === '2';
+            const isUnique = !allBeatmapIds.has(beatmap.beatmap_id);
             
-            if (!batch || batch.length === 0) {
-                hasMore = false;
-                break;
+            if (isRanked && isUnique) {
+                allBeatmapIds.add(beatmap.beatmap_id);
+                return true;
             }
-            
-            // Filter for ranked beatmaps only
-            const rankedBeatmaps = batch.filter(beatmap => 
-                beatmap.approved === '1' || beatmap.approved === '2'
-            );
-            
-            beatmaps.push(...rankedBeatmaps);
-            
-            // If we got less than the limit, we've reached the end
-            if (batch.length < MAX_BEATMAPS_PER_REQUEST) {
-                hasMore = false;
-            }
-            
-            await delay(RATE_LIMIT_DELAY);
-            
-        } catch (error) {
-            console.error(`Error fetching beatmaps for user ${userId}:`, error.message);
-            hasMore = false;
+            return false;
+        });
+        
+        beatmaps.push(...rankedBeatmaps);
+        
+        console.log(`Found ${rankedBeatmaps.length} ranked beatmaps for user ${userId}`);
+        
+        await delay(RATE_LIMIT_DELAY);
+        
+    } catch (error) {
+        console.error(`Error fetching beatmaps for user ${userId}:`, error.message);
+        
+        // If there's an error, try to continue with other users
+        if (error.response?.status === 429) {
+            console.log(`Rate limited for user ${userId}, waiting longer...`);
+            await delay(RATE_LIMIT_DELAY * 5);
         }
     }
     
@@ -200,6 +216,12 @@ async function fetchKoreanMappers() {
         if (processedUsers.has(userId)) return;
         processedUsers.add(userId);
 
+        // Add timeout to prevent getting stuck on problematic users
+        const USER_TIMEOUT = 5 * 60 * 1000; // 5 minutes timeout per user
+        const timeoutPromise = new Promise((_, reject) => {
+            setTimeout(() => reject(new Error(`Timeout processing user ${userId}`)), USER_TIMEOUT);
+        });
+
         try {
             console.log(`Processing user ID: ${userId}`);
             
@@ -208,6 +230,22 @@ async function fetchKoreanMappers() {
                 console.log(`User ID ${userId} is in ignore list, skipping`);
                 return;
             }
+
+            // Wrap the processing in a timeout
+            await Promise.race([processUserInternal(userId), timeoutPromise]);
+            
+        } catch (error) {
+            if (error.message.includes('Timeout')) {
+                console.error(`⚠️  User ${userId} timed out after 5 minutes, skipping...`);
+            } else {
+                console.error(`Error processing user ${userId}:`, error.message);
+            }
+        }
+    }
+
+    // Internal function to process user without timeout wrapper
+    async function processUserInternal(userId) {
+        try {
 
             // Get user data
             const userData = await makeApiRequest(`${BASE_URL}/get_user`, {
