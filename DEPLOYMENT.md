@@ -53,14 +53,26 @@ git push -u origin main
 
 ### Adding Manual User IDs
 
-Edit `scripts/fetch-mappers.js` and add user IDs to the `manualUserIds` array:
+Edit `scripts/fetch-mappers.js` and add user IDs to the `MANUAL_MAPPER_IDS` array:
 
 ```javascript
-const manualUserIds = [
+const MANUAL_MAPPER_IDS = [
   194807,  // lepidopodus
   114017,  // KRZY
   1574070, // Kloyd
   // Add more user IDs here
+];
+```
+
+### Ignoring Specific User IDs
+
+Some users might have the Korean flag but are not actually Korean mappers. You can exclude them by adding their IDs to the ignore list:
+
+```javascript
+const IGNORE_MAPPER_IDS = [
+  123456,  // Example: Non-Korean user with KR flag
+  789012,  // Example: Another user to ignore
+  // Add more user IDs to ignore here
 ];
 ```
 
