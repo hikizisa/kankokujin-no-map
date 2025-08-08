@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { Search, User, Calendar, Trophy, ExternalLink, Github, ChevronDown, ChevronUp } from 'lucide-react'
 import { Mapper, MapperSortOption, SortOption, BeatmapsetGroup } from './components/types'
 import { MapperCard } from './components/MapperCard'
@@ -132,13 +133,13 @@ export default function Home() {
               Discover ranked beatmaps from talented Korean mappers in the osu! community
             </p>
             <div className="flex justify-center gap-4 mb-8">
-              <a
+              <Link
                 href="/all-maps"
                 className="px-6 py-3 bg-osu-pink text-white rounded-lg hover:bg-osu-purple transition-all duration-200 ease-in-out font-medium flex items-center gap-2 hover:scale-105 hover:shadow-lg"
               >
                 <Calendar className="h-5 w-5" />
                 Browse All Beatmaps
-              </a>
+              </Link>
             </div>
             <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               Discover talented Korean osu! mappers and their ranked beatmaps. 
