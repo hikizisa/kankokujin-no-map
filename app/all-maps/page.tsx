@@ -62,7 +62,7 @@ export default function AllMapsPage() {
   useEffect(() => {
     const fetchMappers = async () => {
       try {
-        const response = await fetch('/data/sample-mappers.json')
+        const response = await fetch('/data/mappers.json')
         if (!response.ok) {
           throw new Error('Failed to fetch mappers data')
         }
