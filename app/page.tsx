@@ -84,8 +84,8 @@ export default function Home() {
       return matchingBeatmapsets.length > 0
     })
     
-    // Sort mappers using shared sorting utility
-    filtered = sortMappers(filtered, mapperSortBy)
+    // Sort mappers using shared sorting utility (considering current filters)
+    filtered = sortMappers(filtered, mapperSortBy, selectedModes, selectedStatuses)
     
     setFilteredMappers(filtered)
   }, [searchTerm, mappers, mapperSortBy, selectedModes, selectedStatuses])

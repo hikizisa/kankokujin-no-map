@@ -25,7 +25,7 @@ export const MapperCard: React.FC<MapperCardProps> = ({
   beatmapSortBy
 }) => {
   // No longer need local state - using global sorting from main page
-  const isNewMapper = hasRecentRankedMap(mapper)
+  const isNewMapper = hasRecentRankedMap(mapper, selectedModes, selectedStatuses)
   // Filter beatmapsets based on selected modes and statuses
   const filteredBeatmapsets = (mapper.beatmapsets || []).filter(set => {
     // Check if beatmapset status is selected
