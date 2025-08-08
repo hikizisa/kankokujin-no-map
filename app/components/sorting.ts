@@ -1,4 +1,68 @@
-import { Mapper, BeatmapsetGroup, SortOption, MapperSortOption } from './types'
+import { Mapper, BeatmapsetGroup, Beatmapset, SortOption, MapperSortOption } from './types'
+
+/**
+ * Check if a mapper has a recently ranked map (within last 30 days)
+ * @param mapper Mapper object
+ * @returns boolean indicating if mapper has recent ranked map
+ */
+export const hasRecentRankedMap = (mapper: Mapper): boolean => {
+  const oneMonthAgo = new Date()
+  oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1)
+  
+  const mostRecentDate = mapper.mostRecentRankedDate
+  if (!mostRecentDate) return false
+  
+  const recentDate = new Date(mostRecentDate)
+  return recentDate > oneMonthAgo
+}
+
+/**
+ * Sort beatmapsets within a mapper by favorite count or playcount
+ * @param beatmapsets Array of beatmapsets (BeatmapsetGroup)
+ * @param sortBy Sort criteria ('favorite' or 'playcount')
+ * @returns Sorted array of beatmapsets
+ */
+export const sortMapperBeatmapsets = (beatmapsets: BeatmapsetGroup[], sortBy: 'favorite' | 'playcount' | 'date'): BeatmapsetGroup[] => {
+  return [...beatmapsets].sort((a, b) => {
+    switch (sortBy) {
+      case 'favorite':
+        const aFav = parseInt(a.favourite_count || '0')
+        const bFav = parseInt(b.favourite_count || '0')
+        return bFav - aFav
+      case 'playcount':
+        const aPlay = parseInt(a.playcount || '0')
+        const bPlay = parseInt(b.playcount || '0')
+        return bPlay - aPlay
+      case 'date':
+      default:
+        return new Date(b.approved_date).getTime() - new Date(a.approved_date).getTime()
+    }
+  })
+}
+
+/**
+ * Sort beatmapsets within a mapper by favorite count or playcount (for Beatmapset type)
+ * @param beatmapsets Array of beatmapsets (Beatmapset)
+ * @param sortBy Sort criteria ('favorite' or 'playcount')
+ * @returns Sorted array of beatmapsets
+ */
+export const sortMapperBeatmapsetsV2 = (beatmapsets: Beatmapset[], sortBy: 'favorite' | 'playcount' | 'date'): Beatmapset[] => {
+  return [...beatmapsets].sort((a, b) => {
+    switch (sortBy) {
+      case 'favorite':
+        const aFav = parseInt(a.favourite_count || '0')
+        const bFav = parseInt(b.favourite_count || '0')
+        return bFav - aFav
+      case 'playcount':
+        const aPlay = parseInt(a.playcount || '0')
+        const bPlay = parseInt(b.playcount || '0')
+        return bPlay - aPlay
+      case 'date':
+      default:
+        return new Date(b.approved_date).getTime() - new Date(a.approved_date).getTime()
+    }
+  })
+}
 
 export const sortMappers = (mappers: Mapper[], sortBy: MapperSortOption): Mapper[] => {
   return [...mappers].sort((a, b) => {
@@ -30,9 +94,13 @@ export const sortBeatmapsets = (beatmapsets: BeatmapsetGroup[], sortBy: SortOpti
       case 'title':
         return a.title.localeCompare(b.title)
       case 'favorite':
-        return b.favourite_count - a.favourite_count
+        const aFav = parseInt(a.favourite_count || '0')
+        const bFav = parseInt(b.favourite_count || '0')
+        return bFav - aFav
       case 'playcount':
-        return b.total_playcount - a.total_playcount
+        const aPlay = parseInt(a.playcount || '0')
+        const bPlay = parseInt(b.playcount || '0')
+        return bPlay - aPlay
       default:
         return new Date(b.approved_date).getTime() - new Date(a.approved_date).getTime()
     }

@@ -1,8 +1,9 @@
-import React from 'react'
-import { User, ChevronDown, ChevronUp } from 'lucide-react'
+import React, { useState } from 'react'
+import { User, ChevronDown, ChevronUp, Sparkles, SortAsc } from 'lucide-react'
 import { Mapper } from './types'
 import { BeatmapsetCard } from './BeatmapsetCard'
 import { formatNumber } from './utils'
+import { hasRecentRankedMap, sortMapperBeatmapsetsV2 } from './sorting'
 
 interface MapperCardProps {
   mapper: Mapper
@@ -23,6 +24,8 @@ export const MapperCard: React.FC<MapperCardProps> = ({
   onToggle,
   beatmapSortBy
 }) => {
+  const [localBeatmapSortBy, setLocalBeatmapSortBy] = useState<'date' | 'favorite' | 'playcount'>(beatmapSortBy === 'favorite' || beatmapSortBy === 'playcount' ? beatmapSortBy : 'date')
+  const isNewMapper = hasRecentRankedMap(mapper)
   // Filter beatmapsets based on selected modes and statuses
   const filteredBeatmapsets = (mapper.beatmapsets || []).filter(set => {
     // Check if beatmapset status is selected
@@ -61,28 +64,8 @@ export const MapperCard: React.FC<MapperCardProps> = ({
     }
   })
 
-  // Sort beatmapsets based on selected criteria  
-  const sortedBeatmapsets = [...filteredBeatmapsets].sort((a, b) => {
-    switch (beatmapSortBy) {
-      case 'date':
-        return new Date(b.approved_date).getTime() - new Date(a.approved_date).getTime()
-      case 'artist':
-        return a.artist.localeCompare(b.artist)
-      case 'title':
-        return a.title.localeCompare(b.title)
-      case 'favorite':
-        const aFav = parseInt(a.favourite_count || '0')
-        const bFav = parseInt(b.favourite_count || '0')
-        return bFav - aFav
-      case 'playcount':
-        // Always aggregate playcount from difficulties for consistency
-        const aPlay = (a.difficulties || []).reduce((sum, diff) => sum + parseInt(diff.playcount || '0'), 0)
-        const bPlay = (b.difficulties || []).reduce((sum, diff) => sum + parseInt(diff.playcount || '0'), 0)
-        return bPlay - aPlay
-      default:
-        return new Date(b.approved_date).getTime() - new Date(a.approved_date).getTime()
-    }
-  })
+  // Sort beatmapsets using local sorting state and shared utility
+  const sortedBeatmapsets = sortMapperBeatmapsetsV2(filteredBeatmapsets, localBeatmapSortBy)
 
   const displayName = mapper.username
   const aliases = mapper.aliases && mapper.aliases.length > 0 ? mapper.aliases : []
@@ -109,9 +92,20 @@ export const MapperCard: React.FC<MapperCardProps> = ({
               <User className="h-6 w-6 text-white" />
             </div>
             <div>
-              <h3 className="text-xl font-bold text-gray-800 dark:text-white">
-                {displayName}
-              </h3>
+              <div className="flex items-center gap-2">
+                <h3 className="text-xl font-bold text-gray-800 dark:text-white">
+                  {displayName}
+                </h3>
+                {isNewMapper && (
+                  <span 
+                    className="inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-100"
+                    title="Recently ranked map (within last month)"
+                  >
+                    <Sparkles className="h-3 w-3" />
+                    New
+                  </span>
+                )}
+              </div>
               {aliases.length > 0 && (
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   Also known as: {aliases.join(', ')}
@@ -146,6 +140,25 @@ export const MapperCard: React.FC<MapperCardProps> = ({
 
       {isExpanded && (
         <div className="border-t border-gray-200 dark:border-gray-700 p-6">
+          {/* Beatmapset sorting controls */}
+          <div className="flex items-center justify-between mb-4">
+            <h4 className="text-lg font-semibold text-gray-800 dark:text-white">
+              Beatmapsets ({sortedBeatmapsets.length})
+            </h4>
+            <div className="flex items-center gap-2">
+              <SortAsc className="h-4 w-4 text-gray-500" />
+              <select
+                value={localBeatmapSortBy}
+                onChange={(e) => setLocalBeatmapSortBy(e.target.value as 'date' | 'favorite' | 'playcount')}
+                className="text-sm border border-gray-300 dark:border-gray-600 rounded px-2 py-1 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 focus:outline-none focus:ring-2 focus:ring-osu-pink"
+              >
+                <option value="date">Date</option>
+                <option value="favorite">Favorites</option>
+                <option value="playcount">Playcount</option>
+              </select>
+            </div>
+          </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {sortedBeatmapsets.map(beatmapset => (
               <BeatmapsetCard

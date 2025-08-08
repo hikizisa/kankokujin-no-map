@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Calendar, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react'
 import { Beatmapset, Difficulty } from './types'
 import { getModeIcon, getModeName, getApprovedStatus, formatDate, formatNumber } from './utils'
+import { getDifficultyStyle, formatStarRating } from './difficulty-colors'
 
 interface BeatmapsetCardProps {
   beatmapset: Beatmapset
@@ -214,8 +215,11 @@ export const BeatmapsetCard: React.FC<BeatmapsetCardProps> = ({
                 <span>▶️</span>
                 <span>{formatNumber(parseInt(difficulty.playcount || '0'))}</span>
               </span>
-              <span className="px-1.5 py-0.5 rounded text-xs bg-blue-100 dark:bg-blue-800 text-blue-800 dark:text-blue-200">
-                ★{parseFloat(difficulty.difficultyrating).toFixed(1)}
+              <span 
+                className="px-1.5 py-0.5 rounded text-xs font-semibold bg-black/10 dark:bg-white/10"
+                style={getDifficultyStyle(parseFloat(difficulty.difficultyrating))}
+              >
+                ★{formatStarRating(difficulty.difficultyrating)}
               </span>
             </div>
           ))}
