@@ -2,9 +2,8 @@ name: Update Korean Mappers Data
 
 on:
   schedule:
-    # Run daily at 2 AM UTC (11 AM KST)
-    - cron: '0 2 * * *'
-  workflow_dispatch: # Allow manual triggering
+    - cron: '0 2 * * *'  # Run daily at 2 AM UTC (11 AM KST)
+  workflow_dispatch:  # Allow manual triggering
   push:
     branches: [ main ]
     paths: [ 'scripts/**' ]
@@ -55,7 +54,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add public/data/mappers.json
+        git add data/mappers.json
         git diff --staged --quiet || git commit -m "Update Korean mappers data - $(date +'%Y-%m-%d %H:%M:%S')"
         git push
       env:
