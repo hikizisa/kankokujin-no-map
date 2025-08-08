@@ -317,6 +317,7 @@ export default function Home() {
                   <option value="name">Name</option>
                   <option value="mapsets">Beatmapsets</option>
                   <option value="beatmaps">Total Beatmaps</option>
+                  <option value="recent">Most Recent</option>
                 </select>
               </div>
 
@@ -325,12 +326,14 @@ export default function Home() {
                 <label className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">Sort beatmaps:</label>
                 <select
                   value={beatmapSortBy}
-                  onChange={(e) => setBeatmapSortBy(e.target.value as 'date' | 'artist' | 'title')}
+                  onChange={(e) => setBeatmapSortBy(e.target.value as SortOption)}
                   className="px-3 py-1 border border-gray-300 rounded-md text-sm bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:ring-2 focus:ring-osu-pink focus:border-transparent transition-all duration-200 ease-in-out"
                 >
                   <option value="date">Date</option>
                   <option value="artist">Artist</option>
                   <option value="title">Title</option>
+                  <option value="favorite">Favorites</option>
+                  <option value="playcount">Playcount</option>
                 </select>
               </div>
             </div>

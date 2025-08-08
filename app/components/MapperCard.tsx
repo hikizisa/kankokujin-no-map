@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { User, ChevronDown, ChevronUp, Sparkles, SortAsc } from 'lucide-react'
-import { Mapper } from './types'
+import { Mapper, SortOption } from './types'
 import { BeatmapsetCard } from './BeatmapsetCard'
 import { formatNumber } from './utils'
 import { hasRecentRankedMap, sortMapperBeatmapsetsV2 } from './sorting'
@@ -12,7 +12,7 @@ interface MapperCardProps {
   displayStyle?: 'card' | 'thumbnail' | 'minimal'
   isExpanded: boolean
   onToggle: (mapperId: string) => void
-  beatmapSortBy: 'date' | 'artist' | 'title' | 'favorite' | 'playcount'
+  beatmapSortBy: SortOption
 }
 
 export const MapperCard: React.FC<MapperCardProps> = ({
@@ -24,7 +24,10 @@ export const MapperCard: React.FC<MapperCardProps> = ({
   onToggle,
   beatmapSortBy
 }) => {
-  const [localBeatmapSortBy, setLocalBeatmapSortBy] = useState<'date' | 'favorite' | 'playcount'>(beatmapSortBy === 'favorite' || beatmapSortBy === 'playcount' ? beatmapSortBy : 'date')
+  const [localBeatmapSortBy, setLocalBeatmapSortBy] = useState<'date' | 'favorite' | 'playcount'>(
+    beatmapSortBy === 'favorite' || beatmapSortBy === 'playcount' || beatmapSortBy === 'date' ? 
+      beatmapSortBy as 'date' | 'favorite' | 'playcount' : 'date'
+  )
   const isNewMapper = hasRecentRankedMap(mapper)
   // Filter beatmapsets based on selected modes and statuses
   const filteredBeatmapsets = (mapper.beatmapsets || []).filter(set => {
