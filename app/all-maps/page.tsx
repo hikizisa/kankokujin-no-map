@@ -24,6 +24,15 @@ export default function AllMapsPage() {
   const [sortDirection, setSortDirection] = useState<SortDirection>('desc')
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  
+  // Virtual scrolling state
+  const [allFilteredBeatmapsets, setAllFilteredBeatmapsets] = useState<BeatmapsetGroup[]>([])
+  const [displayedBeatmapsets, setDisplayedBeatmapsets] = useState<BeatmapsetGroup[]>([])
+  const [currentPage, setCurrentPage] = useState(0)
+  const [isLoadingMore, setIsLoadingMore] = useState(false)
+  const [hasMore, setHasMore] = useState(true)
+  
+  const ITEMS_PER_PAGE = 50 // Load 50 items at a time
 
   useEffect(() => {
     const fetchMappers = async () => {
@@ -74,17 +83,61 @@ export default function AllMapsPage() {
     setSelectedModes(newSelectedModes)
   }
 
-  const filteredAndSortedBeatmapsets = (() => {
+  // Process and filter all beatmapsets (but don't render all at once)
+  const processAllBeatmapsets = React.useCallback(() => {
+    if (mappers.length === 0) return []
+    
     let beatmapsets = getAllBeatmapsetsFromMappers(mappers)
-
+    
     // Filter beatmapsets using shared utility
     beatmapsets = filterBeatmapsets(beatmapsets, searchTerm, selectedModes, selectedStatuses)
-
+    
     // Sort beatmapsets using shared sorting utility
     beatmapsets = sortBeatmapsets(beatmapsets, sortBy, sortDirection)
-
+    
     return beatmapsets
-  })()
+  }, [mappers, searchTerm, selectedModes, selectedStatuses, sortBy, sortDirection])
+
+  // Update filtered beatmapsets when filters change
+  useEffect(() => {
+    const filtered = processAllBeatmapsets()
+    setAllFilteredBeatmapsets(filtered)
+    setCurrentPage(0)
+    setDisplayedBeatmapsets(filtered.slice(0, ITEMS_PER_PAGE))
+    setHasMore(filtered.length > ITEMS_PER_PAGE)
+  }, [processAllBeatmapsets])
+
+  // Load more items
+  const loadMore = React.useCallback(() => {
+    if (isLoadingMore || !hasMore) return
+    
+    setIsLoadingMore(true)
+    
+    // Simulate async loading for smooth UX
+    setTimeout(() => {
+      const nextPage = currentPage + 1
+      const startIndex = nextPage * ITEMS_PER_PAGE
+      const endIndex = startIndex + ITEMS_PER_PAGE
+      const newItems = allFilteredBeatmapsets.slice(startIndex, endIndex)
+      
+      setDisplayedBeatmapsets(prev => [...prev, ...newItems])
+      setCurrentPage(nextPage)
+      setHasMore(endIndex < allFilteredBeatmapsets.length)
+      setIsLoadingMore(false)
+    }, 100)
+  }, [currentPage, allFilteredBeatmapsets, isLoadingMore, hasMore])
+
+  // Infinite scroll detection
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerHeight + document.documentElement.scrollTop >= document.documentElement.offsetHeight - 1000) {
+        loadMore()
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [loadMore])
 
   if (loading) {
     return (
@@ -302,13 +355,16 @@ export default function AllMapsPage() {
           </div>
 
           <div className="mt-4 text-sm text-gray-600 dark:text-gray-400">
-            {language === 'ko' ? `${filteredAndSortedBeatmapsets.length}개의 비트맵셋 표시 중` : `Showing ${filteredAndSortedBeatmapsets.length} beatmapsets`}
+            {language === 'ko' 
+              ? `${displayedBeatmapsets.length}/${allFilteredBeatmapsets.length}개의 비트맵셋 표시 중` 
+              : `Showing ${displayedBeatmapsets.length} of ${allFilteredBeatmapsets.length} beatmapsets`
+            }
           </div>
         </div>
 
         {/* Beatmapsets Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {filteredAndSortedBeatmapsets.map((beatmapset) => (
+          {displayedBeatmapsets.map((beatmapset) => (
             <BeatmapsetCard
               key={beatmapset.beatmapset_id}
               beatmapset={beatmapset}
@@ -319,10 +375,42 @@ export default function AllMapsPage() {
           ))}
         </div>
 
-        {filteredAndSortedBeatmapsets.length === 0 && (
+        {/* Loading more indicator */}
+        {isLoadingMore && (
+          <div className="text-center py-8">
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-osu-pink mx-auto mb-2"></div>
+            <p className="text-gray-600 dark:text-gray-400">
+              {language === 'ko' ? '더 많은 비트맵셋을 불러오는 중...' : 'Loading more beatmapsets...'}
+            </p>
+          </div>
+        )}
+
+        {/* Load more button (fallback for users who prefer clicking) */}
+        {!isLoadingMore && hasMore && displayedBeatmapsets.length > 0 && (
+          <div className="text-center py-8">
+            <button
+              onClick={loadMore}
+              className="px-6 py-3 bg-osu-pink text-white rounded-lg hover:bg-osu-pink-dark transition-colors duration-200 font-medium"
+            >
+              {language === 'ko' ? '더 보기' : 'Load More'}
+            </button>
+          </div>
+        )}
+
+        {/* No results message */}
+        {allFilteredBeatmapsets.length === 0 && !loading && (
           <div className="text-center py-12">
             <p className="text-gray-600 dark:text-gray-400 text-lg">
               {language === 'ko' ? '검색 조건에 맞는 비트맵셋을 찾을 수 없습니다.' : 'No beatmapsets found matching your criteria.'}
+            </p>
+          </div>
+        )}
+
+        {/* End of results message */}
+        {!hasMore && displayedBeatmapsets.length > 0 && (
+          <div className="text-center py-8">
+            <p className="text-gray-500 dark:text-gray-400">
+              {language === 'ko' ? '모든 비트맵셋을 표시했습니다.' : 'You\'ve reached the end of the results.'}
             </p>
           </div>
         )}
