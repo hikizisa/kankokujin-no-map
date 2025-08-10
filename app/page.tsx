@@ -13,6 +13,7 @@ import { filterMappers, calculateFilteredStats, toggleMode as toggleModeUtil } f
 import { useLanguage } from './components/LanguageContext'
 import { LanguageToggle } from './components/LanguageToggle'
 import { FloatingDisplayToggle } from './components/FloatingDisplayToggle'
+import { useFLIPAnimation } from './hooks/useFLIPAnimation'
 import { getModeName } from './components/i18n'
 
 // Interfaces moved to shared components/types.ts
@@ -35,6 +36,9 @@ export default function Home() {
   const [mapperSortBy, setMapperSortBy] = useState<MapperSortOption>('name')
   const [mapperSortDirection, setMapperSortDirection] = useState<'asc' | 'desc'>('asc')
   const [expandedMappers, setExpandedMappers] = useState<Set<string>>(new Set())
+  
+  // FLIP animation for smooth position changes
+  const flipContainerRef = useFLIPAnimation([filteredMappers, displayStyle])
 
   useEffect(() => {
     // Load mapper data from JSON file
@@ -260,8 +264,16 @@ export default function Home() {
                 <div className="flex items-center gap-1">
                   <select
                     value={mapperSortBy}
-                    onChange={(e) => setMapperSortBy(e.target.value as MapperSortOption)}
-                    className="px-3 py-1 border border-gray-300 rounded-l-md text-sm bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:ring-2 focus:ring-osu-pink focus:border-transparent transition-all duration-200 ease-in-out"
+                    onChange={(e) => {
+                      const newSortBy = e.target.value as MapperSortOption
+                      setMapperSortBy(newSortBy)
+                      // Set default direction for Recent Activity to show most recent first
+                      if (newSortBy === 'recent') {
+                        setMapperSortDirection('desc')
+                      }
+                    }}
+                    className="px-3 py-1 border border-gray-300 rounded-l-md text-sm bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:ring-2 focus:ring-osu-pink focus:border-transparent transition-all duration-200 ease-in-out appearance-none"
+                    style={{ backgroundImage: 'none' }}
                   >
                     <option value="name">{t.sortByName}</option>
                     <option value="mapsets">{t.sortByBeatmapsets}</option>
@@ -285,7 +297,8 @@ export default function Home() {
                   <select
                     value={beatmapSortBy}
                     onChange={(e) => setBeatmapSortBy(e.target.value as SortOption)}
-                    className="px-3 py-1 border border-gray-300 rounded-l-md text-sm bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:ring-2 focus:ring-osu-pink focus:border-transparent transition-all duration-200 ease-in-out"
+                    className="px-3 py-1 border border-gray-300 rounded-l-md text-sm bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:ring-2 focus:ring-osu-pink focus:border-transparent transition-all duration-200 ease-in-out appearance-none"
+                    style={{ backgroundImage: 'none' }}
                   >
                     <option value="date">{t.sortByDate}</option>
                     <option value="artist">{t.sortByArtist}</option>
@@ -307,11 +320,12 @@ export default function Home() {
         </div>
 
         {/* Mappers List */}
-        <div className="space-y-8">
+        <div ref={flipContainerRef} className="space-y-8">
           {filteredMappers.map((mapper, index) => (
             <div
               key={mapper.user_id}
-              className="animate-fade-in transition-transform duration-300 ease-out"
+              data-flip-key={mapper.user_id.toString()}
+              className="animate-fade-in"
               style={{
                 animationDelay: `${index * 100}ms`,
                 animationFillMode: 'both'
@@ -334,7 +348,7 @@ export default function Home() {
         {filteredMappers.length === 0 && !loading && (
           <div className="text-center py-12">
             <p className="text-xl text-gray-600 dark:text-gray-400">
-{t.noMappersFound}
+              {t.noMappersFound}
             </p>
           </div>
         )}
@@ -351,11 +365,11 @@ export default function Home() {
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-osu-pink transition-colors"
             >
-{t.viewOnGitHub}
+              {t.viewOnGitHub}
             </a>
           </div>
           <p className="text-sm text-gray-500">
-{t.footerText}
+            {t.footerText}
           </p>
         </div>
       </footer>

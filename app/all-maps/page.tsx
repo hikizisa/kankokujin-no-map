@@ -12,6 +12,7 @@ import { useLanguage } from '../components/LanguageContext'
 import { LanguageToggle } from '../components/LanguageToggle'
 import { FloatingDisplayToggle } from '../components/FloatingDisplayToggle'
 import { getModeName } from '../components/i18n'
+import { useFLIPAnimation } from '../hooks/useFLIPAnimation'
 import Link from 'next/link'
 
 export default function AllMapsPage() {
@@ -34,6 +35,9 @@ export default function AllMapsPage() {
   const [hasMore, setHasMore] = useState(true)
   
   const ITEMS_PER_PAGE = 50 // Load 50 items at a time
+  
+  // FLIP animation for smooth position changes
+  const flipContainerRef = useFLIPAnimation([displayedBeatmapsets, displayStyle])
 
   useEffect(() => {
     const fetchMappers = async () => {
@@ -329,11 +333,15 @@ export default function AllMapsPage() {
         </div>
 
         {/* Beatmapsets Grid/List */}
-        <div className={displayStyle === 'minimal' ? 'space-y-3' : 'grid grid-cols-1 md:grid-cols-2 gap-6'}>
+        <div 
+          ref={flipContainerRef}
+          className={displayStyle === 'minimal' ? 'space-y-3' : 'grid grid-cols-1 md:grid-cols-2 gap-6'}
+        >
           {displayedBeatmapsets.map((beatmapset, index) => (
             <div
               key={beatmapset.beatmapset_id}
-              className="animate-fade-in transition-transform duration-300 ease-out"
+              data-flip-key={beatmapset.beatmapset_id.toString()}
+              className="animate-fade-in"
               style={{
                 animationDelay: `${index * 50}ms`,
                 animationFillMode: 'both'

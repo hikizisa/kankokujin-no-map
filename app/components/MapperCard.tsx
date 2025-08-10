@@ -4,6 +4,7 @@ import { Mapper, SortOption, SortDirection } from './types'
 import { BeatmapsetCard } from './BeatmapsetCard'
 import { formatNumber } from './utils'
 import { hasRecentRankedMap, sortMapperBeatmapsetsV2 } from './sorting'
+import { useLanguage } from './LanguageContext'
 
 interface MapperCardProps {
   mapper: Mapper
@@ -26,6 +27,7 @@ export const MapperCard: React.FC<MapperCardProps> = ({
   beatmapSortBy,
   beatmapSortDirection
 }) => {
+  const { t } = useLanguage()
   // No longer need local state - using global sorting from main page
   const isNewMapper = hasRecentRankedMap(mapper, selectedModes, selectedStatuses)
   // Filter beatmapsets based on selected modes and statuses
@@ -103,19 +105,19 @@ export const MapperCard: React.FC<MapperCardProps> = ({
       }
     })
     
-    sortingLabel = beatmapSortBy === 'artist' ? 'Artist' : 'Title'
+    sortingLabel = beatmapSortBy === 'artist' ? t.sortByArtist : t.sortByTitle
   } else {
     // For other sorting criteria, use beatmapset-level sorting
     const effectiveSortBy = beatmapSortBy as 'date' | 'favorite' | 'playcount'
     finalBeatmapsets = sortMapperBeatmapsetsV2(filteredBeatmapsets, effectiveSortBy, beatmapSortDirection)
-    sortingLabel = effectiveSortBy === 'date' ? 'Date' : effectiveSortBy === 'favorite' ? 'Favorites' : 'Playcount'
+    sortingLabel = effectiveSortBy === 'date' ? t.sortByDate : effectiveSortBy === 'favorite' ? t.sortByFavorites : t.sortByPlaycount
   }
 
   const displayName = mapper.username
   const aliases = mapper.aliases && mapper.aliases.length > 0 ? mapper.aliases : []
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-200">
+    <div className="bg-white dark:bg-gray-800 rounded-lg border-2 border-gray-300 dark:border-gray-600 hover:border-osu-pink dark:hover:border-osu-pink shadow-md hover:shadow-lg transition-all duration-200">
       <div 
         className="p-6 cursor-pointer"
         onClick={() => onToggle(mapper.user_id)}

@@ -53,7 +53,7 @@ export const BeatmapsetCard: React.FC<BeatmapsetCardProps> = ({
     }
     
     return (
-      <div className={`bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-osu-pink dark:hover:border-osu-pink hover:shadow-md transition-all duration-200 ${className}`}>
+      <div className={`bg-white dark:bg-gray-800 rounded-lg border-2 border-gray-300 dark:border-gray-600 hover:border-osu-pink dark:hover:border-osu-pink hover:shadow-lg transition-all duration-200 ${className}`}>
         <div 
           className="p-3 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
           onClick={handleCardClick}
@@ -154,7 +154,7 @@ export const BeatmapsetCard: React.FC<BeatmapsetCardProps> = ({
     }
     
     return (
-      <div className={`bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 ${isExpanded ? 'col-span-full' : ''} ${className}`}>
+      <div className={`bg-white dark:bg-gray-800 rounded-lg border-2 border-gray-300 dark:border-gray-600 hover:border-osu-pink dark:hover:border-osu-pink shadow-sm hover:shadow-lg transition-all duration-200 ${isExpanded ? 'col-span-full' : ''} ${className}`}>
         <div className="p-3">
           <div 
             className="flex gap-3 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200 rounded-lg p-2 -m-2"
@@ -260,7 +260,7 @@ export const BeatmapsetCard: React.FC<BeatmapsetCardProps> = ({
 
   // Card display style (default)
   return (
-    <div className={`bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 overflow-hidden ${className}`}>
+    <div className={`bg-white dark:bg-gray-800 rounded-lg border-2 border-gray-300 dark:border-gray-600 hover:border-osu-pink dark:hover:border-osu-pink shadow-md hover:shadow-lg transition-all duration-200 overflow-hidden ${className}`}>
       {/* Cover Image */}
       <div className="relative h-32 bg-gradient-to-r from-osu-pink to-purple-600">
         <a
