@@ -13,7 +13,7 @@ import { filterMappers, calculateFilteredStats, toggleMode as toggleModeUtil } f
 import { useLanguage } from './components/LanguageContext'
 import { LanguageToggle } from './components/LanguageToggle'
 import { FloatingDisplayToggle } from './components/FloatingDisplayToggle'
-import { useFLIPAnimation } from './hooks/useFLIPAnimation'
+import { AnimatedList } from './components/AnimatedList'
 import { getModeName } from './components/i18n'
 
 // Interfaces moved to shared components/types.ts
@@ -36,9 +36,6 @@ export default function Home() {
   const [mapperSortBy, setMapperSortBy] = useState<MapperSortOption>('name')
   const [mapperSortDirection, setMapperSortDirection] = useState<'asc' | 'desc'>('asc')
   const [expandedMappers, setExpandedMappers] = useState<Set<string>>(new Set())
-  
-  // FLIP animation for smooth position changes
-  const flipContainerRef = useFLIPAnimation([filteredMappers, displayStyle])
 
   useEffect(() => {
     // Load mapper data from JSON file
@@ -320,30 +317,23 @@ export default function Home() {
         </div>
 
         {/* Mappers List */}
-        <div ref={flipContainerRef} className="space-y-8">
-          {filteredMappers.map((mapper, index) => (
-            <div
-              key={mapper.user_id}
-              data-flip-key={mapper.user_id.toString()}
-              className="animate-fade-in"
-              style={{
-                animationDelay: `${index * 100}ms`,
-                animationFillMode: 'both'
-              }}
-            >
-              <MapperCard
-                mapper={mapper}
-                selectedModes={selectedModes}
-                selectedStatuses={selectedStatuses}
-                displayStyle={displayStyle}
-                isExpanded={expandedMappers.has(mapper.user_id)}
-                onToggle={toggleMapper}
-                beatmapSortBy={beatmapSortBy}
-                beatmapSortDirection={beatmapSortDirection}
-              />
-            </div>
-          ))}
-        </div>
+        <AnimatedList
+          items={filteredMappers}
+          getKey={(mapper) => mapper.user_id}
+          className="space-y-8"
+          renderItem={(mapper, index) => (
+            <MapperCard
+              mapper={mapper}
+              selectedModes={selectedModes}
+              selectedStatuses={selectedStatuses}
+              displayStyle={displayStyle}
+              isExpanded={expandedMappers.has(mapper.user_id)}
+              onToggle={toggleMapper}
+              beatmapSortBy={beatmapSortBy}
+              beatmapSortDirection={beatmapSortDirection}
+            />
+          )}
+        />
 
         {filteredMappers.length === 0 && !loading && (
           <div className="text-center py-12">

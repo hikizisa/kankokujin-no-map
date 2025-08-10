@@ -77,6 +77,23 @@ body {
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Fade-out for exiting elements */
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+.animate-fade-out {
+  animation: fade-out 0.3s ease-in;
+  animation-fill-mode: forwards;
+}
+
 /* Staggered entrance animations */
 .stagger-item {
   animation: fade-in-smooth 0.4s ease-out;

@@ -12,7 +12,7 @@ import { useLanguage } from '../components/LanguageContext'
 import { LanguageToggle } from '../components/LanguageToggle'
 import { FloatingDisplayToggle } from '../components/FloatingDisplayToggle'
 import { getModeName } from '../components/i18n'
-import { useFLIPAnimation } from '../hooks/useFLIPAnimation'
+import { AnimatedList } from '../components/AnimatedList'
 import Link from 'next/link'
 
 export default function AllMapsPage() {
@@ -35,9 +35,6 @@ export default function AllMapsPage() {
   const [hasMore, setHasMore] = useState(true)
   
   const ITEMS_PER_PAGE = 50 // Load 50 items at a time
-  
-  // FLIP animation for smooth position changes
-  const flipContainerRef = useFLIPAnimation([displayedBeatmapsets, displayStyle])
 
   useEffect(() => {
     const fetchMappers = async () => {
@@ -333,29 +330,19 @@ export default function AllMapsPage() {
         </div>
 
         {/* Beatmapsets Grid/List */}
-        <div 
-          ref={flipContainerRef}
+        <AnimatedList
+          items={displayedBeatmapsets}
+          getKey={(beatmapset) => beatmapset.beatmapset_id}
           className={displayStyle === 'minimal' ? 'space-y-3' : 'grid grid-cols-1 md:grid-cols-2 gap-6'}
-        >
-          {displayedBeatmapsets.map((beatmapset, index) => (
-            <div
-              key={beatmapset.beatmapset_id}
-              data-flip-key={beatmapset.beatmapset_id.toString()}
-              className="animate-fade-in"
-              style={{
-                animationDelay: `${index * 50}ms`,
-                animationFillMode: 'both'
-              }}
-            >
-              <BeatmapsetCard
-                beatmapset={beatmapset}
-                selectedModes={selectedModes}
-                displayStyle={displayStyle}
-                showMapperName={true}
-              />
-            </div>
-          ))}
-        </div>
+          renderItem={(beatmapset, index) => (
+            <BeatmapsetCard
+              beatmapset={beatmapset}
+              selectedModes={selectedModes}
+              displayStyle={displayStyle}
+              showMapperName={true}
+            />
+          )}
+        />
 
         {/* Loading more indicator */}
         {isLoadingMore && (
