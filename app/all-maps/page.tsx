@@ -197,7 +197,7 @@ export default function AllMapsPage() {
 
       <div className="container mx-auto px-4 py-8">
         {/* Controls - Sticky */}
-        <div className="sticky top-4 z-10 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-lg p-6 mb-8 border border-gray-200 dark:border-gray-700 shadow-lg">
+        <div className="sticky top-4 z-10 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-lg p-6 mb-8 border border-gray-200 dark:border-gray-700 shadow-lg animate-slide-in">
           <div className="space-y-4">
             {/* First Row: Search */}
             <div className="flex flex-col sm:flex-row gap-4">
@@ -330,22 +330,30 @@ export default function AllMapsPage() {
 
         {/* Beatmapsets Grid/List */}
         <div className={displayStyle === 'minimal' ? 'space-y-3' : 'grid grid-cols-1 md:grid-cols-2 gap-6'}>
-          {displayedBeatmapsets.map((beatmapset) => (
-            <BeatmapsetCard
+          {displayedBeatmapsets.map((beatmapset, index) => (
+            <div
               key={beatmapset.beatmapset_id}
-              beatmapset={beatmapset}
-              selectedModes={selectedModes}
-              displayStyle={displayStyle}
-              showMapperName={true}
-            />
+              className="animate-fade-in transition-transform duration-300 ease-out"
+              style={{
+                animationDelay: `${index * 50}ms`,
+                animationFillMode: 'both'
+              }}
+            >
+              <BeatmapsetCard
+                beatmapset={beatmapset}
+                selectedModes={selectedModes}
+                displayStyle={displayStyle}
+                showMapperName={true}
+              />
+            </div>
           ))}
         </div>
 
         {/* Loading more indicator */}
         {isLoadingMore && (
-          <div className="text-center py-8">
+          <div className="text-center py-8 animate-fade-in">
             <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-osu-pink mx-auto mb-2"></div>
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="text-gray-600 dark:text-gray-400 animate-pulse">
               {language === 'ko' ? '더 많은 비트맵셋을 불러오는 중...' : 'Loading more beatmapsets...'}
             </p>
           </div>

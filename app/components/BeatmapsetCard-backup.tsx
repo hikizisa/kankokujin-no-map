@@ -55,7 +55,7 @@ export const BeatmapsetCard: React.FC<BeatmapsetCardProps> = ({
     return (
       <div className={`bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-osu-pink dark:hover:border-osu-pink hover:shadow-md transition-all duration-200 ${className}`}>
         <div 
-          className="p-3 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
+          className="p-3 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
           onClick={handleCardClick}
         >
           <div className="flex items-center justify-between gap-4">
@@ -102,24 +102,12 @@ export const BeatmapsetCard: React.FC<BeatmapsetCardProps> = ({
             </div>
           </div>
           
-          {/* Expanded beatmaps section with smooth animations */}
-          <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
-            isExpanded ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0 mt-0'
-          }`}>
-            <div className="pt-3 border-t border-gray-200 dark:border-gray-700">
+          {/* Expanded beatmaps section */}
+          {isExpanded && (
+            <div className="mt-3 pt-3 border-t border-gray-200 dark:border-gray-700">
               <div className="space-y-2">
-                {filteredDifficulties.map((difficulty, index) => (
-                  <div 
-                    key={difficulty.beatmap_id} 
-                    className={`flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400 transform transition-all duration-200 ease-out ${
-                      isExpanded 
-                        ? 'translate-y-0 opacity-100' 
-                        : 'translate-y-2 opacity-0'
-                    }`}
-                    style={{
-                      transitionDelay: isExpanded ? `${index * 50}ms` : '0ms'
-                    }}
-                  >
+                {filteredDifficulties.map((difficulty) => (
+                  <div key={difficulty.beatmap_id} className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400">
                     <span className="text-base">{getModeIcon(difficulty.mode)}</span>
                     <span className="flex-1 truncate">{difficulty.version}</span>
                     <span className="flex items-center gap-1 text-xs">
@@ -127,7 +115,7 @@ export const BeatmapsetCard: React.FC<BeatmapsetCardProps> = ({
                       <span>{formatNumber(parseInt(difficulty.playcount || '0'))}</span>
                     </span>
                     <span 
-                      className="px-2 py-1 rounded text-xs font-bold transition-all duration-200 hover:scale-105"
+                      className="px-2 py-1 rounded text-xs font-bold"
                       style={getDifficultyStyle(parseFloat(difficulty.difficultyrating))}
                     >
                       ★{formatStarRating(difficulty.difficultyrating)}
@@ -136,7 +124,7 @@ export const BeatmapsetCard: React.FC<BeatmapsetCardProps> = ({
                 ))}
               </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     )
@@ -154,10 +142,10 @@ export const BeatmapsetCard: React.FC<BeatmapsetCardProps> = ({
     }
     
     return (
-      <div className={`bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 ${isExpanded ? 'col-span-full' : ''} ${className}`}>
+      <div className={`bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 ${isExpanded ? 'col-span-full' : ''} ${className}`}>
         <div className="p-3">
           <div 
-            className="flex gap-3 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200 rounded-lg p-2 -m-2"
+            className="flex gap-3 cursor-pointer"
             onClick={handleCardClick}
           >
             <div className="relative flex-shrink-0">
@@ -170,7 +158,7 @@ export const BeatmapsetCard: React.FC<BeatmapsetCardProps> = ({
                 <img
                   src={`https://assets.ppy.sh/beatmaps/${beatmapset.beatmapset_id}/covers/list.jpg`}
                   alt={`${beatmapset.title} cover`}
-                  className="w-16 h-16 object-cover rounded transition-transform duration-200 hover:scale-105"
+                  className="w-16 h-16 object-cover rounded"
                   loading="lazy"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none'
@@ -218,24 +206,12 @@ export const BeatmapsetCard: React.FC<BeatmapsetCardProps> = ({
             </div>
           </div>
           
-          {/* Expanded beatmaps section with smooth animations */}
-          <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
-            isExpanded ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0 mt-0'
-          }`}>
-            <div className="pt-3 border-t border-gray-200 dark:border-gray-700">
+          {/* Expanded beatmaps section */}
+          {isExpanded && (
+            <div className="mt-3 pt-3 border-t border-gray-200 dark:border-gray-700">
               <div className="space-y-2">
-                {filteredDifficulties.map((difficulty, index) => (
-                  <div 
-                    key={difficulty.beatmap_id} 
-                    className={`flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400 transform transition-all duration-200 ease-out ${
-                      isExpanded 
-                        ? 'translate-y-0 opacity-100' 
-                        : 'translate-y-2 opacity-0'
-                    }`}
-                    style={{
-                      transitionDelay: isExpanded ? `${index * 50}ms` : '0ms'
-                    }}
-                  >
+                {filteredDifficulties.map((difficulty) => (
+                  <div key={difficulty.beatmap_id} className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400">
                     <span className="text-base">{getModeIcon(difficulty.mode)}</span>
                     <span className="flex-1 truncate">{difficulty.version}</span>
                     <span className="flex items-center gap-1 text-xs">
@@ -243,7 +219,7 @@ export const BeatmapsetCard: React.FC<BeatmapsetCardProps> = ({
                       <span>{formatNumber(parseInt(difficulty.playcount || '0'))}</span>
                     </span>
                     <span 
-                      className="px-2 py-1 rounded text-xs font-bold transition-all duration-200 hover:scale-105"
+                      className="px-2 py-1 rounded text-xs font-bold"
                       style={getDifficultyStyle(parseFloat(difficulty.difficultyrating))}
                     >
                       ★{formatStarRating(difficulty.difficultyrating)}
@@ -252,7 +228,7 @@ export const BeatmapsetCard: React.FC<BeatmapsetCardProps> = ({
                 ))}
               </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     )

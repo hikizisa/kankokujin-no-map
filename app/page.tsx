@@ -308,18 +308,26 @@ export default function Home() {
 
         {/* Mappers List */}
         <div className="space-y-8">
-          {filteredMappers.map((mapper) => (
-            <MapperCard
+          {filteredMappers.map((mapper, index) => (
+            <div
               key={mapper.user_id}
-              mapper={mapper}
-              selectedModes={selectedModes}
-              selectedStatuses={selectedStatuses}
-              displayStyle={displayStyle}
-              isExpanded={expandedMappers.has(mapper.user_id)}
-              onToggle={toggleMapper}
-              beatmapSortBy={beatmapSortBy}
-              beatmapSortDirection={beatmapSortDirection}
-            />
+              className="animate-fade-in transition-transform duration-300 ease-out"
+              style={{
+                animationDelay: `${index * 100}ms`,
+                animationFillMode: 'both'
+              }}
+            >
+              <MapperCard
+                mapper={mapper}
+                selectedModes={selectedModes}
+                selectedStatuses={selectedStatuses}
+                displayStyle={displayStyle}
+                isExpanded={expandedMappers.has(mapper.user_id)}
+                onToggle={toggleMapper}
+                beatmapSortBy={beatmapSortBy}
+                beatmapSortDirection={beatmapSortDirection}
+              />
+            </div>
           ))}
         </div>
 

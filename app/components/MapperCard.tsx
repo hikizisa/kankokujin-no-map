@@ -196,15 +196,23 @@ export const MapperCard: React.FC<MapperCardProps> = ({
           </div>
           
           <div className={displayStyle === 'minimal' ? 'space-y-3' : 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'}>
-            {finalBeatmapsets.map(beatmapset => (
-              <BeatmapsetCard
+            {finalBeatmapsets.map((beatmapset, index) => (
+              <div
                 key={beatmapset.beatmapset_id}
-                beatmapset={beatmapset}
-                selectedModes={selectedModes}
-                displayStyle={displayStyle}
-                showMapperName={false}
-                className={displayStyle === 'minimal' ? '' : 'h-full'}
-              />
+                className="animate-fade-in"
+                style={{
+                  animationDelay: `${index * 50}ms`,
+                  animationFillMode: 'both'
+                }}
+              >
+                <BeatmapsetCard
+                  beatmapset={beatmapset}
+                  selectedModes={selectedModes}
+                  displayStyle={displayStyle}
+                  showMapperName={false}
+                  className={displayStyle === 'minimal' ? '' : 'h-full'}
+                />
+              </div>
             ))}
           </div>
         </div>
