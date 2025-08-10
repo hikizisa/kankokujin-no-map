@@ -12,6 +12,7 @@ import { fetchData } from './components/api-utils'
 import { filterMappers, calculateFilteredStats, toggleMode as toggleModeUtil } from './components/page-utils'
 import { useLanguage } from './components/LanguageContext'
 import { LanguageToggle } from './components/LanguageToggle'
+import { FloatingDisplayToggle } from './components/FloatingDisplayToggle'
 import { getModeName } from './components/i18n'
 
 // Interfaces moved to shared components/types.ts
@@ -184,44 +185,7 @@ export default function Home() {
         {/* Controls - Sticky */}
         <div className="sticky top-4 z-10 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 mb-8 border border-gray-200 dark:border-gray-700">
           <div className="space-y-4">
-            {/* Display Style */}
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-              <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                <label className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">{language === 'ko' ? '표시:' : 'Display:'}:</label>
-                <div className="flex bg-gray-100 dark:bg-gray-700 rounded-lg p-1">
-                  <button
-                    onClick={() => setDisplayStyle('card')}
-                    className={`px-3 py-1 rounded-md text-sm font-medium transition-all duration-200 ease-in-out ${
-                      displayStyle === 'card'
-                        ? 'bg-osu-pink text-white'
-                        : 'text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white'
-                    }`}
-                  >
-                    {t.cardView}
-                  </button>
-                  <button
-                    onClick={() => setDisplayStyle('thumbnail')}
-                    className={`px-3 py-1 rounded-md text-sm font-medium transition-all duration-200 ease-in-out ${
-                      displayStyle === 'thumbnail'
-                        ? 'bg-osu-pink text-white'
-                        : 'text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white'
-                    }`}
-                  >
-                    {t.thumbnailView}
-                  </button>
-                  <button
-                    onClick={() => setDisplayStyle('minimal')}
-                    className={`px-3 py-1 rounded-md text-sm font-medium transition-all duration-200 ease-in-out ${
-                      displayStyle === 'minimal'
-                        ? 'bg-osu-pink text-white'
-                        : 'text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white'
-                    }`}
-                  >
-                    {t.minimalView}
-                  </button>
-                </div>
-              </div>
-            </div>
+
 
             {/* Second Row: Status Filter and Game Modes */}
             <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
@@ -387,6 +351,12 @@ export default function Home() {
           </p>
         </div>
       </footer>
+      
+      {/* Floating Display Toggle */}
+      <FloatingDisplayToggle
+        displayStyle={displayStyle}
+        onDisplayStyleChange={setDisplayStyle}
+      />
     </div>
   )
 }

@@ -20,6 +20,7 @@ export const BeatmapsetCard: React.FC<BeatmapsetCardProps> = ({
   className = ''
 }) => {
   const [showAllDifficulties, setShowAllDifficulties] = useState(false)
+  const [isExpanded, setIsExpanded] = useState(false)
   // Filter and sort difficulties based on selected modes and star rating (descending)
   const filteredDifficulties = beatmapset.difficulties
     .filter(diff => selectedModes.has(diff.mode))
@@ -40,34 +41,90 @@ export const BeatmapsetCard: React.FC<BeatmapsetCardProps> = ({
     parseInt(beatmapset.playcount) : 
     filteredDifficulties.reduce((sum, diff) => sum + parseInt(diff.playcount || '0'), 0)
 
-  // Minimal display style
+  // Minimal display style - simplified one-line listing
   if (displayStyle === 'minimal') {
+    const uniqueModes = Array.from(new Set(filteredDifficulties.map(d => d.mode)))
+    
+    const handleCardClick = (e: React.MouseEvent) => {
+      // Only prevent default if clicking on the card itself, not the external link
+      if ((e.target as HTMLElement).closest('.external-link')) return
+      e.preventDefault()
+      setIsExpanded(!isExpanded)
+    }
+    
     return (
-      <div className={`bg-white dark:bg-gray-800 rounded border-l-4 border-osu-pink p-3 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors ${className}`}>
-        <div className="flex items-center justify-between">
-          <div className="flex-1 min-w-0">
-            <div className="flex items-center gap-2 mb-1">
-              <span className={`text-xs px-2 py-0.5 rounded ${status.color}`}>
-                {status.emoji} {status.text}
-              </span>
-              <h4 className="font-medium text-gray-900 dark:text-white truncate">
-                {beatmapset.title}
-              </h4>
-              <span className="text-sm text-gray-500 dark:text-gray-400">by {beatmapset.artist}</span>
+      <div className={`bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-osu-pink dark:hover:border-osu-pink hover:shadow-md transition-all duration-200 ${className}`}>
+        <div 
+          className="p-3 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+          onClick={handleCardClick}
+        >
+          <div className="flex items-center justify-between gap-4">
+            {/* Left section: Main info in one line */}
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className={`text-xs px-2 py-0.5 rounded font-medium ${status.color} flex-shrink-0`}>
+                  {status.emoji} {status.text}
+                </span>
+                <h4 className="font-medium text-gray-900 dark:text-white truncate">
+                  {beatmapset.title}
+                </h4>
+                <span className="text-sm text-gray-500 dark:text-gray-400 flex-shrink-0">by {beatmapset.artist}</span>
+                {showMapperName && (
+                  <span className="text-xs text-gray-500 dark:text-gray-400 flex-shrink-0">• {beatmapset.creator}</span>
+                )}
+              </div>
             </div>
-            <div className="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-400">
-              {showMapperName && <span>Mapped by {beatmapset.creator}</span>}
-              <span>{formatDate(beatmapset.approved_date)}</span>
-              <span>{filteredDifficulties.length} diffs</span>
-              <span>❤️ {formatNumber(favoriteCount)}</span>
-              <span>▶️ {formatNumber(totalPlaycount)}</span>
+            
+            {/* Right section: Stats and modes */}
+            <div className="flex items-center gap-4 flex-shrink-0">
+              <div className="flex items-center gap-3 text-sm">
+                <span className="text-red-500">❤️ {formatNumber(favoriteCount)}</span>
+                <span className="text-blue-500">▶️ {formatNumber(totalPlaycount)}</span>
+              </div>
+              
+              <div className="flex items-center gap-1">
+                {uniqueModes.map(mode => (
+                  <span key={mode} className="text-xl p-1 bg-gray-100 dark:bg-gray-700 rounded" title={getModeName(mode)}>
+                    {getModeIcon(mode)}
+                  </span>
+                ))}
+              </div>
+              
+              <a
+                href={`https://osu.ppy.sh/beatmapsets/${beatmapset.beatmapset_id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="external-link text-gray-400 hover:text-osu-pink transition-colors"
+                title="Open on osu! website"
+              >
+                <ExternalLink className="h-4 w-4" />
+              </a>
             </div>
           </div>
-          <div className="flex items-center gap-1 ml-4">
-            {Array.from(new Set(filteredDifficulties.map(d => d.mode))).map(mode => (
-              <span key={mode} className="text-sm">{getModeIcon(mode)}</span>
-            ))}
-          </div>
+          
+          {/* Expanded beatmaps section */}
+          {isExpanded && (
+            <div className="mt-3 pt-3 border-t border-gray-200 dark:border-gray-700">
+              <div className="space-y-2">
+                {filteredDifficulties.map((difficulty) => (
+                  <div key={difficulty.beatmap_id} className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400">
+                    <span className="text-base">{getModeIcon(difficulty.mode)}</span>
+                    <span className="flex-1 truncate">{difficulty.version}</span>
+                    <span className="flex items-center gap-1 text-xs">
+                      <span>▶️</span>
+                      <span>{formatNumber(parseInt(difficulty.playcount || '0'))}</span>
+                    </span>
+                    <span 
+                      className="px-2 py-1 rounded text-xs font-bold"
+                      style={getDifficultyStyle(parseFloat(difficulty.difficultyrating))}
+                    >
+                      ★{formatStarRating(difficulty.difficultyrating)}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     )
@@ -75,53 +132,103 @@ export const BeatmapsetCard: React.FC<BeatmapsetCardProps> = ({
 
   // Thumbnail display style
   if (displayStyle === 'thumbnail') {
+    const uniqueModes = Array.from(new Set(filteredDifficulties.map(d => d.mode)))
+    
+    const handleCardClick = (e: React.MouseEvent) => {
+      // Only prevent default if clicking on the card itself, not the external link or image
+      if ((e.target as HTMLElement).closest('.external-link') || (e.target as HTMLElement).closest('.thumbnail-image')) return
+      e.preventDefault()
+      setIsExpanded(!isExpanded)
+    }
+    
     return (
-      <div className={`bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 ${className}`}>
-        <div className="flex gap-3 p-3">
-          <div className="relative flex-shrink-0">
-            <a
-              href={`https://osu.ppy.sh/beatmapsets/${beatmapset.beatmapset_id}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block"
-            >
-              <img
-                src={`https://assets.ppy.sh/beatmaps/${beatmapset.beatmapset_id}/covers/list.jpg`}
-                alt={`${beatmapset.title} cover`}
-                className="w-16 h-16 object-cover rounded"
-                loading="lazy"
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none'
-                }}
-              />
-            </a>
-            <div className="absolute -top-1 -left-1">
-              <span className={`text-xs px-1 py-0.5 rounded ${status.color}`}>
-                {status.emoji}
-              </span>
+      <div className={`bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 ${isExpanded ? 'col-span-full' : ''} ${className}`}>
+        <div className="p-3">
+          <div 
+            className="flex gap-3 cursor-pointer"
+            onClick={handleCardClick}
+          >
+            <div className="relative flex-shrink-0">
+              <a
+                href={`https://osu.ppy.sh/beatmapsets/${beatmapset.beatmapset_id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="thumbnail-image block"
+              >
+                <img
+                  src={`https://assets.ppy.sh/beatmaps/${beatmapset.beatmapset_id}/covers/list.jpg`}
+                  alt={`${beatmapset.title} cover`}
+                  className="w-16 h-16 object-cover rounded"
+                  loading="lazy"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none'
+                  }}
+                />
+              </a>
+              <div className="absolute -top-1 -left-1">
+                <span className={`text-xs px-1 py-0.5 rounded ${status.color}`}>
+                  {status.emoji}
+                </span>
+              </div>
+            </div>
+            <div className="flex-1 min-w-0">
+              <h4 className="font-medium text-gray-900 dark:text-white truncate mb-1">
+                {beatmapset.title}
+              </h4>
+              <p className="text-sm text-gray-600 dark:text-gray-400 truncate mb-2">
+                by {beatmapset.artist}
+              </p>
+              <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+                <div className="flex items-center gap-3">
+                  {showMapperName && <span>{beatmapset.creator}</span>}
+                </div>
+                <div className="flex items-center gap-3">
+                  <span>❤️ {formatNumber(favoriteCount)}</span>
+                  <span>▶️ {formatNumber(totalPlaycount)}</span>
+                  <div className="flex items-center gap-1">
+                    {uniqueModes.map(mode => (
+                      <span key={mode} className="text-base p-1 bg-gray-100 dark:bg-gray-700 rounded" title={getModeName(mode)}>
+                        {getModeIcon(mode)}
+                      </span>
+                    ))}
+                  </div>
+                  <a
+                    href={`https://osu.ppy.sh/beatmapsets/${beatmapset.beatmapset_id}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="external-link text-gray-400 hover:text-osu-pink transition-colors"
+                    title="Open on osu! website"
+                  >
+                    <ExternalLink className="h-3 w-3" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="flex-1 min-w-0">
-            <h4 className="font-medium text-gray-900 dark:text-white truncate mb-1">
-              {beatmapset.title}
-            </h4>
-            <p className="text-sm text-gray-600 dark:text-gray-400 truncate mb-2">
-              by {beatmapset.artist}
-            </p>
-            <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
-              <div className="flex items-center gap-3">
-                {showMapperName && <span>{beatmapset.creator}</span>}
-                <span>{formatDate(beatmapset.approved_date)}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span>❤️ {formatNumber(favoriteCount)}</span>
-                <span>▶️ {formatNumber(totalPlaycount)}</span>
-                {Array.from(new Set(filteredDifficulties.map(d => d.mode))).map(mode => (
-                  <span key={mode}>{getModeIcon(mode)}</span>
+          
+          {/* Expanded beatmaps section */}
+          {isExpanded && (
+            <div className="mt-3 pt-3 border-t border-gray-200 dark:border-gray-700">
+              <div className="space-y-2">
+                {filteredDifficulties.map((difficulty) => (
+                  <div key={difficulty.beatmap_id} className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400">
+                    <span className="text-base">{getModeIcon(difficulty.mode)}</span>
+                    <span className="flex-1 truncate">{difficulty.version}</span>
+                    <span className="flex items-center gap-1 text-xs">
+                      <span>▶️</span>
+                      <span>{formatNumber(parseInt(difficulty.playcount || '0'))}</span>
+                    </span>
+                    <span 
+                      className="px-2 py-1 rounded text-xs font-bold"
+                      style={getDifficultyStyle(parseFloat(difficulty.difficultyrating))}
+                    >
+                      ★{formatStarRating(difficulty.difficultyrating)}
+                    </span>
+                  </div>
                 ))}
               </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     )

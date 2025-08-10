@@ -10,6 +10,7 @@ import { fetchData } from '../components/api-utils'
 import { getAllBeatmapsetsFromMappers, filterBeatmapsets } from '../components/page-utils'
 import { useLanguage } from '../components/LanguageContext'
 import { LanguageToggle } from '../components/LanguageToggle'
+import { FloatingDisplayToggle } from '../components/FloatingDisplayToggle'
 import { getModeName } from '../components/i18n'
 import Link from 'next/link'
 
@@ -316,42 +317,7 @@ export default function AllMapsPage() {
               </div>
             </div>
 
-            {/* Third Row: Display Style */}
-            <div className="flex flex-col sm:flex-row sm:items-center gap-4 pt-2 border-t border-gray-200 dark:border-gray-600">
-              <label className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">{language === 'ko' ? '표시:' : 'Display:'}:</label>
-              <div className="flex bg-gray-100 dark:bg-gray-700 rounded-lg p-1">
-                <button
-                  onClick={() => setDisplayStyle('card')}
-                  className={`px-3 py-1 rounded-md text-sm font-medium transition-all duration-200 ease-in-out ${
-                    displayStyle === 'card'
-                      ? 'bg-osu-pink text-white'
-                      : 'text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white'
-                  }`}
-                >
-                  {t.cardView}
-                </button>
-                <button
-                  onClick={() => setDisplayStyle('thumbnail')}
-                  className={`px-3 py-1 rounded-md text-sm font-medium transition-all duration-200 ease-in-out ${
-                    displayStyle === 'thumbnail'
-                      ? 'bg-osu-pink text-white'
-                      : 'text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white'
-                  }`}
-                >
-                  {t.thumbnailView}
-                </button>
-                <button
-                  onClick={() => setDisplayStyle('minimal')}
-                  className={`px-3 py-1 rounded-md text-sm font-medium transition-all duration-200 ease-in-out ${
-                    displayStyle === 'minimal'
-                      ? 'bg-osu-pink text-white'
-                      : 'text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white'
-                  }`}
-                >
-                  {t.minimalView}
-                </button>
-              </div>
-            </div>
+
           </div>
 
           <div className="mt-4 text-sm text-gray-600 dark:text-gray-400">
@@ -362,8 +328,8 @@ export default function AllMapsPage() {
           </div>
         </div>
 
-        {/* Beatmapsets Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Beatmapsets Grid/List */}
+        <div className={displayStyle === 'minimal' ? 'space-y-3' : 'grid grid-cols-1 md:grid-cols-2 gap-6'}>
           {displayedBeatmapsets.map((beatmapset) => (
             <BeatmapsetCard
               key={beatmapset.beatmapset_id}
@@ -415,6 +381,12 @@ export default function AllMapsPage() {
           </div>
         )}
       </div>
+      
+      {/* Floating Display Toggle */}
+      <FloatingDisplayToggle
+        displayStyle={displayStyle}
+        onDisplayStyleChange={setDisplayStyle}
+      />
     </div>
   )
 }

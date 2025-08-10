@@ -195,7 +195,7 @@ export const MapperCard: React.FC<MapperCardProps> = ({
             </div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className={displayStyle === 'minimal' ? 'space-y-3' : 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'}>
             {finalBeatmapsets.map(beatmapset => (
               <BeatmapsetCard
                 key={beatmapset.beatmapset_id}
@@ -203,7 +203,7 @@ export const MapperCard: React.FC<MapperCardProps> = ({
                 selectedModes={selectedModes}
                 displayStyle={displayStyle}
                 showMapperName={false}
-                className="h-full"
+                className={displayStyle === 'minimal' ? '' : 'h-full'}
               />
             ))}
           </div>
