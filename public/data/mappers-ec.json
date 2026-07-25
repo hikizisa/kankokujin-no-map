@@ -5,14 +5,14 @@
     "demonym": "Ecuador",
     "nativeName": "Ecuador"
   },
-  "lastUpdated": "2026-07-05T06:13:33.437Z",
-  "totalMappers": 2,
-  "totalBeatmaps": 139,
-  "totalBeatmapsets": 39,
-  "totalOwnBeatmapsets": 39,
+  "lastUpdated": "2026-07-25T05:19:36.793Z",
+  "totalMappers": 4,
+  "totalBeatmaps": 171,
+  "totalBeatmapsets": 49,
+  "totalOwnBeatmapsets": 49,
   "totalGuestBeatmapsets": 0,
   "totalGuestDiffs": 0,
-  "totalOwnDifficulties": 139,
+  "totalOwnDifficulties": 171,
   "scanType": "full",
   "mappers": [
     {
@@ -5222,75 +5222,44 @@
       ],
       "beatmapsets": [
         {
-          "beatmapset_id": "986569",
-          "title": "Grim",
-          "artist": "Raujika",
+          "beatmapset_id": "2321386",
+          "title": "Ryuu no Koukyoukyoku",
+          "artist": "SiLiS",
           "creator": "Gamelan4",
-          "approved_date": "2019-11-18 13:02:24",
+          "approved_date": "2025-08-12 13:47:50",
           "difficulties": [
             {
-              "beatmap_id": "2070279",
-              "version": "Muzukashii",
-              "difficultyrating": "2.23724",
+              "beatmap_id": "4973342",
+              "version": "Ura Oni",
+              "difficultyrating": "5.67904",
               "mode": "1",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "2071317",
-              "version": "Etsu's Futsuu",
-              "difficultyrating": "1.6567",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2071318",
-              "version": "Pleasant Oni",
-              "difficultyrating": "3.06976",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2071319",
-              "version": "Etsu's Kantan",
-              "difficultyrating": "1.24075",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "976470",
-          "title": "La Valse d'Amelie",
-          "artist": "Yann Tiersen",
-          "creator": "Gamelan4",
-          "approved_date": "2019-12-09 22:21:27",
-          "difficulties": [
-            {
-              "beatmap_id": "2043929",
+              "beatmap_id": "5059642",
               "version": "Futsuu",
-              "difficultyrating": "1.62076",
+              "difficultyrating": "2.34416",
               "mode": "1",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "2043930",
-              "version": "Oni",
-              "difficultyrating": "2.73961",
+              "beatmap_id": "5059643",
+              "version": "Ideal's Oni",
+              "difficultyrating": "4.21232",
               "mode": "1",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "2044246",
-              "version": "Muzukashii",
-              "difficultyrating": "2.19109",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2044348",
+              "beatmap_id": "5059644",
               "version": "Kantan",
-              "difficultyrating": "1.16535",
+              "difficultyrating": "1.45818",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "5059645",
+              "version": "Muzukashii",
+              "difficultyrating": "3.51755",
               "mode": "1",
               "isGuestDiff": false
             }
@@ -5298,16 +5267,44 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "1085512",
-          "title": "Because I was so Young",
-          "artist": "t+pazolite",
+          "beatmapset_id": "2321384",
+          "title": "Extricate",
+          "artist": "GOETIA",
           "creator": "Gamelan4",
-          "approved_date": "2020-02-03 02:24:19",
+          "approved_date": "2025-07-28 15:22:42",
           "difficulties": [
             {
-              "beatmap_id": "2269920",
-              "version": "Innocence",
-              "difficultyrating": "5.23146",
+              "beatmap_id": "4973340",
+              "version": "Free Form",
+              "difficultyrating": "5.13844",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "5153034",
+              "version": "Muzukashii",
+              "difficultyrating": "3.35741",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "5161203",
+              "version": "Rycy's Futsuu",
+              "difficultyrating": "2.19178",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "5161204",
+              "version": "Rycy's Kantan",
+              "difficultyrating": "1.34349",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "5218490",
+              "version": "yosh's Oni",
+              "difficultyrating": "3.81338",
               "mode": "1",
               "isGuestDiff": false
             }
@@ -5315,23 +5312,537 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "1038850",
-          "title": "Ya no se que hacer conmigo",
+          "beatmapset_id": "2373259",
+          "title": "Jackknife",
+          "artist": "Type R",
+          "creator": "Gamelan4",
+          "approved_date": "2025-06-09 12:22:20",
+          "difficulties": [
+            {
+              "beatmap_id": "5124472",
+              "version": "UNFOLD",
+              "difficultyrating": "7.91805",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1842746",
+          "title": "Dumb Lit (ANX House Remix) (Nightcore Mix)",
+          "artist": "Herobust",
+          "creator": "Gamelan4",
+          "approved_date": "2024-09-02 19:41:55",
+          "difficulties": [
+            {
+              "beatmap_id": "3784993",
+              "version": "DANRIT!",
+              "difficultyrating": "6.26501",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "4292050",
+              "version": "HiroK's Oni",
+              "difficultyrating": "3.80888",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "4381126",
+              "version": "Cynp-zy's Muzukashii",
+              "difficultyrating": "3.1923",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "4381127",
+              "version": "Futsuu",
+              "difficultyrating": "2.37834",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "4381128",
+              "version": "Kantan",
+              "difficultyrating": "1.37321",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1814145",
+          "title": "Projector",
+          "artist": "Tenchio",
+          "creator": "Gamelan4",
+          "approved_date": "2023-12-25 22:25:45",
+          "difficulties": [
+            {
+              "beatmap_id": "3721703",
+              "version": "Muzukashii",
+              "difficultyrating": "3.93003",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3721704",
+              "version": "Screening",
+              "difficultyrating": "5.96287",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "4253826",
+              "version": "Zeth's Oni",
+              "difficultyrating": "4.67311",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "2036508",
+          "title": "Lunar Gateway",
+          "artist": "Sydosys",
+          "creator": "Gamelan4",
+          "approved_date": "2023-12-18 20:23:25",
+          "difficulties": [
+            {
+              "beatmap_id": "4247062",
+              "version": "Molniya-M",
+              "difficultyrating": "6.21188",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "4252817",
+              "version": "Hivie's Oni",
+              "difficultyrating": "5.12703",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "4381093",
+              "version": "Ideal's Muzukashii",
+              "difficultyrating": "3.53079",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "4385717",
+              "version": "Kantan",
+              "difficultyrating": "1.47561",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "4385718",
+              "version": "Raph's Futsuu",
+              "difficultyrating": "2.07367",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1587095",
+          "title": "AMEN KATAGIRI GENERATION",
+          "artist": "katagiri",
+          "creator": "Gamelan4",
+          "approved_date": "2023-02-16 21:31:07",
+          "difficulties": [
+            {
+              "beatmap_id": "3241504",
+              "version": "amenbreak.wav",
+              "difficultyrating": "6.31891",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1786165",
+          "title": "Arandano",
+          "artist": "NILFRUITS",
+          "creator": "Gamelan4",
+          "approved_date": "2022-11-06 20:45:27",
+          "difficulties": [
+            {
+              "beatmap_id": "3658968",
+              "version": "Inner Oni",
+              "difficultyrating": "5.26237",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3668808",
+              "version": "Futsuu",
+              "difficultyrating": "2.47832",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3668809",
+              "version": "Kantan",
+              "difficultyrating": "1.50022",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3668810",
+              "version": "Muzukashii",
+              "difficultyrating": "3.65907",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3668811",
+              "version": "Oni",
+              "difficultyrating": "4.18825",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1486230",
+          "title": "Mateo",
+          "artist": "TRONIC",
+          "creator": "Gamelan4",
+          "approved_date": "2022-10-15 21:06:06",
+          "difficulties": [
+            {
+              "beatmap_id": "3047452",
+              "version": "DETONAO",
+              "difficultyrating": "4.92411",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3679529",
+              "version": "INSANO DE TOUCHE",
+              "difficultyrating": "3.85421",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3705003",
+              "version": "DIFICIL DE TATAN",
+              "difficultyrating": "3.18644",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3738345",
+              "version": "NORMAL DE ULQUI",
+              "difficultyrating": "2.19772",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3749309",
+              "version": "FACIL DE KAZU",
+              "difficultyrating": "1.32737",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1754903",
+          "title": "Zinnober",
+          "artist": "Sparxe",
+          "creator": "Gamelan4",
+          "approved_date": "2022-09-10 12:22:57",
+          "difficulties": [
+            {
+              "beatmap_id": "3591317",
+              "version": "Scarlet Heist",
+              "difficultyrating": "5.32723",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1389954",
+          "title": "7/8",
+          "artist": "Yuyoyuppe",
+          "creator": "Gamelan4",
+          "approved_date": "2022-07-23 18:42:31",
+          "difficulties": [
+            {
+              "beatmap_id": "2870357",
+              "version": "Inner Oni",
+              "difficultyrating": "6.5669",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2877064",
+              "version": "WTHBRO's Oni",
+              "difficultyrating": "4.48724",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2918174",
+              "version": "Muzukashii",
+              "difficultyrating": "3.48882",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2924977",
+              "version": "Futsuu",
+              "difficultyrating": "2.54754",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2925001",
+              "version": "Kantan",
+              "difficultyrating": "1.62992",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1774374",
+          "title": "Post Shelter",
+          "artist": "inabakumori",
+          "creator": "Gamelan4",
+          "approved_date": "2022-07-12 21:06:21",
+          "difficulties": [
+            {
+              "beatmap_id": "3633093",
+              "version": "Correspondence",
+              "difficultyrating": "3.61172",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3659530",
+              "version": "Futsuu",
+              "difficultyrating": "2.12914",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3659531",
+              "version": "Kantan",
+              "difficultyrating": "1.32152",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3659532",
+              "version": "Miyoi's Muzukashii",
+              "difficultyrating": "2.77146",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1604579",
+          "title": "Xinyi Dist",
+          "artist": "Cyte",
+          "creator": "Gamelan4",
+          "approved_date": "2022-06-28 03:04:11",
+          "difficulties": [
+            {
+              "beatmap_id": "3276629",
+              "version": "Hell Oni",
+              "difficultyrating": "6.11059",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3550533",
+              "version": "08's Oni",
+              "difficultyrating": "4.26406",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3550534",
+              "version": "Futsuu",
+              "difficultyrating": "2.54222",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3550535",
+              "version": "Kantan",
+              "difficultyrating": "1.52319",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3550536",
+              "version": "Muzukashii",
+              "difficultyrating": "3.59049",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1484868",
+          "title": "Lagtrain",
+          "artist": "inabakumori",
+          "creator": "Gamelan4",
+          "approved_date": "2021-12-29 19:18:01",
+          "difficulties": [
+            {
+              "beatmap_id": "3045051",
+              "version": "Delay",
+              "difficultyrating": "4.74185",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1431573",
+          "title": "Avi Avidan's Speech",
+          "artist": "Tenchio",
+          "creator": "Gamelan4",
+          "approved_date": "2021-12-04 23:41:16",
+          "difficulties": [
+            {
+              "beatmap_id": "2946779",
+              "version": "Ceremony",
+              "difficultyrating": "6.18278",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3314680",
+              "version": "Megafan's Oni",
+              "difficultyrating": "4.47936",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3316047",
+              "version": "Ulqui's Muzukashii",
+              "difficultyrating": "3.17133",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1467922",
+          "title": "Haru no Sekibaku",
+          "artist": "inabakumori",
+          "creator": "Gamelan4",
+          "approved_date": "2021-08-18 02:23:53",
+          "difficulties": [
+            {
+              "beatmap_id": "3014294",
+              "version": "Oni",
+              "difficultyrating": "3.69596",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3062437",
+              "version": "Refi's Muzukashii",
+              "difficultyrating": "2.85045",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3088672",
+              "version": "2199's Futsuu",
+              "difficultyrating": "1.96761",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3091463",
+              "version": "Kantan",
+              "difficultyrating": "1.29153",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1222182",
+          "title": "Kienai Hitomi.",
+          "artist": "Numtack05",
+          "creator": "Gamelan4",
+          "approved_date": "2021-07-21 01:46:36",
+          "difficulties": [
+            {
+              "beatmap_id": "2807326",
+              "version": "Niekiranai.",
+              "difficultyrating": "4.64904",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1188797",
+          "title": "Lo malo de ser bueno",
           "artist": "El Cuarteto de Nos",
           "creator": "Gamelan4",
-          "approved_date": "2020-03-02 06:46:00",
+          "approved_date": "2021-04-22 22:05:07",
           "difficulties": [
             {
-              "beatmap_id": "2171570",
-              "version": "Cambio",
-              "difficultyrating": "2.94296",
+              "beatmap_id": "2477182",
+              "version": "Dualidad",
+              "difficultyrating": "2.85917",
               "mode": "1",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "2244687",
-              "version": "Coryn's Muzukashii",
-              "difficultyrating": "2.56374",
+              "beatmap_id": "2515025",
+              "version": "Insano de Kqrth",
+              "difficultyrating": "2.91844",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2542194",
+              "version": "Dificil de Coryn",
+              "difficultyrating": "2.12665",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2553509",
+              "version": "Normal",
+              "difficultyrating": "1.97095",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2761399",
+              "version": "Facil",
+              "difficultyrating": "1.49044",
               "mode": "1",
               "isGuestDiff": false
             }
@@ -5339,44 +5850,44 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "1108777",
-          "title": "spaceman",
-          "artist": "Kola Kid",
+          "beatmapset_id": "1385512",
+          "title": "Dakiti",
+          "artist": "Bad Bunny x Jhay Cortez",
           "creator": "Gamelan4",
-          "approved_date": "2020-03-25 21:05:40",
+          "approved_date": "2021-03-11 00:24:55",
           "difficulties": [
             {
-              "beatmap_id": "2317154",
-              "version": "freedom",
-              "difficultyrating": "6.01153",
+              "beatmap_id": "2862238",
+              "version": "Euforia",
+              "difficultyrating": "2.548",
               "mode": "1",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "2319190",
-              "version": "muzukashii",
-              "difficultyrating": "3.66904",
+              "beatmap_id": "2862503",
+              "version": "Insano",
+              "difficultyrating": "2.2443",
               "mode": "1",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "2325465",
-              "version": "HiroK's oni",
-              "difficultyrating": "4.53396",
+              "beatmap_id": "2862817",
+              "version": "Dificil",
+              "difficultyrating": "2.12081",
               "mode": "1",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "2325779",
-              "version": "Etsu's futsuu",
-              "difficultyrating": "2.34359",
+              "beatmap_id": "2862818",
+              "version": "Facil",
+              "difficultyrating": "0.993859",
               "mode": "1",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "2325780",
-              "version": "Etsu's kantan",
-              "difficultyrating": "1.4545",
+              "beatmap_id": "2862819",
+              "version": "Normal",
+              "difficultyrating": "1.61826",
               "mode": "1",
               "isGuestDiff": false
             }
@@ -5384,30 +5895,247 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "1123529",
-          "title": "Neon Tetra",
-          "artist": "ginkiha feat. TEA",
+          "beatmapset_id": "1262793",
+          "title": "flos",
+          "artist": "Nekomata Okayu",
           "creator": "Gamelan4",
-          "approved_date": "2020-03-27 05:24:25",
+          "approved_date": "2021-02-21 10:41:15",
           "difficulties": [
             {
-              "beatmap_id": "2347776",
-              "version": "Inner Oni",
-              "difficultyrating": "4.98148",
+              "beatmap_id": "2624869",
+              "version": "Daphne",
+              "difficultyrating": "4.07601",
               "mode": "1",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "2347777",
-              "version": "Muzukashii",
-              "difficultyrating": "3.24118",
+              "beatmap_id": "2635494",
+              "version": "closed's Kantan",
+              "difficultyrating": "1.08661",
               "mode": "1",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "2347778",
+              "beatmap_id": "2639826",
+              "version": "Hivie's Futsuu",
+              "difficultyrating": "1.74401",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2644429",
               "version": "Oni",
-              "difficultyrating": "4.03298",
+              "difficultyrating": "3.21543",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2644675",
+              "version": "Muzukashii",
+              "difficultyrating": "2.46045",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1265229",
+          "title": "Clear Tamei",
+          "artist": "Iglooghost",
+          "creator": "Gamelan4",
+          "approved_date": "2020-12-30 22:04:31",
+          "difficulties": [
+            {
+              "beatmap_id": "2629493",
+              "version": "Kamei",
+              "difficultyrating": "6.19298",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2636305",
+              "version": "Axer's Oni",
+              "difficultyrating": "4.1552",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1318405",
+          "title": "Pop on Rocks: A Dr. Seuss Rap",
+          "artist": "Holo Bass feat. Amelia Watson",
+          "creator": "Gamelan4",
+          "approved_date": "2020-12-28 02:47:40",
+          "difficulties": [
+            {
+              "beatmap_id": "2731287",
+              "version": "Muzukashii",
+              "difficultyrating": "3.36372",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2731444",
+              "version": "Ulqui's Concoction",
+              "difficultyrating": "4.56396",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2731464",
+              "version": "Futsuu",
+              "difficultyrating": "2.42402",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2731511",
+              "version": "Kantan",
+              "difficultyrating": "1.54014",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1205053",
+          "title": "Moonlight Sonata 3rd Movement (meganeko remix)",
+          "artist": "Beethoven",
+          "creator": "Gamelan4",
+          "approved_date": "2020-08-16 10:24:56",
+          "difficulties": [
+            {
+              "beatmap_id": "2509266",
+              "version": "Muzukashii",
+              "difficultyrating": "3.25977",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2516076",
+              "version": "Stingy's Oni",
+              "difficultyrating": "3.89177",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2516077",
+              "version": "Virtuoso",
+              "difficultyrating": "6.17896",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1039985",
+          "title": "Croque Monsieur A Disneyland",
+          "artist": "Ruby My Dear",
+          "creator": "Gamelan4",
+          "approved_date": "2020-07-23 16:24:15",
+          "difficulties": [
+            {
+              "beatmap_id": "2173759",
+              "version": "_m6's Oni",
+              "difficultyrating": "5.10333",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2173760",
+              "version": "Hell Oni",
+              "difficultyrating": "6.77709",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2262189",
+              "version": "Cychlo's Death Waltz",
+              "difficultyrating": "6.86426",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1171255",
+          "title": "Bipolar",
+          "artist": "El Cuarteto de Nos",
+          "creator": "Gamelan4",
+          "approved_date": "2020-06-20 21:03:04",
+          "difficulties": [
+            {
+              "beatmap_id": "2443200",
+              "version": "Maraton",
+              "difficultyrating": "4.18983",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1152531",
+          "title": "I Can't Wait",
+          "artist": "Celldweller",
+          "creator": "Gamelan4",
+          "approved_date": "2020-05-01 04:03:03",
+          "difficulties": [
+            {
+              "beatmap_id": "2405633",
+              "version": "Impatience",
+              "difficultyrating": "4.95746",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1111340",
+          "title": "24eeev0-$",
+          "artist": "Frums",
+          "creator": "Gamelan4",
+          "approved_date": "2020-04-10 16:47:42",
+          "difficulties": [
+            {
+              "beatmap_id": "2321978",
+              "version": "Futsuu",
+              "difficultyrating": "2.30898",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2331733",
+              "version": "rubies87's Oni",
+              "difficultyrating": "4.63592",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2341486",
+              "version": "Idealism's Muzukashii",
+              "difficultyrating": "3.24752",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2341735",
+              "version": "Cychlo's eeev0lution-$",
+              "difficultyrating": "6.24997",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2343388",
+              "version": "Kantan",
+              "difficultyrating": "1.5736",
               "mode": "1",
               "isGuestDiff": false
             }
@@ -5467,44 +6195,30 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "1111340",
-          "title": "24eeev0-$",
-          "artist": "Frums",
+          "beatmapset_id": "1123529",
+          "title": "Neon Tetra",
+          "artist": "ginkiha feat. TEA",
           "creator": "Gamelan4",
-          "approved_date": "2020-04-10 16:47:42",
+          "approved_date": "2020-03-27 05:24:25",
           "difficulties": [
             {
-              "beatmap_id": "2321978",
-              "version": "Futsuu",
-              "difficultyrating": "2.30898",
+              "beatmap_id": "2347776",
+              "version": "Inner Oni",
+              "difficultyrating": "4.98148",
               "mode": "1",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "2331733",
-              "version": "rubies87's Oni",
-              "difficultyrating": "4.63592",
+              "beatmap_id": "2347777",
+              "version": "Muzukashii",
+              "difficultyrating": "3.24118",
               "mode": "1",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "2341486",
-              "version": "Idealism's Muzukashii",
-              "difficultyrating": "3.24752",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2341735",
-              "version": "Cychlo's eeev0lution-$",
-              "difficultyrating": "6.24997",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2343388",
-              "version": "Kantan",
-              "difficultyrating": "1.5736",
+              "beatmap_id": "2347778",
+              "version": "Oni",
+              "difficultyrating": "4.03298",
               "mode": "1",
               "isGuestDiff": false
             }
@@ -5512,16 +6226,44 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "1152531",
-          "title": "I Can't Wait",
-          "artist": "Celldweller",
+          "beatmapset_id": "1108777",
+          "title": "spaceman",
+          "artist": "Kola Kid",
           "creator": "Gamelan4",
-          "approved_date": "2020-05-01 04:03:03",
+          "approved_date": "2020-03-25 21:05:40",
           "difficulties": [
             {
-              "beatmap_id": "2405633",
-              "version": "Impatience",
-              "difficultyrating": "4.95746",
+              "beatmap_id": "2317154",
+              "version": "freedom",
+              "difficultyrating": "6.01153",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2319190",
+              "version": "muzukashii",
+              "difficultyrating": "3.66904",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2325465",
+              "version": "HiroK's oni",
+              "difficultyrating": "4.53396",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2325779",
+              "version": "Etsu's futsuu",
+              "difficultyrating": "2.34359",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2325780",
+              "version": "Etsu's kantan",
+              "difficultyrating": "1.4545",
               "mode": "1",
               "isGuestDiff": false
             }
@@ -5529,16 +6271,23 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "1171255",
-          "title": "Bipolar",
+          "beatmapset_id": "1038850",
+          "title": "Ya no se que hacer conmigo",
           "artist": "El Cuarteto de Nos",
           "creator": "Gamelan4",
-          "approved_date": "2020-06-20 21:03:04",
+          "approved_date": "2020-03-02 06:46:00",
           "difficulties": [
             {
-              "beatmap_id": "2443200",
-              "version": "Maraton",
-              "difficultyrating": "4.18983",
+              "beatmap_id": "2171570",
+              "version": "Cambio",
+              "difficultyrating": "2.94296",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2244687",
+              "version": "Coryn's Muzukashii",
+              "difficultyrating": "2.56374",
               "mode": "1",
               "isGuestDiff": false
             }
@@ -5546,30 +6295,16 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "1039985",
-          "title": "Croque Monsieur A Disneyland",
-          "artist": "Ruby My Dear",
+          "beatmapset_id": "1085512",
+          "title": "Because I was so Young",
+          "artist": "t+pazolite",
           "creator": "Gamelan4",
-          "approved_date": "2020-07-23 16:24:15",
+          "approved_date": "2020-02-03 02:24:19",
           "difficulties": [
             {
-              "beatmap_id": "2173759",
-              "version": "_m6's Oni",
-              "difficultyrating": "5.10333",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2173760",
-              "version": "Hell Oni",
-              "difficultyrating": "6.77709",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2262189",
-              "version": "Cychlo's Death Waltz",
-              "difficultyrating": "6.86426",
+              "beatmap_id": "2269920",
+              "version": "Innocence",
+              "difficultyrating": "5.23146",
               "mode": "1",
               "isGuestDiff": false
             }
@@ -5577,282 +6312,37 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "1205053",
-          "title": "Moonlight Sonata 3rd Movement (meganeko remix)",
-          "artist": "Beethoven",
+          "beatmapset_id": "976470",
+          "title": "La Valse d'Amelie",
+          "artist": "Yann Tiersen",
           "creator": "Gamelan4",
-          "approved_date": "2020-08-16 10:24:56",
+          "approved_date": "2019-12-09 22:21:27",
           "difficulties": [
             {
-              "beatmap_id": "2509266",
-              "version": "Muzukashii",
-              "difficultyrating": "3.25977",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2516076",
-              "version": "Stingy's Oni",
-              "difficultyrating": "3.89177",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2516077",
-              "version": "Virtuoso",
-              "difficultyrating": "6.17896",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "1318405",
-          "title": "Pop on Rocks: A Dr. Seuss Rap",
-          "artist": "Holo Bass feat. Amelia Watson",
-          "creator": "Gamelan4",
-          "approved_date": "2020-12-28 02:47:40",
-          "difficulties": [
-            {
-              "beatmap_id": "2731287",
-              "version": "Muzukashii",
-              "difficultyrating": "3.36372",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2731444",
-              "version": "Ulqui's Concoction",
-              "difficultyrating": "4.56396",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2731464",
+              "beatmap_id": "2043929",
               "version": "Futsuu",
-              "difficultyrating": "2.42402",
+              "difficultyrating": "1.62076",
               "mode": "1",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "2731511",
-              "version": "Kantan",
-              "difficultyrating": "1.54014",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "1265229",
-          "title": "Clear Tamei",
-          "artist": "Iglooghost",
-          "creator": "Gamelan4",
-          "approved_date": "2020-12-30 22:04:31",
-          "difficulties": [
-            {
-              "beatmap_id": "2629493",
-              "version": "Kamei",
-              "difficultyrating": "6.19298",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2636305",
-              "version": "Axer's Oni",
-              "difficultyrating": "4.1552",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "1262793",
-          "title": "flos",
-          "artist": "Nekomata Okayu",
-          "creator": "Gamelan4",
-          "approved_date": "2021-02-21 10:41:15",
-          "difficulties": [
-            {
-              "beatmap_id": "2624869",
-              "version": "Daphne",
-              "difficultyrating": "4.07601",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2635494",
-              "version": "closed's Kantan",
-              "difficultyrating": "1.08661",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2639826",
-              "version": "Hivie's Futsuu",
-              "difficultyrating": "1.74401",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2644429",
+              "beatmap_id": "2043930",
               "version": "Oni",
-              "difficultyrating": "3.21543",
+              "difficultyrating": "2.73961",
               "mode": "1",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "2644675",
+              "beatmap_id": "2044246",
               "version": "Muzukashii",
-              "difficultyrating": "2.46045",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "1385512",
-          "title": "Dakiti",
-          "artist": "Bad Bunny x Jhay Cortez",
-          "creator": "Gamelan4",
-          "approved_date": "2021-03-11 00:24:55",
-          "difficulties": [
-            {
-              "beatmap_id": "2862238",
-              "version": "Euforia",
-              "difficultyrating": "2.548",
+              "difficultyrating": "2.19109",
               "mode": "1",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "2862503",
-              "version": "Insano",
-              "difficultyrating": "2.2443",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2862817",
-              "version": "Dificil",
-              "difficultyrating": "2.12081",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2862818",
-              "version": "Facil",
-              "difficultyrating": "0.993859",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2862819",
-              "version": "Normal",
-              "difficultyrating": "1.61826",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "1188797",
-          "title": "Lo malo de ser bueno",
-          "artist": "El Cuarteto de Nos",
-          "creator": "Gamelan4",
-          "approved_date": "2021-04-22 22:05:07",
-          "difficulties": [
-            {
-              "beatmap_id": "2477182",
-              "version": "Dualidad",
-              "difficultyrating": "2.85917",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2515025",
-              "version": "Insano de Kqrth",
-              "difficultyrating": "2.91844",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2542194",
-              "version": "Dificil de Coryn",
-              "difficultyrating": "2.12665",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2553509",
-              "version": "Normal",
-              "difficultyrating": "1.97095",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2761399",
-              "version": "Facil",
-              "difficultyrating": "1.49044",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "1222182",
-          "title": "Kienai Hitomi.",
-          "artist": "Numtack05",
-          "creator": "Gamelan4",
-          "approved_date": "2021-07-21 01:46:36",
-          "difficulties": [
-            {
-              "beatmap_id": "2807326",
-              "version": "Niekiranai.",
-              "difficultyrating": "4.64904",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "1467922",
-          "title": "Haru no Sekibaku",
-          "artist": "inabakumori",
-          "creator": "Gamelan4",
-          "approved_date": "2021-08-18 02:23:53",
-          "difficulties": [
-            {
-              "beatmap_id": "3014294",
-              "version": "Oni",
-              "difficultyrating": "3.69596",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3062437",
-              "version": "Refi's Muzukashii",
-              "difficultyrating": "2.85045",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3088672",
-              "version": "2199's Futsuu",
-              "difficultyrating": "1.96761",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3091463",
+              "beatmap_id": "2044348",
               "version": "Kantan",
-              "difficultyrating": "1.29153",
+              "difficultyrating": "1.16535",
               "mode": "1",
               "isGuestDiff": false
             }
@@ -5860,540 +6350,42 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "1431573",
-          "title": "Avi Avidan's Speech",
-          "artist": "Tenchio",
+          "beatmapset_id": "986569",
+          "title": "Grim",
+          "artist": "Raujika",
           "creator": "Gamelan4",
-          "approved_date": "2021-12-04 23:41:16",
+          "approved_date": "2019-11-18 13:02:24",
           "difficulties": [
             {
-              "beatmap_id": "2946779",
-              "version": "Ceremony",
-              "difficultyrating": "6.18278",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3314680",
-              "version": "Megafan's Oni",
-              "difficultyrating": "4.47936",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3316047",
-              "version": "Ulqui's Muzukashii",
-              "difficultyrating": "3.17133",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "1484868",
-          "title": "Lagtrain",
-          "artist": "inabakumori",
-          "creator": "Gamelan4",
-          "approved_date": "2021-12-29 19:18:01",
-          "difficulties": [
-            {
-              "beatmap_id": "3045051",
-              "version": "Delay",
-              "difficultyrating": "4.74185",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "1604579",
-          "title": "Xinyi Dist",
-          "artist": "Cyte",
-          "creator": "Gamelan4",
-          "approved_date": "2022-06-28 03:04:11",
-          "difficulties": [
-            {
-              "beatmap_id": "3276629",
-              "version": "Hell Oni",
-              "difficultyrating": "6.11059",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3550533",
-              "version": "08's Oni",
-              "difficultyrating": "4.26406",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3550534",
-              "version": "Futsuu",
-              "difficultyrating": "2.54222",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3550535",
-              "version": "Kantan",
-              "difficultyrating": "1.52319",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3550536",
+              "beatmap_id": "2070279",
               "version": "Muzukashii",
-              "difficultyrating": "3.59049",
+              "difficultyrating": "2.23724",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2071317",
+              "version": "Etsu's Futsuu",
+              "difficultyrating": "1.6567",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2071318",
+              "version": "Pleasant Oni",
+              "difficultyrating": "3.06976",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2071319",
+              "version": "Etsu's Kantan",
+              "difficultyrating": "1.24075",
               "mode": "1",
               "isGuestDiff": false
             }
           ],
           "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "1774374",
-          "title": "Post Shelter",
-          "artist": "inabakumori",
-          "creator": "Gamelan4",
-          "approved_date": "2022-07-12 21:06:21",
-          "difficulties": [
-            {
-              "beatmap_id": "3633093",
-              "version": "Correspondence",
-              "difficultyrating": "3.61172",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3659530",
-              "version": "Futsuu",
-              "difficultyrating": "2.12914",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3659531",
-              "version": "Kantan",
-              "difficultyrating": "1.32152",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3659532",
-              "version": "Miyoi's Muzukashii",
-              "difficultyrating": "2.77146",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "1389954",
-          "title": "7/8",
-          "artist": "Yuyoyuppe",
-          "creator": "Gamelan4",
-          "approved_date": "2022-07-23 18:42:31",
-          "difficulties": [
-            {
-              "beatmap_id": "2870357",
-              "version": "Inner Oni",
-              "difficultyrating": "6.5669",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2877064",
-              "version": "WTHBRO's Oni",
-              "difficultyrating": "4.48724",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2918174",
-              "version": "Muzukashii",
-              "difficultyrating": "3.48882",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2924977",
-              "version": "Futsuu",
-              "difficultyrating": "2.54754",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2925001",
-              "version": "Kantan",
-              "difficultyrating": "1.62992",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "1754903",
-          "title": "Zinnober",
-          "artist": "Sparxe",
-          "creator": "Gamelan4",
-          "approved_date": "2022-09-10 12:22:57",
-          "difficulties": [
-            {
-              "beatmap_id": "3591317",
-              "version": "Scarlet Heist",
-              "difficultyrating": "5.32723",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "1486230",
-          "title": "Mateo",
-          "artist": "TRONIC",
-          "creator": "Gamelan4",
-          "approved_date": "2022-10-15 21:06:06",
-          "difficulties": [
-            {
-              "beatmap_id": "3047452",
-              "version": "DETONAO",
-              "difficultyrating": "4.92411",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3679529",
-              "version": "INSANO DE TOUCHE",
-              "difficultyrating": "3.85421",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3705003",
-              "version": "DIFICIL DE TATAN",
-              "difficultyrating": "3.18644",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3738345",
-              "version": "NORMAL DE ULQUI",
-              "difficultyrating": "2.19772",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3749309",
-              "version": "FACIL DE KAZU",
-              "difficultyrating": "1.32737",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "1786165",
-          "title": "Arandano",
-          "artist": "NILFRUITS",
-          "creator": "Gamelan4",
-          "approved_date": "2022-11-06 20:45:27",
-          "difficulties": [
-            {
-              "beatmap_id": "3658968",
-              "version": "Inner Oni",
-              "difficultyrating": "5.26237",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3668808",
-              "version": "Futsuu",
-              "difficultyrating": "2.47832",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3668809",
-              "version": "Kantan",
-              "difficultyrating": "1.50022",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3668810",
-              "version": "Muzukashii",
-              "difficultyrating": "3.65907",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3668811",
-              "version": "Oni",
-              "difficultyrating": "4.18825",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "1587095",
-          "title": "AMEN KATAGIRI GENERATION",
-          "artist": "katagiri",
-          "creator": "Gamelan4",
-          "approved_date": "2023-02-16 21:31:07",
-          "difficulties": [
-            {
-              "beatmap_id": "3241504",
-              "version": "amenbreak.wav",
-              "difficultyrating": "6.31891",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "2036508",
-          "title": "Lunar Gateway",
-          "artist": "Sydosys",
-          "creator": "Gamelan4",
-          "approved_date": "2023-12-18 20:23:25",
-          "difficulties": [
-            {
-              "beatmap_id": "4247062",
-              "version": "Molniya-M",
-              "difficultyrating": "6.21188",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "4252817",
-              "version": "Hivie's Oni",
-              "difficultyrating": "5.12703",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "4381093",
-              "version": "Ideal's Muzukashii",
-              "difficultyrating": "3.53079",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "4385717",
-              "version": "Kantan",
-              "difficultyrating": "1.47561",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "4385718",
-              "version": "Raph's Futsuu",
-              "difficultyrating": "2.07367",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "1814145",
-          "title": "Projector",
-          "artist": "Tenchio",
-          "creator": "Gamelan4",
-          "approved_date": "2023-12-25 22:25:45",
-          "difficulties": [
-            {
-              "beatmap_id": "3721703",
-              "version": "Muzukashii",
-              "difficultyrating": "3.93003",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3721704",
-              "version": "Screening",
-              "difficultyrating": "5.96287",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "4253826",
-              "version": "Zeth's Oni",
-              "difficultyrating": "4.67311",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "1842746",
-          "title": "Dumb Lit (ANX House Remix) (Nightcore Mix)",
-          "artist": "Herobust",
-          "creator": "Gamelan4",
-          "approved_date": "2024-09-02 19:41:55",
-          "difficulties": [
-            {
-              "beatmap_id": "3784993",
-              "version": "DANRIT!",
-              "difficultyrating": "6.26501",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "4292050",
-              "version": "HiroK's Oni",
-              "difficultyrating": "3.80888",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "4381126",
-              "version": "Cynp-zy's Muzukashii",
-              "difficultyrating": "3.1923",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "4381127",
-              "version": "Futsuu",
-              "difficultyrating": "2.37834",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "4381128",
-              "version": "Kantan",
-              "difficultyrating": "1.37321",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true,
-          "favourite_count": "15",
-          "playcount": "5541"
-        },
-        {
-          "beatmapset_id": "2373259",
-          "title": "Jackknife",
-          "artist": "Type R",
-          "creator": "Gamelan4",
-          "approved_date": "2025-06-09 12:22:20",
-          "difficulties": [
-            {
-              "beatmap_id": "5124472",
-              "version": "UNFOLD",
-              "difficultyrating": "7.91805",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true,
-          "favourite_count": "27",
-          "playcount": "1243"
-        },
-        {
-          "beatmapset_id": "2321384",
-          "title": "Extricate",
-          "artist": "GOETIA",
-          "creator": "Gamelan4",
-          "approved_date": "2025-07-28 15:22:42",
-          "difficulties": [
-            {
-              "beatmap_id": "4973340",
-              "version": "Free Form",
-              "difficultyrating": "5.13844",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "5153034",
-              "version": "Muzukashii",
-              "difficultyrating": "3.35741",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "5161203",
-              "version": "Rycy's Futsuu",
-              "difficultyrating": "2.19178",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "5161204",
-              "version": "Rycy's Kantan",
-              "difficultyrating": "1.34349",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "5218490",
-              "version": "yosh's Oni",
-              "difficultyrating": "3.81338",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true,
-          "favourite_count": "11",
-          "playcount": "4893"
-        },
-        {
-          "beatmapset_id": "2321386",
-          "title": "Ryuu no Koukyoukyoku",
-          "artist": "SiLiS",
-          "creator": "Gamelan4",
-          "approved_date": "2025-08-12 13:47:50",
-          "difficulties": [
-            {
-              "beatmap_id": "4973342",
-              "version": "Ura Oni",
-              "difficultyrating": "5.67904",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "5059642",
-              "version": "Futsuu",
-              "difficultyrating": "2.34416",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "5059643",
-              "version": "Ideal's Oni",
-              "difficultyrating": "4.21232",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "5059644",
-              "version": "Kantan",
-              "difficultyrating": "1.45818",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "5059645",
-              "version": "Muzukashii",
-              "difficultyrating": "3.51755",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true,
-          "favourite_count": "18",
-          "playcount": "3212"
         }
       ],
       "guestDifficulties": [],
@@ -6405,7 +6397,1602 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 118
       },
-      "lastUpdated": "2026-07-05T06:13:33.437Z"
+      "lastUpdated": "2026-07-25T05:19:36.793Z"
+    },
+    {
+      "user_id": "39872",
+      "username": "Sir Minelli",
+      "aliases": [],
+      "country": "EC",
+      "rankedBeatmaps": 29,
+      "rankedBeatmapsets": 9,
+      "ownBeatmapsets": 9,
+      "guestBeatmapsets": 0,
+      "totalGuestDiffs": 0,
+      "ownDifficulties": 29,
+      "beatmaps": [
+        {
+          "beatmapset_id": "13787",
+          "beatmap_id": "56232",
+          "approved": "1",
+          "total_length": "195",
+          "hit_length": "175",
+          "version": "Ultimate's Remix",
+          "file_md5": "068831fd8863690df79e504e82814f6b",
+          "diff_size": "4",
+          "diff_overall": "7",
+          "diff_approach": "7",
+          "diff_drain": "6",
+          "mode": "0",
+          "count_normal": "269",
+          "count_slider": "218",
+          "count_spinner": "4",
+          "submit_date": "2010-03-09 17:57:09",
+          "approved_date": "2010-11-25 06:34:00",
+          "last_update": "2010-11-25 03:21:35",
+          "artist": "Alphaville",
+          "artist_unicode": null,
+          "title": "Forever Young (Remix)",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "137.35",
+          "source": "",
+          "tags": "ultimate",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "86",
+          "rating": "8.99778",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "65922",
+          "passcount": "11400",
+          "packs": "R4,R87,S153",
+          "max_combo": "725",
+          "diff_aim": "1.77245",
+          "diff_speed": "1.89961",
+          "difficultyrating": "3.76256"
+        },
+        {
+          "beatmapset_id": "13787",
+          "beatmap_id": "58661",
+          "approved": "1",
+          "total_length": "195",
+          "hit_length": "170",
+          "version": "Easy",
+          "file_md5": "c4a66d48a0dad69970de4f49b32d91c7",
+          "diff_size": "4",
+          "diff_overall": "4",
+          "diff_approach": "4",
+          "diff_drain": "3",
+          "mode": "0",
+          "count_normal": "80",
+          "count_slider": "56",
+          "count_spinner": "5",
+          "submit_date": "2010-03-09 17:57:09",
+          "approved_date": "2010-11-25 06:34:00",
+          "last_update": "2010-11-25 03:21:35",
+          "artist": "Alphaville",
+          "artist_unicode": null,
+          "title": "Forever Young (Remix)",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "137.35",
+          "source": "",
+          "tags": "ultimate",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "86",
+          "rating": "8.99778",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "33463",
+          "passcount": "15340",
+          "packs": "R4,R87,S153",
+          "max_combo": "266",
+          "diff_aim": "1.00689",
+          "diff_speed": "0.449786",
+          "difficultyrating": "1.69426"
+        },
+        {
+          "beatmapset_id": "13787",
+          "beatmap_id": "78755",
+          "approved": "1",
+          "total_length": "196",
+          "hit_length": "182",
+          "version": "Normal",
+          "file_md5": "d728b016be4efb56ca5f554f95635d7c",
+          "diff_size": "5",
+          "diff_overall": "5",
+          "diff_approach": "5",
+          "diff_drain": "5",
+          "mode": "0",
+          "count_normal": "202",
+          "count_slider": "88",
+          "count_spinner": "9",
+          "submit_date": "2010-03-09 17:57:09",
+          "approved_date": "2010-11-25 06:34:00",
+          "last_update": "2010-11-25 03:21:35",
+          "artist": "Alphaville",
+          "artist_unicode": null,
+          "title": "Forever Young (Remix)",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "137.35",
+          "source": "",
+          "tags": "ultimate",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "86",
+          "rating": "8.99778",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "51870",
+          "passcount": "14636",
+          "packs": "R4,R87,S153",
+          "max_combo": "421",
+          "diff_aim": "1.45504",
+          "diff_speed": "0.889095",
+          "difficultyrating": "2.54964"
+        },
+        {
+          "beatmapset_id": "10587",
+          "beatmap_id": "41087",
+          "approved": "1",
+          "total_length": "222",
+          "hit_length": "199",
+          "version": "Hard",
+          "file_md5": "fc5385bd5f4c0c7ecc3300b533019209",
+          "diff_size": "4",
+          "diff_overall": "6",
+          "diff_approach": "6",
+          "diff_drain": "6",
+          "mode": "0",
+          "count_normal": "229",
+          "count_slider": "140",
+          "count_spinner": "9",
+          "submit_date": "2009-11-14 01:18:04",
+          "approved_date": "2010-07-06 19:32:34",
+          "last_update": "2010-07-06 01:58:20",
+          "artist": "Vanessa Carlton",
+          "artist_unicode": null,
+          "title": "A Thousand Miles",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "95",
+          "source": "",
+          "tags": "larto cheesewarlock",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "236",
+          "rating": "8.75663",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "78543",
+          "passcount": "9272",
+          "packs": "S126",
+          "max_combo": "569",
+          "diff_aim": "1.85982",
+          "diff_speed": "1.23775",
+          "difficultyrating": "3.37105"
+        },
+        {
+          "beatmapset_id": "10587",
+          "beatmap_id": "61385",
+          "approved": "1",
+          "total_length": "222",
+          "hit_length": "199",
+          "version": "Larto's Miles",
+          "file_md5": "37d5d61073a197b43cfda17d5011c5f2",
+          "diff_size": "4",
+          "diff_overall": "6",
+          "diff_approach": "6",
+          "diff_drain": "6",
+          "mode": "0",
+          "count_normal": "321",
+          "count_slider": "121",
+          "count_spinner": "6",
+          "submit_date": "2009-11-14 01:18:04",
+          "approved_date": "2010-07-06 19:32:34",
+          "last_update": "2010-07-06 01:58:20",
+          "artist": "Vanessa Carlton",
+          "artist_unicode": null,
+          "title": "A Thousand Miles",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "95",
+          "source": "",
+          "tags": "larto cheesewarlock",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "236",
+          "rating": "8.75663",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "78394",
+          "passcount": "8015",
+          "packs": "S126",
+          "max_combo": "727",
+          "diff_aim": "1.98791",
+          "diff_speed": "1.44345",
+          "difficultyrating": "3.80944"
+        },
+        {
+          "beatmapset_id": "10587",
+          "beatmap_id": "61963",
+          "approved": "1",
+          "total_length": "222",
+          "hit_length": "182",
+          "version": "CheeseWarlock's Normal",
+          "file_md5": "3a898fc39a287569b7b0a69da94f7afb",
+          "diff_size": "3",
+          "diff_overall": "5",
+          "diff_approach": "5",
+          "diff_drain": "4",
+          "mode": "0",
+          "count_normal": "178",
+          "count_slider": "63",
+          "count_spinner": "4",
+          "submit_date": "2009-11-14 01:18:04",
+          "approved_date": "2010-07-06 19:32:34",
+          "last_update": "2010-07-06 01:58:20",
+          "artist": "Vanessa Carlton",
+          "artist_unicode": null,
+          "title": "A Thousand Miles",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "95",
+          "source": "",
+          "tags": "larto cheesewarlock",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "236",
+          "rating": "8.75663",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "103882",
+          "passcount": "38203",
+          "packs": "S126",
+          "max_combo": "425",
+          "diff_aim": "1.22856",
+          "diff_speed": "0.871759",
+          "difficultyrating": "2.24909"
+        },
+        {
+          "beatmapset_id": "10029",
+          "beatmap_id": "39673",
+          "approved": "1",
+          "total_length": "33",
+          "hit_length": "33",
+          "version": "Lost In The Woods",
+          "file_md5": "6841a299d3e1c7228a66883381097636",
+          "diff_size": "5",
+          "diff_overall": "7",
+          "diff_approach": "7",
+          "diff_drain": "5",
+          "mode": "0",
+          "count_normal": "85",
+          "count_slider": "25",
+          "count_spinner": "0",
+          "submit_date": "2009-10-20 14:04:43",
+          "approved_date": "2009-11-22 23:41:33",
+          "last_update": "2009-11-22 23:29:08",
+          "artist": "Koji Kondo",
+          "artist_unicode": null,
+          "title": "Lost Woods",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "140",
+          "source": "Zelda Ocarina Of Time",
+          "tags": "zelda koji kondo lost woods beuchi chan blissfulyoshi",
+          "genre_id": "2",
+          "language_id": "5",
+          "favourite_count": "1196",
+          "rating": "8.68807",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "700702",
+          "passcount": "176380",
+          "packs": "S75,T79",
+          "max_combo": "154",
+          "diff_aim": "1.84913",
+          "diff_speed": "1.35046",
+          "difficultyrating": "3.36628"
+        },
+        {
+          "beatmapset_id": "10029",
+          "beatmap_id": "39752",
+          "approved": "1",
+          "total_length": "33",
+          "hit_length": "33",
+          "version": "Enter The Woods",
+          "file_md5": "c6c491d5f3d53404f99ed3e15fc33365",
+          "diff_size": "3",
+          "diff_overall": "4",
+          "diff_approach": "4",
+          "diff_drain": "2",
+          "mode": "0",
+          "count_normal": "25",
+          "count_slider": "16",
+          "count_spinner": "1",
+          "submit_date": "2009-10-20 14:04:43",
+          "approved_date": "2009-11-22 23:41:33",
+          "last_update": "2009-11-22 23:29:08",
+          "artist": "Koji Kondo",
+          "artist_unicode": null,
+          "title": "Lost Woods",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "140",
+          "source": "Zelda Ocarina Of Time",
+          "tags": "zelda koji kondo lost woods beuchi chan blissfulyoshi",
+          "genre_id": "2",
+          "language_id": "5",
+          "favourite_count": "1196",
+          "rating": "8.68807",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "554578",
+          "passcount": "394294",
+          "packs": "S75,T79",
+          "max_combo": "73",
+          "diff_aim": "0.740389",
+          "diff_speed": "0.63114",
+          "difficultyrating": "1.40482"
+        },
+        {
+          "beatmapset_id": "10029",
+          "beatmap_id": "39753",
+          "approved": "1",
+          "total_length": "33",
+          "hit_length": "33",
+          "version": "Walk In The Woods",
+          "file_md5": "6e290135125dbec58f9ae71e6027430b",
+          "diff_size": "4",
+          "diff_overall": "5",
+          "diff_approach": "5",
+          "diff_drain": "3",
+          "mode": "0",
+          "count_normal": "62",
+          "count_slider": "18",
+          "count_spinner": "1",
+          "submit_date": "2009-10-20 14:04:43",
+          "approved_date": "2009-11-22 23:41:33",
+          "last_update": "2009-11-22 23:29:08",
+          "artist": "Koji Kondo",
+          "artist_unicode": null,
+          "title": "Lost Woods",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "140",
+          "source": "Zelda Ocarina Of Time",
+          "tags": "zelda koji kondo lost woods beuchi chan blissfulyoshi",
+          "genre_id": "2",
+          "language_id": "5",
+          "favourite_count": "1196",
+          "rating": "8.68807",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "699328",
+          "passcount": "377054",
+          "packs": "S75,T79",
+          "max_combo": "99",
+          "diff_aim": "1.60801",
+          "diff_speed": "0.917417",
+          "difficultyrating": "2.89756"
+        },
+        {
+          "beatmapset_id": "10029",
+          "beatmap_id": "40030",
+          "approved": "1",
+          "total_length": "33",
+          "hit_length": "33",
+          "version": "Escape The Woods *Challenge*",
+          "file_md5": "62877f47c2de427cc6b837dd18aadcb0",
+          "diff_size": "5",
+          "diff_overall": "8",
+          "diff_approach": "8",
+          "diff_drain": "7",
+          "mode": "0",
+          "count_normal": "77",
+          "count_slider": "29",
+          "count_spinner": "1",
+          "submit_date": "2009-10-20 14:04:43",
+          "approved_date": "2009-11-22 23:41:33",
+          "last_update": "2009-11-22 23:29:08",
+          "artist": "Koji Kondo",
+          "artist_unicode": null,
+          "title": "Lost Woods",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "140",
+          "source": "Zelda Ocarina Of Time",
+          "tags": "zelda koji kondo lost woods beuchi chan blissfulyoshi",
+          "genre_id": "2",
+          "language_id": "5",
+          "favourite_count": "1196",
+          "rating": "8.68807",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "771841",
+          "passcount": "170871",
+          "packs": "S75,T79",
+          "max_combo": "144",
+          "diff_aim": "2.31931",
+          "diff_speed": "1.43094",
+          "difficultyrating": "4.0519"
+        },
+        {
+          "beatmapset_id": "6259",
+          "beatmap_id": "36129",
+          "approved": "1",
+          "total_length": "205",
+          "hit_length": "165",
+          "version": "Hard",
+          "file_md5": "54bdb66b56646e99157fd5b15bcc72b0",
+          "diff_size": "5",
+          "diff_overall": "6",
+          "diff_approach": "6",
+          "diff_drain": "3",
+          "mode": "0",
+          "count_normal": "337",
+          "count_slider": "110",
+          "count_spinner": "4",
+          "submit_date": "2009-04-05 17:34:47",
+          "approved_date": "2009-11-15 19:33:04",
+          "last_update": "2009-11-15 18:05:43",
+          "artist": "Mika",
+          "artist_unicode": null,
+          "title": "Relax, Take It Easy",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "122",
+          "source": "Pop",
+          "tags": "lesjuh gens",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "228",
+          "rating": "8.63563",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "73629",
+          "passcount": "10058",
+          "packs": "S74,T19",
+          "max_combo": "601",
+          "diff_aim": "1.98466",
+          "diff_speed": "1.56685",
+          "difficultyrating": "3.77689"
+        },
+        {
+          "beatmapset_id": "6259",
+          "beatmap_id": "38812",
+          "approved": "1",
+          "total_length": "204",
+          "hit_length": "168",
+          "version": "Lesjuh's Insane",
+          "file_md5": "c801b518091de9ec51331e4614ccc4bb",
+          "diff_size": "5",
+          "diff_overall": "7",
+          "diff_approach": "7",
+          "diff_drain": "7",
+          "mode": "0",
+          "count_normal": "308",
+          "count_slider": "184",
+          "count_spinner": "1",
+          "submit_date": "2009-04-05 17:34:47",
+          "approved_date": "2009-11-15 19:33:04",
+          "last_update": "2009-11-15 18:05:43",
+          "artist": "Mika",
+          "artist_unicode": null,
+          "title": "Relax, Take It Easy",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "122",
+          "source": "Pop",
+          "tags": "lesjuh gens",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "228",
+          "rating": "8.63563",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "76733",
+          "passcount": "5027",
+          "packs": "S74,T19",
+          "max_combo": "691",
+          "diff_aim": "2.35171",
+          "diff_speed": "1.57254",
+          "difficultyrating": "4.26822"
+        },
+        {
+          "beatmapset_id": "6259",
+          "beatmap_id": "39543",
+          "approved": "1",
+          "total_length": "141",
+          "hit_length": "97",
+          "version": "Gens' Normal",
+          "file_md5": "3929a6919aadbcbe16fb5e0610635c0e",
+          "diff_size": "4",
+          "diff_overall": "4",
+          "diff_approach": "4",
+          "diff_drain": "3",
+          "mode": "0",
+          "count_normal": "119",
+          "count_slider": "42",
+          "count_spinner": "1",
+          "submit_date": "2009-04-05 17:34:47",
+          "approved_date": "2009-11-15 19:33:04",
+          "last_update": "2009-11-15 18:05:43",
+          "artist": "Mika",
+          "artist_unicode": null,
+          "title": "Relax, Take It Easy",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "122",
+          "source": "Pop",
+          "tags": "lesjuh gens",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "228",
+          "rating": "8.63563",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "106740",
+          "passcount": "33131",
+          "packs": "S74,T19",
+          "max_combo": "302",
+          "diff_aim": "1.37789",
+          "diff_speed": "0.842118",
+          "difficultyrating": "2.45843"
+        },
+        {
+          "beatmapset_id": "6729",
+          "beatmap_id": "30071",
+          "approved": "1",
+          "total_length": "202",
+          "hit_length": "172",
+          "version": "Easy",
+          "file_md5": "4719956ca781cfbe3b0e378b34ca75c9",
+          "diff_size": "3",
+          "diff_overall": "1",
+          "diff_approach": "1",
+          "diff_drain": "1",
+          "mode": "0",
+          "count_normal": "84",
+          "count_slider": "38",
+          "count_spinner": "5",
+          "submit_date": "2009-04-28 18:39:24",
+          "approved_date": "2009-10-17 14:19:54",
+          "last_update": "2009-09-25 19:17:04",
+          "artist": "Westlife",
+          "artist_unicode": null,
+          "title": "Fool Again",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "76",
+          "source": "",
+          "tags": "",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "107",
+          "rating": "8.75972",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "38252",
+          "passcount": "19800",
+          "packs": "S68",
+          "max_combo": "190",
+          "diff_aim": "0.80147",
+          "diff_speed": "0.341983",
+          "difficultyrating": "1.34484"
+        },
+        {
+          "beatmapset_id": "6729",
+          "beatmap_id": "30406",
+          "approved": "1",
+          "total_length": "202",
+          "hit_length": "172",
+          "version": "Normal",
+          "file_md5": "3c29e0feda4d373fb0a51b266a4a9d06",
+          "diff_size": "4",
+          "diff_overall": "2",
+          "diff_approach": "2",
+          "diff_drain": "1",
+          "mode": "0",
+          "count_normal": "133",
+          "count_slider": "55",
+          "count_spinner": "5",
+          "submit_date": "2009-04-28 18:39:24",
+          "approved_date": "2009-10-17 14:19:54",
+          "last_update": "2009-09-25 19:17:04",
+          "artist": "Westlife",
+          "artist_unicode": null,
+          "title": "Fool Again",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "76",
+          "source": "",
+          "tags": "",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "107",
+          "rating": "8.75972",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "28033",
+          "passcount": "12280",
+          "packs": "S68",
+          "max_combo": "278",
+          "diff_aim": "0.88275",
+          "diff_speed": "0.601274",
+          "difficultyrating": "1.56886"
+        },
+        {
+          "beatmapset_id": "6729",
+          "beatmap_id": "33413",
+          "approved": "1",
+          "total_length": "201",
+          "hit_length": "160",
+          "version": "lesjuh's Hard",
+          "file_md5": "3932df3543cfeeaa7fe85d442f135145",
+          "diff_size": "4",
+          "diff_overall": "6",
+          "diff_approach": "6",
+          "diff_drain": "5",
+          "mode": "0",
+          "count_normal": "129",
+          "count_slider": "110",
+          "count_spinner": "2",
+          "submit_date": "2009-04-28 18:39:24",
+          "approved_date": "2009-10-17 14:19:54",
+          "last_update": "2009-09-25 19:17:04",
+          "artist": "Westlife",
+          "artist_unicode": null,
+          "title": "Fool Again",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "76",
+          "source": "",
+          "tags": "",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "107",
+          "rating": "8.75972",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "40653",
+          "passcount": "10063",
+          "packs": "S68",
+          "max_combo": "356",
+          "diff_aim": "1.10396",
+          "diff_speed": "0.888581",
+          "difficultyrating": "2.05313"
+        },
+        {
+          "beatmapset_id": "7907",
+          "beatmap_id": "33214",
+          "approved": "1",
+          "total_length": "214",
+          "hit_length": "213",
+          "version": "Normal",
+          "file_md5": "460119a4a5ad7dc42b274bdf4cdf341b",
+          "diff_size": "5",
+          "diff_overall": "5",
+          "diff_approach": "5",
+          "diff_drain": "5",
+          "mode": "0",
+          "count_normal": "116",
+          "count_slider": "81",
+          "count_spinner": "7",
+          "submit_date": "2009-07-06 17:29:59",
+          "approved_date": "2009-08-02 18:51:34",
+          "last_update": "2009-07-31 01:49:02",
+          "artist": "Dido",
+          "artist_unicode": null,
+          "title": "White Flag",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "85",
+          "source": "",
+          "tags": "",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "49",
+          "rating": "8.64906",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "24811",
+          "passcount": "7796",
+          "packs": "S58",
+          "max_combo": "339",
+          "diff_aim": "0.998103",
+          "diff_speed": "0.592333",
+          "difficultyrating": "1.72945"
+        },
+        {
+          "beatmapset_id": "7907",
+          "beatmap_id": "33648",
+          "approved": "1",
+          "total_length": "213",
+          "hit_length": "213",
+          "version": "Hard",
+          "file_md5": "8986e746437cca03d36a35a1f294c348",
+          "diff_size": "5",
+          "diff_overall": "7",
+          "diff_approach": "7",
+          "diff_drain": "5",
+          "mode": "0",
+          "count_normal": "243",
+          "count_slider": "111",
+          "count_spinner": "7",
+          "submit_date": "2009-07-06 17:29:59",
+          "approved_date": "2009-08-02 18:51:34",
+          "last_update": "2009-07-31 01:49:02",
+          "artist": "Dido",
+          "artist_unicode": null,
+          "title": "White Flag",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "85",
+          "source": "",
+          "tags": "",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "49",
+          "rating": "8.64906",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "32771",
+          "passcount": "8229",
+          "packs": "S58",
+          "max_combo": "534",
+          "diff_aim": "1.56032",
+          "diff_speed": "1.0411",
+          "difficultyrating": "2.76451"
+        },
+        {
+          "beatmapset_id": "5460",
+          "beatmap_id": "26772",
+          "approved": "1",
+          "total_length": "234",
+          "hit_length": "196",
+          "version": "Normal",
+          "file_md5": "ce0ae604443211c179adb34649d99fcb",
+          "diff_size": "5",
+          "diff_overall": "5",
+          "diff_approach": "5",
+          "diff_drain": "5",
+          "mode": "0",
+          "count_normal": "250",
+          "count_slider": "68",
+          "count_spinner": "7",
+          "submit_date": "2009-02-24 04:32:48",
+          "approved_date": "2009-06-25 18:48:20",
+          "last_update": "2009-06-24 21:53:37",
+          "artist": "Atsumi Saori",
+          "artist_unicode": null,
+          "title": "Biidama",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "154.22",
+          "source": "",
+          "tags": "",
+          "genre_id": "3",
+          "language_id": "3",
+          "favourite_count": "27",
+          "rating": "8.71061",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "12626",
+          "passcount": "4410",
+          "packs": "S52",
+          "max_combo": "468",
+          "diff_aim": "1.32713",
+          "diff_speed": "0.900629",
+          "difficultyrating": "2.37978"
+        },
+        {
+          "beatmapset_id": "5460",
+          "beatmap_id": "27701",
+          "approved": "1",
+          "total_length": "234",
+          "hit_length": "196",
+          "version": "Easy",
+          "file_md5": "f08aca0ae5e2fdf9d318d1777388cc22",
+          "diff_size": "4",
+          "diff_overall": "3",
+          "diff_approach": "3",
+          "diff_drain": "3",
+          "mode": "0",
+          "count_normal": "137",
+          "count_slider": "68",
+          "count_spinner": "8",
+          "submit_date": "2009-02-24 04:32:48",
+          "approved_date": "2009-06-25 18:48:20",
+          "last_update": "2009-06-24 21:53:37",
+          "artist": "Atsumi Saori",
+          "artist_unicode": null,
+          "title": "Biidama",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "154.22",
+          "source": "",
+          "tags": "",
+          "genre_id": "3",
+          "language_id": "3",
+          "favourite_count": "27",
+          "rating": "8.71061",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "9713",
+          "passcount": "3810",
+          "packs": "S52",
+          "max_combo": "341",
+          "diff_aim": "1.11891",
+          "diff_speed": "0.544697",
+          "difficultyrating": "1.89651"
+        },
+        {
+          "beatmapset_id": "5460",
+          "beatmap_id": "28694",
+          "approved": "1",
+          "total_length": "234",
+          "hit_length": "196",
+          "version": "Hard",
+          "file_md5": "71a49fcdc6115d1c12610206511dd2e2",
+          "diff_size": "5",
+          "diff_overall": "5",
+          "diff_approach": "5",
+          "diff_drain": "5",
+          "mode": "0",
+          "count_normal": "326",
+          "count_slider": "73",
+          "count_spinner": "7",
+          "submit_date": "2009-02-24 04:32:48",
+          "approved_date": "2009-06-25 18:48:20",
+          "last_update": "2009-06-24 21:53:37",
+          "artist": "Atsumi Saori",
+          "artist_unicode": null,
+          "title": "Biidama",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "154.22",
+          "source": "",
+          "tags": "",
+          "genre_id": "3",
+          "language_id": "3",
+          "favourite_count": "27",
+          "rating": "8.71061",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "13874",
+          "passcount": "3040",
+          "packs": "S52",
+          "max_combo": "559",
+          "diff_aim": "1.56926",
+          "diff_speed": "1.22702",
+          "difficultyrating": "2.94039"
+        },
+        {
+          "beatmapset_id": "5460",
+          "beatmap_id": "32151",
+          "approved": "1",
+          "total_length": "227",
+          "hit_length": "190",
+          "version": "Sir Minelli Style",
+          "file_md5": "de12daac6fed59f3a74609988e624646",
+          "diff_size": "5",
+          "diff_overall": "5",
+          "diff_approach": "5",
+          "diff_drain": "5",
+          "mode": "0",
+          "count_normal": "410",
+          "count_slider": "125",
+          "count_spinner": "7",
+          "submit_date": "2009-02-24 04:32:48",
+          "approved_date": "2009-06-25 18:48:20",
+          "last_update": "2009-06-24 21:53:37",
+          "artist": "Atsumi Saori",
+          "artist_unicode": null,
+          "title": "Biidama",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "154.21",
+          "source": "",
+          "tags": "",
+          "genre_id": "3",
+          "language_id": "3",
+          "favourite_count": "27",
+          "rating": "8.71061",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "20922",
+          "passcount": "2565",
+          "packs": "S52",
+          "max_combo": "766",
+          "diff_aim": "1.85736",
+          "diff_speed": "2.08412",
+          "difficultyrating": "4.2483"
+        },
+        {
+          "beatmapset_id": "5165",
+          "beatmap_id": "26034",
+          "approved": "1",
+          "total_length": "92",
+          "hit_length": "65",
+          "version": "Hard",
+          "file_md5": "09bfee71dbd93185a64c8074e33efdd3",
+          "diff_size": "5",
+          "diff_overall": "6",
+          "diff_approach": "6",
+          "diff_drain": "6",
+          "mode": "0",
+          "count_normal": "88",
+          "count_slider": "33",
+          "count_spinner": "1",
+          "submit_date": "2009-02-09 23:24:42",
+          "approved_date": "2009-04-24 16:54:04",
+          "last_update": "2009-04-24 16:42:16",
+          "artist": "Nobuo Uematsu",
+          "artist_unicode": null,
+          "title": "To Zanarkand",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "90",
+          "source": "",
+          "tags": "  ",
+          "genre_id": "2",
+          "language_id": "5",
+          "favourite_count": "142",
+          "rating": "8.81352",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "110571",
+          "passcount": "49246",
+          "packs": "S46",
+          "max_combo": "169",
+          "diff_aim": "1.18819",
+          "diff_speed": "0.704472",
+          "difficultyrating": "2.08188"
+        },
+        {
+          "beatmapset_id": "5165",
+          "beatmap_id": "29444",
+          "approved": "1",
+          "total_length": "92",
+          "hit_length": "64",
+          "version": "Normal",
+          "file_md5": "82670c475725cc9d9805a6acb31ce8ee",
+          "diff_size": "4",
+          "diff_overall": "0",
+          "diff_approach": "0",
+          "diff_drain": "5",
+          "mode": "0",
+          "count_normal": "61",
+          "count_slider": "24",
+          "count_spinner": "1",
+          "submit_date": "2009-02-09 23:24:42",
+          "approved_date": "2009-04-24 16:54:04",
+          "last_update": "2009-04-24 16:42:16",
+          "artist": "Nobuo Uematsu",
+          "artist_unicode": null,
+          "title": "To Zanarkand",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "90",
+          "source": "",
+          "tags": "  ",
+          "genre_id": "2",
+          "language_id": "5",
+          "favourite_count": "142",
+          "rating": "8.81352",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "98883",
+          "passcount": "44131",
+          "packs": "S46",
+          "max_combo": "117",
+          "diff_aim": "0.875548",
+          "diff_speed": "0.604714",
+          "difficultyrating": "1.61768"
+        },
+        {
+          "beatmapset_id": "5165",
+          "beatmap_id": "29763",
+          "approved": "1",
+          "total_length": "92",
+          "hit_length": "65",
+          "version": "Insane",
+          "file_md5": "20d7c146db8bfce09ae608d3d7449c5f",
+          "diff_size": "6",
+          "diff_overall": "7",
+          "diff_approach": "7",
+          "diff_drain": "8",
+          "mode": "0",
+          "count_normal": "125",
+          "count_slider": "40",
+          "count_spinner": "1",
+          "submit_date": "2009-02-09 23:24:42",
+          "approved_date": "2009-04-24 16:54:04",
+          "last_update": "2009-04-24 16:42:16",
+          "artist": "Nobuo Uematsu",
+          "artist_unicode": null,
+          "title": "To Zanarkand",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "90",
+          "source": "",
+          "tags": "  ",
+          "genre_id": "2",
+          "language_id": "5",
+          "favourite_count": "142",
+          "rating": "8.81352",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "99045",
+          "passcount": "15786",
+          "packs": "S46",
+          "max_combo": "238",
+          "diff_aim": "1.83446",
+          "diff_speed": "1.56085",
+          "difficultyrating": "3.48189"
+        },
+        {
+          "beatmapset_id": "4572",
+          "beatmap_id": "25319",
+          "approved": "1",
+          "total_length": "118",
+          "hit_length": "86",
+          "version": "Insane",
+          "file_md5": "209e7817f805c4d789433d2720134330",
+          "diff_size": "5",
+          "diff_overall": "7",
+          "diff_approach": "7",
+          "diff_drain": "5",
+          "mode": "0",
+          "count_normal": "207",
+          "count_slider": "56",
+          "count_spinner": "3",
+          "submit_date": "2009-01-02 20:55:58",
+          "approved_date": "2009-02-09 19:57:03",
+          "last_update": "2009-02-09 05:21:09",
+          "artist": "Mago de Oz",
+          "artist_unicode": null,
+          "title": "Hasta que el cuerpo aguante",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "191.91",
+          "source": "",
+          "tags": "Mago de Oz",
+          "genre_id": "11",
+          "language_id": "10",
+          "favourite_count": "580",
+          "rating": "8.71837",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "67527",
+          "passcount": "13269",
+          "packs": "S34",
+          "max_combo": "424",
+          "diff_aim": "2.13316",
+          "diff_speed": "1.75023",
+          "difficultyrating": "4.03164"
+        },
+        {
+          "beatmapset_id": "4572",
+          "beatmap_id": "25321",
+          "approved": "1",
+          "total_length": "118",
+          "hit_length": "86",
+          "version": "Hard",
+          "file_md5": "c5e838806782273978010ece2d2c8673",
+          "diff_size": "4",
+          "diff_overall": "4",
+          "diff_approach": "4",
+          "diff_drain": "3",
+          "mode": "0",
+          "count_normal": "163",
+          "count_slider": "48",
+          "count_spinner": "3",
+          "submit_date": "2009-01-02 20:55:58",
+          "approved_date": "2009-02-09 19:57:03",
+          "last_update": "2009-02-09 05:21:09",
+          "artist": "Mago de Oz",
+          "artist_unicode": null,
+          "title": "Hasta que el cuerpo aguante",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "191.91",
+          "source": "",
+          "tags": "Mago de Oz",
+          "genre_id": "11",
+          "language_id": "10",
+          "favourite_count": "580",
+          "rating": "8.71837",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "73661",
+          "passcount": "23323",
+          "packs": "S34",
+          "max_combo": "372",
+          "diff_aim": "1.79703",
+          "diff_speed": "1.25858",
+          "difficultyrating": "3.54832"
+        },
+        {
+          "beatmapset_id": "4572",
+          "beatmap_id": "25405",
+          "approved": "1",
+          "total_length": "118",
+          "hit_length": "87",
+          "version": "Normal",
+          "file_md5": "ecc4ac767e05bf6c9397c2a1144883f5",
+          "diff_size": "3",
+          "diff_overall": "3",
+          "diff_approach": "3",
+          "diff_drain": "2",
+          "mode": "0",
+          "count_normal": "112",
+          "count_slider": "50",
+          "count_spinner": "3",
+          "submit_date": "2009-01-02 20:55:58",
+          "approved_date": "2009-02-09 19:57:03",
+          "last_update": "2009-02-09 05:21:09",
+          "artist": "Mago de Oz",
+          "artist_unicode": null,
+          "title": "Hasta que el cuerpo aguante",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "191.91",
+          "source": "",
+          "tags": "Mago de Oz",
+          "genre_id": "11",
+          "language_id": "10",
+          "favourite_count": "580",
+          "rating": "8.71837",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "147788",
+          "passcount": "59933",
+          "packs": "S34",
+          "max_combo": "337",
+          "diff_aim": "1.39782",
+          "diff_speed": "0.854638",
+          "difficultyrating": "2.92434"
+        },
+        {
+          "beatmapset_id": "4572",
+          "beatmap_id": "25482",
+          "approved": "1",
+          "total_length": "118",
+          "hit_length": "87",
+          "version": "Easy",
+          "file_md5": "1d64adc65fd76b5a4ade54856af07c76",
+          "diff_size": "3",
+          "diff_overall": "1",
+          "diff_approach": "1",
+          "diff_drain": "1",
+          "mode": "0",
+          "count_normal": "70",
+          "count_slider": "21",
+          "count_spinner": "3",
+          "submit_date": "2009-01-02 20:55:58",
+          "approved_date": "2009-02-09 19:57:03",
+          "last_update": "2009-02-09 05:21:09",
+          "artist": "Mago de Oz",
+          "artist_unicode": null,
+          "title": "Hasta que el cuerpo aguante",
+          "title_unicode": null,
+          "creator": "Sir Minelli",
+          "creator_id": "39872",
+          "bpm": "191.91",
+          "source": "",
+          "tags": "Mago de Oz",
+          "genre_id": "11",
+          "language_id": "10",
+          "favourite_count": "580",
+          "rating": "8.71837",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "107747",
+          "passcount": "58917",
+          "packs": "S34",
+          "max_combo": "244",
+          "diff_aim": "1.23491",
+          "diff_speed": "0.404712",
+          "difficultyrating": "2.10725"
+        }
+      ],
+      "beatmapsets": [
+        {
+          "beatmapset_id": "4572",
+          "title": "Hasta que el cuerpo aguante",
+          "artist": "Mago de Oz",
+          "creator": "Sir Minelli",
+          "approved_date": "2009-02-09 19:57:03",
+          "difficulties": [
+            {
+              "beatmap_id": "25319",
+              "version": "Insane",
+              "difficultyrating": "4.03164",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "25321",
+              "version": "Hard",
+              "difficultyrating": "3.54832",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "25405",
+              "version": "Normal",
+              "difficultyrating": "2.92434",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "25482",
+              "version": "Easy",
+              "difficultyrating": "2.10725",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "5165",
+          "title": "To Zanarkand",
+          "artist": "Nobuo Uematsu",
+          "creator": "Sir Minelli",
+          "approved_date": "2009-04-24 16:54:04",
+          "difficulties": [
+            {
+              "beatmap_id": "26034",
+              "version": "Hard",
+              "difficultyrating": "2.08188",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "29444",
+              "version": "Normal",
+              "difficultyrating": "1.61768",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "29763",
+              "version": "Insane",
+              "difficultyrating": "3.48189",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "5460",
+          "title": "Biidama",
+          "artist": "Atsumi Saori",
+          "creator": "Sir Minelli",
+          "approved_date": "2009-06-25 18:48:20",
+          "difficulties": [
+            {
+              "beatmap_id": "26772",
+              "version": "Normal",
+              "difficultyrating": "2.37978",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "27701",
+              "version": "Easy",
+              "difficultyrating": "1.89651",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "28694",
+              "version": "Hard",
+              "difficultyrating": "2.94039",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "32151",
+              "version": "Sir Minelli Style",
+              "difficultyrating": "4.2483",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "7907",
+          "title": "White Flag",
+          "artist": "Dido",
+          "creator": "Sir Minelli",
+          "approved_date": "2009-08-02 18:51:34",
+          "difficulties": [
+            {
+              "beatmap_id": "33214",
+              "version": "Normal",
+              "difficultyrating": "1.72945",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "33648",
+              "version": "Hard",
+              "difficultyrating": "2.76451",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "6729",
+          "title": "Fool Again",
+          "artist": "Westlife",
+          "creator": "Sir Minelli",
+          "approved_date": "2009-10-17 14:19:54",
+          "difficulties": [
+            {
+              "beatmap_id": "30071",
+              "version": "Easy",
+              "difficultyrating": "1.34484",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "30406",
+              "version": "Normal",
+              "difficultyrating": "1.56886",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "33413",
+              "version": "lesjuh's Hard",
+              "difficultyrating": "2.05313",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "6259",
+          "title": "Relax, Take It Easy",
+          "artist": "Mika",
+          "creator": "Sir Minelli",
+          "approved_date": "2009-11-15 19:33:04",
+          "difficulties": [
+            {
+              "beatmap_id": "36129",
+              "version": "Hard",
+              "difficultyrating": "3.77689",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "38812",
+              "version": "Lesjuh's Insane",
+              "difficultyrating": "4.26822",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "39543",
+              "version": "Gens' Normal",
+              "difficultyrating": "2.45843",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "10029",
+          "title": "Lost Woods",
+          "artist": "Koji Kondo",
+          "creator": "Sir Minelli",
+          "approved_date": "2009-11-22 23:41:33",
+          "difficulties": [
+            {
+              "beatmap_id": "39673",
+              "version": "Lost In The Woods",
+              "difficultyrating": "3.36628",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "39752",
+              "version": "Enter The Woods",
+              "difficultyrating": "1.40482",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "39753",
+              "version": "Walk In The Woods",
+              "difficultyrating": "2.89756",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "40030",
+              "version": "Escape The Woods *Challenge*",
+              "difficultyrating": "4.0519",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "10587",
+          "title": "A Thousand Miles",
+          "artist": "Vanessa Carlton",
+          "creator": "Sir Minelli",
+          "approved_date": "2010-07-06 19:32:34",
+          "difficulties": [
+            {
+              "beatmap_id": "41087",
+              "version": "Hard",
+              "difficultyrating": "3.37105",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "61385",
+              "version": "Larto's Miles",
+              "difficultyrating": "3.80944",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "61963",
+              "version": "CheeseWarlock's Normal",
+              "difficultyrating": "2.24909",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "13787",
+          "title": "Forever Young (Remix)",
+          "artist": "Alphaville",
+          "creator": "Sir Minelli",
+          "approved_date": "2010-11-25 06:34:00",
+          "difficulties": [
+            {
+              "beatmap_id": "56232",
+              "version": "Ultimate's Remix",
+              "difficultyrating": "3.76256",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "58661",
+              "version": "Easy",
+              "difficultyrating": "1.69426",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "78755",
+              "version": "Normal",
+              "difficultyrating": "2.54964",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        }
+      ],
+      "guestDifficulties": [],
+      "stats": {
+        "totalBeatmaps": 29,
+        "totalBeatmapsets": 9,
+        "ownBeatmapsets": 9,
+        "guestBeatmapsets": 0,
+        "totalGuestDiffs": 0,
+        "ownDifficulties": 29
+      },
+      "lastUpdated": "2026-07-25T05:19:36.793Z"
     },
     {
       "user_id": "3442319",
@@ -7346,37 +8933,113 @@
       ],
       "beatmapsets": [
         {
-          "beatmapset_id": "595227",
-          "title": "It's a Small World",
-          "artist": "Yoko Shimomura",
+          "beatmapset_id": "474312",
+          "title": "Nichijou Decoration (TV Size)",
+          "artist": "Petit Rabbit's",
           "creator": "Etsu",
-          "approved_date": "2018-01-07 02:40:03",
+          "approved_date": "2020-11-18 20:03:47",
           "difficulties": [
             {
-              "beatmap_id": "1258750",
+              "beatmap_id": "1013207",
+              "version": "EZ",
+              "difficultyrating": "1.39964",
+              "mode": "3",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "1013834",
+              "version": "NM",
+              "difficultyrating": "1.72131",
+              "mode": "3",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "1014963",
+              "version": "Ibrahim's HD",
+              "difficultyrating": "2.56662",
+              "mode": "3",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2384843",
+              "version": "Muu's MX",
+              "difficultyrating": "3.15354",
+              "mode": "3",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1127568",
+          "title": "the earth is counting on you",
+          "artist": "Kola Kid",
+          "creator": "Etsu",
+          "approved_date": "2020-04-12 22:01:19",
+          "difficulties": [
+            {
+              "beatmap_id": "2355794",
+              "version": "futsuu",
+              "difficultyrating": "2.43601",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2355795",
+              "version": "kantan",
+              "difficultyrating": "1.37297",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2355796",
+              "version": "muzukashii",
+              "difficultyrating": "3.71331",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2355797",
+              "version": "oni",
+              "difficultyrating": "4.71583",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "992011",
+          "title": "Isekai Girls Talk (TV Size)",
+          "artist": "Hara Yumi, Amamiya Sora, Takahashi Rie, Yuuki Aoi",
+          "creator": "Etsu",
+          "approved_date": "2020-02-25 22:25:05",
+          "difficulties": [
+            {
+              "beatmap_id": "2074577",
               "version": "Futsuu",
-              "difficultyrating": "1.56911",
+              "difficultyrating": "1.91425",
               "mode": "1",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "1258751",
+              "beatmap_id": "2074578",
               "version": "Kantan",
-              "difficultyrating": "1.05674",
+              "difficultyrating": "1.23315",
               "mode": "1",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "1258752",
+              "beatmap_id": "2074579",
               "version": "Muzukashii",
-              "difficultyrating": "2.18824",
+              "difficultyrating": "2.54633",
               "mode": "1",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "1258753",
-              "version": "Oni",
-              "difficultyrating": "2.58489",
+              "beatmap_id": "2086256",
+              "version": "Poii's Quartet World",
+              "difficultyrating": "3.2612",
               "mode": "1",
               "isGuestDiff": false
             }
@@ -7429,114 +9092,38 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "992011",
-          "title": "Isekai Girls Talk (TV Size)",
-          "artist": "Hara Yumi, Amamiya Sora, Takahashi Rie, Yuuki Aoi",
+          "beatmapset_id": "595227",
+          "title": "It's a Small World",
+          "artist": "Yoko Shimomura",
           "creator": "Etsu",
-          "approved_date": "2020-02-25 22:25:05",
+          "approved_date": "2018-01-07 02:40:03",
           "difficulties": [
             {
-              "beatmap_id": "2074577",
+              "beatmap_id": "1258750",
               "version": "Futsuu",
-              "difficultyrating": "1.91425",
+              "difficultyrating": "1.56911",
               "mode": "1",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "2074578",
+              "beatmap_id": "1258751",
               "version": "Kantan",
-              "difficultyrating": "1.23315",
+              "difficultyrating": "1.05674",
               "mode": "1",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "2074579",
+              "beatmap_id": "1258752",
               "version": "Muzukashii",
-              "difficultyrating": "2.54633",
+              "difficultyrating": "2.18824",
               "mode": "1",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "2086256",
-              "version": "Poii's Quartet World",
-              "difficultyrating": "3.2612",
+              "beatmap_id": "1258753",
+              "version": "Oni",
+              "difficultyrating": "2.58489",
               "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "1127568",
-          "title": "the earth is counting on you",
-          "artist": "Kola Kid",
-          "creator": "Etsu",
-          "approved_date": "2020-04-12 22:01:19",
-          "difficulties": [
-            {
-              "beatmap_id": "2355794",
-              "version": "futsuu",
-              "difficultyrating": "2.43601",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2355795",
-              "version": "kantan",
-              "difficultyrating": "1.37297",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2355796",
-              "version": "muzukashii",
-              "difficultyrating": "3.71331",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2355797",
-              "version": "oni",
-              "difficultyrating": "4.71583",
-              "mode": "1",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "474312",
-          "title": "Nichijou Decoration (TV Size)",
-          "artist": "Petit Rabbit's",
-          "creator": "Etsu",
-          "approved_date": "2020-11-18 20:03:47",
-          "difficulties": [
-            {
-              "beatmap_id": "1013207",
-              "version": "EZ",
-              "difficultyrating": "1.39964",
-              "mode": "3",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "1013834",
-              "version": "NM",
-              "difficultyrating": "1.72131",
-              "mode": "3",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "1014963",
-              "version": "Ibrahim's HD",
-              "difficultyrating": "2.56662",
-              "mode": "3",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "2384843",
-              "version": "Muu's MX",
-              "difficultyrating": "3.15354",
-              "mode": "3",
               "isGuestDiff": false
             }
           ],
@@ -7552,7 +9139,196 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 21
       },
-      "lastUpdated": "2026-07-05T06:13:33.437Z"
+      "lastUpdated": "2026-07-25T05:19:36.793Z"
+    },
+    {
+      "user_id": "61466",
+      "username": "sebastiangl",
+      "aliases": [],
+      "country": "EC",
+      "rankedBeatmaps": 3,
+      "rankedBeatmapsets": 1,
+      "ownBeatmapsets": 1,
+      "guestBeatmapsets": 0,
+      "totalGuestDiffs": 0,
+      "ownDifficulties": 3,
+      "beatmaps": [
+        {
+          "beatmapset_id": "7659",
+          "beatmap_id": "37405",
+          "approved": "1",
+          "total_length": "200",
+          "hit_length": "182",
+          "version": "Feels Like Insomnia",
+          "file_md5": "17086b5da47b3fae339de97201ef2871",
+          "diff_size": "5",
+          "diff_overall": "7",
+          "diff_approach": "7",
+          "diff_drain": "7",
+          "mode": "0",
+          "count_normal": "301",
+          "count_slider": "127",
+          "count_spinner": "5",
+          "submit_date": "2009-06-23 03:39:46",
+          "approved_date": "2010-06-06 18:02:16",
+          "last_update": "2010-06-06 17:29:14",
+          "artist": "Craig David",
+          "artist_unicode": null,
+          "title": "Insomnia",
+          "title_unicode": null,
+          "creator": "sebastiangl",
+          "creator_id": "61466",
+          "bpm": "125.4",
+          "source": "",
+          "tags": "",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "131",
+          "rating": "9.00737",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "70963",
+          "passcount": "12253",
+          "packs": "S118",
+          "max_combo": "704",
+          "diff_aim": "1.58267",
+          "diff_speed": "1.55802",
+          "difficultyrating": "3.20387"
+        },
+        {
+          "beatmapset_id": "7659",
+          "beatmap_id": "43156",
+          "approved": "1",
+          "total_length": "167",
+          "hit_length": "150",
+          "version": "So Tired",
+          "file_md5": "10aac8e1260a4314ea270fd0bf5d9be2",
+          "diff_size": "3",
+          "diff_overall": "4",
+          "diff_approach": "4",
+          "diff_drain": "3",
+          "mode": "0",
+          "count_normal": "112",
+          "count_slider": "84",
+          "count_spinner": "8",
+          "submit_date": "2009-06-23 03:39:46",
+          "approved_date": "2010-06-06 18:02:16",
+          "last_update": "2010-06-06 17:29:14",
+          "artist": "Craig David",
+          "artist_unicode": null,
+          "title": "Insomnia",
+          "title_unicode": null,
+          "creator": "sebastiangl",
+          "creator_id": "61466",
+          "bpm": "125.4",
+          "source": "",
+          "tags": "",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "131",
+          "rating": "9.00737",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "61466",
+          "passcount": "20381",
+          "packs": "S118",
+          "max_combo": "439",
+          "diff_aim": "0.939309",
+          "diff_speed": "0.760067",
+          "difficultyrating": "1.7538"
+        },
+        {
+          "beatmapset_id": "7659",
+          "beatmap_id": "48501",
+          "approved": "1",
+          "total_length": "199",
+          "hit_length": "182",
+          "version": "Feeling Sleepy",
+          "file_md5": "5d103f433f4e8d0481cc49c617dfe4c2",
+          "diff_size": "4",
+          "diff_overall": "5",
+          "diff_approach": "5",
+          "diff_drain": "4",
+          "mode": "0",
+          "count_normal": "198",
+          "count_slider": "114",
+          "count_spinner": "4",
+          "submit_date": "2009-06-23 03:39:46",
+          "approved_date": "2010-06-06 18:02:16",
+          "last_update": "2010-06-06 17:29:14",
+          "artist": "Craig David",
+          "artist_unicode": null,
+          "title": "Insomnia",
+          "title_unicode": null,
+          "creator": "sebastiangl",
+          "creator_id": "61466",
+          "bpm": "125.4",
+          "source": "",
+          "tags": "",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "131",
+          "rating": "9.00737",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "61153",
+          "passcount": "15258",
+          "packs": "S118",
+          "max_combo": "585",
+          "diff_aim": "1.24027",
+          "diff_speed": "0.934356",
+          "difficultyrating": "2.27026"
+        }
+      ],
+      "beatmapsets": [
+        {
+          "beatmapset_id": "7659",
+          "title": "Insomnia",
+          "artist": "Craig David",
+          "creator": "sebastiangl",
+          "approved_date": "2010-06-06 18:02:16",
+          "difficulties": [
+            {
+              "beatmap_id": "37405",
+              "version": "Feels Like Insomnia",
+              "difficultyrating": "3.20387",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "43156",
+              "version": "So Tired",
+              "difficultyrating": "1.7538",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "48501",
+              "version": "Feeling Sleepy",
+              "difficultyrating": "2.27026",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        }
+      ],
+      "guestDifficulties": [],
+      "stats": {
+        "totalBeatmaps": 3,
+        "totalBeatmapsets": 1,
+        "ownBeatmapsets": 1,
+        "guestBeatmapsets": 0,
+        "totalGuestDiffs": 0,
+        "ownDifficulties": 3
+      },
+      "lastUpdated": "2026-07-25T05:19:36.793Z"
     }
   ]
 }
