@@ -63915,7 +63915,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "19297",
+          "playcount": "19351",
           "passcount": "3411",
           "packs": "S1696",
           "max_combo": "1669",
@@ -64480,7 +64480,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "79",
+          "playcount": "19351"
         }
       ],
       "guestDifficulties": [],

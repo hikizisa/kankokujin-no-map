@@ -11158,7 +11158,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "11944",
+          "playcount": "12016",
           "passcount": "2372",
           "packs": "S1431",
           "max_combo": "1782",
@@ -14186,7 +14186,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "41",
+          "playcount": "12016"
         },
         {
           "beatmapset_id": "1890007",
@@ -24851,7 +24853,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "19828",
+          "playcount": "20233",
           "passcount": "3548",
           "packs": "S1457",
           "max_combo": "1486",
@@ -24895,7 +24897,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "2890",
+          "playcount": "2926",
           "passcount": "953",
           "packs": "S1457",
           "max_combo": "801",
@@ -24983,7 +24985,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "4474",
+          "playcount": "5131",
           "passcount": "991",
           "packs": "S1457",
           "max_combo": "1334",
@@ -25027,7 +25029,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "2944",
+          "playcount": "2962",
           "passcount": "240",
           "packs": "S1457",
           "max_combo": "1149",
@@ -25071,7 +25073,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "5932",
+          "playcount": "6049",
           "passcount": "990",
           "packs": "S1457",
           "max_combo": "1456",
@@ -25115,7 +25117,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "8956",
+          "playcount": "9208",
           "passcount": "2708",
           "packs": "S1457",
           "max_combo": "1462",
@@ -25159,7 +25161,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "6778",
+          "playcount": "6841",
           "passcount": "1085",
           "packs": "S1457",
           "max_combo": "1123",
@@ -25203,7 +25205,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "3133",
+          "playcount": "3160",
           "passcount": "1023",
           "packs": "S1457",
           "max_combo": "937",
@@ -25247,7 +25249,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "3592",
+          "playcount": "3655",
           "passcount": "910",
           "packs": "S1454",
           "max_combo": "1255",
@@ -25291,7 +25293,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "2728",
+          "playcount": "2764",
           "passcount": "528",
           "packs": "S1454",
           "max_combo": "1047",
@@ -26428,7 +26430,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "80",
+          "playcount": "58383"
         },
         {
           "beatmapset_id": "1705930",
@@ -26452,7 +26456,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "27",
+          "playcount": "6419"
         },
         {
           "beatmapset_id": "1276327",
@@ -29959,13 +29965,13 @@
           "tags": "jazz instrumental 4 digit osu!mania world cup 2024 4dm24 mistrzostwa polski w 4k mp4k osu!mania ln tournament 3 omln3 torneo platanorojo 2021 pltrj21 long note",
           "genre_id": "14",
           "language_id": "5",
-          "favourite_count": "184",
+          "favourite_count": "187",
           "rating": "9.86207",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "12556",
+          "playcount": "12772",
           "passcount": "2078",
           "packs": "L29",
           "max_combo": "3645",
@@ -30623,7 +30629,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "187",
+          "playcount": "12772"
         },
         {
           "beatmapset_id": "1162342",

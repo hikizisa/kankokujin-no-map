@@ -5051,7 +5051,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "59",
+          "playcount": "13431"
         }
       ],
       "guestDifficulties": [],
@@ -5115,7 +5117,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "273",
+          "playcount": "276",
           "passcount": "27",
           "packs": null,
           "max_combo": "1593",
@@ -5907,7 +5909,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "3664",
+          "playcount": "3700",
           "passcount": "440",
           "packs": "SC104",
           "max_combo": "4232",
@@ -5951,7 +5953,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "5491",
+          "playcount": "5536",
           "passcount": "439",
           "packs": "SC103",
           "max_combo": "4861",
@@ -5995,7 +5997,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "7552",
+          "playcount": "7651",
           "passcount": "1679",
           "packs": "SC102",
           "max_combo": "195",
@@ -6033,13 +6035,13 @@
           "tags": "m3-2021秋 2nd album afflict みしゃも mishamo llcd-002 electronic hardcore instrumental viyella vane classical edm metal uptempo ethnic orchestral japan iyouka",
           "genre_id": "10",
           "language_id": "5",
-          "favourite_count": "40",
+          "favourite_count": "41",
           "rating": "8.52941",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "5509",
+          "playcount": "5635",
           "passcount": "734",
           "packs": "SC101",
           "max_combo": "3316",
@@ -6083,7 +6085,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "1666",
+          "playcount": "1675",
           "passcount": "286",
           "packs": "SC100",
           "max_combo": "1250",
@@ -6127,7 +6129,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "1954",
+          "playcount": "1963",
           "passcount": "210",
           "packs": "SC98",
           "max_combo": "7381",
@@ -6171,7 +6173,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "18271",
+          "playcount": "18577",
           "passcount": "1354",
           "packs": "SC97",
           "max_combo": "2662",
@@ -6215,7 +6217,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "12187",
+          "playcount": "12331",
           "passcount": "826",
           "packs": "SC96",
           "max_combo": "3939",
@@ -6253,13 +6255,13 @@
           "tags": "featured artist fa future bass electronic english",
           "genre_id": "10",
           "language_id": "2",
-          "favourite_count": "118",
+          "favourite_count": "119",
           "rating": "8.71429",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "4015",
+          "playcount": "4069",
           "passcount": "498",
           "packs": null,
           "max_combo": "2922",
@@ -6303,7 +6305,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "2809",
+          "playcount": "2854",
           "passcount": "486",
           "packs": null,
           "max_combo": "1851",
@@ -6347,7 +6349,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "1882",
+          "playcount": "1891",
           "passcount": "226",
           "packs": null,
           "max_combo": "4638",
@@ -8561,7 +8563,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "23",
+          "playcount": "3700"
         },
         {
           "beatmapset_id": "2139627",
@@ -8578,7 +8582,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "20",
+          "playcount": "5536"
         },
         {
           "beatmapset_id": "2136340",
@@ -8595,7 +8601,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "36",
+          "playcount": "7651"
         },
         {
           "beatmapset_id": "2129862",
@@ -8612,7 +8620,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "41",
+          "playcount": "5635"
         },
         {
           "beatmapset_id": "2126258",
@@ -8629,7 +8639,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "25",
+          "playcount": "1675"
         },
         {
           "beatmapset_id": "1655808",
@@ -8646,7 +8658,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "36",
+          "playcount": "1963"
         },
         {
           "beatmapset_id": "1508396",
@@ -8663,7 +8677,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "28",
+          "playcount": "18577"
         },
         {
           "beatmapset_id": "1485606",
@@ -8680,7 +8696,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "41",
+          "playcount": "12331"
         },
         {
           "beatmapset_id": "913426",
@@ -8697,7 +8715,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "119",
+          "playcount": "4069"
         },
         {
           "beatmapset_id": "779608",
@@ -8714,7 +8734,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "30",
+          "playcount": "2854"
         },
         {
           "beatmapset_id": "1104837",
@@ -8731,7 +8753,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "24",
+          "playcount": "1891"
         },
         {
           "beatmapset_id": "1100729",
@@ -9287,7 +9311,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "7",
+          "playcount": "1798"
         },
         {
           "beatmapset_id": "2585380",
@@ -9304,7 +9330,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "2",
+          "playcount": "276"
         }
       ],
       "guestDifficulties": [],
@@ -14136,7 +14164,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "85114",
+          "playcount": "86473",
           "passcount": "10133",
           "packs": "P114",
           "max_combo": "1535",
@@ -14174,13 +14202,13 @@
           "tags": "aim cup azur lane x hololive black 3rd minato aqua virtual youtuber vtuber japanese rock jrock j-rock fake fakefakefake 碧蓝航线",
           "genre_id": "4",
           "language_id": "3",
-          "favourite_count": "315",
+          "favourite_count": "317",
           "rating": "9.23333",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "56233",
+          "playcount": "57358",
           "passcount": "4887",
           "packs": null,
           "max_combo": "1864",
@@ -15312,7 +15340,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "339",
+          "playcount": "86473"
         },
         {
           "beatmapset_id": "1743421",
@@ -15329,7 +15359,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "317",
+          "playcount": "57358"
         },
         {
           "beatmapset_id": "621278",

@@ -2904,7 +2904,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "16",
+          "playcount": "864"
         },
         {
           "beatmapset_id": "1628329",
