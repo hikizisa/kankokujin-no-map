@@ -5,14 +5,14 @@
     "demonym": "Uruguay",
     "nativeName": "Uruguay"
   },
-  "lastUpdated": "2026-07-04T18:43:15.517Z",
-  "totalMappers": 1,
-  "totalBeatmaps": 48,
-  "totalBeatmapsets": 11,
-  "totalOwnBeatmapsets": 11,
+  "lastUpdated": "2026-07-26T05:37:37.309Z",
+  "totalMappers": 3,
+  "totalBeatmaps": 63,
+  "totalBeatmapsets": 16,
+  "totalOwnBeatmapsets": 16,
   "totalGuestBeatmapsets": 0,
   "totalGuestDiffs": 0,
-  "totalOwnDifficulties": 48,
+  "totalOwnDifficulties": 63,
   "scanType": "full",
   "mappers": [
     {
@@ -2144,120 +2144,44 @@
       ],
       "beatmapsets": [
         {
-          "beatmapset_id": "32499",
-          "title": "The Winter Wake",
-          "artist": "Elvenking",
+          "beatmapset_id": "85328",
+          "title": "Crescendo",
+          "artist": "_yoc. feat. Matsumoto Sara",
           "creator": "Snepif",
-          "approved_date": "2011-12-27 07:23:36",
+          "approved_date": "2025-11-20 22:22:56",
           "difficulties": [
             {
-              "beatmap_id": "106291",
-              "version": "Easy",
-              "difficultyrating": "2.02983",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "106292",
-              "version": "Hard",
-              "difficultyrating": "3.87685",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "106293",
-              "version": "Normal",
-              "difficultyrating": "2.32784",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "107747",
-              "version": "AlrdyExists' Blizzard",
-              "difficultyrating": "4.35613",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "19940",
-          "title": "Strike of the Ninja",
-          "artist": "DragonForce",
-          "creator": "Snepif",
-          "approved_date": "2012-07-02 22:54:41",
-          "difficulties": [
-            {
-              "beatmap_id": "69844",
-              "version": "Normal",
-              "difficultyrating": "2.17325",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "111496",
-              "version": "Insane",
-              "difficultyrating": "4.44933",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "113549",
-              "version": "Ozzy's Ninja Taiko",
-              "difficultyrating": "5.72705",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "115813",
-              "version": "Winber1's Easy",
-              "difficultyrating": "2.00448",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "124174",
-              "version": "Kei's Hard",
-              "difficultyrating": "3.07981",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "54043",
-          "title": "Resurrection Blossom",
-          "artist": "IOSYS",
-          "creator": "Snepif",
-          "approved_date": "2013-02-04 07:01:35",
-          "difficulties": [
-            {
-              "beatmap_id": "164519",
+              "beatmap_id": "234556",
               "version": "Lunatic",
-              "difficultyrating": "5.34472",
+              "difficultyrating": "4.76754",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "164531",
-              "version": "Normal",
-              "difficultyrating": "2.15068",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "169503",
-              "version": "Easy",
-              "difficultyrating": "1.58349",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "177862",
+              "beatmap_id": "235811",
               "version": "Hard",
-              "difficultyrating": "3.60162",
+              "difficultyrating": "3.78013",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "242640",
+              "version": "Easy",
+              "difficultyrating": "1.92899",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3436957",
+              "version": "Sky Palette",
+              "difficultyrating": "5.75614",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "5337736",
+              "version": "Normal",
+              "difficultyrating": "2.54184",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -2265,37 +2189,16 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "83494",
-          "title": "Airplanes (Feint Remix)",
-          "artist": "B.o.B feat. Hayley Williams",
+          "beatmapset_id": "1006176",
+          "title": "Koe",
+          "artist": "majiko",
           "creator": "Snepif",
-          "approved_date": "2013-04-20 17:51:40",
+          "approved_date": "2021-12-07 21:41:10",
           "difficulties": [
             {
-              "beatmap_id": "230523",
-              "version": "Shooting Stars",
-              "difficultyrating": "5.33226",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "231093",
-              "version": "Hard",
-              "difficultyrating": "3.5604",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "237286",
-              "version": "Normal",
-              "difficultyrating": "2.3959",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "239629",
-              "version": "Easy",
-              "difficultyrating": "2.05141",
+              "beatmap_id": "2105804",
+              "version": "Happiness",
+              "difficultyrating": "6.91903",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -2303,148 +2206,16 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "90095",
-          "title": "Caramel Heaven",
-          "artist": "Last Note.",
+          "beatmapset_id": "735641",
+          "title": "The Dance of Eternity",
+          "artist": "Dream Theater",
           "creator": "Snepif",
-          "approved_date": "2013-06-30 22:58:54",
+          "approved_date": "2020-09-23 19:55:28",
           "difficulties": [
             {
-              "beatmap_id": "244691",
-              "version": "Heaven",
-              "difficultyrating": "5.52643",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "246688",
-              "version": "Hard",
-              "difficultyrating": "3.65207",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "250890",
-              "version": "Winber1's Normal",
-              "difficultyrating": "2.79011",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "252182",
-              "version": "Easy",
-              "difficultyrating": "2.07345",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "252812",
-              "version": "Nyquill's Insane",
-              "difficultyrating": "4.8748",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "240761",
-          "title": "Liar",
-          "artist": "ONE OK ROCK",
-          "creator": "Snepif",
-          "approved_date": "2015-01-25 16:01:30",
-          "difficulties": [
-            {
-              "beatmap_id": "556320",
-              "version": "Insanity",
-              "difficultyrating": "5.06081",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "563789",
-              "version": "Hard",
-              "difficultyrating": "3.69379",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "564727",
-              "version": "Normal",
-              "difficultyrating": "2.55906",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "566506",
-              "version": "Easy",
-              "difficultyrating": "2.11755",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "569097",
-              "version": "Bloodlust",
-              "difficultyrating": "5.95067",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "296543",
-          "title": "MOON LIGHT WAVE",
-          "artist": "BLOOD STAIN CHILD",
-          "creator": "Silleth",
-          "approved_date": "2017-05-21 17:20:42",
-          "difficulties": [
-            {
-              "beatmap_id": "665787",
-              "version": "Effulgence",
-              "difficultyrating": "7.061",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "671659",
-              "version": "Hard",
-              "difficultyrating": "3.87915",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "673823",
-              "version": "Normal",
-              "difficultyrating": "2.69389",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "674624",
-              "version": "Easy",
-              "difficultyrating": "2.27595",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "676512",
-              "version": "Insane",
-              "difficultyrating": "5.21333",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "1041934",
-              "version": "Extra",
-              "difficultyrating": "6.01419",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "1292350",
-              "version": "W1's Extreme",
-              "difficultyrating": "6.49014",
+              "beatmap_id": "2254763",
+              "version": "Aeternitatis Lusus Exsultans",
+              "difficultyrating": "7.73883",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -2511,85 +2282,312 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "735641",
-          "title": "The Dance of Eternity",
-          "artist": "Dream Theater",
-          "creator": "Snepif",
-          "approved_date": "2020-09-23 19:55:28",
+          "beatmapset_id": "296543",
+          "title": "MOON LIGHT WAVE",
+          "artist": "BLOOD STAIN CHILD",
+          "creator": "Silleth",
+          "approved_date": "2017-05-21 17:20:42",
           "difficulties": [
             {
-              "beatmap_id": "2254763",
-              "version": "Aeternitatis Lusus Exsultans",
-              "difficultyrating": "7.73883",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "1006176",
-          "title": "Koe",
-          "artist": "majiko",
-          "creator": "Snepif",
-          "approved_date": "2021-12-07 21:41:10",
-          "difficulties": [
-            {
-              "beatmap_id": "2105804",
-              "version": "Happiness",
-              "difficultyrating": "6.91903",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "85328",
-          "title": "Crescendo",
-          "artist": "_yoc. feat. Matsumoto Sara",
-          "creator": "Snepif",
-          "approved_date": "2025-11-20 22:22:56",
-          "difficulties": [
-            {
-              "beatmap_id": "234556",
-              "version": "Lunatic",
-              "difficultyrating": "4.76754",
+              "beatmap_id": "665787",
+              "version": "Effulgence",
+              "difficultyrating": "7.061",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "235811",
+              "beatmap_id": "671659",
               "version": "Hard",
-              "difficultyrating": "3.78013",
+              "difficultyrating": "3.87915",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "242640",
-              "version": "Easy",
-              "difficultyrating": "1.92899",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3436957",
-              "version": "Sky Palette",
-              "difficultyrating": "5.75614",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "5337736",
+              "beatmap_id": "673823",
               "version": "Normal",
-              "difficultyrating": "2.54184",
+              "difficultyrating": "2.69389",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "674624",
+              "version": "Easy",
+              "difficultyrating": "2.27595",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "676512",
+              "version": "Insane",
+              "difficultyrating": "5.21333",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "1041934",
+              "version": "Extra",
+              "difficultyrating": "6.01419",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "1292350",
+              "version": "W1's Extreme",
+              "difficultyrating": "6.49014",
               "mode": "0",
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "53",
-          "playcount": "21578"
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "240761",
+          "title": "Liar",
+          "artist": "ONE OK ROCK",
+          "creator": "Snepif",
+          "approved_date": "2015-01-25 16:01:30",
+          "difficulties": [
+            {
+              "beatmap_id": "556320",
+              "version": "Insanity",
+              "difficultyrating": "5.06081",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "563789",
+              "version": "Hard",
+              "difficultyrating": "3.69379",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "564727",
+              "version": "Normal",
+              "difficultyrating": "2.55906",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "566506",
+              "version": "Easy",
+              "difficultyrating": "2.11755",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "569097",
+              "version": "Bloodlust",
+              "difficultyrating": "5.95067",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "90095",
+          "title": "Caramel Heaven",
+          "artist": "Last Note.",
+          "creator": "Snepif",
+          "approved_date": "2013-06-30 22:58:54",
+          "difficulties": [
+            {
+              "beatmap_id": "244691",
+              "version": "Heaven",
+              "difficultyrating": "5.52643",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "246688",
+              "version": "Hard",
+              "difficultyrating": "3.65207",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "250890",
+              "version": "Winber1's Normal",
+              "difficultyrating": "2.79011",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "252182",
+              "version": "Easy",
+              "difficultyrating": "2.07345",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "252812",
+              "version": "Nyquill's Insane",
+              "difficultyrating": "4.8748",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "83494",
+          "title": "Airplanes (Feint Remix)",
+          "artist": "B.o.B feat. Hayley Williams",
+          "creator": "Snepif",
+          "approved_date": "2013-04-20 17:51:40",
+          "difficulties": [
+            {
+              "beatmap_id": "230523",
+              "version": "Shooting Stars",
+              "difficultyrating": "5.33226",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "231093",
+              "version": "Hard",
+              "difficultyrating": "3.5604",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "237286",
+              "version": "Normal",
+              "difficultyrating": "2.3959",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "239629",
+              "version": "Easy",
+              "difficultyrating": "2.05141",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "54043",
+          "title": "Resurrection Blossom",
+          "artist": "IOSYS",
+          "creator": "Snepif",
+          "approved_date": "2013-02-04 07:01:35",
+          "difficulties": [
+            {
+              "beatmap_id": "164519",
+              "version": "Lunatic",
+              "difficultyrating": "5.34472",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "164531",
+              "version": "Normal",
+              "difficultyrating": "2.15068",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "169503",
+              "version": "Easy",
+              "difficultyrating": "1.58349",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "177862",
+              "version": "Hard",
+              "difficultyrating": "3.60162",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "19940",
+          "title": "Strike of the Ninja",
+          "artist": "DragonForce",
+          "creator": "Snepif",
+          "approved_date": "2012-07-02 22:54:41",
+          "difficulties": [
+            {
+              "beatmap_id": "69844",
+              "version": "Normal",
+              "difficultyrating": "2.17325",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "111496",
+              "version": "Insane",
+              "difficultyrating": "4.44933",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "113549",
+              "version": "Ozzy's Ninja Taiko",
+              "difficultyrating": "5.72705",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "115813",
+              "version": "Winber1's Easy",
+              "difficultyrating": "2.00448",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "124174",
+              "version": "Kei's Hard",
+              "difficultyrating": "3.07981",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "32499",
+          "title": "The Winter Wake",
+          "artist": "Elvenking",
+          "creator": "Snepif",
+          "approved_date": "2011-12-27 07:23:36",
+          "difficulties": [
+            {
+              "beatmap_id": "106291",
+              "version": "Easy",
+              "difficultyrating": "2.02983",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "106292",
+              "version": "Hard",
+              "difficultyrating": "3.87685",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "106293",
+              "version": "Normal",
+              "difficultyrating": "2.32784",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "107747",
+              "version": "AlrdyExists' Blizzard",
+              "difficultyrating": "4.35613",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
         }
       ],
       "guestDifficulties": [],
@@ -2601,7 +2599,876 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 48
       },
-      "lastUpdated": "2026-07-04T18:43:15.517Z"
+      "lastUpdated": "2026-07-26T05:37:37.309Z"
+    },
+    {
+      "user_id": "45513",
+      "username": "Guzzzzm4n",
+      "aliases": [
+        "darck360"
+      ],
+      "country": "UY",
+      "rankedBeatmaps": 13,
+      "rankedBeatmapsets": 4,
+      "ownBeatmapsets": 4,
+      "guestBeatmapsets": 0,
+      "totalGuestDiffs": 0,
+      "ownDifficulties": 13,
+      "beatmaps": [
+        {
+          "beatmapset_id": "29244",
+          "beatmap_id": "99254",
+          "approved": "1",
+          "total_length": "195",
+          "hit_length": "154",
+          "version": "Experto",
+          "file_md5": "b44083fd159c881a5506527c3ef798a8",
+          "diff_size": "4",
+          "diff_overall": "8",
+          "diff_approach": "8",
+          "diff_drain": "7",
+          "mode": "0",
+          "count_normal": "223",
+          "count_slider": "175",
+          "count_spinner": "1",
+          "submit_date": "2011-04-22 20:20:50",
+          "approved_date": "2011-07-19 18:43:34",
+          "last_update": "2011-07-13 21:22:45",
+          "artist": "Don Omar ft. Lucenzo",
+          "artist_unicode": null,
+          "title": "Danza Kuduro",
+          "title_unicode": null,
+          "creator": "darck360",
+          "creator_id": "45513",
+          "bpm": "130",
+          "source": "",
+          "tags": "narakucrimson animask reggaeton portuguese angola",
+          "genre_id": "6",
+          "language_id": "10",
+          "favourite_count": "1143",
+          "rating": "9.24149",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "444656",
+          "passcount": "77299",
+          "packs": "S193",
+          "max_combo": "766",
+          "diff_aim": "1.82779",
+          "diff_speed": "1.45887",
+          "difficultyrating": "3.3899"
+        },
+        {
+          "beatmapset_id": "29244",
+          "beatmap_id": "99255",
+          "approved": "1",
+          "total_length": "195",
+          "hit_length": "139",
+          "version": "Principiante",
+          "file_md5": "d8cffbf50129b297a135de7a7d68b450",
+          "diff_size": "4",
+          "diff_overall": "3",
+          "diff_approach": "3",
+          "diff_drain": "3",
+          "mode": "0",
+          "count_normal": "14",
+          "count_slider": "79",
+          "count_spinner": "0",
+          "submit_date": "2011-04-22 20:20:50",
+          "approved_date": "2011-07-19 18:43:34",
+          "last_update": "2011-07-13 21:22:45",
+          "artist": "Don Omar ft. Lucenzo",
+          "artist_unicode": null,
+          "title": "Danza Kuduro",
+          "title_unicode": null,
+          "creator": "darck360",
+          "creator_id": "45513",
+          "bpm": "130",
+          "source": "",
+          "tags": "narakucrimson animask reggaeton portuguese angola",
+          "genre_id": "6",
+          "language_id": "10",
+          "favourite_count": "1143",
+          "rating": "9.24149",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "257597",
+          "passcount": "130337",
+          "packs": "S193",
+          "max_combo": "285",
+          "diff_aim": "1.01698",
+          "diff_speed": "0.355989",
+          "difficultyrating": "1.69224"
+        },
+        {
+          "beatmapset_id": "29244",
+          "beatmap_id": "106173",
+          "approved": "1",
+          "total_length": "194",
+          "hit_length": "166",
+          "version": "Dificil",
+          "file_md5": "8f483da2f0370a5ddf95acd21ce759a2",
+          "diff_size": "4",
+          "diff_overall": "5",
+          "diff_approach": "5",
+          "diff_drain": "5",
+          "mode": "0",
+          "count_normal": "180",
+          "count_slider": "149",
+          "count_spinner": "0",
+          "submit_date": "2011-04-22 20:20:50",
+          "approved_date": "2011-07-19 18:43:34",
+          "last_update": "2011-07-13 21:22:45",
+          "artist": "Don Omar ft. Lucenzo",
+          "artist_unicode": null,
+          "title": "Danza Kuduro",
+          "title_unicode": null,
+          "creator": "darck360",
+          "creator_id": "45513",
+          "bpm": "130",
+          "source": "",
+          "tags": "narakucrimson animask reggaeton portuguese angola",
+          "genre_id": "6",
+          "language_id": "10",
+          "favourite_count": "1143",
+          "rating": "9.24149",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "482817",
+          "passcount": "59333",
+          "packs": "S193",
+          "max_combo": "629",
+          "diff_aim": "1.47603",
+          "diff_speed": "0.980616",
+          "difficultyrating": "2.7385"
+        },
+        {
+          "beatmapset_id": "29244",
+          "beatmap_id": "106174",
+          "approved": "1",
+          "total_length": "195",
+          "hit_length": "181",
+          "version": "Taiko Oni",
+          "file_md5": "e65681f9d5de794b8e3f13b241856b2a",
+          "diff_size": "5",
+          "diff_overall": "8",
+          "diff_approach": "8",
+          "diff_drain": "8",
+          "mode": "1",
+          "count_normal": "798",
+          "count_slider": "2",
+          "count_spinner": "2",
+          "submit_date": "2011-04-22 20:20:50",
+          "approved_date": "2011-07-19 18:43:34",
+          "last_update": "2011-07-13 21:22:45",
+          "artist": "Don Omar ft. Lucenzo",
+          "artist_unicode": null,
+          "title": "Danza Kuduro",
+          "title_unicode": null,
+          "creator": "darck360",
+          "creator_id": "45513",
+          "bpm": "130",
+          "source": "",
+          "tags": "narakucrimson animask reggaeton portuguese angola",
+          "genre_id": "6",
+          "language_id": "10",
+          "favourite_count": "1143",
+          "rating": "9.24149",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "24802",
+          "passcount": "1562",
+          "packs": "S193",
+          "max_combo": "798",
+          "diff_aim": null,
+          "diff_speed": null,
+          "difficultyrating": "3.35257"
+        },
+        {
+          "beatmapset_id": "17657",
+          "beatmap_id": "62900",
+          "approved": "1",
+          "total_length": "182",
+          "hit_length": "165",
+          "version": "Hard",
+          "file_md5": "3e2f0160f721cdc68e1591811cbce852",
+          "diff_size": "4",
+          "diff_overall": "6",
+          "diff_approach": "6",
+          "diff_drain": "5",
+          "mode": "0",
+          "count_normal": "115",
+          "count_slider": "120",
+          "count_spinner": "5",
+          "submit_date": "2010-07-03 22:51:19",
+          "approved_date": "2010-11-14 14:40:09",
+          "last_update": "2010-11-03 23:28:35",
+          "artist": "David Guetta ft. Akon",
+          "artist_unicode": null,
+          "title": "Sexy Bitch",
+          "title_unicode": null,
+          "creator": "darck360",
+          "creator_id": "45513",
+          "bpm": "130",
+          "source": "",
+          "tags": "electro house hop dancepop",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "595",
+          "rating": "9.00629",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "425650",
+          "passcount": "90481",
+          "packs": "S151",
+          "max_combo": "563",
+          "diff_aim": "1.45194",
+          "diff_speed": "0.80208",
+          "difficultyrating": "2.49537"
+        },
+        {
+          "beatmapset_id": "17657",
+          "beatmap_id": "62901",
+          "approved": "1",
+          "total_length": "182",
+          "hit_length": "165",
+          "version": "Insane",
+          "file_md5": "66a2af61e2a0b81f9ad4dccf6e157346",
+          "diff_size": "5",
+          "diff_overall": "8",
+          "diff_approach": "8",
+          "diff_drain": "7",
+          "mode": "0",
+          "count_normal": "190",
+          "count_slider": "146",
+          "count_spinner": "3",
+          "submit_date": "2010-07-03 22:51:19",
+          "approved_date": "2010-11-14 14:40:09",
+          "last_update": "2010-11-03 23:28:35",
+          "artist": "David Guetta ft. Akon",
+          "artist_unicode": null,
+          "title": "Sexy Bitch",
+          "title_unicode": null,
+          "creator": "darck360",
+          "creator_id": "45513",
+          "bpm": "130",
+          "source": "",
+          "tags": "electro house hop dancepop",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "595",
+          "rating": "9.00629",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "369638",
+          "passcount": "54449",
+          "packs": "S151",
+          "max_combo": "682",
+          "diff_aim": "2.00474",
+          "diff_speed": "1.15272",
+          "difficultyrating": "3.464"
+        },
+        {
+          "beatmapset_id": "17657",
+          "beatmap_id": "76577",
+          "approved": "1",
+          "total_length": "181",
+          "hit_length": "161",
+          "version": "Easy",
+          "file_md5": "5838d135c1f8b0c1de13bf1fdbe43a86",
+          "diff_size": "3",
+          "diff_overall": "2",
+          "diff_approach": "2",
+          "diff_drain": "2",
+          "mode": "0",
+          "count_normal": "93",
+          "count_slider": "76",
+          "count_spinner": "1",
+          "submit_date": "2010-07-03 22:51:19",
+          "approved_date": "2010-11-14 14:40:09",
+          "last_update": "2010-11-03 23:28:35",
+          "artist": "David Guetta ft. Akon",
+          "artist_unicode": null,
+          "title": "Sexy Bitch",
+          "title_unicode": null,
+          "creator": "darck360",
+          "creator_id": "45513",
+          "bpm": "130",
+          "source": "",
+          "tags": "electro house hop dancepop",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "595",
+          "rating": "9.00629",
+          "storyboard": "1",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "413329",
+          "passcount": "180493",
+          "packs": "S151",
+          "max_combo": "499",
+          "diff_aim": "1.18394",
+          "diff_speed": "0.516459",
+          "difficultyrating": "2.00108"
+        },
+        {
+          "beatmapset_id": "10259",
+          "beatmap_id": "40130",
+          "approved": "1",
+          "total_length": "195",
+          "hit_length": "178",
+          "version": "Hard",
+          "file_md5": "51727f488c383196f00656260ac03540",
+          "diff_size": "4",
+          "diff_overall": "7",
+          "diff_approach": "7",
+          "diff_drain": "6",
+          "mode": "0",
+          "count_normal": "276",
+          "count_slider": "126",
+          "count_spinner": "2",
+          "submit_date": "2009-10-31 18:07:59",
+          "approved_date": "2010-06-09 00:09:35",
+          "last_update": "2010-06-08 02:13:56",
+          "artist": "Cobra Starship ft. Leighton Meester",
+          "artist_unicode": null,
+          "title": "Good Girls Go Bad",
+          "title_unicode": null,
+          "creator": "darck360",
+          "creator_id": "45513",
+          "bpm": "120",
+          "source": "",
+          "tags": "pop rock synthpop dance alternative",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "50",
+          "rating": "8.55172",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "24543",
+          "passcount": "6548",
+          "packs": "S119",
+          "max_combo": "557",
+          "diff_aim": "1.56875",
+          "diff_speed": "1.38167",
+          "difficultyrating": "3.02958"
+        },
+        {
+          "beatmapset_id": "10259",
+          "beatmap_id": "58954",
+          "approved": "1",
+          "total_length": "194",
+          "hit_length": "173",
+          "version": "Normal",
+          "file_md5": "7f5731760352b09890974cd15b7cd5d3",
+          "diff_size": "3",
+          "diff_overall": "3",
+          "diff_approach": "3",
+          "diff_drain": "2",
+          "mode": "0",
+          "count_normal": "128",
+          "count_slider": "95",
+          "count_spinner": "3",
+          "submit_date": "2009-10-31 18:07:59",
+          "approved_date": "2010-06-09 00:09:35",
+          "last_update": "2010-06-08 02:13:56",
+          "artist": "Cobra Starship ft. Leighton Meester",
+          "artist_unicode": null,
+          "title": "Good Girls Go Bad",
+          "title_unicode": null,
+          "creator": "darck360",
+          "creator_id": "45513",
+          "bpm": "120",
+          "source": "",
+          "tags": "pop rock synthpop dance alternative",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "50",
+          "rating": "8.55172",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "24385",
+          "passcount": "9388",
+          "packs": "S119",
+          "max_combo": "364",
+          "diff_aim": "1.27402",
+          "diff_speed": "0.725706",
+          "difficultyrating": "2.2276"
+        },
+        {
+          "beatmapset_id": "13845",
+          "beatmap_id": "54573",
+          "approved": "1",
+          "total_length": "124",
+          "hit_length": "119",
+          "version": "Hard",
+          "file_md5": "3a5637a5b599acb1233a7cdb494a0f1d",
+          "diff_size": "4",
+          "diff_overall": "4",
+          "diff_approach": "4",
+          "diff_drain": "2",
+          "mode": "0",
+          "count_normal": "119",
+          "count_slider": "79",
+          "count_spinner": "4",
+          "submit_date": "2010-03-11 23:02:16",
+          "approved_date": "2010-05-09 20:53:33",
+          "last_update": "2010-05-08 23:29:43",
+          "artist": "Jason Derulo ft. Imogen Heap",
+          "artist_unicode": null,
+          "title": "Whatcha Say",
+          "title_unicode": null,
+          "creator": "darck360",
+          "creator_id": "45513",
+          "bpm": "144",
+          "source": "",
+          "tags": "rap",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "203",
+          "rating": "8.92649",
+          "storyboard": "0",
+          "video": "1",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "58611",
+          "passcount": "17355",
+          "packs": "S110",
+          "max_combo": "367",
+          "diff_aim": "1.3779",
+          "diff_speed": "0.966092",
+          "difficultyrating": "2.65136"
+        },
+        {
+          "beatmapset_id": "13845",
+          "beatmap_id": "55278",
+          "approved": "1",
+          "total_length": "217",
+          "hit_length": "202",
+          "version": "EEeee's Insane",
+          "file_md5": "53f4ddd0e91eee728c88ea2a9c3c4118",
+          "diff_size": "5",
+          "diff_overall": "7",
+          "diff_approach": "7",
+          "diff_drain": "7",
+          "mode": "0",
+          "count_normal": "313",
+          "count_slider": "169",
+          "count_spinner": "2",
+          "submit_date": "2010-03-11 23:02:16",
+          "approved_date": "2010-05-09 20:53:33",
+          "last_update": "2010-05-08 23:29:43",
+          "artist": "Jason Derulo ft. Imogen Heap",
+          "artist_unicode": null,
+          "title": "Whatcha Say",
+          "title_unicode": null,
+          "creator": "darck360",
+          "creator_id": "45513",
+          "bpm": "144",
+          "source": "",
+          "tags": "rap",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "203",
+          "rating": "8.92649",
+          "storyboard": "0",
+          "video": "1",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "61421",
+          "passcount": "6101",
+          "packs": "S110",
+          "max_combo": "916",
+          "diff_aim": "2.12903",
+          "diff_speed": "1.67094",
+          "difficultyrating": "3.99029"
+        },
+        {
+          "beatmapset_id": "13845",
+          "beatmap_id": "55279",
+          "approved": "1",
+          "total_length": "217",
+          "hit_length": "203",
+          "version": "Hard+",
+          "file_md5": "a2da5fe256a127720518241eb1e92a8f",
+          "diff_size": "4",
+          "diff_overall": "6",
+          "diff_approach": "6",
+          "diff_drain": "3",
+          "mode": "0",
+          "count_normal": "284",
+          "count_slider": "211",
+          "count_spinner": "3",
+          "submit_date": "2010-03-11 23:02:16",
+          "approved_date": "2010-05-09 20:53:33",
+          "last_update": "2010-05-08 23:29:43",
+          "artist": "Jason Derulo ft. Imogen Heap",
+          "artist_unicode": null,
+          "title": "Whatcha Say",
+          "title_unicode": null,
+          "creator": "darck360",
+          "creator_id": "45513",
+          "bpm": "144",
+          "source": "",
+          "tags": "rap",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "203",
+          "rating": "8.92649",
+          "storyboard": "0",
+          "video": "1",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "56676",
+          "passcount": "9872",
+          "packs": "S110",
+          "max_combo": "788",
+          "diff_aim": "1.89207",
+          "diff_speed": "1.33591",
+          "difficultyrating": "3.54698"
+        },
+        {
+          "beatmapset_id": "13845",
+          "beatmap_id": "56601",
+          "approved": "1",
+          "total_length": "84",
+          "hit_length": "79",
+          "version": "Normal",
+          "file_md5": "f8b58c79336da1b2d40d8d5766fd31fd",
+          "diff_size": "3",
+          "diff_overall": "4",
+          "diff_approach": "4",
+          "diff_drain": "0",
+          "mode": "0",
+          "count_normal": "38",
+          "count_slider": "51",
+          "count_spinner": "3",
+          "submit_date": "2010-03-11 23:02:16",
+          "approved_date": "2010-05-09 20:53:33",
+          "last_update": "2010-05-08 23:29:43",
+          "artist": "Jason Derulo ft. Imogen Heap",
+          "artist_unicode": null,
+          "title": "Whatcha Say",
+          "title_unicode": null,
+          "creator": "darck360",
+          "creator_id": "45513",
+          "bpm": "144",
+          "source": "",
+          "tags": "rap",
+          "genre_id": "5",
+          "language_id": "2",
+          "favourite_count": "203",
+          "rating": "8.92649",
+          "storyboard": "0",
+          "video": "1",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "79135",
+          "passcount": "46978",
+          "packs": "S110",
+          "max_combo": "180",
+          "diff_aim": "1.23793",
+          "diff_speed": "0.505772",
+          "difficultyrating": "2.07552"
+        }
+      ],
+      "beatmapsets": [
+        {
+          "beatmapset_id": "13845",
+          "title": "Whatcha Say",
+          "artist": "Jason Derulo ft. Imogen Heap",
+          "creator": "darck360",
+          "approved_date": "2010-05-09 20:53:33",
+          "difficulties": [
+            {
+              "beatmap_id": "54573",
+              "version": "Hard",
+              "difficultyrating": "2.65136",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "55278",
+              "version": "EEeee's Insane",
+              "difficultyrating": "3.99029",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "55279",
+              "version": "Hard+",
+              "difficultyrating": "3.54698",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "56601",
+              "version": "Normal",
+              "difficultyrating": "2.07552",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "10259",
+          "title": "Good Girls Go Bad",
+          "artist": "Cobra Starship ft. Leighton Meester",
+          "creator": "darck360",
+          "approved_date": "2010-06-09 00:09:35",
+          "difficulties": [
+            {
+              "beatmap_id": "40130",
+              "version": "Hard",
+              "difficultyrating": "3.02958",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "58954",
+              "version": "Normal",
+              "difficultyrating": "2.2276",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "17657",
+          "title": "Sexy Bitch",
+          "artist": "David Guetta ft. Akon",
+          "creator": "darck360",
+          "approved_date": "2010-11-14 14:40:09",
+          "difficulties": [
+            {
+              "beatmap_id": "62900",
+              "version": "Hard",
+              "difficultyrating": "2.49537",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "62901",
+              "version": "Insane",
+              "difficultyrating": "3.464",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "76577",
+              "version": "Easy",
+              "difficultyrating": "2.00108",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "29244",
+          "title": "Danza Kuduro",
+          "artist": "Don Omar ft. Lucenzo",
+          "creator": "darck360",
+          "approved_date": "2011-07-19 18:43:34",
+          "difficulties": [
+            {
+              "beatmap_id": "99254",
+              "version": "Experto",
+              "difficultyrating": "3.3899",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "99255",
+              "version": "Principiante",
+              "difficultyrating": "1.69224",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "106173",
+              "version": "Dificil",
+              "difficultyrating": "2.7385",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "106174",
+              "version": "Taiko Oni",
+              "difficultyrating": "3.35257",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        }
+      ],
+      "guestDifficulties": [],
+      "stats": {
+        "totalBeatmaps": 13,
+        "totalBeatmapsets": 4,
+        "ownBeatmapsets": 4,
+        "guestBeatmapsets": 0,
+        "totalGuestDiffs": 0,
+        "ownDifficulties": 13
+      },
+      "lastUpdated": "2026-07-26T05:37:37.309Z"
+    },
+    {
+      "user_id": "58710",
+      "username": "H1ko",
+      "aliases": [],
+      "country": "UY",
+      "rankedBeatmaps": 2,
+      "rankedBeatmapsets": 1,
+      "ownBeatmapsets": 1,
+      "guestBeatmapsets": 0,
+      "totalGuestDiffs": 0,
+      "ownDifficulties": 2,
+      "beatmaps": [
+        {
+          "beatmapset_id": "11650",
+          "beatmap_id": "44348",
+          "approved": "1",
+          "total_length": "182",
+          "hit_length": "164",
+          "version": "Hard",
+          "file_md5": "c4fd84c183cb9217443c4d9c86ccf610",
+          "diff_size": "4",
+          "diff_overall": "7",
+          "diff_approach": "7",
+          "diff_drain": "7",
+          "mode": "0",
+          "count_normal": "289",
+          "count_slider": "91",
+          "count_spinner": "6",
+          "submit_date": "2009-12-26 11:51:48",
+          "approved_date": "2009-12-29 07:52:55",
+          "last_update": "2009-12-29 00:49:57",
+          "artist": "Rata Blanca",
+          "artist_unicode": null,
+          "title": "Mujer Amante",
+          "title_unicode": null,
+          "creator": "H1ko",
+          "creator_id": "58710",
+          "bpm": "115.24",
+          "source": "",
+          "tags": "metal",
+          "genre_id": "4",
+          "language_id": "10",
+          "favourite_count": "185",
+          "rating": "8.875",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "103639",
+          "passcount": "14746",
+          "packs": "S82",
+          "max_combo": "490",
+          "diff_aim": "1.75369",
+          "diff_speed": "0.989901",
+          "difficultyrating": "3.06856"
+        },
+        {
+          "beatmapset_id": "11650",
+          "beatmap_id": "44535",
+          "approved": "1",
+          "total_length": "181",
+          "hit_length": "165",
+          "version": "Normal",
+          "file_md5": "0c4a2ca2d48a2774248dfa4ac5a17165",
+          "diff_size": "4",
+          "diff_overall": "5",
+          "diff_approach": "5",
+          "diff_drain": "5",
+          "mode": "0",
+          "count_normal": "158",
+          "count_slider": "60",
+          "count_spinner": "5",
+          "submit_date": "2009-12-26 11:51:48",
+          "approved_date": "2009-12-29 07:52:55",
+          "last_update": "2009-12-29 00:49:57",
+          "artist": "Rata Blanca",
+          "artist_unicode": null,
+          "title": "Mujer Amante",
+          "title_unicode": null,
+          "creator": "H1ko",
+          "creator_id": "58710",
+          "bpm": "115.24",
+          "source": "",
+          "tags": "metal",
+          "genre_id": "4",
+          "language_id": "10",
+          "favourite_count": "185",
+          "rating": "8.875",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "60620",
+          "passcount": "18933",
+          "packs": "S82",
+          "max_combo": "322",
+          "diff_aim": "1.07567",
+          "diff_speed": "0.766128",
+          "difficultyrating": "1.93169"
+        }
+      ],
+      "beatmapsets": [
+        {
+          "beatmapset_id": "11650",
+          "title": "Mujer Amante",
+          "artist": "Rata Blanca",
+          "creator": "H1ko",
+          "approved_date": "2009-12-29 07:52:55",
+          "difficulties": [
+            {
+              "beatmap_id": "44348",
+              "version": "Hard",
+              "difficultyrating": "3.06856",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "44535",
+              "version": "Normal",
+              "difficultyrating": "1.93169",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        }
+      ],
+      "guestDifficulties": [],
+      "stats": {
+        "totalBeatmaps": 2,
+        "totalBeatmapsets": 1,
+        "ownBeatmapsets": 1,
+        "guestBeatmapsets": 0,
+        "totalGuestDiffs": 0,
+        "ownDifficulties": 2
+      },
+      "lastUpdated": "2026-07-26T05:37:37.309Z"
     }
   ]
 }
