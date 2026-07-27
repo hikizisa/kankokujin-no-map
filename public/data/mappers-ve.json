@@ -5,7 +5,7 @@
     "demonym": "Venezuela",
     "nativeName": "Venezuela"
   },
-  "lastUpdated": "2026-07-13T05:44:47.836Z",
+  "lastUpdated": "2026-07-27T05:56:22.555Z",
   "totalMappers": 3,
   "totalBeatmaps": 166,
   "totalBeatmapsets": 38,
@@ -4006,9 +4006,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "310",
-          "playcount": "131333"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1006790",
@@ -4053,9 +4051,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "100",
-          "playcount": "60260"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2140183",
@@ -4079,9 +4075,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "53",
-          "playcount": "10640"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1689156",
@@ -4126,9 +4120,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "245",
-          "playcount": "127733"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2089549",
@@ -4159,9 +4151,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "27",
-          "playcount": "19596"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2011188",
@@ -4678,7 +4668,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 87
       },
-      "lastUpdated": "2026-07-13T05:44:47.836Z"
+      "lastUpdated": "2026-07-27T05:56:22.555Z"
     },
     {
       "user_id": "131918",
@@ -8763,7 +8753,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 76
       },
-      "lastUpdated": "2026-07-13T05:44:47.836Z"
+      "lastUpdated": "2026-07-27T05:56:22.555Z"
     },
     {
       "user_id": "45683",
@@ -8952,7 +8942,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 3
       },
-      "lastUpdated": "2026-07-13T05:44:47.836Z"
+      "lastUpdated": "2026-07-27T05:56:22.555Z"
     }
   ]
 }
