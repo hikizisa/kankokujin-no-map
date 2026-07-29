@@ -1,6 +1,6 @@
 {
   "defaultCountry": "KR",
-  "generatedAt": "2026-07-28T05:20:13.576Z",
+  "generatedAt": "2026-07-29T05:28:14.919Z",
   "source": "https://osu.ppy.sh/rankings/osu/country",
   "countries": [
     {
@@ -100,7 +100,7 @@
       "nativeName": "Argentina",
       "hasData": true,
       "mapperCount": 5,
-      "lastUpdated": "2026-07-15T04:56:58.500Z"
+      "lastUpdated": "2026-07-29T05:27:59.498Z"
     },
     {
       "code": "AM",
@@ -1423,7 +1423,7 @@
       "nativeName": "Pakistan",
       "hasData": true,
       "mapperCount": 1,
-      "lastUpdated": "2026-07-15T04:57:12.559Z"
+      "lastUpdated": "2026-07-29T05:28:12.966Z"
     },
     {
       "code": "PW",
@@ -1981,7 +1981,7 @@
       "nativeName": "United Kingdom",
       "hasData": true,
       "mapperCount": 44,
-      "lastUpdated": "2026-07-15T04:56:59.879Z"
+      "lastUpdated": "2026-07-29T05:28:00.882Z"
     },
     {
       "code": "TZ",

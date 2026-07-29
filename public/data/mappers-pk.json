@@ -5,7 +5,7 @@
     "demonym": "Pakistan",
     "nativeName": "Pakistan"
   },
-  "lastUpdated": "2026-07-15T04:57:12.559Z",
+  "lastUpdated": "2026-07-29T05:28:12.966Z",
   "totalMappers": 1,
   "totalBeatmaps": 262,
   "totalBeatmapsets": 62,
@@ -11586,9 +11586,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "125",
-          "playcount": "81831"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2240527",
@@ -11626,9 +11624,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "237",
-          "playcount": "46147"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2202658",
@@ -11666,9 +11662,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "169",
-          "playcount": "92722"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2205447",
@@ -11685,9 +11679,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "223",
-          "playcount": "88651"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1178020",
@@ -11746,9 +11738,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "61",
-          "playcount": "56293"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2078575",
@@ -11779,9 +11769,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "414",
-          "playcount": "92595"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2008013",
@@ -14033,7 +14021,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 262
       },
-      "lastUpdated": "2026-07-15T04:57:12.559Z"
+      "lastUpdated": "2026-07-29T05:28:12.966Z"
     }
   ]
 }
