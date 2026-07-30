@@ -5,7 +5,7 @@
     "demonym": "Greece",
     "nativeName": "Greece"
   },
-  "lastUpdated": "2026-07-16T05:16:46.573Z",
+  "lastUpdated": "2026-07-30T05:14:21.631Z",
   "totalMappers": 2,
   "totalBeatmaps": 361,
   "totalBeatmapsets": 103,
@@ -17677,7 +17677,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 328
       },
-      "lastUpdated": "2026-07-16T05:16:46.573Z"
+      "lastUpdated": "2026-07-30T05:14:21.631Z"
     },
     {
       "user_id": "5530",
@@ -19146,47 +19146,23 @@
       ],
       "beatmapsets": [
         {
-          "beatmapset_id": "672",
-          "title": "J-E-N-O-V-A",
-          "artist": "Nobuo Uematsu",
+          "beatmapset_id": "3390",
+          "title": "Back 2 Good",
+          "artist": "Matchbox Twenty",
           "creator": "Sinistro",
-          "approved_date": "2008-02-06 02:06:26",
+          "approved_date": "2009-02-15 23:03:37",
           "difficulties": [
             {
-              "beatmap_id": "3883",
-              "version": "Easy",
-              "difficultyrating": "2.71533",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "3884",
-              "version": "Insane",
-              "difficultyrating": "3.636",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "688",
-          "title": "Staff Credits",
-          "artist": "Masato Nakamura",
-          "creator": "Sinistro",
-          "approved_date": "2008-03-09 11:40:37",
-          "difficulties": [
-            {
-              "beatmap_id": "5899",
-              "version": "Easy",
-              "difficultyrating": "2.30859",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "5900",
+              "beatmap_id": "25762",
               "version": "Normal",
-              "difficultyrating": "2.92282",
+              "difficultyrating": "2.15903",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "26167",
+              "version": "Hard",
+              "difficultyrating": "2.58307",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -19194,85 +19170,30 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "909",
-          "title": "Song of Ashley",
-          "artist": "Super Smash Bros. Brawl",
-          "creator": "Sinistro",
-          "approved_date": "2008-03-09 13:58:44",
-          "difficulties": [
-            {
-              "beatmap_id": "5907",
-              "version": "Easy",
-              "difficultyrating": "2.44579",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "5908",
-              "version": "Insane",
-              "difficultyrating": "2.93287",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "5909",
-              "version": "Normal",
-              "difficultyrating": "2.38564",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "919",
-          "title": "Maemuki Roketto-dan!",
-          "artist": "Team Rocket",
-          "creator": "Sinistro",
-          "approved_date": "2008-03-24 02:59:06",
-          "difficulties": [
-            {
-              "beatmap_id": "6694",
-              "version": "Normal",
-              "difficultyrating": "2.79513",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "6695",
-              "version": "Insane",
-              "difficultyrating": "3.56157",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "989",
-          "title": "Wonka's Welcome Song",
+          "beatmapset_id": "2150",
+          "title": "Mike Teavee",
           "artist": "Danny Elfman",
           "creator": "Sinistro",
-          "approved_date": "2008-03-29 13:18:21",
+          "approved_date": "2008-08-06 22:01:43",
           "difficulties": [
             {
-              "beatmap_id": "6965",
-              "version": "Marshmallow",
-              "difficultyrating": "1.94558",
+              "beatmap_id": "18922",
+              "version": "Angry",
+              "difficultyrating": "2.41908",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "6966",
-              "version": "Almond chocolate",
-              "difficultyrating": "2.08336",
+              "beatmap_id": "18923",
+              "version": "Annoyed",
+              "difficultyrating": "2.06668",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "6967",
-              "version": "Jawbreaker",
-              "difficultyrating": "2.76185",
+              "beatmap_id": "18924",
+              "version": "I HAVE FURY!",
+              "difficultyrating": "3.73207",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -19280,92 +19201,30 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "1092",
-          "title": "Star Wolf (Brawl remix)",
-          "artist": "Kentaro Ishizaka",
+          "beatmapset_id": "1464",
+          "title": "Ai (Chuuseishin)",
+          "artist": "Excel Girls",
           "creator": "Sinistro",
-          "approved_date": "2008-04-17 22:43:15",
+          "approved_date": "2008-07-02 12:01:14",
           "difficulties": [
             {
-              "beatmap_id": "8293",
-              "version": "You're not so tough!",
-              "difficultyrating": "2.33917",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "8294",
-              "version": "You're good, but I'm better!",
-              "difficultyrating": "2.93286",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "8295",
-              "version": "Playtime is over, Star Fox.",
-              "difficultyrating": "4.06249",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "1157",
-          "title": "Teenage Mutant Ninja Turtles",
-          "artist": "Chuck Lorre, Dennis Brown",
-          "creator": "Sinistro",
-          "approved_date": "2008-04-20 03:32:38",
-          "difficulties": [
-            {
-              "beatmap_id": "8539",
+              "beatmap_id": "16720",
               "version": "Easy",
-              "difficultyrating": "1.98968",
+              "difficultyrating": "1.80127",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "8540",
+              "beatmap_id": "16721",
               "version": "Normal",
-              "difficultyrating": "2.3795",
+              "difficultyrating": "2.44495",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "8541",
-              "version": "Insane",
-              "difficultyrating": "3.34762",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "1193",
-          "title": "Veruca Salt",
-          "artist": "Danny Elfman",
-          "creator": "Sinistro",
-          "approved_date": "2008-05-10 12:36:47",
-          "difficulties": [
-            {
-              "beatmap_id": "11050",
-              "version": "Fresh",
-              "difficultyrating": "1.65992",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "11051",
-              "version": "Overripe",
-              "difficultyrating": "2.24811",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "11052",
-              "version": "Spoiled rotten",
-              "difficultyrating": "2.98238",
+              "beatmap_id": "16722",
+              "version": "Excel",
+              "difficultyrating": "4.40791",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -19411,61 +19270,30 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "1464",
-          "title": "Ai (Chuuseishin)",
-          "artist": "Excel Girls",
-          "creator": "Sinistro",
-          "approved_date": "2008-07-02 12:01:14",
-          "difficulties": [
-            {
-              "beatmap_id": "16720",
-              "version": "Easy",
-              "difficultyrating": "1.80127",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "16721",
-              "version": "Normal",
-              "difficultyrating": "2.44495",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "16722",
-              "version": "Excel",
-              "difficultyrating": "4.40791",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "2150",
-          "title": "Mike Teavee",
+          "beatmapset_id": "1193",
+          "title": "Veruca Salt",
           "artist": "Danny Elfman",
           "creator": "Sinistro",
-          "approved_date": "2008-08-06 22:01:43",
+          "approved_date": "2008-05-10 12:36:47",
           "difficulties": [
             {
-              "beatmap_id": "18922",
-              "version": "Angry",
-              "difficultyrating": "2.41908",
+              "beatmap_id": "11050",
+              "version": "Fresh",
+              "difficultyrating": "1.65992",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "18923",
-              "version": "Annoyed",
-              "difficultyrating": "2.06668",
+              "beatmap_id": "11051",
+              "version": "Overripe",
+              "difficultyrating": "2.24811",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "18924",
-              "version": "I HAVE FURY!",
-              "difficultyrating": "3.73207",
+              "beatmap_id": "11052",
+              "version": "Spoiled rotten",
+              "difficultyrating": "2.98238",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -19473,23 +19301,195 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "3390",
-          "title": "Back 2 Good",
-          "artist": "Matchbox Twenty",
+          "beatmapset_id": "1157",
+          "title": "Teenage Mutant Ninja Turtles",
+          "artist": "Chuck Lorre, Dennis Brown",
           "creator": "Sinistro",
-          "approved_date": "2009-02-15 23:03:37",
+          "approved_date": "2008-04-20 03:32:38",
           "difficulties": [
             {
-              "beatmap_id": "25762",
-              "version": "Normal",
-              "difficultyrating": "2.15903",
+              "beatmap_id": "8539",
+              "version": "Easy",
+              "difficultyrating": "1.98968",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "26167",
-              "version": "Hard",
-              "difficultyrating": "2.58307",
+              "beatmap_id": "8540",
+              "version": "Normal",
+              "difficultyrating": "2.3795",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "8541",
+              "version": "Insane",
+              "difficultyrating": "3.34762",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "1092",
+          "title": "Star Wolf (Brawl remix)",
+          "artist": "Kentaro Ishizaka",
+          "creator": "Sinistro",
+          "approved_date": "2008-04-17 22:43:15",
+          "difficulties": [
+            {
+              "beatmap_id": "8293",
+              "version": "You're not so tough!",
+              "difficultyrating": "2.33917",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "8294",
+              "version": "You're good, but I'm better!",
+              "difficultyrating": "2.93286",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "8295",
+              "version": "Playtime is over, Star Fox.",
+              "difficultyrating": "4.06249",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "989",
+          "title": "Wonka's Welcome Song",
+          "artist": "Danny Elfman",
+          "creator": "Sinistro",
+          "approved_date": "2008-03-29 13:18:21",
+          "difficulties": [
+            {
+              "beatmap_id": "6965",
+              "version": "Marshmallow",
+              "difficultyrating": "1.94558",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "6966",
+              "version": "Almond chocolate",
+              "difficultyrating": "2.08336",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "6967",
+              "version": "Jawbreaker",
+              "difficultyrating": "2.76185",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "919",
+          "title": "Maemuki Roketto-dan!",
+          "artist": "Team Rocket",
+          "creator": "Sinistro",
+          "approved_date": "2008-03-24 02:59:06",
+          "difficulties": [
+            {
+              "beatmap_id": "6694",
+              "version": "Normal",
+              "difficultyrating": "2.79513",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "6695",
+              "version": "Insane",
+              "difficultyrating": "3.56157",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "909",
+          "title": "Song of Ashley",
+          "artist": "Super Smash Bros. Brawl",
+          "creator": "Sinistro",
+          "approved_date": "2008-03-09 13:58:44",
+          "difficulties": [
+            {
+              "beatmap_id": "5907",
+              "version": "Easy",
+              "difficultyrating": "2.44579",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "5908",
+              "version": "Insane",
+              "difficultyrating": "2.93287",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "5909",
+              "version": "Normal",
+              "difficultyrating": "2.38564",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "688",
+          "title": "Staff Credits",
+          "artist": "Masato Nakamura",
+          "creator": "Sinistro",
+          "approved_date": "2008-03-09 11:40:37",
+          "difficulties": [
+            {
+              "beatmap_id": "5899",
+              "version": "Easy",
+              "difficultyrating": "2.30859",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "5900",
+              "version": "Normal",
+              "difficultyrating": "2.92282",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "672",
+          "title": "J-E-N-O-V-A",
+          "artist": "Nobuo Uematsu",
+          "creator": "Sinistro",
+          "approved_date": "2008-02-06 02:06:26",
+          "difficulties": [
+            {
+              "beatmap_id": "3883",
+              "version": "Easy",
+              "difficultyrating": "2.71533",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "3884",
+              "version": "Insane",
+              "difficultyrating": "3.636",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -19506,7 +19506,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 33
       },
-      "lastUpdated": "2026-07-16T05:16:46.573Z"
+      "lastUpdated": "2026-07-30T05:14:21.631Z"
     }
   ]
 }

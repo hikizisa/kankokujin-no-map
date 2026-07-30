@@ -5,7 +5,7 @@
     "demonym": "Austria",
     "nativeName": "Austria"
   },
-  "lastUpdated": "2026-07-16T05:16:45.784Z",
+  "lastUpdated": "2026-07-30T05:14:20.727Z",
   "totalMappers": 2,
   "totalBeatmaps": 158,
   "totalBeatmapsets": 56,
@@ -6522,9 +6522,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "27",
-          "playcount": "5140"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2278996",
@@ -6583,9 +6581,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "22",
-          "playcount": "47536"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2292823",
@@ -6651,9 +6647,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "86",
-          "playcount": "47618"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2307872",
@@ -6670,9 +6664,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "7",
-          "playcount": "5446"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2239329",
@@ -6689,9 +6681,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "23",
-          "playcount": "8299"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2239310",
@@ -6708,9 +6698,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "46",
-          "playcount": "15625"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2257758",
@@ -6776,9 +6764,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "33",
-          "playcount": "100826"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2230774",
@@ -6795,9 +6781,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "28",
-          "playcount": "8245"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2191184",
@@ -6821,9 +6805,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "30",
-          "playcount": "5150"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2241735",
@@ -6840,9 +6822,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "101",
-          "playcount": "9811"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2202800",
@@ -6859,9 +6839,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "19",
-          "playcount": "11701"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2143862",
@@ -6906,9 +6884,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "123",
-          "playcount": "25574"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2147438",
@@ -6925,9 +6901,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "19",
-          "playcount": "2467"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2137241",
@@ -6944,9 +6918,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "21",
-          "playcount": "9910"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1960126",
@@ -7780,7 +7752,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 141
       },
-      "lastUpdated": "2026-07-16T05:16:45.784Z"
+      "lastUpdated": "2026-07-30T05:14:20.727Z"
     },
     {
       "user_id": "73480",
@@ -8545,106 +8517,6 @@
       ],
       "beatmapsets": [
         {
-          "beatmapset_id": "6581",
-          "title": "Hold Me Like A Princess",
-          "artist": "Kagamine Rin",
-          "creator": "Hanyuu",
-          "approved_date": "2009-07-04 19:46:22",
-          "difficulties": [
-            {
-              "beatmap_id": "29694",
-              "version": "Hard",
-              "difficultyrating": "4.15377",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "30464",
-              "version": "Normal",
-              "difficultyrating": "2.78125",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "30952",
-              "version": "Easy",
-              "difficultyrating": "2.17078",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "31570",
-              "version": "ignore's Insane",
-              "difficultyrating": "4.48737",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "7794",
-          "title": "Death Moon II",
-          "artist": "SHK",
-          "creator": "Hanyuu",
-          "approved_date": "2010-01-27 18:39:02",
-          "difficulties": [
-            {
-              "beatmap_id": "36344",
-              "version": "ignore's Hard",
-              "difficultyrating": "4.22535",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "39930",
-              "version": "Normal",
-              "difficultyrating": "2.61694",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "41034",
-              "version": "FARTOWNIK'S STAGE",
-              "difficultyrating": "5.29818",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "44604",
-              "version": "Teara's Easy",
-              "difficultyrating": "1.50969",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "12116",
-          "title": "Delirium",
-          "artist": "Smiley",
-          "creator": "Hanyuu",
-          "approved_date": "2010-01-28 20:49:16",
-          "difficulties": [
-            {
-              "beatmap_id": "45695",
-              "version": "Hard",
-              "difficultyrating": "4.43403",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "45720",
-              "version": "Normal",
-              "difficultyrating": "2.11926",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
           "beatmapset_id": "65847",
           "title": "Toki wo Kizamu Uta",
           "artist": "nayuta",
@@ -8702,6 +8574,106 @@
             }
           ],
           "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "12116",
+          "title": "Delirium",
+          "artist": "Smiley",
+          "creator": "Hanyuu",
+          "approved_date": "2010-01-28 20:49:16",
+          "difficulties": [
+            {
+              "beatmap_id": "45695",
+              "version": "Hard",
+              "difficultyrating": "4.43403",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "45720",
+              "version": "Normal",
+              "difficultyrating": "2.11926",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "7794",
+          "title": "Death Moon II",
+          "artist": "SHK",
+          "creator": "Hanyuu",
+          "approved_date": "2010-01-27 18:39:02",
+          "difficulties": [
+            {
+              "beatmap_id": "36344",
+              "version": "ignore's Hard",
+              "difficultyrating": "4.22535",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "39930",
+              "version": "Normal",
+              "difficultyrating": "2.61694",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "41034",
+              "version": "FARTOWNIK'S STAGE",
+              "difficultyrating": "5.29818",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "44604",
+              "version": "Teara's Easy",
+              "difficultyrating": "1.50969",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "6581",
+          "title": "Hold Me Like A Princess",
+          "artist": "Kagamine Rin",
+          "creator": "Hanyuu",
+          "approved_date": "2009-07-04 19:46:22",
+          "difficulties": [
+            {
+              "beatmap_id": "29694",
+              "version": "Hard",
+              "difficultyrating": "4.15377",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "30464",
+              "version": "Normal",
+              "difficultyrating": "2.78125",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "30952",
+              "version": "Easy",
+              "difficultyrating": "2.17078",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "31570",
+              "version": "ignore's Insane",
+              "difficultyrating": "4.48737",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
         }
       ],
       "guestDifficulties": [],
@@ -8713,7 +8685,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 17
       },
-      "lastUpdated": "2026-07-16T05:16:45.784Z"
+      "lastUpdated": "2026-07-30T05:14:20.727Z"
     }
   ]
 }
