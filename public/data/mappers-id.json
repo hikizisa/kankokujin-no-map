@@ -5,11 +5,11 @@
     "demonym": "Indonesia",
     "nativeName": "Indonesia"
   },
-  "lastUpdated": "2026-07-18T04:53:59.568Z",
+  "lastUpdated": "2026-08-01T05:32:38.227Z",
   "totalMappers": 14,
-  "totalBeatmaps": 1124,
-  "totalBeatmapsets": 287,
-  "totalOwnBeatmapsets": 287,
+  "totalBeatmaps": 1129,
+  "totalBeatmapsets": 288,
+  "totalOwnBeatmapsets": 288,
   "totalGuestBeatmapsets": 0,
   "totalGuestDiffs": 0,
   "totalOwnDifficulties": 1124,
@@ -13191,9 +13191,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "308",
-          "playcount": "90536"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2308571",
@@ -13238,9 +13236,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "268",
-          "playcount": "94586"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1461937",
@@ -13278,9 +13274,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "76",
-          "playcount": "28111"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2214814",
@@ -13346,9 +13340,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "55",
-          "playcount": "29429"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2219697",
@@ -13386,9 +13378,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "475",
-          "playcount": "120316"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1606686",
@@ -13405,9 +13395,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "77",
-          "playcount": "16930"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1688622",
@@ -13452,9 +13440,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "195",
-          "playcount": "100085"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2132288",
@@ -13492,9 +13478,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "227",
-          "playcount": "79177"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1769310",
@@ -13539,9 +13523,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "558",
-          "playcount": "251528"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1987180",
@@ -15770,7 +15752,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 293
       },
-      "lastUpdated": "2026-07-18T04:53:59.568Z"
+      "lastUpdated": "2026-08-01T05:32:38.227Z"
     },
     {
       "user_id": "4610379",
@@ -25942,9 +25924,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "40",
-          "playcount": "20994"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1251101",
@@ -25982,9 +25962,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "24",
-          "playcount": "2637"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1147783",
@@ -26050,9 +26028,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "41",
-          "playcount": "39401"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "839243",
@@ -26097,9 +26073,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "64",
-          "playcount": "20255"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1276059",
@@ -27984,7 +27958,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 230
       },
-      "lastUpdated": "2026-07-18T04:53:59.568Z"
+      "lastUpdated": "2026-08-01T05:32:38.227Z"
     },
     {
       "user_id": "8972308",
@@ -36834,9 +36808,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "89",
-          "playcount": "6492"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1882896",
@@ -36888,9 +36860,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "27",
-          "playcount": "8631"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2171905",
@@ -36914,9 +36884,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "95",
-          "playcount": "10595"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1980589",
@@ -36961,9 +36929,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "111",
-          "playcount": "28652"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2242304",
@@ -36980,9 +36946,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "245",
-          "playcount": "19243"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2043954",
@@ -37020,9 +36984,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "87",
-          "playcount": "15223"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1498309",
@@ -37039,9 +37001,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "235",
-          "playcount": "107722"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1540170",
@@ -37135,9 +37095,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "429",
-          "playcount": "405417"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1464846",
@@ -37161,9 +37119,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "82",
-          "playcount": "27839"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1850986",
@@ -38783,7 +38739,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 200
       },
-      "lastUpdated": "2026-07-18T04:53:59.568Z"
+      "lastUpdated": "2026-08-01T05:32:38.227Z"
     },
     {
       "user_id": "119134",
@@ -44240,7 +44196,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 101
       },
-      "lastUpdated": "2026-07-18T04:53:59.568Z"
+      "lastUpdated": "2026-08-01T05:32:38.227Z"
     },
     {
       "user_id": "3378391",
@@ -44249,7 +44205,7 @@
         "Error-"
       ],
       "country": "ID",
-      "rankedBeatmaps": 73,
+      "rankedBeatmaps": 74,
       "rankedBeatmapsets": 19,
       "ownBeatmapsets": 19,
       "guestBeatmapsets": 0,
@@ -44519,6 +44475,50 @@
           "diff_aim": "3.30738",
           "diff_speed": "2.48634",
           "difficultyrating": "6.07649"
+        },
+        {
+          "beatmapset_id": "1057015",
+          "beatmap_id": "2776487",
+          "approved": "1",
+          "total_length": "130",
+          "hit_length": "120",
+          "version": "Keitarosu's Hard",
+          "file_md5": "9d07396f8bcdebb7e1f6a02b88eaec1f",
+          "diff_size": "3.8",
+          "diff_overall": "6",
+          "diff_approach": "7.2",
+          "diff_drain": "4.5",
+          "mode": "0",
+          "count_normal": "120",
+          "count_slider": "206",
+          "count_spinner": "2",
+          "submit_date": "2019-10-27 04:01:17",
+          "approved_date": "2021-01-17 14:02:49",
+          "last_update": "2021-01-10 02:38:06",
+          "artist": "Nanamori-chu * Goraku-bu",
+          "artist_unicode": "七森中☆ごらく部",
+          "title": "Happy Time wa Owaranai (Cut Ver.)",
+          "title_unicode": "ハッピータイムは終わらない (Cut Ver.)",
+          "creator": "-Keitaro",
+          "creator_id": "3378391",
+          "bpm": "190",
+          "source": "ゆるゆり",
+          "tags": "japanese anime pop yuruyuri 三上枝織 大坪由佳 津田美波 大久保瑠美 mikami shiori otsubo yuka tsuda minami okubo rumi 赤座あかり akaza akari 歳納京子 toshino kyoko 船見結衣 funami yui 吉川ちなつ yoshikawa chinatsu ioexception deadcode ceo of osu ceo_of_osu",
+          "genre_id": "5",
+          "language_id": "3",
+          "favourite_count": "128",
+          "rating": "7.85106",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "29701",
+          "passcount": "4895",
+          "packs": "P178,S975",
+          "max_combo": "574",
+          "diff_aim": "1.80288",
+          "diff_speed": "1.44447",
+          "difficultyrating": "3.36445"
         },
         {
           "beatmapset_id": "1200733",
@@ -47518,6 +47518,13 @@
               "difficultyrating": "6.07649",
               "mode": "0",
               "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "2776487",
+              "version": "Keitarosu's Hard",
+              "difficultyrating": "3.36445",
+              "mode": "0",
+              "isGuestDiff": false
             }
           ],
           "isOwnMapset": true
@@ -48174,14 +48181,14 @@
       ],
       "guestDifficulties": [],
       "stats": {
-        "totalBeatmaps": 73,
+        "totalBeatmaps": 74,
         "totalBeatmapsets": 19,
         "ownBeatmapsets": 19,
         "guestBeatmapsets": 0,
         "totalGuestDiffs": 0,
-        "ownDifficulties": 73
+        "ownDifficulties": 74
       },
-      "lastUpdated": "2026-07-18T04:53:59.568Z"
+      "lastUpdated": "2026-08-01T05:32:38.227Z"
     },
     {
       "user_id": "185422",
@@ -51794,7 +51801,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 67
       },
-      "lastUpdated": "2026-07-18T04:53:59.568Z"
+      "lastUpdated": "2026-08-01T05:32:38.227Z"
     },
     {
       "user_id": "2261651",
@@ -51803,13 +51810,189 @@
         "William K"
       ],
       "country": "ID",
-      "rankedBeatmaps": 46,
-      "rankedBeatmapsets": 14,
-      "ownBeatmapsets": 14,
+      "rankedBeatmaps": 50,
+      "rankedBeatmapsets": 15,
+      "ownBeatmapsets": 15,
       "guestBeatmapsets": 0,
       "totalGuestDiffs": 0,
       "ownDifficulties": 46,
       "beatmaps": [
+        {
+          "beatmapset_id": "2430620",
+          "beatmap_id": "5294719",
+          "approved": "1",
+          "total_length": "94",
+          "hit_length": "93",
+          "version": "Mirage",
+          "file_md5": "734de7912bbcb50b038d064beb0835c0",
+          "diff_size": "4",
+          "diff_overall": "8",
+          "diff_approach": "9.3",
+          "diff_drain": "6",
+          "mode": "0",
+          "count_normal": "128",
+          "count_slider": "212",
+          "count_spinner": "1",
+          "submit_date": "2025-09-05 04:49:11",
+          "approved_date": "2026-07-26 18:02:11",
+          "last_update": "2026-07-17 15:16:16",
+          "artist": "mafumafu",
+          "artist_unicode": "まふまふ",
+          "title": "Yasou to Hakuchumu (Short Ver.)",
+          "title_unicode": "夜想と白昼夢 (Short Ver.)",
+          "creator": "Hilane",
+          "creator_id": "2261651",
+          "bpm": "184",
+          "source": "オルタンシア・サーガ",
+          "tags": "horsaga hortensia saga william_k william k fl37 regraz mafumafu gokugohan12468 kittyadventure kyouren isagi yoichi japanese jp j-pop pop jpop j-rock rock jrock",
+          "genre_id": "5",
+          "language_id": "3",
+          "favourite_count": "22",
+          "rating": "9.5",
+          "storyboard": "0",
+          "video": "1",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "1009",
+          "passcount": "208",
+          "packs": null,
+          "max_combo": "569",
+          "diff_aim": "3.56028",
+          "diff_speed": "1.75843",
+          "difficultyrating": "6.06218"
+        },
+        {
+          "beatmapset_id": "2430620",
+          "beatmap_id": "5536610",
+          "approved": "1",
+          "total_length": "90",
+          "hit_length": "89",
+          "version": "FL37's Hard",
+          "file_md5": "6ee3f966ae462a43d37371a210f6f672",
+          "diff_size": "3.8",
+          "diff_overall": "6.6",
+          "diff_approach": "7.2",
+          "diff_drain": "5.2",
+          "mode": "0",
+          "count_normal": "118",
+          "count_slider": "110",
+          "count_spinner": "2",
+          "submit_date": "2025-09-05 04:49:11",
+          "approved_date": "2026-07-26 18:02:11",
+          "last_update": "2026-07-17 15:16:16",
+          "artist": "mafumafu",
+          "artist_unicode": "まふまふ",
+          "title": "Yasou to Hakuchumu (Short Ver.)",
+          "title_unicode": "夜想と白昼夢 (Short Ver.)",
+          "creator": "Hilane",
+          "creator_id": "2261651",
+          "bpm": "184",
+          "source": "オルタンシア・サーガ",
+          "tags": "horsaga hortensia saga william_k william k fl37 regraz mafumafu gokugohan12468 kittyadventure kyouren isagi yoichi japanese jp j-pop pop jpop j-rock rock jrock",
+          "genre_id": "5",
+          "language_id": "3",
+          "favourite_count": "22",
+          "rating": "9.5",
+          "storyboard": "0",
+          "video": "1",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "702",
+          "passcount": "209",
+          "packs": null,
+          "max_combo": "369",
+          "diff_aim": "1.95481",
+          "diff_speed": "1.27",
+          "difficultyrating": "3.48242"
+        },
+        {
+          "beatmapset_id": "2430620",
+          "beatmap_id": "5585457",
+          "approved": "1",
+          "total_length": "93",
+          "hit_length": "92",
+          "version": "mafumafu's Normal",
+          "file_md5": "a4cd10075ba43558e7bee983cc53e0c1",
+          "diff_size": "3.3",
+          "diff_overall": "4",
+          "diff_approach": "5.5",
+          "diff_drain": "4",
+          "mode": "0",
+          "count_normal": "81",
+          "count_slider": "118",
+          "count_spinner": "1",
+          "submit_date": "2025-09-05 04:49:11",
+          "approved_date": "2026-07-26 18:02:11",
+          "last_update": "2026-07-17 15:16:16",
+          "artist": "mafumafu",
+          "artist_unicode": "まふまふ",
+          "title": "Yasou to Hakuchumu (Short Ver.)",
+          "title_unicode": "夜想と白昼夢 (Short Ver.)",
+          "creator": "Hilane",
+          "creator_id": "2261651",
+          "bpm": "184",
+          "source": "オルタンシア・サーガ",
+          "tags": "horsaga hortensia saga william_k william k fl37 regraz mafumafu gokugohan12468 kittyadventure kyouren isagi yoichi japanese jp j-pop pop jpop j-rock rock jrock",
+          "genre_id": "5",
+          "language_id": "3",
+          "favourite_count": "22",
+          "rating": "9.5",
+          "storyboard": "0",
+          "video": "1",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "576",
+          "passcount": "267",
+          "packs": null,
+          "max_combo": "342",
+          "diff_aim": "1.37441",
+          "diff_speed": "1.01722",
+          "difficultyrating": "2.56041"
+        },
+        {
+          "beatmapset_id": "2430620",
+          "beatmap_id": "5616552",
+          "approved": "1",
+          "total_length": "93",
+          "hit_length": "92",
+          "version": "Yoichi's Insane",
+          "file_md5": "c3a7f680d936332d0edd67de602e1cc1",
+          "diff_size": "4",
+          "diff_overall": "7.5",
+          "diff_approach": "8.6",
+          "diff_drain": "5.5",
+          "mode": "0",
+          "count_normal": "114",
+          "count_slider": "149",
+          "count_spinner": "2",
+          "submit_date": "2025-09-05 04:49:11",
+          "approved_date": "2026-07-26 18:02:11",
+          "last_update": "2026-07-17 15:16:16",
+          "artist": "mafumafu",
+          "artist_unicode": "まふまふ",
+          "title": "Yasou to Hakuchumu (Short Ver.)",
+          "title_unicode": "夜想と白昼夢 (Short Ver.)",
+          "creator": "Hilane",
+          "creator_id": "2261651",
+          "bpm": "184",
+          "source": "オルタンシア・サーガ",
+          "tags": "horsaga hortensia saga william_k william k fl37 regraz mafumafu gokugohan12468 kittyadventure kyouren isagi yoichi japanese jp j-pop pop jpop j-rock rock jrock",
+          "genre_id": "5",
+          "language_id": "3",
+          "favourite_count": "22",
+          "rating": "9.5",
+          "storyboard": "0",
+          "video": "1",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "965",
+          "passcount": "377",
+          "packs": null,
+          "max_combo": "446",
+          "diff_aim": "2.56984",
+          "diff_speed": "1.79062",
+          "difficultyrating": "4.59864"
+        },
         {
           "beatmapset_id": "2508518",
           "beatmap_id": "5525324",
@@ -53972,9 +54155,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "64",
-          "playcount": "13259"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1345784",
@@ -54299,18 +54480,56 @@
             }
           ],
           "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "2430620",
+          "title": "Yasou to Hakuchumu (Short Ver.)",
+          "artist": "mafumafu",
+          "creator": "Hilane",
+          "approved_date": "2026-07-26 18:02:11",
+          "difficulties": [
+            {
+              "beatmap_id": "5294719",
+              "version": "Mirage",
+              "difficultyrating": "6.06218",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "5536610",
+              "version": "FL37's Hard",
+              "difficultyrating": "3.48242",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "5585457",
+              "version": "mafumafu's Normal",
+              "difficultyrating": "2.56041",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "5616552",
+              "version": "Yoichi's Insane",
+              "difficultyrating": "4.59864",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
         }
       ],
       "guestDifficulties": [],
       "stats": {
-        "totalBeatmaps": 46,
-        "totalBeatmapsets": 14,
-        "ownBeatmapsets": 14,
+        "totalBeatmaps": 50,
+        "totalBeatmapsets": 15,
+        "ownBeatmapsets": 15,
         "guestBeatmapsets": 0,
         "totalGuestDiffs": 0,
-        "ownDifficulties": 46
+        "ownDifficulties": 50
       },
-      "lastUpdated": "2026-07-18T04:53:59.568Z"
+      "lastUpdated": "2026-08-01T05:32:38.227Z"
     },
     {
       "user_id": "7989003",
@@ -55673,7 +55892,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 25
       },
-      "lastUpdated": "2026-07-18T04:53:59.568Z"
+      "lastUpdated": "2026-08-01T05:32:38.227Z"
     },
     {
       "user_id": "9229539",
@@ -56718,9 +56937,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "49",
-          "playcount": "5536"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "843916",
@@ -56758,9 +56975,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "190",
-          "playcount": "59035"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1728013",
@@ -56958,7 +57173,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 23
       },
-      "lastUpdated": "2026-07-18T04:53:59.568Z"
+      "lastUpdated": "2026-08-01T05:32:38.227Z"
     },
     {
       "user_id": "155648",
@@ -58115,7 +58330,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 21
       },
-      "lastUpdated": "2026-07-18T04:53:59.568Z"
+      "lastUpdated": "2026-08-01T05:32:38.227Z"
     },
     {
       "user_id": "117865",
@@ -59111,7 +59326,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 18
       },
-      "lastUpdated": "2026-07-18T04:53:59.568Z"
+      "lastUpdated": "2026-08-01T05:32:38.227Z"
     },
     {
       "user_id": "10560",
@@ -59942,7 +60157,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 15
       },
-      "lastUpdated": "2026-07-18T04:53:59.568Z"
+      "lastUpdated": "2026-08-01T05:32:38.227Z"
     },
     {
       "user_id": "67953",
@@ -60396,7 +60611,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 8
       },
-      "lastUpdated": "2026-07-18T04:53:59.568Z"
+      "lastUpdated": "2026-08-01T05:32:38.227Z"
     },
     {
       "user_id": "50666",
@@ -60636,7 +60851,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 4
       },
-      "lastUpdated": "2026-07-18T04:53:59.568Z"
+      "lastUpdated": "2026-08-01T05:32:38.227Z"
     }
   ]
 }
