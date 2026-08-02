@@ -31762,13 +31762,13 @@
           "tags": "lafayla anime op opening jp japanese rock j-rock jrock kanojo ga koushaku-tei ni itta riyuu why raeliana ended up at the duke's dukes mansion",
           "genre_id": "3",
           "language_id": "3",
-          "favourite_count": "60",
+          "favourite_count": "61",
           "rating": "9.05155",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "26614",
+          "playcount": "26713",
           "passcount": "7022",
           "packs": "S1334",
           "max_combo": "499",
@@ -31806,13 +31806,13 @@
           "tags": "lafayla anime op opening jp japanese rock j-rock jrock kanojo ga koushaku-tei ni itta riyuu why raeliana ended up at the duke's dukes mansion",
           "genre_id": "3",
           "language_id": "3",
-          "favourite_count": "60",
+          "favourite_count": "61",
           "rating": "9.05155",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "11296",
+          "playcount": "11332",
           "passcount": "3910",
           "packs": "S1334",
           "max_combo": "466",
@@ -31850,7 +31850,7 @@
           "tags": "lafayla anime op opening jp japanese rock j-rock jrock kanojo ga koushaku-tei ni itta riyuu why raeliana ended up at the duke's dukes mansion",
           "genre_id": "3",
           "language_id": "3",
-          "favourite_count": "60",
+          "favourite_count": "61",
           "rating": "9.05155",
           "storyboard": "0",
           "video": "0",
@@ -31894,7 +31894,7 @@
           "tags": "lafayla anime op opening jp japanese rock j-rock jrock kanojo ga koushaku-tei ni itta riyuu why raeliana ended up at the duke's dukes mansion",
           "genre_id": "3",
           "language_id": "3",
-          "favourite_count": "60",
+          "favourite_count": "61",
           "rating": "9.05155",
           "storyboard": "0",
           "video": "0",
@@ -36905,7 +36905,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "61",
+          "playcount": "48784"
         },
         {
           "beatmapset_id": "1995816",
@@ -57831,7 +57833,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "19171",
+          "playcount": "19315",
           "passcount": "3182",
           "packs": "S1336",
           "max_combo": "1542",
@@ -57875,7 +57877,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "17704",
+          "playcount": "17911",
           "passcount": "866",
           "packs": "S1336",
           "max_combo": "2943",
@@ -62625,7 +62627,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "25",
+          "playcount": "19315"
         },
         {
           "beatmapset_id": "2023572",
@@ -62642,7 +62646,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "58",
+          "playcount": "17911"
         },
         {
           "beatmapset_id": "1850921",
@@ -69906,7 +69912,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "14536",
+          "playcount": "14797",
           "passcount": "2718",
           "packs": "S1339",
           "max_combo": "1470",
@@ -69950,7 +69956,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "12961",
+          "playcount": "13285",
           "passcount": "1530",
           "packs": "S1339",
           "max_combo": "1533",
@@ -69994,7 +70000,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "4843",
+          "playcount": "4879",
           "passcount": "920",
           "packs": "S1339",
           "max_combo": "689",
@@ -70038,7 +70044,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "6013",
+          "playcount": "6085",
           "passcount": "573",
           "packs": "S1339",
           "max_combo": "1210",
@@ -70082,7 +70088,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "5014",
+          "playcount": "5077",
           "passcount": "257",
           "packs": "S1339",
           "max_combo": "1448",
@@ -72004,7 +72010,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "80",
+          "playcount": "44123"
         },
         {
           "beatmapset_id": "1659613",

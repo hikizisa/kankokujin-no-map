@@ -35989,7 +35989,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "2665",
+          "playcount": "2692",
           "passcount": "379",
           "packs": "S1838",
           "max_combo": "1597",
@@ -36033,7 +36033,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "1225",
+          "playcount": "1279",
           "passcount": "213",
           "packs": "S1838",
           "max_combo": "1479",
@@ -36077,7 +36077,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "890",
+          "playcount": "905",
           "passcount": "155",
           "packs": "S1838",
           "max_combo": "1537",
@@ -36121,7 +36121,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "1144",
+          "playcount": "1171",
           "passcount": "92",
           "packs": "S1838",
           "max_combo": "1266",
@@ -36165,7 +36165,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "1126",
+          "playcount": "1153",
           "passcount": "95",
           "packs": "S1838",
           "max_combo": "1166",
@@ -36209,7 +36209,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "2953",
+          "playcount": "2962",
           "passcount": "508",
           "packs": "S1806",
           "max_combo": "1517",
@@ -36247,7 +36247,7 @@
           "tags": "jrock j-rock japanese game 07th expansion 5qb.records five ps2 playstation 2 alchemist opening theme full version higurashi no naku koro ni matsuri when they cry evilelvis v2 jounzan natteke desu pregnant_man rock video",
           "genre_id": "2",
           "language_id": "3",
-          "favourite_count": "54",
+          "favourite_count": "55",
           "rating": "9.76471",
           "storyboard": "0",
           "video": "0",
@@ -36385,7 +36385,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "7975",
+          "playcount": "7984",
           "passcount": "803",
           "packs": "S1583",
           "max_combo": "1395",
@@ -36429,7 +36429,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "11197",
+          "playcount": "11224",
           "passcount": "916",
           "packs": "S1583",
           "max_combo": "1234",
@@ -36649,7 +36649,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "5194",
+          "playcount": "5203",
           "passcount": "742",
           "packs": "S1539",
           "max_combo": "944",
@@ -36693,7 +36693,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "12880",
+          "playcount": "12907",
           "passcount": "886",
           "packs": "S1539",
           "max_combo": "2616",
@@ -36737,7 +36737,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "13132",
+          "playcount": "13141",
           "passcount": "756",
           "packs": "S1523",
           "max_combo": "1882",
@@ -36863,13 +36863,13 @@
           "tags": "electronic japanese anime jea bassline crisis 危ないベースライン doujin dojin srpc-0027 sharpnelsound mm! group emu emu! えむえむっ! caren_sk reiji-rj",
           "genre_id": "10",
           "language_id": "3",
-          "favourite_count": "371",
+          "favourite_count": "370",
           "rating": "9.55",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "110638",
+          "playcount": "110710",
           "passcount": "9752",
           "packs": null,
           "max_combo": "1978",
@@ -36907,13 +36907,13 @@
           "tags": "パンティ＆ストッキングwithガーターベルト 充徳 — 池田 pansto and gainax ending ed anime english anarchy pop ☆taku takahashi *taku m-flo mflo 高橋拓 jounzan evilelvis evilelvisv2",
           "genre_id": "3",
           "language_id": "2",
-          "favourite_count": "96",
+          "favourite_count": "97",
           "rating": "9.25",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "20206",
+          "playcount": "20260",
           "passcount": "2150",
           "packs": "S1383",
           "max_combo": "1270",
@@ -41146,7 +41146,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "65",
+          "playcount": "7200"
         },
         {
           "beatmapset_id": "310297",
@@ -41163,7 +41165,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "26",
+          "playcount": "2962"
         },
         {
           "beatmapset_id": "2150852",
@@ -41180,7 +41184,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "55",
+          "playcount": "3142"
         },
         {
           "beatmapset_id": "2372033",
@@ -41197,7 +41203,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "32",
+          "playcount": "3052"
         },
         {
           "beatmapset_id": "2413420",
@@ -41214,7 +41222,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "23",
+          "playcount": "8137"
         },
         {
           "beatmapset_id": "2302249",
@@ -41238,7 +41248,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "68",
+          "playcount": "19208"
         },
         {
           "beatmapset_id": "2288529",
@@ -41262,7 +41274,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "19",
+          "playcount": "5510"
         },
         {
           "beatmapset_id": "2293757",
@@ -41279,7 +41293,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "22",
+          "playcount": "4780"
         },
         {
           "beatmapset_id": "2280980",
@@ -41303,7 +41319,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "31",
+          "playcount": "11189"
         },
         {
           "beatmapset_id": "2271521",
@@ -41320,7 +41338,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "79",
+          "playcount": "12907"
         },
         {
           "beatmapset_id": "2139747",
@@ -41337,7 +41357,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "37",
+          "playcount": "13141"
         },
         {
           "beatmapset_id": "2154893",
@@ -41361,7 +41383,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "26",
+          "playcount": "8993"
         },
         {
           "beatmapset_id": "336272",
@@ -41378,7 +41402,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "370",
+          "playcount": "110710"
         },
         {
           "beatmapset_id": "2118494",
@@ -41395,7 +41421,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "97",
+          "playcount": "20260"
         },
         {
           "beatmapset_id": "1029346",
@@ -47989,7 +48017,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "452",
+          "playcount": "458",
           "passcount": "37",
           "packs": null,
           "max_combo": "1648",
@@ -48027,13 +48055,13 @@
           "tags": "english rock punk alternative metal the early years revisited 2015 neilperry wavewy lightin chogori nine19 gazpriest feelthepain owc2025 osu world cup quarterfinals qf nomod nm1 owc2025qfnm1",
           "genre_id": "4",
           "language_id": "2",
-          "favourite_count": "42",
+          "favourite_count": "41",
           "rating": "8.41177",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "991",
+          "playcount": "1108",
           "passcount": "255",
           "packs": null,
           "max_combo": "1220",
@@ -48071,13 +48099,13 @@
           "tags": "english rock punk alternative metal the early years revisited 2015 neilperry wavewy lightin chogori nine19 gazpriest feelthepain owc2025 osu world cup quarterfinals qf nomod nm1 owc2025qfnm1",
           "genre_id": "4",
           "language_id": "2",
-          "favourite_count": "42",
+          "favourite_count": "41",
           "rating": "8.41177",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "499",
+          "playcount": "536",
           "passcount": "218",
           "packs": null,
           "max_combo": "614",
@@ -48115,13 +48143,13 @@
           "tags": "english rock punk alternative metal the early years revisited 2015 neilperry wavewy lightin chogori nine19 gazpriest feelthepain owc2025 osu world cup quarterfinals qf nomod nm1 owc2025qfnm1",
           "genre_id": "4",
           "language_id": "2",
-          "favourite_count": "42",
+          "favourite_count": "41",
           "rating": "8.41177",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "1162",
+          "playcount": "1279",
           "passcount": "151",
           "packs": null,
           "max_combo": "1429",
@@ -48159,13 +48187,13 @@
           "tags": "english rock punk alternative metal the early years revisited 2015 neilperry wavewy lightin chogori nine19 gazpriest feelthepain owc2025 osu world cup quarterfinals qf nomod nm1 owc2025qfnm1",
           "genre_id": "4",
           "language_id": "2",
-          "favourite_count": "42",
+          "favourite_count": "41",
           "rating": "8.41177",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "588",
+          "playcount": "652",
           "passcount": "126",
           "packs": null,
           "max_combo": "813",
@@ -48203,13 +48231,13 @@
           "tags": "english rock punk alternative metal the early years revisited 2015 neilperry wavewy lightin chogori nine19 gazpriest feelthepain owc2025 osu world cup quarterfinals qf nomod nm1 owc2025qfnm1",
           "genre_id": "4",
           "language_id": "2",
-          "favourite_count": "42",
+          "favourite_count": "41",
           "rating": "8.41177",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "777",
+          "playcount": "869",
           "passcount": "182",
           "packs": null,
           "max_combo": "1102",
@@ -48247,13 +48275,13 @@
           "tags": "english rock punk alternative metal the early years revisited 2015 neilperry wavewy lightin chogori nine19 gazpriest feelthepain owc2025 osu world cup quarterfinals qf nomod nm1 owc2025qfnm1",
           "genre_id": "4",
           "language_id": "2",
-          "favourite_count": "42",
+          "favourite_count": "41",
           "rating": "8.41177",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "1018",
+          "playcount": "1135",
           "passcount": "223",
           "packs": null,
           "max_combo": "1030",
@@ -48291,13 +48319,13 @@
           "tags": "english rock punk alternative metal the early years revisited 2015 neilperry wavewy lightin chogori nine19 gazpriest feelthepain owc2025 osu world cup quarterfinals qf nomod nm1 owc2025qfnm1",
           "genre_id": "4",
           "language_id": "2",
-          "favourite_count": "42",
+          "favourite_count": "41",
           "rating": "8.41177",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "672",
+          "playcount": "772",
           "passcount": "154",
           "packs": null,
           "max_combo": "1281",
@@ -52280,7 +52308,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "41",
+          "playcount": "6351"
         },
         {
           "beatmapset_id": "1801375",
@@ -53220,7 +53250,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "19",
+          "playcount": "458"
         }
       ],
       "guestDifficulties": [],
@@ -58057,7 +58089,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "16399",
+          "playcount": "16426",
           "passcount": "2833",
           "packs": "S1727",
           "max_combo": "982",
@@ -58101,7 +58133,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "8515",
+          "playcount": "8524",
           "passcount": "1465",
           "packs": "S1727",
           "max_combo": "876",
@@ -61711,7 +61743,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "64",
+          "playcount": "31099"
         },
         {
           "beatmapset_id": "2413522",
@@ -61735,7 +61769,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "14",
+          "playcount": "3415"
         },
         {
           "beatmapset_id": "408612",
@@ -62560,13 +62596,13 @@
           "tags": "are you dead yet? melodic death metal cob wajinshu deppyforce maakkeli mkl themefisto feb makeli english",
           "genre_id": "11",
           "language_id": "2",
-          "favourite_count": "133",
+          "favourite_count": "134",
           "rating": "9.08594",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "15022",
+          "playcount": "15031",
           "passcount": "1396",
           "packs": "S1378",
           "max_combo": "1871",
@@ -62604,13 +62640,13 @@
           "tags": "are you dead yet? melodic death metal cob wajinshu deppyforce maakkeli mkl themefisto feb makeli english",
           "genre_id": "11",
           "language_id": "2",
-          "favourite_count": "133",
+          "favourite_count": "134",
           "rating": "9.08594",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "8182",
+          "playcount": "8191",
           "passcount": "462",
           "packs": "S1378",
           "max_combo": "1881",
@@ -62648,13 +62684,13 @@
           "tags": "are you dead yet? melodic death metal cob wajinshu deppyforce maakkeli mkl themefisto feb makeli english",
           "genre_id": "11",
           "language_id": "2",
-          "favourite_count": "133",
+          "favourite_count": "134",
           "rating": "9.08594",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "9586",
+          "playcount": "9595",
           "passcount": "2088",
           "packs": "S1378",
           "max_combo": "1513",
@@ -62692,13 +62728,13 @@
           "tags": "are you dead yet? melodic death metal cob wajinshu deppyforce maakkeli mkl themefisto feb makeli english",
           "genre_id": "11",
           "language_id": "2",
-          "favourite_count": "133",
+          "favourite_count": "134",
           "rating": "9.08594",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "15076",
+          "playcount": "15085",
           "passcount": "2564",
           "packs": "S1378",
           "max_combo": "1743",
@@ -62736,7 +62772,7 @@
           "tags": "are you dead yet? melodic death metal cob wajinshu deppyforce maakkeli mkl themefisto feb makeli english",
           "genre_id": "11",
           "language_id": "2",
-          "favourite_count": "133",
+          "favourite_count": "134",
           "rating": "9.08594",
           "storyboard": "0",
           "video": "0",
@@ -62780,13 +62816,13 @@
           "tags": "are you dead yet? melodic death metal cob wajinshu deppyforce maakkeli mkl themefisto feb makeli english",
           "genre_id": "11",
           "language_id": "2",
-          "favourite_count": "133",
+          "favourite_count": "134",
           "rating": "9.08594",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "17929",
+          "playcount": "17956",
           "passcount": "3819",
           "packs": "S1378",
           "max_combo": "1592",
@@ -62824,7 +62860,7 @@
           "tags": "are you dead yet? melodic death metal cob wajinshu deppyforce maakkeli mkl themefisto feb makeli english",
           "genre_id": "11",
           "language_id": "2",
-          "favourite_count": "133",
+          "favourite_count": "134",
           "rating": "9.08594",
           "storyboard": "0",
           "video": "0",
@@ -62874,7 +62910,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "59032",
+          "playcount": "59077",
           "passcount": "9807",
           "packs": "S1366",
           "max_combo": "706",
@@ -62918,7 +62954,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "31807",
+          "playcount": "31816",
           "passcount": "12603",
           "packs": "S1366",
           "max_combo": "409",
@@ -62962,7 +62998,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "52147",
+          "playcount": "52201",
           "passcount": "14745",
           "packs": "S1366",
           "max_combo": "565",
@@ -63006,7 +63042,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "76636",
+          "playcount": "76708",
           "passcount": "17083",
           "packs": "S1366",
           "max_combo": "607",
@@ -63050,7 +63086,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "28927",
+          "playcount": "28954",
           "passcount": "3145",
           "packs": "S1366",
           "max_combo": "801",
@@ -63094,7 +63130,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "52282",
+          "playcount": "52309",
           "passcount": "10841",
           "packs": "S1366",
           "max_combo": "697",
@@ -63138,7 +63174,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "95572",
+          "playcount": "95653",
           "passcount": "15715",
           "packs": "P194,S1346",
           "max_combo": "1146",
@@ -63182,7 +63218,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "17983",
+          "playcount": "17992",
           "passcount": "5398",
           "packs": "P194,S1346",
           "max_combo": "1044",
@@ -63226,7 +63262,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "32779",
+          "playcount": "32797",
           "passcount": "3350",
           "packs": "P194,S1346",
           "max_combo": "1174",
@@ -63270,7 +63306,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "29719",
+          "playcount": "29737",
           "passcount": "4985",
           "packs": "P194,S1346",
           "max_combo": "1110",
@@ -63358,7 +63394,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "22960",
+          "playcount": "22969",
           "passcount": "2342",
           "packs": "P194,S1346",
           "max_combo": "1134",
@@ -63446,7 +63482,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "30709",
+          "playcount": "30718",
           "passcount": "5149",
           "packs": "P194,S1346",
           "max_combo": "1145",
@@ -63534,7 +63570,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "51895",
+          "playcount": "51913",
           "passcount": "11437",
           "packs": "S1341",
           "max_combo": "1729",
@@ -65845,7 +65881,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "134",
+          "playcount": "71764"
         },
         {
           "beatmapset_id": "2005422",
@@ -65897,7 +65935,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "553",
+          "playcount": "301065"
         },
         {
           "beatmapset_id": "1128923",
@@ -65963,7 +66003,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "393",
+          "playcount": "243980"
         },
         {
           "beatmapset_id": "2010229",
@@ -65987,7 +66029,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "131",
+          "playcount": "83819"
         },
         {
           "beatmapset_id": "1109633",
@@ -79228,13 +79272,13 @@
           "tags": "experimental electronic industrial noise alternative punk fairy tale russian fairytale icepeak wajinshu lilyadest kitasan bakari -bakari- riffy daycore",
           "genre_id": "10",
           "language_id": "12",
-          "favourite_count": "188",
+          "favourite_count": "189",
           "rating": "9.61539",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "2953",
+          "playcount": "3160",
           "passcount": "868",
           "packs": null,
           "max_combo": "616",
@@ -79272,13 +79316,13 @@
           "tags": "experimental electronic industrial noise alternative punk fairy tale russian fairytale icepeak wajinshu lilyadest kitasan bakari -bakari- riffy daycore",
           "genre_id": "10",
           "language_id": "12",
-          "favourite_count": "188",
+          "favourite_count": "189",
           "rating": "9.61539",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "1486",
+          "playcount": "1621",
           "passcount": "533",
           "packs": null,
           "max_combo": "384",
@@ -79316,13 +79360,13 @@
           "tags": "experimental electronic industrial noise alternative punk fairy tale russian fairytale icepeak wajinshu lilyadest kitasan bakari -bakari- riffy daycore",
           "genre_id": "10",
           "language_id": "12",
-          "favourite_count": "188",
+          "favourite_count": "189",
           "rating": "9.61539",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "2152",
+          "playcount": "2377",
           "passcount": "871",
           "packs": null,
           "max_combo": "504",
@@ -81385,7 +81429,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "189",
+          "playcount": "7158"
         },
         {
           "beatmapset_id": "781632",
@@ -91908,7 +91954,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "3943",
+          "playcount": "3952",
           "passcount": "893",
           "packs": "S1445",
           "max_combo": "978",
@@ -93545,7 +93591,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "73",
+          "playcount": "26078"
         },
         {
           "beatmapset_id": "966420",
@@ -93576,7 +93624,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "24",
+          "playcount": "6537"
         },
         {
           "beatmapset_id": "666499",
@@ -93593,7 +93643,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "36",
+          "playcount": "3826"
         },
         {
           "beatmapset_id": "579130",
@@ -101864,13 +101916,13 @@
           "tags": "featured artist fa mappers' guild mpg kondratio electronic instrumental custom depressive breakcore drum & bass dnb amen breaks glitch corsace co23 rr fm1",
           "genre_id": "10",
           "language_id": "5",
-          "favourite_count": "142",
+          "favourite_count": "143",
           "rating": "8.73626",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "12439",
+          "playcount": "12457",
           "passcount": "2407",
           "packs": "S1366",
           "max_combo": "738",
@@ -101908,13 +101960,13 @@
           "tags": "featured artist fa mappers' guild mpg kondratio electronic instrumental custom depressive breakcore drum & bass dnb amen breaks glitch corsace co23 rr fm1",
           "genre_id": "10",
           "language_id": "5",
-          "favourite_count": "142",
+          "favourite_count": "143",
           "rating": "8.73626",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "20476",
+          "playcount": "20494",
           "passcount": "2543",
           "packs": "S1366",
           "max_combo": "1060",
@@ -101952,13 +102004,13 @@
           "tags": "featured artist fa mappers' guild mpg kondratio electronic instrumental custom depressive breakcore drum & bass dnb amen breaks glitch corsace co23 rr fm1",
           "genre_id": "10",
           "language_id": "5",
-          "favourite_count": "142",
+          "favourite_count": "143",
           "rating": "8.73626",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "40447",
+          "playcount": "40483",
           "passcount": "7543",
           "packs": "S1366",
           "max_combo": "1432",
@@ -101996,7 +102048,7 @@
           "tags": "featured artist fa mappers' guild mpg kondratio electronic instrumental custom depressive breakcore drum & bass dnb amen breaks glitch corsace co23 rr fm1",
           "genre_id": "10",
           "language_id": "5",
-          "favourite_count": "142",
+          "favourite_count": "143",
           "rating": "8.73626",
           "storyboard": "0",
           "video": "0",
@@ -103192,7 +103244,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "143",
+          "playcount": "81229"
         },
         {
           "beatmapset_id": "1306568",
@@ -108112,7 +108166,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "70525",
+          "playcount": "70543",
           "passcount": "19136",
           "packs": "LR76",
           "max_combo": "515",
@@ -108156,7 +108210,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "86203",
+          "playcount": "86302",
           "passcount": "8571",
           "packs": "LR76",
           "max_combo": "631",
@@ -108200,7 +108254,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "66277",
+          "playcount": "66358",
           "passcount": "5916",
           "packs": "LR76",
           "max_combo": "630",
@@ -108244,7 +108298,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "104338",
+          "playcount": "104410",
           "passcount": "16868",
           "packs": "LR76",
           "max_combo": "629",
@@ -108288,7 +108342,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "91855",
+          "playcount": "91918",
           "passcount": "12767",
           "packs": "LR76",
           "max_combo": "629",
@@ -109228,7 +109282,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "795",
+          "playcount": "454488"
         },
         {
           "beatmapset_id": "620910",
@@ -110882,7 +110938,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "47665",
+          "playcount": "47674",
           "passcount": "3235",
           "packs": null,
           "max_combo": "1360",
@@ -111787,7 +111843,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "270",
+          "playcount": "48805"
         },
         {
           "beatmapset_id": "35878",

@@ -11355,7 +11355,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "19558",
+          "playcount": "19567",
           "passcount": "3375",
           "packs": "S1704",
           "max_combo": "1083",
@@ -11399,7 +11399,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "36784",
+          "playcount": "36811",
           "passcount": "10174",
           "packs": "S1704",
           "max_combo": "1044",
@@ -11443,7 +11443,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "30043",
+          "playcount": "30070",
           "passcount": "15444",
           "packs": "S1704",
           "max_combo": "456",
@@ -11487,7 +11487,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "46900",
+          "playcount": "46945",
           "passcount": "17572",
           "packs": "S1704",
           "max_combo": "698",
@@ -11531,7 +11531,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "17263",
+          "playcount": "17281",
           "passcount": "4117",
           "packs": "S1704",
           "max_combo": "1058",
@@ -11575,7 +11575,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "18811",
+          "playcount": "18838",
           "passcount": "2566",
           "packs": "S1654",
           "max_combo": "1024",
@@ -11663,7 +11663,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "2395",
+          "playcount": "2404",
           "passcount": "1075",
           "packs": "S1654",
           "max_combo": "617",
@@ -11707,7 +11707,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "21331",
+          "playcount": "21349",
           "passcount": "6252",
           "packs": "S1654",
           "max_combo": "990",
@@ -15575,7 +15575,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "76",
+          "playcount": "49756"
         },
         {
           "beatmapset_id": "2417565",
@@ -15620,7 +15622,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "564",
+          "playcount": "150674"
         }
       ],
       "guestDifficulties": [],
@@ -43845,7 +43849,7 @@
           "video": "1",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "21349",
+          "playcount": "21376",
           "passcount": "3425",
           "packs": "S1423",
           "max_combo": "1441",
@@ -43977,7 +43981,7 @@
           "video": "1",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "14698",
+          "playcount": "14707",
           "passcount": "2862",
           "packs": "S1423",
           "max_combo": "1058",
@@ -44021,7 +44025,7 @@
           "video": "1",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "23347",
+          "playcount": "23365",
           "passcount": "3272",
           "packs": "S1423",
           "max_combo": "1416",
@@ -44153,7 +44157,7 @@
           "video": "1",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "14176",
+          "playcount": "14194",
           "passcount": "1853",
           "packs": "S1423",
           "max_combo": "1558",
@@ -44757,7 +44761,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "158",
+          "playcount": "102167"
         }
       ],
       "guestDifficulties": [],

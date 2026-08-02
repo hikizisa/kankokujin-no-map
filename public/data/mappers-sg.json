@@ -3576,7 +3576,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "16912",
+          "playcount": "17182",
           "passcount": "3128",
           "packs": "SM187",
           "max_combo": "5159",
@@ -4074,7 +4074,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "102",
+          "playcount": "17182"
         },
         {
           "beatmapset_id": "1744376",
