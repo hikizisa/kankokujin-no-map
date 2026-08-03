@@ -5,7 +5,7 @@
     "demonym": "Sweden",
     "nativeName": "Sweden"
   },
-  "lastUpdated": "2026-07-20T05:48:29.342Z",
+  "lastUpdated": "2026-08-03T05:49:02.737Z",
   "totalMappers": 16,
   "totalBeatmaps": 596,
   "totalBeatmapsets": 188,
@@ -6440,7 +6440,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 119
       },
-      "lastUpdated": "2026-07-20T05:48:29.342Z"
+      "lastUpdated": "2026-08-03T05:49:02.737Z"
     },
     {
       "user_id": "98661",
@@ -10065,30 +10065,37 @@
       ],
       "beatmapsets": [
         {
-          "beatmapset_id": "7029",
-          "title": "X - Tunnel Scene",
-          "artist": "Yusuke Takahama",
+          "beatmapset_id": "215187",
+          "title": "Major Boss Battle",
+          "artist": "Woofle",
           "creator": "Xgor",
-          "approved_date": "2009-08-23 15:26:49",
+          "approved_date": "2014-11-23 16:44:31",
           "difficulties": [
             {
-              "beatmap_id": "30809",
+              "beatmap_id": "505456",
               "version": "Easy",
-              "difficultyrating": "1.23436",
+              "difficultyrating": "1.90302",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "30810",
+              "beatmap_id": "505457",
+              "version": "Hard",
+              "difficultyrating": "3.23674",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "505458",
               "version": "Insane",
-              "difficultyrating": "3.6635",
+              "difficultyrating": "4.20605",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "30811",
+              "beatmap_id": "505459",
               "version": "Normal",
-              "difficultyrating": "2.16586",
+              "difficultyrating": "2.61963",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -10096,313 +10103,30 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "8204",
-          "title": "xenon",
-          "artist": "Mr.T",
+          "beatmapset_id": "107666",
+          "title": "fuss fuzz",
+          "artist": "Kurosaki Maon",
           "creator": "Xgor",
-          "approved_date": "2009-10-09 19:45:27",
+          "approved_date": "2013-09-23 14:59:17",
           "difficulties": [
             {
-              "beatmap_id": "33982",
-              "version": "Light",
-              "difficultyrating": "1.65062",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "33983",
-              "version": "Standard",
-              "difficultyrating": "2.06196",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "34009",
-              "version": "Kirby's Challenge",
-              "difficultyrating": "4.76953",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "35083",
-              "version": "yeahyeahyeahhh's Heavy",
-              "difficultyrating": "3.62215",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "9956",
-          "title": "Enjoy The Silence",
-          "artist": "Depeche Mode",
-          "creator": "Xgor",
-          "approved_date": "2009-10-25 02:42:30",
-          "difficulties": [
-            {
-              "beatmap_id": "39193",
-              "version": "Easy",
-              "difficultyrating": "1.70194",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "39194",
-              "version": "Normal",
-              "difficultyrating": "2.03505",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "39352",
+              "beatmap_id": "282027",
               "version": "Hard",
-              "difficultyrating": "2.83098",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "10293",
-          "title": "Dicks Are For My Friends",
-          "artist": "Spinsmith",
-          "creator": "Xgor",
-          "approved_date": "2009-11-18 17:55:12",
-          "difficulties": [
-            {
-              "beatmap_id": "40222",
-              "version": "Breezin'",
-              "difficultyrating": "1.84246",
+              "difficultyrating": "2.67256",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "40223",
-              "version": "Bruuzin'",
-              "difficultyrating": "2.74811",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "40234",
-              "version": "Agent Spin Here!",
-              "difficultyrating": "4.32348",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "9029",
-          "title": "Luv-Lab-Poison 22ate!",
-          "artist": "t+pazolite",
-          "creator": "Xgor",
-          "approved_date": "2010-01-19 05:15:57",
-          "difficulties": [
-            {
-              "beatmap_id": "38423",
-              "version": "Lethal",
-              "difficultyrating": "4.5164",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "38424",
-              "version": "Strong",
-              "difficultyrating": "3.50158",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "38425",
-              "version": "Weak",
-              "difficultyrating": "2.26669",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "38426",
-              "version": "Xtreme",
-              "difficultyrating": "5.81588",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "11534",
-          "title": "AM-3P",
-          "artist": "KTz",
-          "creator": "Xgor",
-          "approved_date": "2010-02-08 06:06:46",
-          "difficulties": [
-            {
-              "beatmap_id": "43993",
-              "version": "Heavy",
-              "difficultyrating": "3.53264",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "43994",
-              "version": "Light",
-              "difficultyrating": "1.4274",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "43995",
-              "version": "Standard",
-              "difficultyrating": "1.97075",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "44850",
-              "version": "Beuchi's Challenge",
-              "difficultyrating": "4.35035",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "11174",
-          "title": "My Sweet Heart (TV Size)",
-          "artist": "Rika Komatsu",
-          "creator": "Xgor",
-          "approved_date": "2010-03-18 19:55:02",
-          "difficulties": [
-            {
-              "beatmap_id": "42932",
-              "version": "Easy",
-              "difficultyrating": "1.54746",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "42933",
-              "version": "Hard",
-              "difficultyrating": "3.0496",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "42934",
-              "version": "Normal",
-              "difficultyrating": "2.22689",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "13110",
-          "title": "Metallic Menace",
-          "artist": "Raymond Gramke",
-          "creator": "Xgor",
-          "approved_date": "2010-04-24 06:08:45",
-          "difficulties": [
-            {
-              "beatmap_id": "48681",
-              "version": "Easy",
-              "difficultyrating": "1.75136",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "48682",
-              "version": "Hard",
-              "difficultyrating": "3.81855",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "48683",
-              "version": "Normal",
-              "difficultyrating": "2.41839",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "15375",
-          "title": "You Goddamn Fish",
-          "artist": "Renard",
-          "creator": "Xgor",
-          "approved_date": "2010-05-24 23:41:44",
-          "difficulties": [
-            {
-              "beatmap_id": "55697",
-              "version": "Easy",
-              "difficultyrating": "1.3813",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "55698",
-              "version": "Hard",
-              "difficultyrating": "2.76559",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "55699",
-              "version": "Normal",
-              "difficultyrating": "2.01937",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "55768",
+              "beatmap_id": "282028",
               "version": "Insane",
-              "difficultyrating": "4.15796",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "14328",
-          "title": "Electro Gypsy",
-          "artist": "Savlonic",
-          "creator": "Xgor",
-          "approved_date": "2010-05-31 02:09:05",
-          "difficulties": [
-            {
-              "beatmap_id": "52465",
-              "version": "Hard",
-              "difficultyrating": "4.10367",
+              "difficultyrating": "4.17677",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "52466",
+              "beatmap_id": "282029",
               "version": "Normal",
-              "difficultyrating": "2.70962",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "52533",
-              "version": "Easy",
-              "difficultyrating": "1.98612",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "53864",
-              "version": "Encrypto Gypsy",
-              "difficultyrating": "4.45006",
+              "difficultyrating": "2.0452",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -10410,37 +10134,30 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "13887",
-          "title": "U.N. Owen Was Her?",
-          "artist": "ZUN",
+          "beatmapset_id": "80861",
+          "title": "The Writer",
+          "artist": "Ellie Goulding",
           "creator": "Xgor",
-          "approved_date": "2010-06-21 08:12:07",
+          "approved_date": "2013-04-07 19:47:47",
           "difficulties": [
             {
-              "beatmap_id": "51082",
+              "beatmap_id": "224782",
               "version": "Easy",
-              "difficultyrating": "1.83196",
+              "difficultyrating": "2.09512",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "51083",
-              "version": "Hard",
-              "difficultyrating": "3.46354",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "51084",
+              "beatmap_id": "224783",
               "version": "Normal",
-              "difficultyrating": "2.48869",
+              "difficultyrating": "2.5982",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "58286",
-              "version": "Lunatic",
-              "difficultyrating": "4.62701",
+              "beatmap_id": "226465",
+              "version": "Hard",
+              "difficultyrating": "3.6387",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -10448,261 +10165,30 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "16568",
-          "title": "Moonsong",
-          "artist": "Pixel",
+          "beatmapset_id": "72137",
+          "title": "To the Moon - Main Theme",
+          "artist": "Kan R. Gao",
           "creator": "Xgor",
-          "approved_date": "2010-08-06 23:17:27",
+          "approved_date": "2013-02-18 20:10:20",
           "difficulties": [
             {
-              "beatmap_id": "59283",
+              "beatmap_id": "206298",
+              "version": "Hard",
+              "difficultyrating": "3.06123",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "206751",
               "version": "Easy",
-              "difficultyrating": "1.36331",
+              "difficultyrating": "1.62524",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "59284",
-              "version": "Hard",
-              "difficultyrating": "2.97217",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "59285",
+              "beatmap_id": "206752",
               "version": "Normal",
-              "difficultyrating": "2.16638",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "10764",
-          "title": "Patchouli Stages 1 & 2",
-          "artist": "Aki Yamani & NKZ",
-          "creator": "Xgor",
-          "approved_date": "2010-10-18 19:34:15",
-          "difficulties": [
-            {
-              "beatmap_id": "41592",
-              "version": "Easy",
-              "difficultyrating": "1.85309",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "41593",
-              "version": "Hard",
-              "difficultyrating": "3.93824",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "41594",
-              "version": "Normal",
-              "difficultyrating": "2.47968",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "18278",
-          "title": "Achtung Panzer",
-          "artist": "Raubtier",
-          "creator": "Xgor",
-          "approved_date": "2010-11-23 06:15:27",
-          "difficulties": [
-            {
-              "beatmap_id": "64809",
-              "version": "Easy",
-              "difficultyrating": "1.83262",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "64810",
-              "version": "Normal",
-              "difficultyrating": "2.50055",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "65046",
-              "version": "Hard",
-              "difficultyrating": "3.65893",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "24271",
-          "title": "Pressure Cooker",
-          "artist": "SoulEye",
-          "creator": "Xgor",
-          "approved_date": "2011-03-23 21:38:25",
-          "difficulties": [
-            {
-              "beatmap_id": "82586",
-              "version": "Easy",
-              "difficultyrating": "1.79254",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "82587",
-              "version": "Hard",
-              "difficultyrating": "2.75553",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "82588",
-              "version": "Insane",
-              "difficultyrating": "4.25827",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "82589",
-              "version": "Normal",
-              "difficultyrating": "2.15814",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "26796",
-          "title": "Like Suicide",
-          "artist": "Christian Walz",
-          "creator": "Xgor",
-          "approved_date": "2011-05-22 00:05:28",
-          "difficulties": [
-            {
-              "beatmap_id": "90179",
-              "version": "Easy",
-              "difficultyrating": "1.89718",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "90180",
-              "version": "Hard",
-              "difficultyrating": "3.49175",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "90181",
-              "version": "Normal",
-              "difficultyrating": "2.53807",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "21505",
-          "title": "Gamla Ullevi",
-          "artist": "Kent",
-          "creator": "Xgor",
-          "approved_date": "2011-09-23 22:20:59",
-          "difficulties": [
-            {
-              "beatmap_id": "74629",
-              "version": "Hard",
-              "difficultyrating": "3.50856",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "75310",
-              "version": "Easy",
-              "difficultyrating": "1.82695",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "75311",
-              "version": "Normal",
-              "difficultyrating": "2.61843",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "33840",
-          "title": "Split My Personality (Bassflow Remix)",
-          "artist": "Salem Al Fakir",
-          "creator": "Xgor",
-          "approved_date": "2012-01-20 19:19:27",
-          "difficulties": [
-            {
-              "beatmap_id": "110158",
-              "version": "Easy",
-              "difficultyrating": "1.95527",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "110159",
-              "version": "Hard",
-              "difficultyrating": "3.38884",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "110160",
-              "version": "Normal",
-              "difficultyrating": "2.93179",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "48713",
-          "title": "Just a Little Bit",
-          "artist": "Love Generation",
-          "creator": "Xgor",
-          "approved_date": "2012-06-12 15:28:54",
-          "difficulties": [
-            {
-              "beatmap_id": "150521",
-              "version": "Hard",
-              "difficultyrating": "2.7717",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "154819",
-              "version": "Very Hard",
-              "difficultyrating": "3.91428",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "156426",
-              "version": "Medium",
-              "difficultyrating": "2.35176",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "160459",
-              "version": "Simple",
-              "difficultyrating": "1.79695",
+              "difficultyrating": "2.27475",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -10748,30 +10234,37 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "72137",
-          "title": "To the Moon - Main Theme",
-          "artist": "Kan R. Gao",
+          "beatmapset_id": "48713",
+          "title": "Just a Little Bit",
+          "artist": "Love Generation",
           "creator": "Xgor",
-          "approved_date": "2013-02-18 20:10:20",
+          "approved_date": "2012-06-12 15:28:54",
           "difficulties": [
             {
-              "beatmap_id": "206298",
+              "beatmap_id": "150521",
               "version": "Hard",
-              "difficultyrating": "3.06123",
+              "difficultyrating": "2.7717",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "206751",
-              "version": "Easy",
-              "difficultyrating": "1.62524",
+              "beatmap_id": "154819",
+              "version": "Very Hard",
+              "difficultyrating": "3.91428",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "206752",
-              "version": "Normal",
-              "difficultyrating": "2.27475",
+              "beatmap_id": "156426",
+              "version": "Medium",
+              "difficultyrating": "2.35176",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "160459",
+              "version": "Simple",
+              "difficultyrating": "1.79695",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -10779,30 +10272,30 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "80861",
-          "title": "The Writer",
-          "artist": "Ellie Goulding",
+          "beatmapset_id": "33840",
+          "title": "Split My Personality (Bassflow Remix)",
+          "artist": "Salem Al Fakir",
           "creator": "Xgor",
-          "approved_date": "2013-04-07 19:47:47",
+          "approved_date": "2012-01-20 19:19:27",
           "difficulties": [
             {
-              "beatmap_id": "224782",
+              "beatmap_id": "110158",
               "version": "Easy",
-              "difficultyrating": "2.09512",
+              "difficultyrating": "1.95527",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "224783",
-              "version": "Normal",
-              "difficultyrating": "2.5982",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "226465",
+              "beatmap_id": "110159",
               "version": "Hard",
-              "difficultyrating": "3.6387",
+              "difficultyrating": "3.38884",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "110160",
+              "version": "Normal",
+              "difficultyrating": "2.93179",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -10810,30 +10303,99 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "107666",
-          "title": "fuss fuzz",
-          "artist": "Kurosaki Maon",
+          "beatmapset_id": "21505",
+          "title": "Gamla Ullevi",
+          "artist": "Kent",
           "creator": "Xgor",
-          "approved_date": "2013-09-23 14:59:17",
+          "approved_date": "2011-09-23 22:20:59",
           "difficulties": [
             {
-              "beatmap_id": "282027",
+              "beatmap_id": "74629",
               "version": "Hard",
-              "difficultyrating": "2.67256",
+              "difficultyrating": "3.50856",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "282028",
+              "beatmap_id": "75310",
+              "version": "Easy",
+              "difficultyrating": "1.82695",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "75311",
+              "version": "Normal",
+              "difficultyrating": "2.61843",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "26796",
+          "title": "Like Suicide",
+          "artist": "Christian Walz",
+          "creator": "Xgor",
+          "approved_date": "2011-05-22 00:05:28",
+          "difficulties": [
+            {
+              "beatmap_id": "90179",
+              "version": "Easy",
+              "difficultyrating": "1.89718",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "90180",
+              "version": "Hard",
+              "difficultyrating": "3.49175",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "90181",
+              "version": "Normal",
+              "difficultyrating": "2.53807",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "24271",
+          "title": "Pressure Cooker",
+          "artist": "SoulEye",
+          "creator": "Xgor",
+          "approved_date": "2011-03-23 21:38:25",
+          "difficulties": [
+            {
+              "beatmap_id": "82586",
+              "version": "Easy",
+              "difficultyrating": "1.79254",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "82587",
+              "version": "Hard",
+              "difficultyrating": "2.75553",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "82588",
               "version": "Insane",
-              "difficultyrating": "4.17677",
+              "difficultyrating": "4.25827",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "282029",
+              "beatmap_id": "82589",
               "version": "Normal",
-              "difficultyrating": "2.0452",
+              "difficultyrating": "2.15814",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -10841,37 +10403,475 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "215187",
-          "title": "Major Boss Battle",
-          "artist": "Woofle",
+          "beatmapset_id": "18278",
+          "title": "Achtung Panzer",
+          "artist": "Raubtier",
           "creator": "Xgor",
-          "approved_date": "2014-11-23 16:44:31",
+          "approved_date": "2010-11-23 06:15:27",
           "difficulties": [
             {
-              "beatmap_id": "505456",
+              "beatmap_id": "64809",
               "version": "Easy",
-              "difficultyrating": "1.90302",
+              "difficultyrating": "1.83262",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "505457",
-              "version": "Hard",
-              "difficultyrating": "3.23674",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "505458",
-              "version": "Insane",
-              "difficultyrating": "4.20605",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "505459",
+              "beatmap_id": "64810",
               "version": "Normal",
-              "difficultyrating": "2.61963",
+              "difficultyrating": "2.50055",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "65046",
+              "version": "Hard",
+              "difficultyrating": "3.65893",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "10764",
+          "title": "Patchouli Stages 1 & 2",
+          "artist": "Aki Yamani & NKZ",
+          "creator": "Xgor",
+          "approved_date": "2010-10-18 19:34:15",
+          "difficulties": [
+            {
+              "beatmap_id": "41592",
+              "version": "Easy",
+              "difficultyrating": "1.85309",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "41593",
+              "version": "Hard",
+              "difficultyrating": "3.93824",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "41594",
+              "version": "Normal",
+              "difficultyrating": "2.47968",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "16568",
+          "title": "Moonsong",
+          "artist": "Pixel",
+          "creator": "Xgor",
+          "approved_date": "2010-08-06 23:17:27",
+          "difficulties": [
+            {
+              "beatmap_id": "59283",
+              "version": "Easy",
+              "difficultyrating": "1.36331",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "59284",
+              "version": "Hard",
+              "difficultyrating": "2.97217",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "59285",
+              "version": "Normal",
+              "difficultyrating": "2.16638",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "13887",
+          "title": "U.N. Owen Was Her?",
+          "artist": "ZUN",
+          "creator": "Xgor",
+          "approved_date": "2010-06-21 08:12:07",
+          "difficulties": [
+            {
+              "beatmap_id": "51082",
+              "version": "Easy",
+              "difficultyrating": "1.83196",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "51083",
+              "version": "Hard",
+              "difficultyrating": "3.46354",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "51084",
+              "version": "Normal",
+              "difficultyrating": "2.48869",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "58286",
+              "version": "Lunatic",
+              "difficultyrating": "4.62701",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "14328",
+          "title": "Electro Gypsy",
+          "artist": "Savlonic",
+          "creator": "Xgor",
+          "approved_date": "2010-05-31 02:09:05",
+          "difficulties": [
+            {
+              "beatmap_id": "52465",
+              "version": "Hard",
+              "difficultyrating": "4.10367",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "52466",
+              "version": "Normal",
+              "difficultyrating": "2.70962",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "52533",
+              "version": "Easy",
+              "difficultyrating": "1.98612",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "53864",
+              "version": "Encrypto Gypsy",
+              "difficultyrating": "4.45006",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "15375",
+          "title": "You Goddamn Fish",
+          "artist": "Renard",
+          "creator": "Xgor",
+          "approved_date": "2010-05-24 23:41:44",
+          "difficulties": [
+            {
+              "beatmap_id": "55697",
+              "version": "Easy",
+              "difficultyrating": "1.3813",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "55698",
+              "version": "Hard",
+              "difficultyrating": "2.76559",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "55699",
+              "version": "Normal",
+              "difficultyrating": "2.01937",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "55768",
+              "version": "Insane",
+              "difficultyrating": "4.15796",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "13110",
+          "title": "Metallic Menace",
+          "artist": "Raymond Gramke",
+          "creator": "Xgor",
+          "approved_date": "2010-04-24 06:08:45",
+          "difficulties": [
+            {
+              "beatmap_id": "48681",
+              "version": "Easy",
+              "difficultyrating": "1.75136",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "48682",
+              "version": "Hard",
+              "difficultyrating": "3.81855",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "48683",
+              "version": "Normal",
+              "difficultyrating": "2.41839",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "11174",
+          "title": "My Sweet Heart (TV Size)",
+          "artist": "Rika Komatsu",
+          "creator": "Xgor",
+          "approved_date": "2010-03-18 19:55:02",
+          "difficulties": [
+            {
+              "beatmap_id": "42932",
+              "version": "Easy",
+              "difficultyrating": "1.54746",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "42933",
+              "version": "Hard",
+              "difficultyrating": "3.0496",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "42934",
+              "version": "Normal",
+              "difficultyrating": "2.22689",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "11534",
+          "title": "AM-3P",
+          "artist": "KTz",
+          "creator": "Xgor",
+          "approved_date": "2010-02-08 06:06:46",
+          "difficulties": [
+            {
+              "beatmap_id": "43993",
+              "version": "Heavy",
+              "difficultyrating": "3.53264",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "43994",
+              "version": "Light",
+              "difficultyrating": "1.4274",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "43995",
+              "version": "Standard",
+              "difficultyrating": "1.97075",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "44850",
+              "version": "Beuchi's Challenge",
+              "difficultyrating": "4.35035",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "9029",
+          "title": "Luv-Lab-Poison 22ate!",
+          "artist": "t+pazolite",
+          "creator": "Xgor",
+          "approved_date": "2010-01-19 05:15:57",
+          "difficulties": [
+            {
+              "beatmap_id": "38423",
+              "version": "Lethal",
+              "difficultyrating": "4.5164",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "38424",
+              "version": "Strong",
+              "difficultyrating": "3.50158",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "38425",
+              "version": "Weak",
+              "difficultyrating": "2.26669",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "38426",
+              "version": "Xtreme",
+              "difficultyrating": "5.81588",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "10293",
+          "title": "Dicks Are For My Friends",
+          "artist": "Spinsmith",
+          "creator": "Xgor",
+          "approved_date": "2009-11-18 17:55:12",
+          "difficulties": [
+            {
+              "beatmap_id": "40222",
+              "version": "Breezin'",
+              "difficultyrating": "1.84246",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "40223",
+              "version": "Bruuzin'",
+              "difficultyrating": "2.74811",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "40234",
+              "version": "Agent Spin Here!",
+              "difficultyrating": "4.32348",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "9956",
+          "title": "Enjoy The Silence",
+          "artist": "Depeche Mode",
+          "creator": "Xgor",
+          "approved_date": "2009-10-25 02:42:30",
+          "difficulties": [
+            {
+              "beatmap_id": "39193",
+              "version": "Easy",
+              "difficultyrating": "1.70194",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "39194",
+              "version": "Normal",
+              "difficultyrating": "2.03505",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "39352",
+              "version": "Hard",
+              "difficultyrating": "2.83098",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "8204",
+          "title": "xenon",
+          "artist": "Mr.T",
+          "creator": "Xgor",
+          "approved_date": "2009-10-09 19:45:27",
+          "difficulties": [
+            {
+              "beatmap_id": "33982",
+              "version": "Light",
+              "difficultyrating": "1.65062",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "33983",
+              "version": "Standard",
+              "difficultyrating": "2.06196",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "34009",
+              "version": "Kirby's Challenge",
+              "difficultyrating": "4.76953",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "35083",
+              "version": "yeahyeahyeahhh's Heavy",
+              "difficultyrating": "3.62215",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "7029",
+          "title": "X - Tunnel Scene",
+          "artist": "Yusuke Takahama",
+          "creator": "Xgor",
+          "approved_date": "2009-08-23 15:26:49",
+          "difficulties": [
+            {
+              "beatmap_id": "30809",
+              "version": "Easy",
+              "difficultyrating": "1.23436",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "30810",
+              "version": "Insane",
+              "difficultyrating": "3.6635",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "30811",
+              "version": "Normal",
+              "difficultyrating": "2.16586",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -10888,7 +10888,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 82
       },
-      "lastUpdated": "2026-07-20T05:48:29.342Z"
+      "lastUpdated": "2026-08-03T05:49:02.737Z"
     },
     {
       "user_id": "4260033",
@@ -14186,9 +14186,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "41",
-          "playcount": "12016"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1890007",
@@ -14899,7 +14897,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 73
       },
-      "lastUpdated": "2026-07-20T05:48:29.342Z"
+      "lastUpdated": "2026-08-03T05:49:02.737Z"
     },
     {
       "user_id": "57057",
@@ -18084,461 +18082,206 @@
       ],
       "beatmapsets": [
         {
-          "beatmapset_id": "5958",
-          "title": "Imagination",
+          "beatmapset_id": "41874",
+          "title": "HEAVENLY MOON",
+          "artist": "Tatsh",
+          "creator": "Gabi",
+          "approved_date": "2012-04-23 13:17:16",
+          "difficulties": [
+            {
+              "beatmap_id": "132043",
+              "version": "Extreme",
+              "difficultyrating": "6.08128",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "136302",
+              "version": "Advanced",
+              "difficultyrating": "4.28052",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "136303",
+              "version": "Basic",
+              "difficultyrating": "2.54099",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "139127",
+              "version": "Easy",
+              "difficultyrating": "1.87709",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "142855",
+              "version": "Sp3's Jubiko",
+              "difficultyrating": "4.56178",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "31310",
+          "title": "The Road of the Apotropaic God ~ Dark Road",
+          "artist": "ZUN",
+          "creator": "Gabi",
+          "approved_date": "2011-08-11 15:05:24",
+          "difficulties": [
+            {
+              "beatmap_id": "102958",
+              "version": "Hard",
+              "difficultyrating": "4.18058",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "104440",
+              "version": "Easy",
+              "difficultyrating": "1.96886",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "109675",
+              "version": "Kite's Normal",
+              "difficultyrating": "2.17134",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "26598",
+          "title": "Wintersun",
+          "artist": "Bond",
+          "creator": "Gabi",
+          "approved_date": "2011-04-21 00:27:21",
+          "difficulties": [
+            {
+              "beatmap_id": "94547",
+              "version": "Hard",
+              "difficultyrating": "4.36241",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "94548",
+              "version": "Normal",
+              "difficultyrating": "2.65292",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "94698",
+              "version": "Easy",
+              "difficultyrating": "2.05555",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "18923",
+          "title": "Night of Fire",
+          "artist": "Niko",
+          "creator": "Gabi",
+          "approved_date": "2011-02-01 17:22:19",
+          "difficulties": [
+            {
+              "beatmap_id": "66820",
+              "version": "Insane",
+              "difficultyrating": "5.02254",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "77499",
+              "version": "Kite's Normal",
+              "difficultyrating": "1.9817",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "77710",
+              "version": "lepidon! - Taiko Oni",
+              "difficultyrating": "4.4572",
+              "mode": "1",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "77711",
+              "version": "Ruc's Hard",
+              "difficultyrating": "3.92133",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "18482",
+          "title": "Running in the 90's",
+          "artist": "Max Coveri",
+          "creator": "Gabi",
+          "approved_date": "2010-12-31 03:20:48",
+          "difficulties": [
+            {
+              "beatmap_id": "65417",
+              "version": "Insane",
+              "difficultyrating": "5.10116",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "71923",
+              "version": "Normal",
+              "difficultyrating": "2.51639",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "77034",
+              "version": "Easy",
+              "difficultyrating": "1.92561",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "81498",
+              "version": "Alazy",
+              "difficultyrating": "4.68293",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "18046",
+          "title": "Holic",
           "artist": "SHK",
           "creator": "Gabi",
-          "approved_date": "2009-04-20 21:43:39",
+          "approved_date": "2010-08-08 02:21:05",
           "difficulties": [
             {
-              "beatmap_id": "28148",
-              "version": "SHD",
-              "difficultyrating": "5.11701",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "29179",
+              "beatmap_id": "64144",
               "version": "Normal",
-              "difficultyrating": "2.96455",
+              "difficultyrating": "2.35724",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "29180",
-              "version": "Hard",
-              "difficultyrating": "4.24219",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "29181",
-              "version": "LESJUH",
-              "difficultyrating": "4.99194",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "6598",
-          "title": "Bloody Tears(IIDX EDITION)",
-          "artist": "DJ YOSHITAKA",
-          "creator": "Gabi",
-          "approved_date": "2009-05-09 21:26:02",
-          "difficulties": [
-            {
-              "beatmap_id": "29731",
+              "beatmap_id": "66721",
               "version": "Insane",
-              "difficultyrating": "5.24121",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "29883",
-              "version": "Alazy",
-              "difficultyrating": "4.50645",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "29912",
-              "version": "Normal",
-              "difficultyrating": "2.46144",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "6952",
-          "title": "Flowering Night (Instrumental)",
-          "artist": "Haru",
-          "creator": "Gabi",
-          "approved_date": "2009-05-26 23:03:27",
-          "difficulties": [
-            {
-              "beatmap_id": "30725",
-              "version": "Hard",
-              "difficultyrating": "3.91304",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "30726",
-              "version": "Lunatic",
-              "difficultyrating": "4.68299",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "30773",
-              "version": "Normal",
-              "difficultyrating": "2.40988",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "7151",
-          "title": "Tomare!",
-          "artist": "Hirano Aya",
-          "creator": "Gabi",
-          "approved_date": "2009-06-13 15:30:36",
-          "difficulties": [
-            {
-              "beatmap_id": "31150",
-              "version": "Insane",
-              "difficultyrating": "4.65174",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "31177",
-              "version": "DanDan's Tag",
-              "difficultyrating": "2.79279",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "31336",
-              "version": "DJPop's Difficulty",
-              "difficultyrating": "4.22185",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "31542",
-              "version": "Easy",
-              "difficultyrating": "1.77853",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "7379",
-          "title": "Euphorium",
-          "artist": "DM Ashura",
-          "creator": "Gabi",
-          "approved_date": "2009-07-27 04:21:54",
-          "difficulties": [
-            {
-              "beatmap_id": "32718",
-              "version": "Insane",
-              "difficultyrating": "4.78331",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "32766",
-              "version": "Hard",
-              "difficultyrating": "4.25731",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "32780",
-              "version": "Easy",
-              "difficultyrating": "2.59439",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "32781",
-              "version": "Normal",
-              "difficultyrating": "2.74839",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "33372",
-              "version": "ignore's Hyper",
-              "difficultyrating": "4.41875",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "8338",
-          "title": "Kumikyoku 'Lucky Star Douga'",
-          "artist": "Lucky Star no Minna",
-          "creator": "Gabi",
-          "approved_date": "2009-10-02 19:22:11",
-          "difficulties": [
-            {
-              "beatmap_id": "36218",
-              "version": "Lucky",
-              "difficultyrating": "4.54799",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "9226",
-          "title": "Precious Memories",
-          "artist": "Kuribayashi Minami",
-          "creator": "Gabi",
-          "approved_date": "2009-11-01 13:00:56",
-          "difficulties": [
-            {
-              "beatmap_id": "37094",
-              "version": "Heartbreaking",
-              "difficultyrating": "3.81641",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "38482",
-              "version": "Normal",
-              "difficultyrating": "2.44044",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "9664",
-          "title": "Ooeyama Nonbee Ondo",
-          "artist": "SOUND HOLIC",
-          "creator": "Gabi",
-          "approved_date": "2009-11-02 10:49:28",
-          "difficulties": [
-            {
-              "beatmap_id": "38377",
-              "version": "Lunatic",
-              "difficultyrating": "4.31419",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "38594",
-              "version": "Normal",
-              "difficultyrating": "2.15512",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "10288",
-          "title": "Rabbit of Happiness",
-          "artist": "COOL&CREATE",
-          "creator": "Gabi",
-          "approved_date": "2009-12-16 22:03:53",
-          "difficulties": [
-            {
-              "beatmap_id": "40212",
-              "version": "Lunaba",
-              "difficultyrating": "3.97726",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "40235",
-              "version": "Easy",
-              "difficultyrating": "1.86161",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "41008",
-              "version": "Normal",
-              "difficultyrating": "2.22943",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "41757",
-              "version": "Hard",
-              "difficultyrating": "3.76098",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "10368",
-          "title": "50% Alive'n'Dead",
-          "artist": "Hitomi Harada",
-          "creator": "Gabi",
-          "approved_date": "2010-01-21 17:53:29",
-          "difficulties": [
-            {
-              "beatmap_id": "42587",
-              "version": "Lunatic",
-              "difficultyrating": "4.73979",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "45193",
-              "version": "Normal",
-              "difficultyrating": "3.20699",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "14774",
-          "title": "Daisuke",
-          "artist": "Y&Co.",
-          "creator": "Gabi",
-          "approved_date": "2010-04-20 15:16:12",
-          "difficulties": [
-            {
-              "beatmap_id": "53926",
-              "version": "Another",
-              "difficultyrating": "5.04365",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "54089",
-              "version": "Beginner",
-              "difficultyrating": "1.777",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "54231",
-              "version": "Hyper",
-              "difficultyrating": "4.43986",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "54673",
-              "version": "Normal",
-              "difficultyrating": "2.36581",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "11420",
-          "title": "Melt in the sky",
-          "artist": "Amane",
-          "creator": "Gabi",
-          "approved_date": "2010-05-21 17:11:01",
-          "difficulties": [
-            {
-              "beatmap_id": "43665",
-              "version": "Lunatic",
-              "difficultyrating": "4.50825",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "44616",
-              "version": "Normal",
-              "difficultyrating": "2.05688",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "49562",
-              "version": "Easy",
-              "difficultyrating": "1.81636",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "50761",
-              "version": "Hard",
-              "difficultyrating": "4.1705",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "15977",
-          "title": "So Fabulous!!",
-          "artist": "HHH (Ryu & Dai)",
-          "creator": "Gabi",
-          "approved_date": "2010-06-26 03:01:08",
-          "difficulties": [
-            {
-              "beatmap_id": "57510",
-              "version": "Another",
-              "difficultyrating": "4.57531",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "58054",
-              "version": "Hyper",
-              "difficultyrating": "4.39331",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "59349",
-              "version": "Normal+",
-              "difficultyrating": "2.51483",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "61927",
-              "version": "Beginner",
-              "difficultyrating": "1.76605",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "14635",
-          "title": "Kyuu Jigoku Kaidou wo Yuku",
-          "artist": "TAMUSIC",
-          "creator": "Gabi",
-          "approved_date": "2010-07-04 16:59:16",
-          "difficulties": [
-            {
-              "beatmap_id": "53479",
-              "version": "Lunatic",
-              "difficultyrating": "4.61274",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "60422",
-              "version": "Normal",
-              "difficultyrating": "2.20036",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "60923",
-              "version": "Easy",
-              "difficultyrating": "1.99678",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "62535",
-              "version": "Hard",
-              "difficultyrating": "3.74969",
+              "difficultyrating": "4.53384",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -18591,207 +18334,462 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "18046",
-          "title": "Holic",
+          "beatmapset_id": "14635",
+          "title": "Kyuu Jigoku Kaidou wo Yuku",
+          "artist": "TAMUSIC",
+          "creator": "Gabi",
+          "approved_date": "2010-07-04 16:59:16",
+          "difficulties": [
+            {
+              "beatmap_id": "53479",
+              "version": "Lunatic",
+              "difficultyrating": "4.61274",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "60422",
+              "version": "Normal",
+              "difficultyrating": "2.20036",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "60923",
+              "version": "Easy",
+              "difficultyrating": "1.99678",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "62535",
+              "version": "Hard",
+              "difficultyrating": "3.74969",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "15977",
+          "title": "So Fabulous!!",
+          "artist": "HHH (Ryu & Dai)",
+          "creator": "Gabi",
+          "approved_date": "2010-06-26 03:01:08",
+          "difficulties": [
+            {
+              "beatmap_id": "57510",
+              "version": "Another",
+              "difficultyrating": "4.57531",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "58054",
+              "version": "Hyper",
+              "difficultyrating": "4.39331",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "59349",
+              "version": "Normal+",
+              "difficultyrating": "2.51483",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "61927",
+              "version": "Beginner",
+              "difficultyrating": "1.76605",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "11420",
+          "title": "Melt in the sky",
+          "artist": "Amane",
+          "creator": "Gabi",
+          "approved_date": "2010-05-21 17:11:01",
+          "difficulties": [
+            {
+              "beatmap_id": "43665",
+              "version": "Lunatic",
+              "difficultyrating": "4.50825",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "44616",
+              "version": "Normal",
+              "difficultyrating": "2.05688",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "49562",
+              "version": "Easy",
+              "difficultyrating": "1.81636",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "50761",
+              "version": "Hard",
+              "difficultyrating": "4.1705",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "14774",
+          "title": "Daisuke",
+          "artist": "Y&Co.",
+          "creator": "Gabi",
+          "approved_date": "2010-04-20 15:16:12",
+          "difficulties": [
+            {
+              "beatmap_id": "53926",
+              "version": "Another",
+              "difficultyrating": "5.04365",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "54089",
+              "version": "Beginner",
+              "difficultyrating": "1.777",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "54231",
+              "version": "Hyper",
+              "difficultyrating": "4.43986",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "54673",
+              "version": "Normal",
+              "difficultyrating": "2.36581",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "10368",
+          "title": "50% Alive'n'Dead",
+          "artist": "Hitomi Harada",
+          "creator": "Gabi",
+          "approved_date": "2010-01-21 17:53:29",
+          "difficulties": [
+            {
+              "beatmap_id": "42587",
+              "version": "Lunatic",
+              "difficultyrating": "4.73979",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "45193",
+              "version": "Normal",
+              "difficultyrating": "3.20699",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "10288",
+          "title": "Rabbit of Happiness",
+          "artist": "COOL&CREATE",
+          "creator": "Gabi",
+          "approved_date": "2009-12-16 22:03:53",
+          "difficulties": [
+            {
+              "beatmap_id": "40212",
+              "version": "Lunaba",
+              "difficultyrating": "3.97726",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "40235",
+              "version": "Easy",
+              "difficultyrating": "1.86161",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "41008",
+              "version": "Normal",
+              "difficultyrating": "2.22943",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "41757",
+              "version": "Hard",
+              "difficultyrating": "3.76098",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "9664",
+          "title": "Ooeyama Nonbee Ondo",
+          "artist": "SOUND HOLIC",
+          "creator": "Gabi",
+          "approved_date": "2009-11-02 10:49:28",
+          "difficulties": [
+            {
+              "beatmap_id": "38377",
+              "version": "Lunatic",
+              "difficultyrating": "4.31419",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "38594",
+              "version": "Normal",
+              "difficultyrating": "2.15512",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "9226",
+          "title": "Precious Memories",
+          "artist": "Kuribayashi Minami",
+          "creator": "Gabi",
+          "approved_date": "2009-11-01 13:00:56",
+          "difficulties": [
+            {
+              "beatmap_id": "37094",
+              "version": "Heartbreaking",
+              "difficultyrating": "3.81641",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "38482",
+              "version": "Normal",
+              "difficultyrating": "2.44044",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "8338",
+          "title": "Kumikyoku 'Lucky Star Douga'",
+          "artist": "Lucky Star no Minna",
+          "creator": "Gabi",
+          "approved_date": "2009-10-02 19:22:11",
+          "difficulties": [
+            {
+              "beatmap_id": "36218",
+              "version": "Lucky",
+              "difficultyrating": "4.54799",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "7379",
+          "title": "Euphorium",
+          "artist": "DM Ashura",
+          "creator": "Gabi",
+          "approved_date": "2009-07-27 04:21:54",
+          "difficulties": [
+            {
+              "beatmap_id": "32718",
+              "version": "Insane",
+              "difficultyrating": "4.78331",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "32766",
+              "version": "Hard",
+              "difficultyrating": "4.25731",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "32780",
+              "version": "Easy",
+              "difficultyrating": "2.59439",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "32781",
+              "version": "Normal",
+              "difficultyrating": "2.74839",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "33372",
+              "version": "ignore's Hyper",
+              "difficultyrating": "4.41875",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "7151",
+          "title": "Tomare!",
+          "artist": "Hirano Aya",
+          "creator": "Gabi",
+          "approved_date": "2009-06-13 15:30:36",
+          "difficulties": [
+            {
+              "beatmap_id": "31150",
+              "version": "Insane",
+              "difficultyrating": "4.65174",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "31177",
+              "version": "DanDan's Tag",
+              "difficultyrating": "2.79279",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "31336",
+              "version": "DJPop's Difficulty",
+              "difficultyrating": "4.22185",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "31542",
+              "version": "Easy",
+              "difficultyrating": "1.77853",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "6952",
+          "title": "Flowering Night (Instrumental)",
+          "artist": "Haru",
+          "creator": "Gabi",
+          "approved_date": "2009-05-26 23:03:27",
+          "difficulties": [
+            {
+              "beatmap_id": "30725",
+              "version": "Hard",
+              "difficultyrating": "3.91304",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "30726",
+              "version": "Lunatic",
+              "difficultyrating": "4.68299",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "30773",
+              "version": "Normal",
+              "difficultyrating": "2.40988",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "6598",
+          "title": "Bloody Tears(IIDX EDITION)",
+          "artist": "DJ YOSHITAKA",
+          "creator": "Gabi",
+          "approved_date": "2009-05-09 21:26:02",
+          "difficulties": [
+            {
+              "beatmap_id": "29731",
+              "version": "Insane",
+              "difficultyrating": "5.24121",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "29883",
+              "version": "Alazy",
+              "difficultyrating": "4.50645",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "29912",
+              "version": "Normal",
+              "difficultyrating": "2.46144",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "5958",
+          "title": "Imagination",
           "artist": "SHK",
           "creator": "Gabi",
-          "approved_date": "2010-08-08 02:21:05",
+          "approved_date": "2009-04-20 21:43:39",
           "difficulties": [
             {
-              "beatmap_id": "64144",
+              "beatmap_id": "28148",
+              "version": "SHD",
+              "difficultyrating": "5.11701",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "29179",
               "version": "Normal",
-              "difficultyrating": "2.35724",
+              "difficultyrating": "2.96455",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "66721",
-              "version": "Insane",
-              "difficultyrating": "4.53384",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "18482",
-          "title": "Running in the 90's",
-          "artist": "Max Coveri",
-          "creator": "Gabi",
-          "approved_date": "2010-12-31 03:20:48",
-          "difficulties": [
-            {
-              "beatmap_id": "65417",
-              "version": "Insane",
-              "difficultyrating": "5.10116",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "71923",
-              "version": "Normal",
-              "difficultyrating": "2.51639",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "77034",
-              "version": "Easy",
-              "difficultyrating": "1.92561",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "81498",
-              "version": "Alazy",
-              "difficultyrating": "4.68293",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "18923",
-          "title": "Night of Fire",
-          "artist": "Niko",
-          "creator": "Gabi",
-          "approved_date": "2011-02-01 17:22:19",
-          "difficulties": [
-            {
-              "beatmap_id": "66820",
-              "version": "Insane",
-              "difficultyrating": "5.02254",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "77499",
-              "version": "Kite's Normal",
-              "difficultyrating": "1.9817",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "77710",
-              "version": "lepidon! - Taiko Oni",
-              "difficultyrating": "4.4572",
-              "mode": "1",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "77711",
-              "version": "Ruc's Hard",
-              "difficultyrating": "3.92133",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "26598",
-          "title": "Wintersun",
-          "artist": "Bond",
-          "creator": "Gabi",
-          "approved_date": "2011-04-21 00:27:21",
-          "difficulties": [
-            {
-              "beatmap_id": "94547",
+              "beatmap_id": "29180",
               "version": "Hard",
-              "difficultyrating": "4.36241",
+              "difficultyrating": "4.24219",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "94548",
-              "version": "Normal",
-              "difficultyrating": "2.65292",
+              "beatmap_id": "29181",
+              "version": "LESJUH",
+              "difficultyrating": "4.99194",
               "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "94698",
-              "version": "Easy",
-              "difficultyrating": "2.05555",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "31310",
-          "title": "The Road of the Apotropaic God ~ Dark Road",
-          "artist": "ZUN",
-          "creator": "Gabi",
-          "approved_date": "2011-08-11 15:05:24",
-          "difficulties": [
-            {
-              "beatmap_id": "102958",
-              "version": "Hard",
-              "difficultyrating": "4.18058",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "104440",
-              "version": "Easy",
-              "difficultyrating": "1.96886",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "109675",
-              "version": "Kite's Normal",
-              "difficultyrating": "2.17134",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "41874",
-          "title": "HEAVENLY MOON",
-          "artist": "Tatsh",
-          "creator": "Gabi",
-          "approved_date": "2012-04-23 13:17:16",
-          "difficulties": [
-            {
-              "beatmap_id": "132043",
-              "version": "Extreme",
-              "difficultyrating": "6.08128",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "136302",
-              "version": "Advanced",
-              "difficultyrating": "4.28052",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "136303",
-              "version": "Basic",
-              "difficultyrating": "2.54099",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "139127",
-              "version": "Easy",
-              "difficultyrating": "1.87709",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "142855",
-              "version": "Sp3's Jubiko",
-              "difficultyrating": "4.56178",
-              "mode": "1",
               "isGuestDiff": false
             }
           ],
@@ -18807,7 +18805,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 72
       },
-      "lastUpdated": "2026-07-20T05:48:29.342Z"
+      "lastUpdated": "2026-08-03T05:49:02.737Z"
     },
     {
       "user_id": "40998",
@@ -21640,30 +21638,30 @@
       ],
       "beatmapsets": [
         {
-          "beatmapset_id": "4801",
-          "title": "Sucks To Be You",
-          "artist": "Prozzak",
+          "beatmapset_id": "15690",
+          "title": "Pursuit of Happiness",
+          "artist": "Kid Cudi feat. MGMT & Ratatat",
           "creator": "Real1",
-          "approved_date": "2009-02-08 02:11:51",
+          "approved_date": "2011-05-16 18:43:33",
           "difficulties": [
             {
-              "beatmap_id": "25041",
+              "beatmap_id": "56684",
               "version": "Easy",
-              "difficultyrating": "1.89193",
+              "difficultyrating": "2.10655",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "25042",
+              "beatmap_id": "56685",
               "version": "Hard",
-              "difficultyrating": "3.03099",
+              "difficultyrating": "3.28214",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "25043",
+              "beatmap_id": "56686",
               "version": "Normal",
-              "difficultyrating": "2.39707",
+              "difficultyrating": "2.47483",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -21671,30 +21669,30 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "5152",
-          "title": "Poison",
-          "artist": "Takashi Sorimachi",
+          "beatmapset_id": "17538",
+          "title": "Enter Galactic",
+          "artist": "Kid Cudi",
           "creator": "Real1",
-          "approved_date": "2009-02-17 23:29:05",
+          "approved_date": "2011-01-28 23:51:37",
           "difficulties": [
             {
-              "beatmap_id": "25936",
-              "version": "Onizuka",
-              "difficultyrating": "3.68391",
+              "beatmap_id": "62551",
+              "version": "Ego Death",
+              "difficultyrating": "3.53079",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "25937",
-              "version": "Teacher",
-              "difficultyrating": "2.74768",
+              "beatmap_id": "62552",
+              "version": "Threshold",
+              "difficultyrating": "1.8799",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "25938",
-              "version": "Trainee",
-              "difficultyrating": "2.20729",
+              "beatmap_id": "62553",
+              "version": "Trip",
+              "difficultyrating": "2.43755",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -21702,444 +21700,30 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "4073",
-          "title": "Serious",
-          "artist": "Shogo Sakai",
+          "beatmapset_id": "12477",
+          "title": "My December",
+          "artist": "Linkin Park",
           "creator": "Real1",
-          "approved_date": "2009-02-20 00:57:08",
+          "approved_date": "2010-05-06 19:52:25",
           "difficulties": [
             {
-              "beatmap_id": "23268",
-              "version": "Hard",
-              "difficultyrating": "2.67567",
+              "beatmap_id": "46769",
+              "version": "December",
+              "difficultyrating": "3.07839",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "23269",
-              "version": "Normal",
-              "difficultyrating": "1.79084",
+              "beatmap_id": "46770",
+              "version": "February",
+              "difficultyrating": "1.846",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "24031",
-              "version": "Easy",
-              "difficultyrating": "1.37596",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "24875",
-              "version": "Harder",
-              "difficultyrating": "2.70501",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "5409",
-          "title": "Dark Side ni Tsuitekite",
-          "artist": "Makino Yui",
-          "creator": "Real1",
-          "approved_date": "2009-02-28 00:10:25",
-          "difficulties": [
-            {
-              "beatmap_id": "26619",
-              "version": "Easy",
-              "difficultyrating": "1.7445",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "26620",
-              "version": "Hard",
-              "difficultyrating": "3.07684",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "26621",
-              "version": "Normal",
-              "difficultyrating": "2.354",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "6218",
-          "title": "Fushigi Purupuru Pururin Rin!",
-          "artist": "Shishido Rumi",
-          "creator": "Real1",
-          "approved_date": "2009-04-23 15:30:03",
-          "difficulties": [
-            {
-              "beatmap_id": "28672",
-              "version": "Puru~",
-              "difficultyrating": "2.07244",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "28673",
-              "version": "PURURIN!",
-              "difficultyrating": "3.35285",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "28674",
-              "version": "Purupuru!",
-              "difficultyrating": "3.09965",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "5813",
-          "title": "Itsu ni Natte mo Itsu Made mo",
-          "artist": "The Zip Guns",
-          "creator": "Real1",
-          "approved_date": "2009-05-14 00:31:30",
-          "difficulties": [
-            {
-              "beatmap_id": "27662",
-              "version": "Become friends",
-              "difficultyrating": "1.92977",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "27663",
-              "version": "Friends forever",
-              "difficultyrating": "3.00949",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "27664",
-              "version": "Stay friends",
-              "difficultyrating": "2.45582",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "6459",
-          "title": "Closer",
-          "artist": "Nine Inch Nails",
-          "creator": "Real1",
-          "approved_date": "2009-07-04 18:36:57",
-          "difficulties": [
-            {
-              "beatmap_id": "29325",
-              "version": "Easy",
-              "difficultyrating": "1.50599",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "29326",
-              "version": "Hard",
-              "difficultyrating": "3.27299",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "29327",
-              "version": "Normal",
-              "difficultyrating": "2.1629",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "8190",
-          "title": "Kingdom of Ixataka",
-          "artist": "Yutaka Minobe & Takayuki Maeda",
-          "creator": "Real1",
-          "approved_date": "2009-08-02 20:27:45",
-          "difficulties": [
-            {
-              "beatmap_id": "33943",
-              "version": "Easy",
-              "difficultyrating": "2.0852",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "33944",
-              "version": "Hard",
-              "difficultyrating": "3.00758",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "33945",
-              "version": "Normal",
-              "difficultyrating": "2.9526",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "7048",
-          "title": "Dreaming While I Wake",
-          "artist": "Arkimedes",
-          "creator": "Real1",
-          "approved_date": "2009-08-17 05:48:28",
-          "difficulties": [
-            {
-              "beatmap_id": "30857",
-              "version": "Ryo",
-              "difficultyrating": "2.41602",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "30965",
-              "version": "Fuku-san",
-              "difficultyrating": "2.01379",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "33274",
-              "version": "Lan Di (by gyt)",
-              "difficultyrating": "3.13246",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "33824",
-              "version": "Chai",
-              "difficultyrating": "3.28192",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "7226",
-          "title": "Yume no Shima Shinen Kouen",
-          "artist": "Susumu Hirasawa",
-          "creator": "Real1",
-          "approved_date": "2009-09-10 10:37:31",
-          "difficulties": [
-            {
-              "beatmap_id": "31340",
-              "version": "Easy",
-              "difficultyrating": "1.49153",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "31341",
-              "version": "Hard",
-              "difficultyrating": "3.43188",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "31651",
-              "version": "KIRBY Mix",
-              "difficultyrating": "5.01886",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "35972",
-              "version": "Normal+",
-              "difficultyrating": "2.89995",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "9172",
-          "title": "Memories of Distant Days",
-          "artist": "Takenobu Mitsuyoshi",
-          "creator": "Real1",
-          "approved_date": "2009-10-12 22:24:26",
-          "difficulties": [
-            {
-              "beatmap_id": "36924",
-              "version": "Fuku-san",
-              "difficultyrating": "1.45421",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "36925",
-              "version": "Gui Zhang",
-              "difficultyrating": "1.76212",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "36926",
-              "version": "Nozomi",
-              "difficultyrating": "3.02905",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "8690",
-          "title": "Shrooms",
-          "artist": "The Lonely Island",
-          "creator": "Real1",
-          "approved_date": "2009-10-23 14:06:57",
-          "difficulties": [
-            {
-              "beatmap_id": "35408",
-              "version": "Flying",
-              "difficultyrating": "3.42552",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "35409",
-              "version": "High",
-              "difficultyrating": "2.62466",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "35410",
-              "version": "Low",
-              "difficultyrating": "1.84823",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "8487",
-          "title": "Parade",
-          "artist": "Susumu Hirasawa",
-          "creator": "Real1",
-          "approved_date": "2009-10-28 09:55:18",
-          "difficulties": [
-            {
-              "beatmap_id": "34817",
-              "version": "Easy",
-              "difficultyrating": "2.02488",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "34819",
-              "version": "KIRBY Mix",
-              "difficultyrating": "4.53311",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "35820",
-              "version": "Insane",
-              "difficultyrating": "3.75792",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "35821",
-              "version": "Normal+",
-              "difficultyrating": "2.56786",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "10390",
-          "title": "Sobu Naru Kaze",
-          "artist": "Susumu Hirasawa",
-          "creator": "Real1",
-          "approved_date": "2009-12-06 08:57:29",
-          "difficulties": [
-            {
-              "beatmap_id": "40508",
-              "version": "Easy",
-              "difficultyrating": "1.55364",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "40509",
-              "version": "Hard",
-              "difficultyrating": "3.42101",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "40510",
-              "version": "Normal",
-              "difficultyrating": "2.38732",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "40637",
-              "version": "KIRBY Mix",
-              "difficultyrating": "4.91141",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "11702",
-          "title": "Amor Buffer",
-          "artist": "Susumu Hirasawa",
-          "creator": "Real1",
-          "approved_date": "2010-02-19 19:25:39",
-          "difficulties": [
-            {
-              "beatmap_id": "44493",
-              "version": "Easy",
-              "difficultyrating": "1.8437",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "44494",
-              "version": "Insane",
-              "difficultyrating": "3.69504",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "44526",
-              "version": "KIRBY Mix",
-              "difficultyrating": "5.41717",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "44615",
-              "version": "Normal+",
-              "difficultyrating": "2.46612",
+              "beatmap_id": "46771",
+              "version": "October",
+              "difficultyrating": "2.25341",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -22185,92 +21769,506 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "12477",
-          "title": "My December",
-          "artist": "Linkin Park",
+          "beatmapset_id": "11702",
+          "title": "Amor Buffer",
+          "artist": "Susumu Hirasawa",
           "creator": "Real1",
-          "approved_date": "2010-05-06 19:52:25",
+          "approved_date": "2010-02-19 19:25:39",
           "difficulties": [
             {
-              "beatmap_id": "46769",
-              "version": "December",
-              "difficultyrating": "3.07839",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "46770",
-              "version": "February",
-              "difficultyrating": "1.846",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "46771",
-              "version": "October",
-              "difficultyrating": "2.25341",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "17538",
-          "title": "Enter Galactic",
-          "artist": "Kid Cudi",
-          "creator": "Real1",
-          "approved_date": "2011-01-28 23:51:37",
-          "difficulties": [
-            {
-              "beatmap_id": "62551",
-              "version": "Ego Death",
-              "difficultyrating": "3.53079",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "62552",
-              "version": "Threshold",
-              "difficultyrating": "1.8799",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "62553",
-              "version": "Trip",
-              "difficultyrating": "2.43755",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "15690",
-          "title": "Pursuit of Happiness",
-          "artist": "Kid Cudi feat. MGMT & Ratatat",
-          "creator": "Real1",
-          "approved_date": "2011-05-16 18:43:33",
-          "difficulties": [
-            {
-              "beatmap_id": "56684",
+              "beatmap_id": "44493",
               "version": "Easy",
-              "difficultyrating": "2.10655",
+              "difficultyrating": "1.8437",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "56685",
+              "beatmap_id": "44494",
+              "version": "Insane",
+              "difficultyrating": "3.69504",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "44526",
+              "version": "KIRBY Mix",
+              "difficultyrating": "5.41717",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "44615",
+              "version": "Normal+",
+              "difficultyrating": "2.46612",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "10390",
+          "title": "Sobu Naru Kaze",
+          "artist": "Susumu Hirasawa",
+          "creator": "Real1",
+          "approved_date": "2009-12-06 08:57:29",
+          "difficulties": [
+            {
+              "beatmap_id": "40508",
+              "version": "Easy",
+              "difficultyrating": "1.55364",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "40509",
               "version": "Hard",
-              "difficultyrating": "3.28214",
+              "difficultyrating": "3.42101",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "56686",
+              "beatmap_id": "40510",
               "version": "Normal",
-              "difficultyrating": "2.47483",
+              "difficultyrating": "2.38732",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "40637",
+              "version": "KIRBY Mix",
+              "difficultyrating": "4.91141",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "8487",
+          "title": "Parade",
+          "artist": "Susumu Hirasawa",
+          "creator": "Real1",
+          "approved_date": "2009-10-28 09:55:18",
+          "difficulties": [
+            {
+              "beatmap_id": "34817",
+              "version": "Easy",
+              "difficultyrating": "2.02488",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "34819",
+              "version": "KIRBY Mix",
+              "difficultyrating": "4.53311",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "35820",
+              "version": "Insane",
+              "difficultyrating": "3.75792",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "35821",
+              "version": "Normal+",
+              "difficultyrating": "2.56786",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "8690",
+          "title": "Shrooms",
+          "artist": "The Lonely Island",
+          "creator": "Real1",
+          "approved_date": "2009-10-23 14:06:57",
+          "difficulties": [
+            {
+              "beatmap_id": "35408",
+              "version": "Flying",
+              "difficultyrating": "3.42552",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "35409",
+              "version": "High",
+              "difficultyrating": "2.62466",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "35410",
+              "version": "Low",
+              "difficultyrating": "1.84823",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "9172",
+          "title": "Memories of Distant Days",
+          "artist": "Takenobu Mitsuyoshi",
+          "creator": "Real1",
+          "approved_date": "2009-10-12 22:24:26",
+          "difficulties": [
+            {
+              "beatmap_id": "36924",
+              "version": "Fuku-san",
+              "difficultyrating": "1.45421",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "36925",
+              "version": "Gui Zhang",
+              "difficultyrating": "1.76212",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "36926",
+              "version": "Nozomi",
+              "difficultyrating": "3.02905",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "7226",
+          "title": "Yume no Shima Shinen Kouen",
+          "artist": "Susumu Hirasawa",
+          "creator": "Real1",
+          "approved_date": "2009-09-10 10:37:31",
+          "difficulties": [
+            {
+              "beatmap_id": "31340",
+              "version": "Easy",
+              "difficultyrating": "1.49153",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "31341",
+              "version": "Hard",
+              "difficultyrating": "3.43188",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "31651",
+              "version": "KIRBY Mix",
+              "difficultyrating": "5.01886",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "35972",
+              "version": "Normal+",
+              "difficultyrating": "2.89995",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "7048",
+          "title": "Dreaming While I Wake",
+          "artist": "Arkimedes",
+          "creator": "Real1",
+          "approved_date": "2009-08-17 05:48:28",
+          "difficulties": [
+            {
+              "beatmap_id": "30857",
+              "version": "Ryo",
+              "difficultyrating": "2.41602",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "30965",
+              "version": "Fuku-san",
+              "difficultyrating": "2.01379",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "33274",
+              "version": "Lan Di (by gyt)",
+              "difficultyrating": "3.13246",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "33824",
+              "version": "Chai",
+              "difficultyrating": "3.28192",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "8190",
+          "title": "Kingdom of Ixataka",
+          "artist": "Yutaka Minobe & Takayuki Maeda",
+          "creator": "Real1",
+          "approved_date": "2009-08-02 20:27:45",
+          "difficulties": [
+            {
+              "beatmap_id": "33943",
+              "version": "Easy",
+              "difficultyrating": "2.0852",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "33944",
+              "version": "Hard",
+              "difficultyrating": "3.00758",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "33945",
+              "version": "Normal",
+              "difficultyrating": "2.9526",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "6459",
+          "title": "Closer",
+          "artist": "Nine Inch Nails",
+          "creator": "Real1",
+          "approved_date": "2009-07-04 18:36:57",
+          "difficulties": [
+            {
+              "beatmap_id": "29325",
+              "version": "Easy",
+              "difficultyrating": "1.50599",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "29326",
+              "version": "Hard",
+              "difficultyrating": "3.27299",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "29327",
+              "version": "Normal",
+              "difficultyrating": "2.1629",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "5813",
+          "title": "Itsu ni Natte mo Itsu Made mo",
+          "artist": "The Zip Guns",
+          "creator": "Real1",
+          "approved_date": "2009-05-14 00:31:30",
+          "difficulties": [
+            {
+              "beatmap_id": "27662",
+              "version": "Become friends",
+              "difficultyrating": "1.92977",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "27663",
+              "version": "Friends forever",
+              "difficultyrating": "3.00949",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "27664",
+              "version": "Stay friends",
+              "difficultyrating": "2.45582",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "6218",
+          "title": "Fushigi Purupuru Pururin Rin!",
+          "artist": "Shishido Rumi",
+          "creator": "Real1",
+          "approved_date": "2009-04-23 15:30:03",
+          "difficulties": [
+            {
+              "beatmap_id": "28672",
+              "version": "Puru~",
+              "difficultyrating": "2.07244",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "28673",
+              "version": "PURURIN!",
+              "difficultyrating": "3.35285",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "28674",
+              "version": "Purupuru!",
+              "difficultyrating": "3.09965",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "5409",
+          "title": "Dark Side ni Tsuitekite",
+          "artist": "Makino Yui",
+          "creator": "Real1",
+          "approved_date": "2009-02-28 00:10:25",
+          "difficulties": [
+            {
+              "beatmap_id": "26619",
+              "version": "Easy",
+              "difficultyrating": "1.7445",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "26620",
+              "version": "Hard",
+              "difficultyrating": "3.07684",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "26621",
+              "version": "Normal",
+              "difficultyrating": "2.354",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "4073",
+          "title": "Serious",
+          "artist": "Shogo Sakai",
+          "creator": "Real1",
+          "approved_date": "2009-02-20 00:57:08",
+          "difficulties": [
+            {
+              "beatmap_id": "23268",
+              "version": "Hard",
+              "difficultyrating": "2.67567",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "23269",
+              "version": "Normal",
+              "difficultyrating": "1.79084",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "24031",
+              "version": "Easy",
+              "difficultyrating": "1.37596",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "24875",
+              "version": "Harder",
+              "difficultyrating": "2.70501",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "5152",
+          "title": "Poison",
+          "artist": "Takashi Sorimachi",
+          "creator": "Real1",
+          "approved_date": "2009-02-17 23:29:05",
+          "difficulties": [
+            {
+              "beatmap_id": "25936",
+              "version": "Onizuka",
+              "difficultyrating": "3.68391",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "25937",
+              "version": "Teacher",
+              "difficultyrating": "2.74768",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "25938",
+              "version": "Trainee",
+              "difficultyrating": "2.20729",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "4801",
+          "title": "Sucks To Be You",
+          "artist": "Prozzak",
+          "creator": "Real1",
+          "approved_date": "2009-02-08 02:11:51",
+          "difficulties": [
+            {
+              "beatmap_id": "25041",
+              "version": "Easy",
+              "difficultyrating": "1.89193",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "25042",
+              "version": "Hard",
+              "difficultyrating": "3.03099",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "25043",
+              "version": "Normal",
+              "difficultyrating": "2.39707",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -22287,7 +22285,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 64
       },
-      "lastUpdated": "2026-07-20T05:48:29.342Z"
+      "lastUpdated": "2026-08-03T05:49:02.737Z"
     },
     {
       "user_id": "4287454",
@@ -24801,7 +24799,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 46
       },
-      "lastUpdated": "2026-07-20T05:48:29.342Z"
+      "lastUpdated": "2026-08-03T05:49:02.737Z"
     },
     {
       "user_id": "12091109",
@@ -26430,9 +26428,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "80",
-          "playcount": "58383"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1705930",
@@ -26456,9 +26452,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "27",
-          "playcount": "6419"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1276327",
@@ -26708,7 +26702,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 35
       },
-      "lastUpdated": "2026-07-20T05:48:29.342Z"
+      "lastUpdated": "2026-08-03T05:49:02.737Z"
     },
     {
       "user_id": "4999669",
@@ -28313,7 +28307,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 29
       },
-      "lastUpdated": "2026-07-20T05:48:29.342Z"
+      "lastUpdated": "2026-08-03T05:49:02.737Z"
     },
     {
       "user_id": "8009626",
@@ -29877,7 +29871,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 28
       },
-      "lastUpdated": "2026-07-20T05:48:29.342Z"
+      "lastUpdated": "2026-08-03T05:49:02.737Z"
     },
     {
       "user_id": "10047413",
@@ -30629,9 +30623,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "187",
-          "playcount": "12772"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1162342",
@@ -30801,7 +30793,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 16
       },
-      "lastUpdated": "2026-07-20T05:48:29.342Z"
+      "lastUpdated": "2026-08-03T05:49:02.737Z"
     },
     {
       "user_id": "9287016",
@@ -31318,7 +31310,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 9
       },
-      "lastUpdated": "2026-07-20T05:48:29.342Z"
+      "lastUpdated": "2026-08-03T05:49:02.737Z"
     },
     {
       "user_id": "819",
@@ -31599,23 +31591,23 @@
       ],
       "beatmapsets": [
         {
-          "beatmapset_id": "89",
-          "title": "Bad",
-          "artist": "Michael Jackson",
+          "beatmapset_id": "1143",
+          "title": "Someday",
+          "artist": "SAWA/Hanaeryca",
           "creator": "Loginer",
-          "approved_date": "2007-10-16 08:43:00",
+          "approved_date": "2008-04-20 08:23:46",
           "difficulties": [
             {
-              "beatmap_id": "304",
-              "version": "Easy",
-              "difficultyrating": "1.53565",
+              "beatmap_id": "8571",
+              "version": "Normal",
+              "difficultyrating": "2.0776",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "305",
+              "beatmap_id": "8572",
               "version": "Hard",
-              "difficultyrating": "2.77565",
+              "difficultyrating": "3.39612",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -31647,23 +31639,23 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "1143",
-          "title": "Someday",
-          "artist": "SAWA/Hanaeryca",
+          "beatmapset_id": "89",
+          "title": "Bad",
+          "artist": "Michael Jackson",
           "creator": "Loginer",
-          "approved_date": "2008-04-20 08:23:46",
+          "approved_date": "2007-10-16 08:43:00",
           "difficulties": [
             {
-              "beatmap_id": "8571",
-              "version": "Normal",
-              "difficultyrating": "2.0776",
+              "beatmap_id": "304",
+              "version": "Easy",
+              "difficultyrating": "1.53565",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "8572",
+              "beatmap_id": "305",
               "version": "Hard",
-              "difficultyrating": "3.39612",
+              "difficultyrating": "2.77565",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -31680,7 +31672,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 6
       },
-      "lastUpdated": "2026-07-20T05:48:29.342Z"
+      "lastUpdated": "2026-08-03T05:49:02.737Z"
     },
     {
       "user_id": "31343",
@@ -31961,30 +31953,6 @@
       ],
       "beatmapsets": [
         {
-          "beatmapset_id": "3955",
-          "title": "Sparks Scattering",
-          "artist": "Motoi Sakuraba",
-          "creator": "Hara",
-          "approved_date": "2008-12-10 13:10:57",
-          "difficulties": [
-            {
-              "beatmap_id": "22986",
-              "version": "Hard",
-              "difficultyrating": "2.51192",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "22987",
-              "version": "Normal",
-              "difficultyrating": "2.36236",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
           "beatmapset_id": "5706",
           "title": "Gang-Plank Galleon",
           "artist": "David Wise",
@@ -32021,6 +31989,30 @@
             }
           ],
           "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "3955",
+          "title": "Sparks Scattering",
+          "artist": "Motoi Sakuraba",
+          "creator": "Hara",
+          "approved_date": "2008-12-10 13:10:57",
+          "difficulties": [
+            {
+              "beatmap_id": "22986",
+              "version": "Hard",
+              "difficultyrating": "2.51192",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "22987",
+              "version": "Normal",
+              "difficultyrating": "2.36236",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
         }
       ],
       "guestDifficulties": [],
@@ -32032,7 +32024,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 6
       },
-      "lastUpdated": "2026-07-20T05:48:29.342Z"
+      "lastUpdated": "2026-08-03T05:49:02.737Z"
     },
     {
       "user_id": "52832",
@@ -32313,37 +32305,6 @@
       ],
       "beatmapsets": [
         {
-          "beatmapset_id": "5916",
-          "title": "Black Panther",
-          "artist": "Crystal Castles",
-          "creator": "v0xtrot",
-          "approved_date": "2009-04-11 23:46:29",
-          "difficulties": [
-            {
-              "beatmap_id": "28014",
-              "version": "Hard",
-              "difficultyrating": "3.32362",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "28015",
-              "version": "Normal",
-              "difficultyrating": "2.17818",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "28448",
-              "version": "Loco",
-              "difficultyrating": "3.79918",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
           "beatmapset_id": "6499",
           "title": "Wing Beats",
           "artist": "Wiklund",
@@ -32373,6 +32334,37 @@
             }
           ],
           "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "5916",
+          "title": "Black Panther",
+          "artist": "Crystal Castles",
+          "creator": "v0xtrot",
+          "approved_date": "2009-04-11 23:46:29",
+          "difficulties": [
+            {
+              "beatmap_id": "28014",
+              "version": "Hard",
+              "difficultyrating": "3.32362",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "28015",
+              "version": "Normal",
+              "difficultyrating": "2.17818",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "28448",
+              "version": "Loco",
+              "difficultyrating": "3.79918",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
         }
       ],
       "guestDifficulties": [],
@@ -32384,7 +32376,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 6
       },
-      "lastUpdated": "2026-07-20T05:48:29.342Z"
+      "lastUpdated": "2026-08-03T05:49:02.737Z"
     },
     {
       "user_id": "37224",
@@ -32573,7 +32565,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 3
       },
-      "lastUpdated": "2026-07-20T05:48:29.342Z"
+      "lastUpdated": "2026-08-03T05:49:02.737Z"
     },
     {
       "user_id": "4150829",
@@ -32721,7 +32713,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 2
       },
-      "lastUpdated": "2026-07-20T05:48:29.342Z"
+      "lastUpdated": "2026-08-03T05:49:02.737Z"
     }
   ]
 }
