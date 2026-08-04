@@ -5,7 +5,7 @@
     "demonym": "Singapore",
     "nativeName": "Singapore"
   },
-  "lastUpdated": "2026-07-21T05:27:01.377Z",
+  "lastUpdated": "2026-08-04T05:20:32.294Z",
   "totalMappers": 5,
   "totalBeatmaps": 82,
   "totalBeatmapsets": 30,
@@ -1712,7 +1712,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 31
       },
-      "lastUpdated": "2026-07-21T05:27:01.377Z"
+      "lastUpdated": "2026-08-04T05:20:32.294Z"
     },
     {
       "user_id": "43345",
@@ -3042,7 +3042,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 24
       },
-      "lastUpdated": "2026-07-21T05:27:01.377Z"
+      "lastUpdated": "2026-08-04T05:20:32.294Z"
     },
     {
       "user_id": "7199159",
@@ -4022,9 +4022,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "162",
-          "playcount": "61069"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1130778",
@@ -4055,9 +4053,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "32",
-          "playcount": "12252"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1942597",
@@ -4074,9 +4070,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "102",
-          "playcount": "17182"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1744376",
@@ -4174,7 +4168,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 20
       },
-      "lastUpdated": "2026-07-21T05:27:01.377Z"
+      "lastUpdated": "2026-08-04T05:20:32.294Z"
     },
     {
       "user_id": "677",
@@ -4444,7 +4438,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 4
       },
-      "lastUpdated": "2026-07-21T05:27:01.377Z"
+      "lastUpdated": "2026-08-04T05:20:32.294Z"
     },
     {
       "user_id": "12213",
@@ -4633,7 +4627,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 3
       },
-      "lastUpdated": "2026-07-21T05:27:01.377Z"
+      "lastUpdated": "2026-08-04T05:20:32.294Z"
     }
   ]
 }
