@@ -5,7 +5,7 @@
     "demonym": "Ecuador",
     "nativeName": "Ecuador"
   },
-  "lastUpdated": "2026-07-25T05:19:36.793Z",
+  "lastUpdated": "2026-08-08T03:38:26.290Z",
   "totalMappers": 4,
   "totalBeatmaps": 171,
   "totalBeatmapsets": 49,
@@ -5402,9 +5402,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "21",
-          "playcount": "2495"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2036508",
@@ -5449,9 +5447,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "40",
-          "playcount": "8705"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1587095",
@@ -6401,7 +6397,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 118
       },
-      "lastUpdated": "2026-07-25T05:19:36.793Z"
+      "lastUpdated": "2026-08-08T03:38:26.290Z"
     },
     {
       "user_id": "39872",
@@ -7694,68 +7690,30 @@
       ],
       "beatmapsets": [
         {
-          "beatmapset_id": "4572",
-          "title": "Hasta que el cuerpo aguante",
-          "artist": "Mago de Oz",
+          "beatmapset_id": "13787",
+          "title": "Forever Young (Remix)",
+          "artist": "Alphaville",
           "creator": "Sir Minelli",
-          "approved_date": "2009-02-09 19:57:03",
+          "approved_date": "2010-11-25 06:34:00",
           "difficulties": [
             {
-              "beatmap_id": "25319",
-              "version": "Insane",
-              "difficultyrating": "4.03164",
+              "beatmap_id": "56232",
+              "version": "Ultimate's Remix",
+              "difficultyrating": "3.76256",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "25321",
-              "version": "Hard",
-              "difficultyrating": "3.54832",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "25405",
-              "version": "Normal",
-              "difficultyrating": "2.92434",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "25482",
+              "beatmap_id": "58661",
               "version": "Easy",
-              "difficultyrating": "2.10725",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "5165",
-          "title": "To Zanarkand",
-          "artist": "Nobuo Uematsu",
-          "creator": "Sir Minelli",
-          "approved_date": "2009-04-24 16:54:04",
-          "difficulties": [
-            {
-              "beatmap_id": "26034",
-              "version": "Hard",
-              "difficultyrating": "2.08188",
+              "difficultyrating": "1.69426",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "29444",
+              "beatmap_id": "78755",
               "version": "Normal",
-              "difficultyrating": "1.61768",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "29763",
-              "version": "Insane",
-              "difficultyrating": "3.48189",
+              "difficultyrating": "2.54964",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -7763,123 +7721,30 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "5460",
-          "title": "Biidama",
-          "artist": "Atsumi Saori",
+          "beatmapset_id": "10587",
+          "title": "A Thousand Miles",
+          "artist": "Vanessa Carlton",
           "creator": "Sir Minelli",
-          "approved_date": "2009-06-25 18:48:20",
+          "approved_date": "2010-07-06 19:32:34",
           "difficulties": [
             {
-              "beatmap_id": "26772",
-              "version": "Normal",
-              "difficultyrating": "2.37978",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "27701",
-              "version": "Easy",
-              "difficultyrating": "1.89651",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "28694",
+              "beatmap_id": "41087",
               "version": "Hard",
-              "difficultyrating": "2.94039",
+              "difficultyrating": "3.37105",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "32151",
-              "version": "Sir Minelli Style",
-              "difficultyrating": "4.2483",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "7907",
-          "title": "White Flag",
-          "artist": "Dido",
-          "creator": "Sir Minelli",
-          "approved_date": "2009-08-02 18:51:34",
-          "difficulties": [
-            {
-              "beatmap_id": "33214",
-              "version": "Normal",
-              "difficultyrating": "1.72945",
+              "beatmap_id": "61385",
+              "version": "Larto's Miles",
+              "difficultyrating": "3.80944",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "33648",
-              "version": "Hard",
-              "difficultyrating": "2.76451",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "6729",
-          "title": "Fool Again",
-          "artist": "Westlife",
-          "creator": "Sir Minelli",
-          "approved_date": "2009-10-17 14:19:54",
-          "difficulties": [
-            {
-              "beatmap_id": "30071",
-              "version": "Easy",
-              "difficultyrating": "1.34484",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "30406",
-              "version": "Normal",
-              "difficultyrating": "1.56886",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "33413",
-              "version": "lesjuh's Hard",
-              "difficultyrating": "2.05313",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "6259",
-          "title": "Relax, Take It Easy",
-          "artist": "Mika",
-          "creator": "Sir Minelli",
-          "approved_date": "2009-11-15 19:33:04",
-          "difficulties": [
-            {
-              "beatmap_id": "36129",
-              "version": "Hard",
-              "difficultyrating": "3.77689",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "38812",
-              "version": "Lesjuh's Insane",
-              "difficultyrating": "4.26822",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "39543",
-              "version": "Gens' Normal",
-              "difficultyrating": "2.45843",
+              "beatmap_id": "61963",
+              "version": "CheeseWarlock's Normal",
+              "difficultyrating": "2.24909",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -7925,30 +7790,30 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "10587",
-          "title": "A Thousand Miles",
-          "artist": "Vanessa Carlton",
+          "beatmapset_id": "6259",
+          "title": "Relax, Take It Easy",
+          "artist": "Mika",
           "creator": "Sir Minelli",
-          "approved_date": "2010-07-06 19:32:34",
+          "approved_date": "2009-11-15 19:33:04",
           "difficulties": [
             {
-              "beatmap_id": "41087",
+              "beatmap_id": "36129",
               "version": "Hard",
-              "difficultyrating": "3.37105",
+              "difficultyrating": "3.77689",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "61385",
-              "version": "Larto's Miles",
-              "difficultyrating": "3.80944",
+              "beatmap_id": "38812",
+              "version": "Lesjuh's Insane",
+              "difficultyrating": "4.26822",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "61963",
-              "version": "CheeseWarlock's Normal",
-              "difficultyrating": "2.24909",
+              "beatmap_id": "39543",
+              "version": "Gens' Normal",
+              "difficultyrating": "2.45843",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -7956,30 +7821,161 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "13787",
-          "title": "Forever Young (Remix)",
-          "artist": "Alphaville",
+          "beatmapset_id": "6729",
+          "title": "Fool Again",
+          "artist": "Westlife",
           "creator": "Sir Minelli",
-          "approved_date": "2010-11-25 06:34:00",
+          "approved_date": "2009-10-17 14:19:54",
           "difficulties": [
             {
-              "beatmap_id": "56232",
-              "version": "Ultimate's Remix",
-              "difficultyrating": "3.76256",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "58661",
+              "beatmap_id": "30071",
               "version": "Easy",
-              "difficultyrating": "1.69426",
+              "difficultyrating": "1.34484",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "78755",
+              "beatmap_id": "30406",
               "version": "Normal",
-              "difficultyrating": "2.54964",
+              "difficultyrating": "1.56886",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "33413",
+              "version": "lesjuh's Hard",
+              "difficultyrating": "2.05313",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "7907",
+          "title": "White Flag",
+          "artist": "Dido",
+          "creator": "Sir Minelli",
+          "approved_date": "2009-08-02 18:51:34",
+          "difficulties": [
+            {
+              "beatmap_id": "33214",
+              "version": "Normal",
+              "difficultyrating": "1.72945",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "33648",
+              "version": "Hard",
+              "difficultyrating": "2.76451",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "5460",
+          "title": "Biidama",
+          "artist": "Atsumi Saori",
+          "creator": "Sir Minelli",
+          "approved_date": "2009-06-25 18:48:20",
+          "difficulties": [
+            {
+              "beatmap_id": "26772",
+              "version": "Normal",
+              "difficultyrating": "2.37978",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "27701",
+              "version": "Easy",
+              "difficultyrating": "1.89651",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "28694",
+              "version": "Hard",
+              "difficultyrating": "2.94039",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "32151",
+              "version": "Sir Minelli Style",
+              "difficultyrating": "4.2483",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "5165",
+          "title": "To Zanarkand",
+          "artist": "Nobuo Uematsu",
+          "creator": "Sir Minelli",
+          "approved_date": "2009-04-24 16:54:04",
+          "difficulties": [
+            {
+              "beatmap_id": "26034",
+              "version": "Hard",
+              "difficultyrating": "2.08188",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "29444",
+              "version": "Normal",
+              "difficultyrating": "1.61768",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "29763",
+              "version": "Insane",
+              "difficultyrating": "3.48189",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "4572",
+          "title": "Hasta que el cuerpo aguante",
+          "artist": "Mago de Oz",
+          "creator": "Sir Minelli",
+          "approved_date": "2009-02-09 19:57:03",
+          "difficulties": [
+            {
+              "beatmap_id": "25319",
+              "version": "Insane",
+              "difficultyrating": "4.03164",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "25321",
+              "version": "Hard",
+              "difficultyrating": "3.54832",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "25405",
+              "version": "Normal",
+              "difficultyrating": "2.92434",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "25482",
+              "version": "Easy",
+              "difficultyrating": "2.10725",
               "mode": "0",
               "isGuestDiff": false
             }
@@ -7996,7 +7992,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 29
       },
-      "lastUpdated": "2026-07-25T05:19:36.793Z"
+      "lastUpdated": "2026-08-08T03:38:26.290Z"
     },
     {
       "user_id": "3442319",
@@ -9143,7 +9139,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 21
       },
-      "lastUpdated": "2026-07-25T05:19:36.793Z"
+      "lastUpdated": "2026-08-08T03:38:26.290Z"
     },
     {
       "user_id": "61466",
@@ -9332,7 +9328,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 3
       },
-      "lastUpdated": "2026-07-25T05:19:36.793Z"
+      "lastUpdated": "2026-08-08T03:38:26.290Z"
     }
   ]
 }
