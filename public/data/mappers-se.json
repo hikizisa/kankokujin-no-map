@@ -411,13 +411,13 @@
           "tags": "a_hisa paradigm shift ~cenjue innna cenjue ciel~ 奈雪ニーカ nayuki nīka niika ilya イリヤ folk fantasy japanese hymmnos new testament of pastalie conlang doujin m3-34",
           "genre_id": "13",
           "language_id": "3",
-          "favourite_count": "30",
+          "favourite_count": "31",
           "rating": "9.05556",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "4663",
+          "playcount": "4699",
           "passcount": "1371",
           "packs": "S1312",
           "max_combo": "1127",
@@ -461,7 +461,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "83449",
+          "playcount": "84592",
           "passcount": "7707",
           "packs": "S1308",
           "max_combo": "1989",
@@ -505,7 +505,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "67483",
+          "playcount": "68041",
           "passcount": "16197",
           "packs": "S1308",
           "max_combo": "1514",
@@ -549,7 +549,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "34840",
+          "playcount": "35128",
           "passcount": "8270",
           "packs": "S1308",
           "max_combo": "1149",
@@ -587,13 +587,13 @@
           "tags": "-midgard project- folk fantasy instrumental japanese conlang 马粒儿 malir ヤマドリ benjaminchong 墨橙 boku daidai elamitaa eekhenaa",
           "genre_id": "13",
           "language_id": "3",
-          "favourite_count": "31",
+          "favourite_count": "32",
           "rating": "8.66667",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "5590",
+          "playcount": "5608",
           "passcount": "1283",
           "packs": "S1261",
           "max_combo": "1084",
@@ -637,7 +637,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "11773",
+          "playcount": "11953",
           "passcount": "3753",
           "packs": "S1252",
           "max_combo": "1324",
@@ -681,7 +681,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "15688",
+          "playcount": "15769",
           "passcount": "3986",
           "packs": "S1252",
           "max_combo": "1454",
@@ -725,7 +725,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "6445",
+          "playcount": "6823",
           "passcount": "2569",
           "packs": "S1252",
           "max_combo": "943",
@@ -5358,7 +5358,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "31",
+          "playcount": "4699"
         },
         {
           "beatmapset_id": "1808911",
@@ -5389,7 +5391,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "329",
+          "playcount": "187761"
         },
         {
           "beatmapset_id": "1879277",
@@ -5406,7 +5410,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "32",
+          "playcount": "5608"
         },
         {
           "beatmapset_id": "1738121",
@@ -5437,7 +5443,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "86",
+          "playcount": "34545"
         },
         {
           "beatmapset_id": "1865576",
@@ -11196,13 +11204,13 @@
           "tags": "electronic drum n and & bass liquid remix hospital records vip vocal chops verychill collaboration dnb edm dance instrumental",
           "genre_id": "10",
           "language_id": "5",
-          "favourite_count": "176",
+          "favourite_count": "179",
           "rating": "9.38461",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "44092",
+          "playcount": "44497",
           "passcount": "6279",
           "packs": "S1254",
           "max_combo": "2296",
@@ -14203,7 +14211,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "179",
+          "playcount": "44497"
         },
         {
           "beatmapset_id": "1736985",
@@ -26746,13 +26756,13 @@
           "tags": "oaafyy about with hyperpop hyper pop english",
           "genre_id": "5",
           "language_id": "2",
-          "favourite_count": "154",
+          "favourite_count": "156",
           "rating": "9.52874",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "7876",
+          "playcount": "8038",
           "passcount": "1944",
           "packs": null,
           "max_combo": "1557",
@@ -26790,13 +26800,13 @@
           "tags": "oaafyy about with hyperpop hyper pop english",
           "genre_id": "5",
           "language_id": "2",
-          "favourite_count": "154",
+          "favourite_count": "156",
           "rating": "9.52874",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "6940",
+          "playcount": "7075",
           "passcount": "1894",
           "packs": null,
           "max_combo": "1552",
@@ -26834,13 +26844,13 @@
           "tags": "oaafyy about with hyperpop hyper pop english",
           "genre_id": "5",
           "language_id": "2",
-          "favourite_count": "154",
+          "favourite_count": "156",
           "rating": "9.52874",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "2908",
+          "playcount": "3007",
           "passcount": "882",
           "packs": null,
           "max_combo": "1543",
@@ -26878,13 +26888,13 @@
           "tags": "oaafyy about with hyperpop hyper pop english",
           "genre_id": "5",
           "language_id": "2",
-          "favourite_count": "154",
+          "favourite_count": "156",
           "rating": "9.52874",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "3538",
+          "playcount": "3619",
           "passcount": "944",
           "packs": null,
           "max_combo": "1541",
@@ -26922,13 +26932,13 @@
           "tags": "oaafyy about with hyperpop hyper pop english",
           "genre_id": "5",
           "language_id": "2",
-          "favourite_count": "154",
+          "favourite_count": "156",
           "rating": "9.52874",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "23401",
+          "playcount": "23698",
           "passcount": "4734",
           "packs": null,
           "max_combo": "1568",
@@ -28037,7 +28047,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "156",
+          "playcount": "45437"
         },
         {
           "beatmapset_id": "1720775",
@@ -30839,13 +30851,13 @@
           "tags": "hna hana frugelel d66 diamant66 diamant shini shinitagari for long tomorrow machupicchu industrias topshelf records guddobai math post rock math-rock post-rock experimental j-rock jrock indie jazz-rock alternative japanese english aye1337 228 famoss mcpc-0006 xqif-1001 tsr086 kashikura takashi mino takaaki yamane satoshi yamazaki hirokazu",
           "genre_id": "4",
           "language_id": "2",
-          "favourite_count": "62",
+          "favourite_count": "63",
           "rating": "8.25806",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "4555",
+          "playcount": "4591",
           "passcount": "967",
           "packs": "SM168",
           "max_combo": "3085",
@@ -31222,7 +31234,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "63",
+          "playcount": "4591"
         },
         {
           "beatmapset_id": "1248704",

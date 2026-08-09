@@ -3614,13 +3614,13 @@
           "tags": "u.u.f.o uufo ctcd-0022 かめるかめりあ kamelcamellia bonus track cametek 大箭将也 大箭マサヤ oya masaya ワッカ marvelous inc. extended furrycore hardcore guitar dnb drum and bass video game arcade instrumental bfn kemono furry anthro 獣人 toomiro 藤三郎 hybrid hb alexdunk featured artist fa electronic",
           "genre_id": "10",
           "language_id": "5",
-          "favourite_count": "72",
+          "favourite_count": "73",
           "rating": "8.57944",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "22267",
+          "playcount": "22474",
           "passcount": "5543",
           "packs": "SM153",
           "max_combo": "4666",
@@ -4087,7 +4087,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "73",
+          "playcount": "22474"
         },
         {
           "beatmapset_id": "877895",

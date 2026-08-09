@@ -2919,13 +2919,13 @@
           "tags": "pain remains english deathcore symphonic metal black death marathon turtatical nyalettowo x3 blackened will ramos austin archey andrew o'connor michael yager adam de micco",
           "genre_id": "11",
           "language_id": "2",
-          "favourite_count": "29",
+          "favourite_count": "31",
           "rating": "6.47059",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "13402",
+          "playcount": "13672",
           "passcount": "676",
           "packs": "SC88",
           "max_combo": "3301",
@@ -2963,13 +2963,13 @@
           "tags": "benita bennybananas benny- video game rock english renko w.nova vivienne maurits\"禅\"cornelis zen cold snap デザイアドライブ stage 4 theme desire drive seiga kaku コミックマーケット87 comiket87 c87 shinreibyou touhou 東方project zun 太田順也 team shanghai alice 上海アリス幻樂団 th 霍 青娥 nyalettowo x3 moete neuronio roberto",
           "genre_id": "4",
           "language_id": "2",
-          "favourite_count": "50",
+          "favourite_count": "52",
           "rating": "8.5",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "6337",
+          "playcount": "6508",
           "passcount": "592",
           "packs": "SC86",
           "max_combo": "2839",
@@ -6935,7 +6935,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "31",
+          "playcount": "13672"
         },
         {
           "beatmapset_id": "2000801",
@@ -6952,7 +6954,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "52",
+          "playcount": "6508"
         },
         {
           "beatmapset_id": "1794186",

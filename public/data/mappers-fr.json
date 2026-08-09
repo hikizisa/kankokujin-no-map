@@ -21255,7 +21255,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "88822",
+          "playcount": "90334",
           "passcount": "3361",
           "packs": "S1302",
           "max_combo": "2696",
@@ -25064,7 +25064,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "173",
+          "playcount": "90334"
         },
         {
           "beatmapset_id": "1779800",

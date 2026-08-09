@@ -1113,13 +1113,13 @@
           "tags": "electronic japanese egts 2021 qlf qualifiers hd2 breakcore anime kung-fu generation erase rewrite 鋼の錬金術師",
           "genre_id": "10",
           "language_id": "3",
-          "favourite_count": "61",
+          "favourite_count": "63",
           "rating": "9.84615",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "11431",
+          "playcount": "11557",
           "passcount": "1690",
           "packs": "L18",
           "max_combo": "1500",
@@ -5464,7 +5464,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "63",
+          "playcount": "11557"
         },
         {
           "beatmapset_id": "1786165",
