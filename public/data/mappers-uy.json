@@ -5,7 +5,7 @@
     "demonym": "Uruguay",
     "nativeName": "Uruguay"
   },
-  "lastUpdated": "2026-07-26T05:37:37.309Z",
+  "lastUpdated": "2026-08-09T03:48:11.645Z",
   "totalMappers": 3,
   "totalBeatmaps": 63,
   "totalBeatmapsets": 16,
@@ -2599,7 +2599,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 48
       },
-      "lastUpdated": "2026-07-26T05:37:37.309Z"
+      "lastUpdated": "2026-08-09T03:48:11.645Z"
     },
     {
       "user_id": "45513",
@@ -3190,62 +3190,38 @@
       ],
       "beatmapsets": [
         {
-          "beatmapset_id": "13845",
-          "title": "Whatcha Say",
-          "artist": "Jason Derulo ft. Imogen Heap",
+          "beatmapset_id": "29244",
+          "title": "Danza Kuduro",
+          "artist": "Don Omar ft. Lucenzo",
           "creator": "darck360",
-          "approved_date": "2010-05-09 20:53:33",
+          "approved_date": "2011-07-19 18:43:34",
           "difficulties": [
             {
-              "beatmap_id": "54573",
-              "version": "Hard",
-              "difficultyrating": "2.65136",
+              "beatmap_id": "99254",
+              "version": "Experto",
+              "difficultyrating": "3.3899",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "55278",
-              "version": "EEeee's Insane",
-              "difficultyrating": "3.99029",
+              "beatmap_id": "99255",
+              "version": "Principiante",
+              "difficultyrating": "1.69224",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "55279",
-              "version": "Hard+",
-              "difficultyrating": "3.54698",
+              "beatmap_id": "106173",
+              "version": "Dificil",
+              "difficultyrating": "2.7385",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "56601",
-              "version": "Normal",
-              "difficultyrating": "2.07552",
-              "mode": "0",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "10259",
-          "title": "Good Girls Go Bad",
-          "artist": "Cobra Starship ft. Leighton Meester",
-          "creator": "darck360",
-          "approved_date": "2010-06-09 00:09:35",
-          "difficulties": [
-            {
-              "beatmap_id": "40130",
-              "version": "Hard",
-              "difficultyrating": "3.02958",
-              "mode": "0",
-              "isGuestDiff": false
-            },
-            {
-              "beatmap_id": "58954",
-              "version": "Normal",
-              "difficultyrating": "2.2276",
-              "mode": "0",
+              "beatmap_id": "106174",
+              "version": "Taiko Oni",
+              "difficultyrating": "3.35257",
+              "mode": "1",
               "isGuestDiff": false
             }
           ],
@@ -3283,38 +3259,62 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "29244",
-          "title": "Danza Kuduro",
-          "artist": "Don Omar ft. Lucenzo",
+          "beatmapset_id": "10259",
+          "title": "Good Girls Go Bad",
+          "artist": "Cobra Starship ft. Leighton Meester",
           "creator": "darck360",
-          "approved_date": "2011-07-19 18:43:34",
+          "approved_date": "2010-06-09 00:09:35",
           "difficulties": [
             {
-              "beatmap_id": "99254",
-              "version": "Experto",
-              "difficultyrating": "3.3899",
+              "beatmap_id": "40130",
+              "version": "Hard",
+              "difficultyrating": "3.02958",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "99255",
-              "version": "Principiante",
-              "difficultyrating": "1.69224",
+              "beatmap_id": "58954",
+              "version": "Normal",
+              "difficultyrating": "2.2276",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "13845",
+          "title": "Whatcha Say",
+          "artist": "Jason Derulo ft. Imogen Heap",
+          "creator": "darck360",
+          "approved_date": "2010-05-09 20:53:33",
+          "difficulties": [
+            {
+              "beatmap_id": "54573",
+              "version": "Hard",
+              "difficultyrating": "2.65136",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "106173",
-              "version": "Dificil",
-              "difficultyrating": "2.7385",
+              "beatmap_id": "55278",
+              "version": "EEeee's Insane",
+              "difficultyrating": "3.99029",
               "mode": "0",
               "isGuestDiff": false
             },
             {
-              "beatmap_id": "106174",
-              "version": "Taiko Oni",
-              "difficultyrating": "3.35257",
-              "mode": "1",
+              "beatmap_id": "55279",
+              "version": "Hard+",
+              "difficultyrating": "3.54698",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "56601",
+              "version": "Normal",
+              "difficultyrating": "2.07552",
+              "mode": "0",
               "isGuestDiff": false
             }
           ],
@@ -3330,7 +3330,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 13
       },
-      "lastUpdated": "2026-07-26T05:37:37.309Z"
+      "lastUpdated": "2026-08-09T03:48:11.645Z"
     },
     {
       "user_id": "58710",
@@ -3468,7 +3468,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 2
       },
-      "lastUpdated": "2026-07-26T05:37:37.309Z"
+      "lastUpdated": "2026-08-09T03:48:11.645Z"
     }
   ]
 }
