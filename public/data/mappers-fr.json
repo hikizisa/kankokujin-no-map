@@ -5,7 +5,7 @@
     "demonym": "France",
     "nativeName": "France"
   },
-  "lastUpdated": "2026-07-28T05:20:05.224Z",
+  "lastUpdated": "2026-08-11T03:49:46.287Z",
   "totalMappers": 11,
   "totalBeatmaps": 640,
   "totalBeatmapsets": 173,
@@ -14094,7 +14094,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 263
       },
-      "lastUpdated": "2026-07-28T05:20:05.224Z"
+      "lastUpdated": "2026-08-11T03:49:46.287Z"
     },
     {
       "user_id": "77089",
@@ -21205,7 +21205,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 132
       },
-      "lastUpdated": "2026-07-28T05:20:05.224Z"
+      "lastUpdated": "2026-08-11T03:49:46.287Z"
     },
     {
       "user_id": "7715620",
@@ -25064,9 +25064,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "173",
-          "playcount": "90334"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1779800",
@@ -25890,7 +25888,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 87
       },
-      "lastUpdated": "2026-07-28T05:20:05.224Z"
+      "lastUpdated": "2026-08-11T03:49:46.287Z"
     },
     {
       "user_id": "50163",
@@ -30003,7 +30001,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 75
       },
-      "lastUpdated": "2026-07-28T05:20:05.224Z"
+      "lastUpdated": "2026-08-11T03:49:46.287Z"
     },
     {
       "user_id": "57976",
@@ -31496,7 +31494,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 27
       },
-      "lastUpdated": "2026-07-28T05:20:05.224Z"
+      "lastUpdated": "2026-08-11T03:49:46.287Z"
     },
     {
       "user_id": "44763",
@@ -32655,7 +32653,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 21
       },
-      "lastUpdated": "2026-07-28T05:20:05.224Z"
+      "lastUpdated": "2026-08-11T03:49:46.287Z"
     },
     {
       "user_id": "80594",
@@ -33550,7 +33548,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 16
       },
-      "lastUpdated": "2026-07-28T05:20:05.224Z"
+      "lastUpdated": "2026-08-11T03:49:46.287Z"
     },
     {
       "user_id": "14137",
@@ -33953,7 +33951,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 7
       },
-      "lastUpdated": "2026-07-28T05:20:05.224Z"
+      "lastUpdated": "2026-08-11T03:49:46.287Z"
     },
     {
       "user_id": "66014",
@@ -34358,7 +34356,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 7
       },
-      "lastUpdated": "2026-07-28T05:20:05.224Z"
+      "lastUpdated": "2026-08-11T03:49:46.287Z"
     },
     {
       "user_id": "13007",
@@ -34547,7 +34545,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 3
       },
-      "lastUpdated": "2026-07-28T05:20:05.224Z"
+      "lastUpdated": "2026-08-11T03:49:46.287Z"
     },
     {
       "user_id": "6499",
@@ -34685,7 +34683,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 2
       },
-      "lastUpdated": "2026-07-28T05:20:05.224Z"
+      "lastUpdated": "2026-08-11T03:49:46.287Z"
     }
   ]
 }
