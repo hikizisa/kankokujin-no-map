@@ -5,11 +5,11 @@
     "demonym": "Austria",
     "nativeName": "Austria"
   },
-  "lastUpdated": "2026-07-30T05:14:20.727Z",
+  "lastUpdated": "2026-08-13T04:17:01.926Z",
   "totalMappers": 2,
-  "totalBeatmaps": 158,
-  "totalBeatmapsets": 56,
-  "totalOwnBeatmapsets": 56,
+  "totalBeatmaps": 160,
+  "totalBeatmapsets": 58,
+  "totalOwnBeatmapsets": 58,
   "totalGuestBeatmapsets": 0,
   "totalGuestDiffs": 0,
   "totalOwnDifficulties": 158,
@@ -22,13 +22,101 @@
         "NyalettOwO x3"
       ],
       "country": "AT",
-      "rankedBeatmaps": 141,
-      "rankedBeatmapsets": 52,
-      "ownBeatmapsets": 52,
+      "rankedBeatmaps": 143,
+      "rankedBeatmapsets": 54,
+      "ownBeatmapsets": 54,
       "guestBeatmapsets": 0,
       "totalGuestDiffs": 0,
       "ownDifficulties": 141,
       "beatmaps": [
+        {
+          "beatmapset_id": "2581072",
+          "beatmap_id": "5752996",
+          "approved": "1",
+          "total_length": "304",
+          "hit_length": "234",
+          "version": "Harbinger",
+          "file_md5": "74023aaf40fea0185e63ed70c4259e19",
+          "diff_size": "4.4",
+          "diff_overall": "10",
+          "diff_approach": "10",
+          "diff_drain": "3.6",
+          "mode": "2",
+          "count_normal": "369",
+          "count_slider": "749",
+          "count_spinner": "33",
+          "submit_date": "2026-07-05 19:41:47",
+          "approved_date": "2026-07-31 15:26:11",
+          "last_update": "2026-07-17 16:00:33",
+          "artist": "Synestia, Disembodied Tyrant",
+          "artist_unicode": "Synestia, Disembodied Tyrant",
+          "title": "Winter",
+          "title_unicode": "Winter",
+          "creator": "Daletto",
+          "creator_id": "7592136",
+          "bpm": "160",
+          "source": "",
+          "tags": "arthro osu!catch world cup 2026 cwc2026 cwc grandfinals gf hr1 hardrock hard rock english metal deathcore symphonic the poetic edda l'inverno le quattro stagioni four seasons antonio lucio vivaldi allegro non molto orchestral classical neoclassical black",
+          "genre_id": "11",
+          "language_id": "2",
+          "favourite_count": "19",
+          "rating": "10",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "766",
+          "passcount": "63",
+          "packs": "P331,SC165",
+          "max_combo": "2032",
+          "diff_aim": "7.65498",
+          "diff_speed": null,
+          "difficultyrating": "7.65498"
+        },
+        {
+          "beatmapset_id": "2558447",
+          "beatmap_id": "5684605",
+          "approved": "1",
+          "total_length": "461",
+          "hit_length": "399",
+          "version": "Nostalgia",
+          "file_md5": "d4e9c0ba991269cfc3bb6ab22ccc2b80",
+          "diff_size": "4.1",
+          "diff_overall": "9.7",
+          "diff_approach": "9.7",
+          "diff_drain": "3",
+          "mode": "2",
+          "count_normal": "937",
+          "count_slider": "955",
+          "count_spinner": "12",
+          "submit_date": "2026-05-23 22:01:12",
+          "approved_date": "2026-07-30 18:26:39",
+          "last_update": "2026-07-23 17:52:27",
+          "artist": "Various Artists",
+          "artist_unicode": "Various Artists",
+          "title": "Spec!memories",
+          "title_unicode": "Spec!memories",
+          "creator": "Daletto",
+          "creator_id": "7592136",
+          "bpm": "176",
+          "source": "",
+          "tags": "spectator marathon songs compilation symphonic hip hop artcore vgm dnb d'n'b d&b drum'n'bass edm drum and bass hardcores hardcore drumstep dubstep electronic video game videogame pop jpop j-pop progressive english portugese portuguese português japanese novelty instrumental vocaloid midorijeon hex -hex- -luminate cielbami hareimu kukkai deif ascendance -rustyy wonjae paranoid grapes team grimoire あま猫 amaneko croix mili utopiosphere warak 暗夜苏醒 reanimate void feat. 小松菜 komatsuna 暁ノ月 akatsuki no tsuki ひつじとおじさん hitsuji to ojisan xΣnΦ xeno lite show magic t+pazolite vs c-show crack traxxxx alípio alipio martins piranha maffalda reloaded trap mix 葛西ハーコーズ kasai harcores サイクルヒット cycle hit dj genki genkianamei かめりあ kamelcamellia cametek camellia ghost 2020 halloween+++++++++ vip 【kyoro】 [kyoro] モチオー mochio- tak feat featuring 初音ミク hatsune miku lemon melon cookie sound voltex booth sdvx deemo rhythm master bms sound voltex ii -infinite infection- スーパーマリオrpg super mario",
+          "genre_id": "6",
+          "language_id": "14",
+          "favourite_count": "13",
+          "rating": "0",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "601",
+          "passcount": "58",
+          "packs": "SC165",
+          "max_combo": "3052",
+          "diff_aim": "7.65744",
+          "diff_speed": null,
+          "difficultyrating": "7.65744"
+        },
         {
           "beatmapset_id": "2475386",
           "beatmap_id": "5426262",
@@ -6935,9 +7023,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "31",
-          "playcount": "13672"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2000801",
@@ -6954,9 +7040,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "52",
-          "playcount": "6508"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1794186",
@@ -7745,18 +7829,52 @@
             }
           ],
           "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "2558447",
+          "title": "Spec!memories",
+          "artist": "Various Artists",
+          "creator": "Daletto",
+          "approved_date": "2026-07-30 18:26:39",
+          "difficulties": [
+            {
+              "beatmap_id": "5684605",
+              "version": "Nostalgia",
+              "difficultyrating": "7.65744",
+              "mode": "2",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "2581072",
+          "title": "Winter",
+          "artist": "Synestia, Disembodied Tyrant",
+          "creator": "Daletto",
+          "approved_date": "2026-07-31 15:26:11",
+          "difficulties": [
+            {
+              "beatmap_id": "5752996",
+              "version": "Harbinger",
+              "difficultyrating": "7.65498",
+              "mode": "2",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
         }
       ],
       "guestDifficulties": [],
       "stats": {
-        "totalBeatmaps": 141,
-        "totalBeatmapsets": 52,
-        "ownBeatmapsets": 52,
+        "totalBeatmaps": 143,
+        "totalBeatmapsets": 54,
+        "ownBeatmapsets": 54,
         "guestBeatmapsets": 0,
         "totalGuestDiffs": 0,
-        "ownDifficulties": 141
+        "ownDifficulties": 143
       },
-      "lastUpdated": "2026-07-30T05:14:20.727Z"
+      "lastUpdated": "2026-08-13T04:17:01.926Z"
     },
     {
       "user_id": "73480",
@@ -8689,7 +8807,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 17
       },
-      "lastUpdated": "2026-07-30T05:14:20.727Z"
+      "lastUpdated": "2026-08-13T04:17:01.926Z"
     }
   ]
 }
