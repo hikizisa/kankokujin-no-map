@@ -5,11 +5,11 @@
     "demonym": "Brazil",
     "nativeName": "Brazil"
   },
-  "lastUpdated": "2026-08-02T05:33:23.449Z",
+  "lastUpdated": "2026-08-16T03:05:27.049Z",
   "totalMappers": 15,
-  "totalBeatmaps": 804,
-  "totalBeatmapsets": 199,
-  "totalOwnBeatmapsets": 199,
+  "totalBeatmaps": 811,
+  "totalBeatmapsets": 200,
+  "totalOwnBeatmapsets": 200,
   "totalGuestBeatmapsets": 0,
   "totalGuestDiffs": 0,
   "totalOwnDifficulties": 804,
@@ -14169,9 +14169,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "68",
-          "playcount": "24572"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1361989",
@@ -14188,9 +14186,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "14",
-          "playcount": "3007"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1729077",
@@ -15832,20 +15828,328 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 297
       },
-      "lastUpdated": "2026-08-02T05:33:23.449Z"
+      "lastUpdated": "2026-08-16T03:05:27.049Z"
     },
     {
       "user_id": "2857314",
       "username": "Seto Kousuke",
       "aliases": [],
       "country": "BR",
-      "rankedBeatmaps": 189,
-      "rankedBeatmapsets": 47,
-      "ownBeatmapsets": 47,
+      "rankedBeatmaps": 196,
+      "rankedBeatmapsets": 48,
+      "ownBeatmapsets": 48,
       "guestBeatmapsets": 0,
       "totalGuestDiffs": 0,
       "ownDifficulties": 189,
       "beatmaps": [
+        {
+          "beatmapset_id": "2529653",
+          "beatmap_id": "5590608",
+          "approved": "1",
+          "total_length": "156",
+          "hit_length": "156",
+          "version": "E-EXTRA",
+          "file_md5": "391db1003ccbdf5f7dad19c78ba84d56",
+          "diff_size": "4.3",
+          "diff_overall": "9",
+          "diff_approach": "9.3",
+          "diff_drain": "5.5",
+          "mode": "0",
+          "count_normal": "564",
+          "count_slider": "275",
+          "count_spinner": "1",
+          "submit_date": "2026-03-27 22:42:27",
+          "approved_date": "2026-08-10 23:43:19",
+          "last_update": "2026-08-03 23:25:54",
+          "artist": "Utsu-P",
+          "artist_unicode": "鬱P",
+          "title": "P-PANDA feat. Kasane Teto",
+          "title_unicode": "P-PANDA feat. 重音テト",
+          "creator": "Seto Kousuke",
+          "creator_id": "2857314",
+          "bpm": "170",
+          "source": "",
+          "tags": "sv 重音テトsv kasane teto vocaloid japanese synthv utau synthesizer v electronic alternative metalcore heavy metal rock perfect persona 9th album utsup maot trynna",
+          "genre_id": "11",
+          "language_id": "3",
+          "favourite_count": "117",
+          "rating": "9.7931",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "2773",
+          "passcount": "549",
+          "packs": null,
+          "max_combo": "1136",
+          "diff_aim": "3.20775",
+          "diff_speed": "2.72262",
+          "difficultyrating": "6.07797"
+        },
+        {
+          "beatmapset_id": "2529653",
+          "beatmap_id": "5590611",
+          "approved": "1",
+          "total_length": "156",
+          "hit_length": "156",
+          "version": "MAOT'S E-EXPERT",
+          "file_md5": "a69562e20cd2ffeb6c920fe6a2ab1a14",
+          "diff_size": "3.5",
+          "diff_overall": "8.7",
+          "diff_approach": "9.3",
+          "diff_drain": "5",
+          "mode": "0",
+          "count_normal": "479",
+          "count_slider": "377",
+          "count_spinner": "0",
+          "submit_date": "2026-03-27 22:42:27",
+          "approved_date": "2026-08-10 23:43:19",
+          "last_update": "2026-08-03 23:25:54",
+          "artist": "Utsu-P",
+          "artist_unicode": "鬱P",
+          "title": "P-PANDA feat. Kasane Teto",
+          "title_unicode": "P-PANDA feat. 重音テト",
+          "creator": "Seto Kousuke",
+          "creator_id": "2857314",
+          "bpm": "170",
+          "source": "",
+          "tags": "sv 重音テトsv kasane teto vocaloid japanese synthv utau synthesizer v electronic alternative metalcore heavy metal rock perfect persona 9th album utsup maot trynna",
+          "genre_id": "11",
+          "language_id": "3",
+          "favourite_count": "117",
+          "rating": "9.7931",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "1594",
+          "passcount": "292",
+          "packs": null,
+          "max_combo": "1325",
+          "diff_aim": "3.11188",
+          "diff_speed": "2.55078",
+          "difficultyrating": "5.82649"
+        },
+        {
+          "beatmapset_id": "2529653",
+          "beatmap_id": "5590612",
+          "approved": "1",
+          "total_length": "156",
+          "hit_length": "156",
+          "version": "N-NORMAL",
+          "file_md5": "fe58187e481c3c74e0c9ca658449b0ba",
+          "diff_size": "3",
+          "diff_overall": "4",
+          "diff_approach": "5",
+          "diff_drain": "3",
+          "mode": "0",
+          "count_normal": "165",
+          "count_slider": "180",
+          "count_spinner": "1",
+          "submit_date": "2026-03-27 22:42:27",
+          "approved_date": "2026-08-10 23:43:19",
+          "last_update": "2026-08-03 23:25:54",
+          "artist": "Utsu-P",
+          "artist_unicode": "鬱P",
+          "title": "P-PANDA feat. Kasane Teto",
+          "title_unicode": "P-PANDA feat. 重音テト",
+          "creator": "Seto Kousuke",
+          "creator_id": "2857314",
+          "bpm": "170",
+          "source": "",
+          "tags": "sv 重音テトsv kasane teto vocaloid japanese synthv utau synthesizer v electronic alternative metalcore heavy metal rock perfect persona 9th album utsup maot trynna",
+          "genre_id": "11",
+          "language_id": "3",
+          "favourite_count": "117",
+          "rating": "9.7931",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "1567",
+          "passcount": "678",
+          "packs": null,
+          "max_combo": "574",
+          "diff_aim": "1.2655",
+          "diff_speed": "1.01314",
+          "difficultyrating": "2.45209"
+        },
+        {
+          "beatmapset_id": "2529653",
+          "beatmap_id": "5590613",
+          "approved": "1",
+          "total_length": "156",
+          "hit_length": "156",
+          "version": "TRYNNA'S P-PURITY",
+          "file_md5": "ff5e7750b42652c3e75822129717fdf0",
+          "diff_size": "4.1",
+          "diff_overall": "9.2",
+          "diff_approach": "9.6",
+          "diff_drain": "3.3",
+          "mode": "0",
+          "count_normal": "530",
+          "count_slider": "373",
+          "count_spinner": "1",
+          "submit_date": "2026-03-27 22:42:27",
+          "approved_date": "2026-08-10 23:43:19",
+          "last_update": "2026-08-03 23:25:54",
+          "artist": "Utsu-P",
+          "artist_unicode": "鬱P",
+          "title": "P-PANDA feat. Kasane Teto",
+          "title_unicode": "P-PANDA feat. 重音テト",
+          "creator": "Seto Kousuke",
+          "creator_id": "2857314",
+          "bpm": "170",
+          "source": "",
+          "tags": "sv 重音テトsv kasane teto vocaloid japanese synthv utau synthesizer v electronic alternative metalcore heavy metal rock perfect persona 9th album utsup maot trynna",
+          "genre_id": "11",
+          "language_id": "3",
+          "favourite_count": "117",
+          "rating": "9.7931",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "2116",
+          "passcount": "348",
+          "packs": null,
+          "max_combo": "1293",
+          "diff_aim": "4.42022",
+          "diff_speed": "3.21932",
+          "difficultyrating": "8.02101"
+        },
+        {
+          "beatmapset_id": "2529653",
+          "beatmap_id": "5592414",
+          "approved": "1",
+          "total_length": "156",
+          "hit_length": "156",
+          "version": "B-BEAUTY",
+          "file_md5": "e6a426169db5761e4a827d4e7359f728",
+          "diff_size": "4",
+          "diff_overall": "9.2",
+          "diff_approach": "9.5",
+          "diff_drain": "5",
+          "mode": "0",
+          "count_normal": "589",
+          "count_slider": "274",
+          "count_spinner": "1",
+          "submit_date": "2026-03-27 22:42:27",
+          "approved_date": "2026-08-10 23:43:19",
+          "last_update": "2026-08-03 23:25:54",
+          "artist": "Utsu-P",
+          "artist_unicode": "鬱P",
+          "title": "P-PANDA feat. Kasane Teto",
+          "title_unicode": "P-PANDA feat. 重音テト",
+          "creator": "Seto Kousuke",
+          "creator_id": "2857314",
+          "bpm": "170",
+          "source": "",
+          "tags": "sv 重音テトsv kasane teto vocaloid japanese synthv utau synthesizer v electronic alternative metalcore heavy metal rock perfect persona 9th album utsup maot trynna",
+          "genre_id": "11",
+          "language_id": "3",
+          "favourite_count": "117",
+          "rating": "9.7931",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "2332",
+          "passcount": "413",
+          "packs": null,
+          "max_combo": "1157",
+          "diff_aim": "3.99477",
+          "diff_speed": "2.95722",
+          "difficultyrating": "7.29893"
+        },
+        {
+          "beatmapset_id": "2529653",
+          "beatmap_id": "5650255",
+          "approved": "1",
+          "total_length": "156",
+          "hit_length": "156",
+          "version": "H-HARD",
+          "file_md5": "ad292d788578b3b5b815cd27c7cb5506",
+          "diff_size": "4",
+          "diff_overall": "7",
+          "diff_approach": "8",
+          "diff_drain": "4",
+          "mode": "0",
+          "count_normal": "229",
+          "count_slider": "242",
+          "count_spinner": "1",
+          "submit_date": "2026-03-27 22:42:27",
+          "approved_date": "2026-08-10 23:43:19",
+          "last_update": "2026-08-03 23:25:54",
+          "artist": "Utsu-P",
+          "artist_unicode": "鬱P",
+          "title": "P-PANDA feat. Kasane Teto",
+          "title_unicode": "P-PANDA feat. 重音テト",
+          "creator": "Seto Kousuke",
+          "creator_id": "2857314",
+          "bpm": "170",
+          "source": "",
+          "tags": "sv 重音テトsv kasane teto vocaloid japanese synthv utau synthesizer v electronic alternative metalcore heavy metal rock perfect persona 9th album utsup maot trynna",
+          "genre_id": "11",
+          "language_id": "3",
+          "favourite_count": "117",
+          "rating": "9.7931",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "3034",
+          "passcount": "948",
+          "packs": null,
+          "max_combo": "836",
+          "diff_aim": "1.92103",
+          "diff_speed": "1.60405",
+          "difficultyrating": "3.6221"
+        },
+        {
+          "beatmapset_id": "2529653",
+          "beatmap_id": "5650256",
+          "approved": "1",
+          "total_length": "156",
+          "hit_length": "156",
+          "version": "I-INSANE",
+          "file_md5": "d603c72e9ac7648bbf068e05d4c2ac9a",
+          "diff_size": "4",
+          "diff_overall": "8",
+          "diff_approach": "9",
+          "diff_drain": "5",
+          "mode": "0",
+          "count_normal": "365",
+          "count_slider": "276",
+          "count_spinner": "1",
+          "submit_date": "2026-03-27 22:42:27",
+          "approved_date": "2026-08-10 23:43:19",
+          "last_update": "2026-08-03 23:25:54",
+          "artist": "Utsu-P",
+          "artist_unicode": "鬱P",
+          "title": "P-PANDA feat. Kasane Teto",
+          "title_unicode": "P-PANDA feat. 重音テト",
+          "creator": "Seto Kousuke",
+          "creator_id": "2857314",
+          "bpm": "170",
+          "source": "",
+          "tags": "sv 重音テトsv kasane teto vocaloid japanese synthv utau synthesizer v electronic alternative metalcore heavy metal rock perfect persona 9th album utsup maot trynna",
+          "genre_id": "11",
+          "language_id": "3",
+          "favourite_count": "117",
+          "rating": "9.7931",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "3664",
+          "passcount": "1119",
+          "packs": null,
+          "max_combo": "1003",
+          "diff_aim": "2.53119",
+          "diff_speed": "2.321",
+          "difficultyrating": "4.94708"
+        },
         {
           "beatmapset_id": "1898721",
           "beatmap_id": "3913374",
@@ -24200,9 +24504,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "173",
-          "playcount": "150574"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1892275",
@@ -24240,9 +24542,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "62",
-          "playcount": "68746"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1336972",
@@ -25960,18 +26260,77 @@
             }
           ],
           "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "2529653",
+          "title": "P-PANDA feat. Kasane Teto",
+          "artist": "Utsu-P",
+          "creator": "Seto Kousuke",
+          "approved_date": "2026-08-10 23:43:19",
+          "difficulties": [
+            {
+              "beatmap_id": "5590608",
+              "version": "E-EXTRA",
+              "difficultyrating": "6.07797",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "5590611",
+              "version": "MAOT'S E-EXPERT",
+              "difficultyrating": "5.82649",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "5590612",
+              "version": "N-NORMAL",
+              "difficultyrating": "2.45209",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "5590613",
+              "version": "TRYNNA'S P-PURITY",
+              "difficultyrating": "8.02101",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "5592414",
+              "version": "B-BEAUTY",
+              "difficultyrating": "7.29893",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "5650255",
+              "version": "H-HARD",
+              "difficultyrating": "3.6221",
+              "mode": "0",
+              "isGuestDiff": false
+            },
+            {
+              "beatmap_id": "5650256",
+              "version": "I-INSANE",
+              "difficultyrating": "4.94708",
+              "mode": "0",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
         }
       ],
       "guestDifficulties": [],
       "stats": {
-        "totalBeatmaps": 189,
-        "totalBeatmapsets": 47,
-        "ownBeatmapsets": 47,
+        "totalBeatmaps": 196,
+        "totalBeatmapsets": 48,
+        "ownBeatmapsets": 48,
         "guestBeatmapsets": 0,
         "totalGuestDiffs": 0,
-        "ownDifficulties": 189
+        "ownDifficulties": 196
       },
-      "lastUpdated": "2026-08-02T05:33:23.449Z"
+      "lastUpdated": "2026-08-16T03:05:27.049Z"
     },
     {
       "user_id": "4098393",
@@ -29387,9 +29746,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "142",
-          "playcount": "14194"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "825164",
@@ -29862,14 +30219,12 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 73
       },
-      "lastUpdated": "2026-08-02T05:33:23.449Z"
+      "lastUpdated": "2026-08-16T03:05:27.049Z"
     },
     {
       "user_id": "19048",
-      "username": "Froslass",
-      "aliases": [
-        "Blue Dragon"
-      ],
+      "username": "Blue Dragon",
+      "aliases": [],
       "country": "BR",
       "rankedBeatmaps": 63,
       "rankedBeatmapsets": 21,
@@ -33313,7 +33668,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 63
       },
-      "lastUpdated": "2026-08-02T05:33:23.449Z"
+      "lastUpdated": "2026-08-16T03:05:27.049Z"
     },
     {
       "user_id": "93813",
@@ -35768,7 +36123,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 45
       },
-      "lastUpdated": "2026-08-02T05:33:23.449Z"
+      "lastUpdated": "2026-08-16T03:05:27.049Z"
     },
     {
       "user_id": "122623",
@@ -37875,7 +38230,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 39
       },
-      "lastUpdated": "2026-08-02T05:33:23.449Z"
+      "lastUpdated": "2026-08-16T03:05:27.049Z"
     },
     {
       "user_id": "4475985",
@@ -38859,7 +39214,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 18
       },
-      "lastUpdated": "2026-08-02T05:33:23.449Z"
+      "lastUpdated": "2026-08-16T03:05:27.049Z"
     },
     {
       "user_id": "40981",
@@ -39865,7 +40220,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 18
       },
-      "lastUpdated": "2026-08-02T05:33:23.449Z"
+      "lastUpdated": "2026-08-16T03:05:27.049Z"
     },
     {
       "user_id": "150978",
@@ -40881,7 +41236,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 18
       },
-      "lastUpdated": "2026-08-02T05:33:23.449Z"
+      "lastUpdated": "2026-08-16T03:05:27.049Z"
     },
     {
       "user_id": "15064",
@@ -41508,7 +41863,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 11
       },
-      "lastUpdated": "2026-08-02T05:33:23.449Z"
+      "lastUpdated": "2026-08-16T03:05:27.049Z"
     },
     {
       "user_id": "195335",
@@ -42023,7 +42378,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 9
       },
-      "lastUpdated": "2026-08-02T05:33:23.449Z"
+      "lastUpdated": "2026-08-16T03:05:27.049Z"
     },
     {
       "user_id": "76262",
@@ -42477,7 +42832,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 8
       },
-      "lastUpdated": "2026-08-02T05:33:23.449Z"
+      "lastUpdated": "2026-08-16T03:05:27.049Z"
     },
     {
       "user_id": "5287",
@@ -42880,7 +43235,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 7
       },
-      "lastUpdated": "2026-08-02T05:33:23.449Z"
+      "lastUpdated": "2026-08-16T03:05:27.049Z"
     },
     {
       "user_id": "74017",
@@ -43283,7 +43638,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 7
       },
-      "lastUpdated": "2026-08-02T05:33:23.449Z"
+      "lastUpdated": "2026-08-16T03:05:27.049Z"
     },
     {
       "user_id": "9314703",
@@ -43421,7 +43776,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 2
       },
-      "lastUpdated": "2026-08-02T05:33:23.449Z"
+      "lastUpdated": "2026-08-16T03:05:27.049Z"
     }
   ]
 }
