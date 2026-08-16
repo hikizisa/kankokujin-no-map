@@ -59,13 +59,13 @@
           "tags": "マルバ m3-2025春 m3 2025 spring haru photology elixir nocturne m3-55 pagan folk electronic instrumental dahkjdas",
           "genre_id": "13",
           "language_id": "5",
-          "favourite_count": "31",
+          "favourite_count": "32",
           "rating": "9.12",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "2674",
+          "playcount": "2917",
           "passcount": "820",
           "packs": "S1789",
           "max_combo": "1609",
@@ -103,13 +103,13 @@
           "tags": "マルバ m3-2025春 m3 2025 spring haru photology elixir nocturne m3-55 pagan folk electronic instrumental dahkjdas",
           "genre_id": "13",
           "language_id": "5",
-          "favourite_count": "31",
+          "favourite_count": "32",
           "rating": "9.12",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "4384",
+          "playcount": "4708",
           "passcount": "1478",
           "packs": "S1789",
           "max_combo": "1470",
@@ -5289,7 +5289,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "32",
+          "playcount": "7625"
         },
         {
           "beatmapset_id": "2193835",
@@ -10940,13 +10942,13 @@
           "tags": "english pop indie alice in wonderland alternative cry baby crybaby",
           "genre_id": "5",
           "language_id": "2",
-          "favourite_count": "168",
+          "favourite_count": "178",
           "rating": "8.87097",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "11818",
+          "playcount": "12421",
           "passcount": "2300",
           "packs": "S1691",
           "max_combo": "1046",
@@ -10984,13 +10986,13 @@
           "tags": "english pop indie alice in wonderland alternative cry baby crybaby",
           "genre_id": "5",
           "language_id": "2",
-          "favourite_count": "168",
+          "favourite_count": "178",
           "rating": "8.87097",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "8173",
+          "playcount": "8938",
           "passcount": "3155",
           "packs": "S1691",
           "max_combo": "569",
@@ -11028,13 +11030,13 @@
           "tags": "english pop indie alice in wonderland alternative cry baby crybaby",
           "genre_id": "5",
           "language_id": "2",
-          "favourite_count": "168",
+          "favourite_count": "178",
           "rating": "8.87097",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "10963",
+          "playcount": "11557",
           "passcount": "3988",
           "packs": "S1691",
           "max_combo": "797",
@@ -14153,7 +14155,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "178",
+          "playcount": "32916"
         },
         {
           "beatmapset_id": "1282615",
@@ -29933,7 +29937,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "2539",
+          "playcount": "2674",
           "passcount": "572",
           "packs": "LR65",
           "max_combo": "10246",
@@ -30618,7 +30622,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "117",
+          "playcount": "2674"
         },
         {
           "beatmapset_id": "1592995",

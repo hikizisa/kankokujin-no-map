@@ -57,13 +57,13 @@
           "tags": "Folk Electronic Instrumental Spiritual Naoki Maeda 前田尚紀 NM SEQUENCE UNLIMITED beatmania IIDX, BOOM BOOM DANCE rhythm party dancedancerevolution konami",
           "genre_id": "13",
           "language_id": "5",
-          "favourite_count": "54",
+          "favourite_count": "56",
           "rating": "8.2",
           "storyboard": "1",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "12934",
+          "playcount": "13177",
           "passcount": "2484",
           "packs": "LR52",
           "max_combo": "388",
@@ -396,7 +396,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "56",
+          "playcount": "13177"
         },
         {
           "beatmapset_id": "7359",

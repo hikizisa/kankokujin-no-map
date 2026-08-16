@@ -62,13 +62,13 @@
           "tags": "zeth [zeth] electronic instrumental dnb drum and n' bass drumstep neurofunk psytrance techno inspector dubplate inspected",
           "genre_id": "10",
           "language_id": "5",
-          "favourite_count": "12",
+          "favourite_count": "13",
           "rating": "8.42857",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "426",
+          "playcount": "595",
           "passcount": "83",
           "packs": "ST391",
           "max_combo": "1758",
@@ -106,13 +106,13 @@
           "tags": "zeth [zeth] electronic instrumental dnb drum and n' bass drumstep neurofunk psytrance techno inspector dubplate inspected",
           "genre_id": "10",
           "language_id": "5",
-          "favourite_count": "12",
+          "favourite_count": "13",
           "rating": "8.42857",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "332",
+          "playcount": "349",
           "passcount": "144",
           "packs": "ST391",
           "max_combo": "1169",
@@ -156,7 +156,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "2611",
+          "playcount": "2728",
           "passcount": "263",
           "packs": "LR47",
           "max_combo": "1326",
@@ -200,7 +200,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "1324",
+          "playcount": "1378",
           "passcount": "204",
           "packs": "LR47",
           "max_combo": "2272",
@@ -244,7 +244,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "1135",
+          "playcount": "1198",
           "passcount": "164",
           "packs": "LR47",
           "max_combo": "1232",
@@ -288,7 +288,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "581",
+          "playcount": "621",
           "passcount": "76",
           "packs": "LR47",
           "max_combo": "2592",
@@ -332,7 +332,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "1135",
+          "playcount": "1180",
           "passcount": "206",
           "packs": "LR47",
           "max_combo": "2091",
@@ -376,7 +376,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "1423",
+          "playcount": "1504",
           "passcount": "173",
           "packs": "LR47",
           "max_combo": "1434",
@@ -420,7 +420,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "1630",
+          "playcount": "1729",
           "passcount": "430",
           "packs": "LR47",
           "max_combo": "1827",
@@ -5908,7 +5908,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "13",
+          "playcount": "944"
         },
         {
           "beatmapset_id": "2176545",
@@ -5967,7 +5969,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "119",
+          "playcount": "10338"
         },
         {
           "beatmapset_id": "2204283",
@@ -7315,13 +7319,13 @@
           "tags": "mwc 2025 world cup mwc2025 mwc7k2025 qualifiers ln long note coordination featured artist fa electronic dance music japanese jpop",
           "genre_id": "10",
           "language_id": "3",
-          "favourite_count": "61",
+          "favourite_count": "65",
           "rating": "10",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "3484",
+          "playcount": "3952",
           "passcount": "1674",
           "packs": "LR89,P270",
           "max_combo": "4241",
@@ -7365,7 +7369,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "2953",
+          "playcount": "3484",
           "passcount": "1521",
           "packs": "P312,SM339",
           "max_combo": "7794",
@@ -11174,7 +11178,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "65",
+          "playcount": "3952"
         },
         {
           "beatmapset_id": "2501772",
@@ -11191,7 +11197,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "41",
+          "playcount": "3484"
         },
         {
           "beatmapset_id": "2325151",

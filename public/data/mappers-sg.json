@@ -3086,13 +3086,13 @@
           "tags": "video game english chinese pop piano canto 8 viii the surrendered witnessing boss theme song cassie wei momocashew 葛西大和 yamato kasai pm project moon projectmili",
           "genre_id": "2",
           "language_id": "2",
-          "favourite_count": "54",
+          "favourite_count": "57",
           "rating": "7",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "225",
+          "playcount": "241",
           "passcount": "60",
           "packs": "SM342",
           "max_combo": "6910",
@@ -3130,13 +3130,13 @@
           "tags": "video game english chinese pop piano canto 8 viii the surrendered witnessing boss theme song cassie wei momocashew 葛西大和 yamato kasai pm project moon projectmili",
           "genre_id": "2",
           "language_id": "2",
-          "favourite_count": "54",
+          "favourite_count": "57",
           "rating": "7",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "337",
+          "playcount": "373",
           "passcount": "64",
           "packs": "SM342",
           "max_combo": "4607",
@@ -3180,7 +3180,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "1675",
+          "playcount": "1756",
           "passcount": "313",
           "packs": "SM335",
           "max_combo": "1477",
@@ -3224,7 +3224,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "1225",
+          "playcount": "1279",
           "passcount": "615",
           "packs": "SM335",
           "max_combo": "996",
@@ -3960,7 +3960,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "57",
+          "playcount": "614"
         },
         {
           "beatmapset_id": "2474711",
@@ -3984,7 +3986,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "27",
+          "playcount": "3035"
         },
         {
           "beatmapset_id": "1993035",

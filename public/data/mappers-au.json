@@ -26834,13 +26834,13 @@
           "tags": "english electronic instrumental classic trance waves of euphoria 3 hardcore tano*c kento oizumi wavforme",
           "genre_id": "10",
           "language_id": "5",
-          "favourite_count": "26",
+          "favourite_count": "27",
           "rating": "9.54545",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "1405",
+          "playcount": "1441",
           "passcount": "296",
           "packs": "S1851",
           "max_combo": "2328",
@@ -30055,7 +30055,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "27",
+          "playcount": "1441"
         }
       ],
       "guestDifficulties": [],
