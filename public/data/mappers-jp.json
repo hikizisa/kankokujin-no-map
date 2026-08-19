@@ -5,7 +5,7 @@
     "demonym": "Japan",
     "nativeName": "Japan"
   },
-  "lastUpdated": "2026-08-05T05:20:28.894Z",
+  "lastUpdated": "2026-08-19T03:03:04.439Z",
   "totalMappers": 14,
   "totalBeatmaps": 314,
   "totalBeatmapsets": 89,
@@ -3598,7 +3598,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 66
       },
-      "lastUpdated": "2026-08-05T05:20:28.894Z"
+      "lastUpdated": "2026-08-19T03:03:04.439Z"
     },
     {
       "user_id": "100324",
@@ -6987,7 +6987,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 63
       },
-      "lastUpdated": "2026-08-05T05:20:28.894Z"
+      "lastUpdated": "2026-08-19T03:03:04.439Z"
     },
     {
       "user_id": "133783",
@@ -8623,7 +8623,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 30
       },
-      "lastUpdated": "2026-08-05T05:20:28.894Z"
+      "lastUpdated": "2026-08-19T03:03:04.439Z"
     },
     {
       "user_id": "60574",
@@ -10218,7 +10218,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 29
       },
-      "lastUpdated": "2026-08-05T05:20:28.894Z"
+      "lastUpdated": "2026-08-19T03:03:04.439Z"
     },
     {
       "user_id": "73453",
@@ -11813,7 +11813,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 29
       },
-      "lastUpdated": "2026-08-05T05:20:28.894Z"
+      "lastUpdated": "2026-08-19T03:03:04.439Z"
     },
     {
       "user_id": "290738",
@@ -13408,7 +13408,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 29
       },
-      "lastUpdated": "2026-08-05T05:20:28.894Z"
+      "lastUpdated": "2026-08-19T03:03:04.439Z"
     },
     {
       "user_id": "7114",
@@ -14606,7 +14606,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 22
       },
-      "lastUpdated": "2026-08-05T05:20:28.894Z"
+      "lastUpdated": "2026-08-19T03:03:04.439Z"
     },
     {
       "user_id": "127949",
@@ -15396,7 +15396,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 14
       },
-      "lastUpdated": "2026-08-05T05:20:28.894Z"
+      "lastUpdated": "2026-08-19T03:03:04.439Z"
     },
     {
       "user_id": "72290",
@@ -15756,9 +15756,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "24",
-          "playcount": "8455"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "9948",
@@ -15801,7 +15799,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 7
       },
-      "lastUpdated": "2026-08-05T05:20:28.894Z"
+      "lastUpdated": "2026-08-19T03:03:04.439Z"
     },
     {
       "user_id": "14053",
@@ -16153,7 +16151,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 6
       },
-      "lastUpdated": "2026-08-05T05:20:28.894Z"
+      "lastUpdated": "2026-08-19T03:03:04.439Z"
     },
     {
       "user_id": "113058",
@@ -16505,7 +16503,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 6
       },
-      "lastUpdated": "2026-08-05T05:20:28.894Z"
+      "lastUpdated": "2026-08-19T03:03:04.439Z"
     },
     {
       "user_id": "14823",
@@ -16806,7 +16804,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 5
       },
-      "lastUpdated": "2026-08-05T05:20:28.894Z"
+      "lastUpdated": "2026-08-19T03:03:04.439Z"
     },
     {
       "user_id": "92873",
@@ -17046,7 +17044,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 4
       },
-      "lastUpdated": "2026-08-05T05:20:28.894Z"
+      "lastUpdated": "2026-08-19T03:03:04.439Z"
     },
     {
       "user_id": "112088",
@@ -17288,7 +17286,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 4
       },
-      "lastUpdated": "2026-08-05T05:20:28.894Z"
+      "lastUpdated": "2026-08-19T03:03:04.439Z"
     }
   ]
 }
