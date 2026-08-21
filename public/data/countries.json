@@ -1,6 +1,6 @@
 {
   "defaultCountry": "KR",
-  "generatedAt": "2026-08-20T03:05:50.089Z",
+  "generatedAt": "2026-08-21T03:09:00.068Z",
   "source": "https://osu.ppy.sh/rankings/osu/country",
   "countries": [
     {
@@ -730,7 +730,7 @@
       "nativeName": "Germany",
       "hasData": true,
       "mapperCount": 18,
-      "lastUpdated": "2026-08-07T04:29:33.396Z"
+      "lastUpdated": "2026-08-21T03:08:42.643Z"
     },
     {
       "code": "GH",
@@ -1234,7 +1234,7 @@
       "nativeName": "Mexico",
       "hasData": true,
       "mapperCount": 4,
-      "lastUpdated": "2026-08-07T04:29:39.577Z"
+      "lastUpdated": "2026-08-21T03:08:49.569Z"
     },
     {
       "code": "MD",
@@ -1855,7 +1855,7 @@
       "nativeName": "Taiwan",
       "hasData": true,
       "mapperCount": 20,
-      "lastUpdated": "2026-08-07T04:29:41.067Z"
+      "lastUpdated": "2026-08-21T03:08:51.511Z"
     },
     {
       "code": "TJ",
