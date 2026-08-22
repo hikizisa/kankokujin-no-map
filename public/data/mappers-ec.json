@@ -5,7 +5,7 @@
     "demonym": "Ecuador",
     "nativeName": "Ecuador"
   },
-  "lastUpdated": "2026-08-08T03:38:26.290Z",
+  "lastUpdated": "2026-08-22T02:59:22.688Z",
   "totalMappers": 4,
   "totalBeatmaps": 171,
   "totalBeatmapsets": 49,
@@ -5264,9 +5264,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "17",
-          "playcount": "3647"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2321384",
@@ -5311,9 +5309,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "12",
-          "playcount": "5067"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2373259",
@@ -5330,9 +5326,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "27",
-          "playcount": "1270"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1842746",
@@ -5470,9 +5464,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "63",
-          "playcount": "11557"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1786165",
@@ -6405,7 +6397,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 118
       },
-      "lastUpdated": "2026-08-08T03:38:26.290Z"
+      "lastUpdated": "2026-08-22T02:59:22.688Z"
     },
     {
       "user_id": "39872",
@@ -8000,7 +7992,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 29
       },
-      "lastUpdated": "2026-08-08T03:38:26.290Z"
+      "lastUpdated": "2026-08-22T02:59:22.688Z"
     },
     {
       "user_id": "3442319",
@@ -9147,7 +9139,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 21
       },
-      "lastUpdated": "2026-08-08T03:38:26.290Z"
+      "lastUpdated": "2026-08-22T02:59:22.688Z"
     },
     {
       "user_id": "61466",
@@ -9336,7 +9328,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 3
       },
-      "lastUpdated": "2026-08-08T03:38:26.290Z"
+      "lastUpdated": "2026-08-22T02:59:22.688Z"
     }
   ]
 }
