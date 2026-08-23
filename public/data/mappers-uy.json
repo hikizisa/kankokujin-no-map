@@ -5,7 +5,7 @@
     "demonym": "Uruguay",
     "nativeName": "Uruguay"
   },
-  "lastUpdated": "2026-08-09T03:48:11.645Z",
+  "lastUpdated": "2026-08-23T03:08:35.369Z",
   "totalMappers": 3,
   "totalBeatmaps": 63,
   "totalBeatmapsets": 16,
@@ -2186,9 +2186,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "54",
-          "playcount": "22640"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1006176",
@@ -2601,7 +2599,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 48
       },
-      "lastUpdated": "2026-08-09T03:48:11.645Z"
+      "lastUpdated": "2026-08-23T03:08:35.369Z"
     },
     {
       "user_id": "45513",
@@ -3332,7 +3330,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 13
       },
-      "lastUpdated": "2026-08-09T03:48:11.645Z"
+      "lastUpdated": "2026-08-23T03:08:35.369Z"
     },
     {
       "user_id": "58710",
@@ -3470,7 +3468,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 2
       },
-      "lastUpdated": "2026-08-09T03:48:11.645Z"
+      "lastUpdated": "2026-08-23T03:08:35.369Z"
     }
   ]
 }

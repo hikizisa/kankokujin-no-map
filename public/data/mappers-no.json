@@ -5,11 +5,11 @@
     "demonym": "Norway",
     "nativeName": "Norway"
   },
-  "lastUpdated": "2026-08-09T03:48:09.615Z",
+  "lastUpdated": "2026-08-23T03:08:33.737Z",
   "totalMappers": 5,
-  "totalBeatmaps": 285,
-  "totalBeatmapsets": 102,
-  "totalOwnBeatmapsets": 102,
+  "totalBeatmaps": 286,
+  "totalBeatmapsets": 103,
+  "totalOwnBeatmapsets": 103,
   "totalGuestBeatmapsets": 0,
   "totalGuestDiffs": 0,
   "totalOwnDifficulties": 281,
@@ -5063,7 +5063,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 94
       },
-      "lastUpdated": "2026-08-09T03:48:09.615Z"
+      "lastUpdated": "2026-08-23T03:08:33.737Z"
     },
     {
       "user_id": "3414261",
@@ -5072,13 +5072,57 @@
         "Razor Sharp"
       ],
       "country": "NO",
-      "rankedBeatmaps": 76,
-      "rankedBeatmapsets": 41,
-      "ownBeatmapsets": 41,
+      "rankedBeatmaps": 77,
+      "rankedBeatmapsets": 42,
+      "ownBeatmapsets": 42,
       "guestBeatmapsets": 0,
       "totalGuestDiffs": 0,
       "ownDifficulties": 72,
       "beatmaps": [
+        {
+          "beatmapset_id": "453814",
+          "beatmap_id": "973092",
+          "approved": "1",
+          "total_length": "310",
+          "hit_length": "301",
+          "version": "The Passionate Heart's Burning at the Back of Our Mind",
+          "file_md5": "bbd0a7451b32d87ce773a2b665ec9002",
+          "diff_size": "4.2",
+          "diff_overall": "9.6",
+          "diff_approach": "9.6",
+          "diff_drain": "6.5",
+          "mode": "2",
+          "count_normal": "950",
+          "count_slider": "720",
+          "count_spinner": "4",
+          "submit_date": "2016-05-09 00:52:11",
+          "approved_date": "2026-08-15 10:44:46",
+          "last_update": "2026-08-04 14:37:09",
+          "artist": "BABYMETAL",
+          "artist_unicode": "BABYMETAL",
+          "title": "Road of Resistance",
+          "title_unicode": "Road of Resistance",
+          "creator": "Lona-",
+          "creator_id": "3414261",
+          "bpm": "205",
+          "source": "",
+          "tags": "female vocals vocalist metal fujinn actiol japanese kawaii toy's toys factory dragonforce herman li 李康敏 sam totman kitsune suzuka nakamoto yui mizuno moa kikuchi su-metal yuimetal moametal ror rock 中元すず香 菊地最愛 水野由結 power j-metal jmetal metal resistance mish-mosh norimetal kyt-metal kitsune of metal god mk-metal kxbxmetal 教頭 repetitive strain injury razor sharp",
+          "genre_id": "11",
+          "language_id": "3",
+          "favourite_count": "21",
+          "rating": "10",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "550",
+          "passcount": "52",
+          "packs": "SC167",
+          "max_combo": "2723",
+          "diff_aim": "6.27681",
+          "diff_speed": null,
+          "difficultyrating": "6.27681"
+        },
         {
           "beatmapset_id": "2588421",
           "beatmap_id": "5774605",
@@ -8426,6 +8470,23 @@
       ],
       "beatmapsets": [
         {
+          "beatmapset_id": "2588421",
+          "title": "Sanae-san",
+          "artist": "RD-Sounds feat. Meramipop",
+          "creator": "Lona-",
+          "approved_date": "2026-07-30 14:24:01",
+          "difficulties": [
+            {
+              "beatmap_id": "5774605",
+              "version": "Mentali",
+              "difficultyrating": "7.76797",
+              "mode": "2",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
           "beatmapset_id": "2585380",
           "title": "Oracion",
           "artist": "Shiro (CV: Kayano Ai)",
@@ -8440,9 +8501,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "6",
-          "playcount": "487"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2129116",
@@ -8483,9 +8542,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "19",
-          "playcount": "469"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1232936",
@@ -8502,9 +8559,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "39",
-          "playcount": "3449"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2424816",
@@ -8521,9 +8576,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "9",
-          "playcount": "1081"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "627517",
@@ -8582,9 +8635,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "27",
-          "playcount": "6180"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2109495",
@@ -9361,35 +9412,33 @@
           "isOwnMapset": true
         },
         {
-          "beatmapset_id": "2588421",
-          "title": "Sanae-san",
-          "artist": "RD-Sounds feat. Meramipop",
+          "beatmapset_id": "453814",
+          "title": "Road of Resistance",
+          "artist": "BABYMETAL",
           "creator": "Lona-",
-          "approved_date": "2026-07-30 14:24:01",
+          "approved_date": "2026-08-15 10:44:46",
           "difficulties": [
             {
-              "beatmap_id": "5774605",
-              "version": "Mentali",
-              "difficultyrating": "7.76797",
+              "beatmap_id": "973092",
+              "version": "The Passionate Heart's Burning at the Back of Our Mind",
+              "difficultyrating": "6.27681",
               "mode": "2",
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "6",
-          "playcount": "819"
+          "isOwnMapset": true
         }
       ],
       "guestDifficulties": [],
       "stats": {
-        "totalBeatmaps": 76,
-        "totalBeatmapsets": 41,
-        "ownBeatmapsets": 41,
+        "totalBeatmaps": 77,
+        "totalBeatmapsets": 42,
+        "ownBeatmapsets": 42,
         "guestBeatmapsets": 0,
         "totalGuestDiffs": 0,
-        "ownDifficulties": 76
+        "ownDifficulties": 77
       },
-      "lastUpdated": "2026-08-09T03:48:09.615Z"
+      "lastUpdated": "2026-08-23T03:08:33.737Z"
     },
     {
       "user_id": "8352623",
@@ -11928,9 +11977,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "150",
-          "playcount": "33220"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2455736",
@@ -12059,9 +12106,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "500",
-          "playcount": "146061"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1089678",
@@ -12127,9 +12172,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "482",
-          "playcount": "332828"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1842041",
@@ -12448,7 +12491,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 57
       },
-      "lastUpdated": "2026-08-09T03:48:09.615Z"
+      "lastUpdated": "2026-08-23T03:08:33.737Z"
     },
     {
       "user_id": "9738159",
@@ -14033,7 +14076,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 29
       },
-      "lastUpdated": "2026-08-09T03:48:09.615Z"
+      "lastUpdated": "2026-08-23T03:08:33.737Z"
     },
     {
       "user_id": "3475189",
@@ -15340,9 +15383,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "154",
-          "playcount": "8578"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "862297",
@@ -15427,9 +15468,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "266",
-          "playcount": "31780"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1230253",
@@ -15722,7 +15761,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 29
       },
-      "lastUpdated": "2026-08-09T03:48:09.615Z"
+      "lastUpdated": "2026-08-23T03:08:33.737Z"
     }
   ]
 }
