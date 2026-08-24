@@ -5,7 +5,7 @@
     "demonym": "Venezuela",
     "nativeName": "Venezuela"
   },
-  "lastUpdated": "2026-08-10T04:02:06.316Z",
+  "lastUpdated": "2026-08-24T03:09:47.704Z",
   "totalMappers": 3,
   "totalBeatmaps": 166,
   "totalBeatmapsets": 38,
@@ -3923,9 +3923,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "345",
-          "playcount": "88370"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2342727",
@@ -3963,9 +3961,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "62",
-          "playcount": "21757"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2261087",
@@ -4010,9 +4006,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "320",
-          "playcount": "136157"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1006790",
@@ -4057,9 +4051,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "103",
-          "playcount": "63572"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2140183",
@@ -4676,7 +4668,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 87
       },
-      "lastUpdated": "2026-08-10T04:02:06.316Z"
+      "lastUpdated": "2026-08-24T03:09:47.704Z"
     },
     {
       "user_id": "131918",
@@ -8761,7 +8753,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 76
       },
-      "lastUpdated": "2026-08-10T04:02:06.316Z"
+      "lastUpdated": "2026-08-24T03:09:47.704Z"
     },
     {
       "user_id": "45683",
@@ -8950,7 +8942,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 3
       },
-      "lastUpdated": "2026-08-10T04:02:06.316Z"
+      "lastUpdated": "2026-08-24T03:09:47.704Z"
     }
   ]
 }
