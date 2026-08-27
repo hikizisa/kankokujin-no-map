@@ -5,7 +5,7 @@
     "demonym": "Austria",
     "nativeName": "Austria"
   },
-  "lastUpdated": "2026-08-13T04:17:01.926Z",
+  "lastUpdated": "2026-08-27T12:40:31.491Z",
   "totalMappers": 2,
   "totalBeatmaps": 160,
   "totalBeatmapsets": 58,
@@ -6324,6 +6324,40 @@
       ],
       "beatmapsets": [
         {
+          "beatmapset_id": "2581072",
+          "title": "Winter",
+          "artist": "Synestia, Disembodied Tyrant",
+          "creator": "Daletto",
+          "approved_date": "2026-07-31 15:26:11",
+          "difficulties": [
+            {
+              "beatmap_id": "5752996",
+              "version": "Harbinger",
+              "difficultyrating": "7.65498",
+              "mode": "2",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "2558447",
+          "title": "Spec!memories",
+          "artist": "Various Artists",
+          "creator": "Daletto",
+          "approved_date": "2026-07-30 18:26:39",
+          "difficulties": [
+            {
+              "beatmap_id": "5684605",
+              "version": "Nostalgia",
+              "difficultyrating": "7.65744",
+              "mode": "2",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
           "beatmapset_id": "2475386",
           "title": "Yuuaku no Inori - Anima immortalis est. -",
           "artist": "Imperial Circus Dead Decadence",
@@ -6345,9 +6379,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "57",
-          "playcount": "4115"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2557046",
@@ -6364,9 +6396,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "17",
-          "playcount": "1054"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2538431",
@@ -6411,9 +6441,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "21",
-          "playcount": "6654"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2495507",
@@ -6430,9 +6458,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "16",
-          "playcount": "1171"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2480662",
@@ -6449,9 +6475,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "5",
-          "playcount": "837"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2461510",
@@ -6489,9 +6513,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "21",
-          "playcount": "2382"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2419181",
@@ -6543,9 +6565,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "60",
-          "playcount": "12007"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2338848",
@@ -6590,9 +6610,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "113",
-          "playcount": "22010"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2402732",
@@ -6609,9 +6627,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "17",
-          "playcount": "6229"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2347281",
@@ -6628,9 +6644,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "27",
-          "playcount": "5311"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2278996",
@@ -6689,9 +6703,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "21",
-          "playcount": "49318"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2292823",
@@ -6757,9 +6769,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "92",
-          "playcount": "49463"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2307872",
@@ -6776,9 +6786,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "7",
-          "playcount": "5617"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2239329",
@@ -6795,9 +6803,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "23",
-          "playcount": "8605"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2239310",
@@ -6814,9 +6820,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "47",
-          "playcount": "16093"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2257758",
@@ -6882,9 +6886,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "34",
-          "playcount": "104030"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2230774",
@@ -6901,9 +6903,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "28",
-          "playcount": "8470"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2191184",
@@ -6927,9 +6927,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "30",
-          "playcount": "5213"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2241735",
@@ -6946,9 +6944,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "105",
-          "playcount": "10090"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2202800",
@@ -7867,44 +7863,6 @@
             }
           ],
           "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "2558447",
-          "title": "Spec!memories",
-          "artist": "Various Artists",
-          "creator": "Daletto",
-          "approved_date": "2026-07-30 18:26:39",
-          "difficulties": [
-            {
-              "beatmap_id": "5684605",
-              "version": "Nostalgia",
-              "difficultyrating": "7.65744",
-              "mode": "2",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true,
-          "favourite_count": "13",
-          "playcount": "667"
-        },
-        {
-          "beatmapset_id": "2581072",
-          "title": "Winter",
-          "artist": "Synestia, Disembodied Tyrant",
-          "creator": "Daletto",
-          "approved_date": "2026-07-31 15:26:11",
-          "difficulties": [
-            {
-              "beatmap_id": "5752996",
-              "version": "Harbinger",
-              "difficultyrating": "7.65498",
-              "mode": "2",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true,
-          "favourite_count": "20",
-          "playcount": "928"
         }
       ],
       "guestDifficulties": [],
@@ -7916,7 +7874,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 143
       },
-      "lastUpdated": "2026-08-13T04:17:01.926Z"
+      "lastUpdated": "2026-08-27T12:40:31.491Z"
     },
     {
       "user_id": "73480",
@@ -8849,7 +8807,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 17
       },
-      "lastUpdated": "2026-08-13T04:17:01.926Z"
+      "lastUpdated": "2026-08-27T12:40:31.491Z"
     }
   ]
 }
