@@ -5,7 +5,7 @@
     "demonym": "Serbia",
     "nativeName": "Serbia"
   },
-  "lastUpdated": "2026-08-15T02:57:03.742Z",
+  "lastUpdated": "2026-08-29T08:51:57.198Z",
   "totalMappers": 1,
   "totalBeatmaps": 73,
   "totalBeatmapsets": 22,
@@ -3265,9 +3265,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "35",
-          "playcount": "12386"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1770239",
@@ -3305,9 +3303,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "40",
-          "playcount": "25564"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1674096",
@@ -3988,7 +3984,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 73
       },
-      "lastUpdated": "2026-08-15T02:57:03.742Z"
+      "lastUpdated": "2026-08-29T08:51:57.198Z"
     }
   ]
 }

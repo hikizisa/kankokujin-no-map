@@ -5,7 +5,7 @@
     "demonym": "Belgium",
     "nativeName": "Belgium"
   },
-  "lastUpdated": "2026-08-15T02:56:59.068Z",
+  "lastUpdated": "2026-08-29T08:51:52.070Z",
   "totalMappers": 1,
   "totalBeatmaps": 8,
   "totalBeatmapsets": 3,
@@ -396,9 +396,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "56",
-          "playcount": "13177"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "7359",
@@ -479,7 +477,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 8
       },
-      "lastUpdated": "2026-08-15T02:56:59.068Z"
+      "lastUpdated": "2026-08-29T08:51:52.070Z"
     }
   ]
 }
