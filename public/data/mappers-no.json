@@ -57,13 +57,13 @@
           "tags": "シャイニング・ハーツ 幸せのパン shiawase no pan hiroki kikuta noriyasu agematsu junpei fujita bee' tsuyoshi sawada tony taka jpop pop j-pop folk japanese video game veil ∞ lia",
           "genre_id": "2",
           "language_id": "3",
-          "favourite_count": "59",
+          "favourite_count": "61",
           "rating": "9.31034",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "2782",
+          "playcount": "2908",
           "passcount": "504",
           "packs": "S1717",
           "max_combo": "1567",
@@ -101,13 +101,13 @@
           "tags": "シャイニング・ハーツ 幸せのパン shiawase no pan hiroki kikuta noriyasu agematsu junpei fujita bee' tsuyoshi sawada tony taka jpop pop j-pop folk japanese video game veil ∞ lia",
           "genre_id": "2",
           "language_id": "3",
-          "favourite_count": "59",
+          "favourite_count": "61",
           "rating": "9.31034",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "7255",
+          "playcount": "7408",
           "passcount": "1822",
           "packs": "S1717",
           "max_combo": "1474",
@@ -145,13 +145,13 @@
           "tags": "シャイニング・ハーツ 幸せのパン shiawase no pan hiroki kikuta noriyasu agematsu junpei fujita bee' tsuyoshi sawada tony taka jpop pop j-pop folk japanese video game veil ∞ lia",
           "genre_id": "2",
           "language_id": "3",
-          "favourite_count": "59",
+          "favourite_count": "61",
           "rating": "9.31034",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "3394",
+          "playcount": "3628",
           "passcount": "931",
           "packs": "S1717",
           "max_combo": "1363",
@@ -4194,7 +4194,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "61",
+          "playcount": "13944"
         },
         {
           "beatmapset_id": "815468",
@@ -5115,7 +5117,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "550",
+          "playcount": "729",
           "passcount": "52",
           "packs": "SC167",
           "max_combo": "2723",
@@ -5153,13 +5155,13 @@
           "tags": "japanese rock jrock j-rock 東方project touhou project toho 東風谷 早苗 sanae kochiya 騙 凋叶棕 diao ye zong withered leaf razor sharp [_azu-_] azu-",
           "genre_id": "4",
           "language_id": "3",
-          "favourite_count": "7",
+          "favourite_count": "10",
           "rating": "7.33333",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "1297",
+          "playcount": "1504",
           "passcount": "71",
           "packs": "SC165",
           "max_combo": "3396",
@@ -5241,13 +5243,13 @@
           "tags": "stigma ep artcore gothic hardcore classical hardcore electronic instrumental fast high bpm melodic speedcore gothic piano dramatic vaqu autols razor sharp",
           "genre_id": "10",
           "language_id": "5",
-          "favourite_count": "7",
+          "favourite_count": "8",
           "rating": "7.75",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "681",
+          "playcount": "905",
           "passcount": "57",
           "packs": "SC163",
           "max_combo": "1977",
@@ -5285,13 +5287,13 @@
           "tags": "stigma ep artcore gothic hardcore classical hardcore electronic instrumental fast high bpm melodic speedcore gothic piano dramatic vaqu autols razor sharp",
           "genre_id": "10",
           "language_id": "5",
-          "favourite_count": "7",
+          "favourite_count": "8",
           "rating": "7.75",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "1117",
+          "playcount": "1756",
           "passcount": "93",
           "packs": "SC163",
           "max_combo": "2083",
@@ -5995,7 +5997,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "3700",
+          "playcount": "3772",
           "passcount": "440",
           "packs": "SC104",
           "max_combo": "4232",
@@ -6039,7 +6041,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "5536",
+          "playcount": "5635",
           "passcount": "439",
           "packs": "SC103",
           "max_combo": "4861",
@@ -6077,13 +6079,13 @@
           "tags": "ambient electronica electronic instrumental bof2012 arthas ein krieg",
           "genre_id": "10",
           "language_id": "5",
-          "favourite_count": "36",
+          "favourite_count": "38",
           "rating": "8.66071",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "7651",
+          "playcount": "7858",
           "passcount": "1679",
           "packs": "SC102",
           "max_combo": "195",
@@ -6127,7 +6129,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "5635",
+          "playcount": "5743",
           "passcount": "734",
           "packs": "SC101",
           "max_combo": "3316",
@@ -6171,7 +6173,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "1675",
+          "playcount": "1720",
           "passcount": "286",
           "packs": "SC100",
           "max_combo": "1250",
@@ -6215,7 +6217,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "1963",
+          "playcount": "1981",
           "passcount": "210",
           "packs": "SC98",
           "max_combo": "7381",
@@ -6259,7 +6261,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "18577",
+          "playcount": "18874",
           "passcount": "1354",
           "packs": "SC97",
           "max_combo": "2662",
@@ -6297,13 +6299,13 @@
           "tags": "fayew skill issue lol skill_issue_lol electronic instrumental techno a la carte -intersect fractional. vol. 2- happy hardcore speedcore j-core ランニング★★★オールナイトッ!! = running all night ranningu★★★orunaito!! ranningu orunaito",
           "genre_id": "10",
           "language_id": "5",
-          "favourite_count": "41",
+          "favourite_count": "42",
           "rating": "9.28571",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "12331",
+          "playcount": "12502",
           "passcount": "826",
           "packs": "SC96",
           "max_combo": "3939",
@@ -6347,7 +6349,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "4069",
+          "playcount": "4096",
           "passcount": "498",
           "packs": null,
           "max_combo": "2922",
@@ -8485,8 +8487,8 @@
             }
           ],
           "isOwnMapset": true,
-          "favourite_count": "7",
-          "playcount": "1297"
+          "favourite_count": "10",
+          "playcount": "1504"
         },
         {
           "beatmapset_id": "2585380",
@@ -8529,7 +8531,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "8",
+          "playcount": "2661"
         },
         {
           "beatmapset_id": "1135397",
@@ -8715,7 +8719,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "23",
+          "playcount": "3772"
         },
         {
           "beatmapset_id": "2139627",
@@ -8732,7 +8738,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "20",
+          "playcount": "5635"
         },
         {
           "beatmapset_id": "2136340",
@@ -8749,7 +8757,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "38",
+          "playcount": "7858"
         },
         {
           "beatmapset_id": "2129862",
@@ -8766,7 +8776,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "41",
+          "playcount": "5743"
         },
         {
           "beatmapset_id": "2126258",
@@ -8783,7 +8795,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "25",
+          "playcount": "1720"
         },
         {
           "beatmapset_id": "1655808",
@@ -8800,7 +8814,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "36",
+          "playcount": "1981"
         },
         {
           "beatmapset_id": "1508396",
@@ -8817,7 +8833,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "28",
+          "playcount": "18874"
         },
         {
           "beatmapset_id": "1485606",
@@ -8834,7 +8852,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "42",
+          "playcount": "12502"
         },
         {
           "beatmapset_id": "913426",
@@ -8851,7 +8871,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "119",
+          "playcount": "4096"
         },
         {
           "beatmapset_id": "779608",
@@ -9436,7 +9458,7 @@
           ],
           "isOwnMapset": true,
           "favourite_count": "21",
-          "playcount": "550"
+          "playcount": "729"
         }
       ],
       "guestDifficulties": [],
@@ -14218,13 +14240,13 @@
           "tags": "bmd napo napo ritaan macchi denpa napolitan electronic japanese novelty",
           "genre_id": "7",
           "language_id": "3",
-          "favourite_count": "375",
+          "favourite_count": "383",
           "rating": "9.71622",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "77662",
+          "playcount": "80416",
           "passcount": "8836",
           "packs": "LR4",
           "max_combo": "1544",
@@ -14262,13 +14284,13 @@
           "tags": "ヲワカ anhappii rifurein album complete compilation 超best -memories- マジカルミライ 2015 official magical mirai mega39’s 10th アニバーサリーコレクション anniversary collection balloom best ニコニコ niconico electronic japanese rock jrock j-rock vocaloid vocal voice synthesizer genjitsutouhi-p 現実逃避p arcade future tone sound voltex iv heavenly haven hatsune miku: project diva f osu! world cup 2019 owc grandfinals gf nm1",
           "genre_id": "4",
           "language_id": "3",
-          "favourite_count": "339",
+          "favourite_count": "343",
           "rating": "9.91549",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "86473",
+          "playcount": "88642",
           "passcount": "10133",
           "packs": "P114",
           "max_combo": "1535",
@@ -14306,13 +14328,13 @@
           "tags": "aim cup azur lane x hololive black 3rd minato aqua virtual youtuber vtuber japanese rock jrock j-rock fake fakefakefake 碧蓝航线",
           "genre_id": "4",
           "language_id": "3",
-          "favourite_count": "317",
+          "favourite_count": "332",
           "rating": "9.23333",
           "storyboard": "0",
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "57358",
+          "playcount": "59131",
           "passcount": "4887",
           "packs": null,
           "max_combo": "1864",
@@ -15429,7 +15451,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "383",
+          "playcount": "80416"
         },
         {
           "beatmapset_id": "1075607",
@@ -15446,7 +15470,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "343",
+          "playcount": "88642"
         },
         {
           "beatmapset_id": "1743421",
@@ -15463,7 +15489,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "332",
+          "playcount": "59131"
         },
         {
           "beatmapset_id": "621278",
