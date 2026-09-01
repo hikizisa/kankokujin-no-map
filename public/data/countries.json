@@ -1,6 +1,6 @@
 {
   "defaultCountry": "KR",
-  "generatedAt": "2026-08-31T08:30:19.150Z",
+  "generatedAt": "2026-09-01T07:37:10.396Z",
   "source": "https://osu.ppy.sh/rankings/osu/country",
   "countries": [
     {
@@ -352,7 +352,7 @@
       "nativeName": "Canada",
       "hasData": true,
       "mapperCount": 36,
-      "lastUpdated": "2026-08-18T03:00:48.371Z"
+      "lastUpdated": "2026-09-01T07:36:41.393Z"
     },
     {
       "code": "BQ",
@@ -623,15 +623,6 @@
       "hasData": true,
       "mapperCount": 0,
       "lastUpdated": "2026-07-04T18:42:36.700Z"
-    },
-    {
-      "code": "FK",
-      "name": "Falkland Islands (Malvinas)",
-      "demonym": "Falkland Islands (Malvinas)",
-      "nativeName": "Falkland Islands (Malvinas)",
-      "hasData": false,
-      "mapperCount": 0,
-      "lastUpdated": null
     },
     {
       "code": "FO",
@@ -955,7 +946,7 @@
       "nativeName": "Italy",
       "hasData": true,
       "mapperCount": 39,
-      "lastUpdated": "2026-08-18T03:00:59.912Z"
+      "lastUpdated": "2026-09-01T07:36:53.587Z"
     },
     {
       "code": "JM",
@@ -1570,15 +1561,6 @@
       "lastUpdated": "2026-07-04T18:42:16.563Z"
     },
     {
-      "code": "SH",
-      "name": "Saint Helena",
-      "demonym": "Saint Helena",
-      "nativeName": "Saint Helena",
-      "hasData": false,
-      "mapperCount": 0,
-      "lastUpdated": null
-    },
-    {
       "code": "KN",
       "name": "Saint Kitts and Nevis",
       "demonym": "Saint Kitts and Nevis",
@@ -1702,7 +1684,7 @@
       "nativeName": "Singapore",
       "hasData": true,
       "mapperCount": 5,
-      "lastUpdated": "2026-08-18T03:01:12.503Z"
+      "lastUpdated": "2026-09-01T07:37:07.065Z"
     },
     {
       "code": "SX",
