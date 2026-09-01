@@ -1,49 +1,127 @@
 {
-  "lastChecked": "2026-08-25T03:04:22.228Z",
+  "lastChecked": "2026-09-01T08:28:05.138Z",
   "mapperStates": {
     "4696": {
-      "lastBeatmapCheck": "2026-08-25T03:04:22.228Z"
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
     },
     "5728": {
-      "lastBeatmapCheck": "2026-08-25T03:04:22.228Z"
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
     },
     "10028": {
-      "lastBeatmapCheck": "2026-08-25T03:04:22.228Z"
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
     },
     "36749": {
-      "lastBeatmapCheck": "2026-08-25T03:04:22.228Z"
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "45036": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
     },
     "46538": {
-      "lastBeatmapCheck": "2026-08-25T03:04:22.228Z"
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
     },
     "46872": {
-      "lastBeatmapCheck": "2026-08-25T03:04:22.228Z"
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
     },
     "50829": {
-      "lastBeatmapCheck": "2026-08-25T03:04:22.228Z"
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
     },
     "95637": {
-      "lastBeatmapCheck": "2026-08-25T03:04:22.228Z"
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
     },
     "99782": {
-      "lastBeatmapCheck": "2026-08-25T03:04:22.228Z"
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
     },
     "124455": {
-      "lastBeatmapCheck": "2026-08-25T03:04:22.228Z"
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
     },
     "133618": {
-      "lastBeatmapCheck": "2026-08-25T03:04:22.228Z"
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "145871": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "152264": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "277044": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "484670": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "570715": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "926675": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "928520": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "1258160": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "1259391": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "1382563": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "1587999": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "1999852": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "2228215": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "2439246": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "2575684": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "2760619": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "2782968": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "3009472": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "3066122": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "3255854": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "4173144": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "4738846": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
     },
     "4861005": {
-      "lastBeatmapCheck": "2026-08-25T03:04:22.228Z"
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "5682273": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "6204933": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
+    },
+    "7293512": {
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
     },
     "7483452": {
-      "lastBeatmapCheck": "2026-08-25T03:04:22.228Z"
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
     },
     "7890134": {
-      "lastBeatmapCheck": "2026-08-25T03:04:22.228Z"
+      "lastBeatmapCheck": "2026-09-01T08:28:05.138Z"
     }
   },
-  "totalBeatmaps": 911,
-  "lastFullScan": "2026-08-25T03:04:22.228Z"
+  "totalBeatmaps": 1568,
+  "lastFullScan": "2026-09-01T08:28:05.138Z"
 }
