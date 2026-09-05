@@ -5,11 +5,11 @@
     "demonym": "Malaysia",
     "nativeName": "Malaysia"
   },
-  "lastUpdated": "2026-08-22T02:59:24.091Z",
+  "lastUpdated": "2026-09-05T06:51:25.854Z",
   "totalMappers": 7,
-  "totalBeatmaps": 335,
-  "totalBeatmapsets": 99,
-  "totalOwnBeatmapsets": 99,
+  "totalBeatmaps": 336,
+  "totalBeatmapsets": 100,
+  "totalOwnBeatmapsets": 100,
   "totalGuestBeatmapsets": 0,
   "totalGuestDiffs": 0,
   "totalOwnDifficulties": 335,
@@ -25,13 +25,57 @@
         "[Zeth]"
       ],
       "country": "MY",
-      "rankedBeatmaps": 133,
-      "rankedBeatmapsets": 43,
-      "ownBeatmapsets": 43,
+      "rankedBeatmaps": 134,
+      "rankedBeatmapsets": 44,
+      "ownBeatmapsets": 44,
       "guestBeatmapsets": 0,
       "totalGuestDiffs": 0,
       "ownDifficulties": 133,
       "beatmaps": [
+        {
+          "beatmapset_id": "2505954",
+          "beatmap_id": "5517590",
+          "approved": "1",
+          "total_length": "228",
+          "hit_length": "224",
+          "version": "Precious Melody",
+          "file_md5": "ccc34799c2a6b87e46f0375281690e21",
+          "diff_size": "2",
+          "diff_overall": "6",
+          "diff_approach": "10",
+          "diff_drain": "5",
+          "mode": "1",
+          "count_normal": "1218",
+          "count_slider": "0",
+          "count_spinner": "1",
+          "submit_date": "2026-02-10 01:51:11",
+          "approved_date": "2026-09-02 09:03:01",
+          "last_update": "2026-08-15 17:18:52",
+          "artist": "yuigot feat. Yachiyo Runami (CV: Saori Hayami)",
+          "artist_unicode": "yuigot feat. 月見ヤチヨ (CV: 早見沙織)",
+          "title": "Remember",
+          "title_unicode": "Remember",
+          "creator": "Zeth",
+          "creator_id": "9912966",
+          "bpm": "168",
+          "source": "超かぐや姫！",
+          "tags": "yuigot 真崎エリカ erica masaki 是 tsukimi ととりか totorika cosmic princess kaguya! cho-kaguya chou hime! movie kaguya-hime cpk japanese pop jpop j-pop electronic anime original soundtrack ost",
+          "genre_id": "3",
+          "language_id": "3",
+          "favourite_count": "6",
+          "rating": "10",
+          "storyboard": "0",
+          "video": "0",
+          "download_unavailable": "0",
+          "audio_unavailable": "0",
+          "playcount": "75",
+          "passcount": "23",
+          "packs": null,
+          "max_combo": "1218",
+          "diff_aim": null,
+          "diff_speed": null,
+          "difficultyrating": "4.23994"
+        },
         {
           "beatmapset_id": "2244840",
           "beatmap_id": "4772322",
@@ -5984,9 +6028,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "23",
-          "playcount": "1729"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2188006",
@@ -6024,9 +6066,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "37",
-          "playcount": "6547"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2166350",
@@ -6057,9 +6097,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "14",
-          "playcount": "4557"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2075217",
@@ -6083,9 +6121,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "18",
-          "playcount": "1324"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1997755",
@@ -7254,18 +7290,35 @@
             }
           ],
           "isOwnMapset": true
+        },
+        {
+          "beatmapset_id": "2505954",
+          "title": "Remember",
+          "artist": "yuigot feat. Yachiyo Runami (CV: Saori Hayami)",
+          "creator": "Zeth",
+          "approved_date": "2026-09-02 09:03:01",
+          "difficulties": [
+            {
+              "beatmap_id": "5517590",
+              "version": "Precious Melody",
+              "difficultyrating": "4.23994",
+              "mode": "1",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
         }
       ],
       "guestDifficulties": [],
       "stats": {
-        "totalBeatmaps": 133,
-        "totalBeatmapsets": 43,
-        "ownBeatmapsets": 43,
+        "totalBeatmaps": 134,
+        "totalBeatmapsets": 44,
+        "ownBeatmapsets": 44,
         "guestBeatmapsets": 0,
         "totalGuestDiffs": 0,
-        "ownDifficulties": 133
+        "ownDifficulties": 134
       },
-      "lastUpdated": "2026-08-22T02:59:24.091Z"
+      "lastUpdated": "2026-09-05T06:51:25.854Z"
     },
     {
       "user_id": "6209713",
@@ -11204,9 +11257,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "496",
-          "playcount": "7282"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2310670",
@@ -11223,9 +11274,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "31",
-          "playcount": "4510"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2321296",
@@ -11242,9 +11291,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "48",
-          "playcount": "9091"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "923032",
@@ -11338,9 +11385,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "164",
-          "playcount": "72669"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2137694",
@@ -11357,9 +11402,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "48",
-          "playcount": "5212"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1887426",
@@ -12061,7 +12104,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 88
       },
-      "lastUpdated": "2026-08-22T02:59:24.091Z"
+      "lastUpdated": "2026-09-05T06:51:25.854Z"
     },
     {
       "user_id": "95480",
@@ -14818,7 +14861,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 51
       },
-      "lastUpdated": "2026-08-22T02:59:24.091Z"
+      "lastUpdated": "2026-09-05T06:51:25.854Z"
     },
     {
       "user_id": "6537",
@@ -17198,7 +17241,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 44
       },
-      "lastUpdated": "2026-08-22T02:59:24.091Z"
+      "lastUpdated": "2026-09-05T06:51:25.854Z"
     },
     {
       "user_id": "333959",
@@ -17705,7 +17748,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 9
       },
-      "lastUpdated": "2026-08-22T02:59:24.091Z"
+      "lastUpdated": "2026-09-05T06:51:25.854Z"
     },
     {
       "user_id": "118446",
@@ -18108,7 +18151,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 7
       },
-      "lastUpdated": "2026-08-22T02:59:24.091Z"
+      "lastUpdated": "2026-09-05T06:51:25.854Z"
     },
     {
       "user_id": "91320",
@@ -18299,7 +18342,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 3
       },
-      "lastUpdated": "2026-08-22T02:59:24.091Z"
+      "lastUpdated": "2026-09-05T06:51:25.854Z"
     }
   ]
 }

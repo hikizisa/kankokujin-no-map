@@ -5,7 +5,7 @@
     "demonym": "Ecuador",
     "nativeName": "Ecuador"
   },
-  "lastUpdated": "2026-08-22T02:59:22.688Z",
+  "lastUpdated": "2026-09-05T06:51:24.582Z",
   "totalMappers": 4,
   "totalBeatmaps": 171,
   "totalBeatmapsets": 49,
@@ -5371,9 +5371,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "14",
-          "playcount": "5624"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1814145",
@@ -5404,9 +5402,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "21",
-          "playcount": "2512"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2036508",
@@ -5451,9 +5447,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "39",
-          "playcount": "8809"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1587095",
@@ -6403,7 +6397,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 118
       },
-      "lastUpdated": "2026-08-22T02:59:22.688Z"
+      "lastUpdated": "2026-09-05T06:51:24.582Z"
     },
     {
       "user_id": "39872",
@@ -7998,7 +7992,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 29
       },
-      "lastUpdated": "2026-08-22T02:59:22.688Z"
+      "lastUpdated": "2026-09-05T06:51:24.582Z"
     },
     {
       "user_id": "3442319",
@@ -9145,7 +9139,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 21
       },
-      "lastUpdated": "2026-08-22T02:59:22.688Z"
+      "lastUpdated": "2026-09-05T06:51:24.582Z"
     },
     {
       "user_id": "61466",
@@ -9334,7 +9328,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 3
       },
-      "lastUpdated": "2026-08-22T02:59:22.688Z"
+      "lastUpdated": "2026-09-05T06:51:24.582Z"
     }
   ]
 }
