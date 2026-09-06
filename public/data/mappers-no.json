@@ -5,7 +5,7 @@
     "demonym": "Norway",
     "nativeName": "Norway"
   },
-  "lastUpdated": "2026-08-23T03:08:33.737Z",
+  "lastUpdated": "2026-09-06T07:01:47.466Z",
   "totalMappers": 5,
   "totalBeatmaps": 286,
   "totalBeatmapsets": 103,
@@ -4194,9 +4194,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "61",
-          "playcount": "13944"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "815468",
@@ -5065,7 +5063,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 94
       },
-      "lastUpdated": "2026-08-23T03:08:33.737Z"
+      "lastUpdated": "2026-09-06T07:01:47.466Z"
     },
     {
       "user_id": "3414261",
@@ -8472,6 +8470,23 @@
       ],
       "beatmapsets": [
         {
+          "beatmapset_id": "453814",
+          "title": "Road of Resistance",
+          "artist": "BABYMETAL",
+          "creator": "Lona-",
+          "approved_date": "2026-08-15 10:44:46",
+          "difficulties": [
+            {
+              "beatmap_id": "973092",
+              "version": "The Passionate Heart's Burning at the Back of Our Mind",
+              "difficultyrating": "6.27681",
+              "mode": "2",
+              "isGuestDiff": false
+            }
+          ],
+          "isOwnMapset": true
+        },
+        {
           "beatmapset_id": "2588421",
           "title": "Sanae-san",
           "artist": "RD-Sounds feat. Meramipop",
@@ -8486,9 +8501,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "10",
-          "playcount": "1504"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2585380",
@@ -8505,9 +8518,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "6",
-          "playcount": "537"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2129116",
@@ -8531,9 +8542,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "8",
-          "playcount": "2661"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1135397",
@@ -8660,9 +8669,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "31",
-          "playcount": "3115"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "609845",
@@ -8700,9 +8707,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "57",
-          "playcount": "6127"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2141702",
@@ -8719,9 +8724,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "23",
-          "playcount": "3772"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2139627",
@@ -8738,9 +8741,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "20",
-          "playcount": "5635"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2136340",
@@ -8757,9 +8758,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "38",
-          "playcount": "7858"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2129862",
@@ -8776,9 +8775,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "41",
-          "playcount": "5743"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "2126258",
@@ -8795,9 +8792,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "25",
-          "playcount": "1720"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1655808",
@@ -8814,9 +8809,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "36",
-          "playcount": "1981"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1508396",
@@ -8833,9 +8826,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "28",
-          "playcount": "18874"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1485606",
@@ -8852,9 +8843,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "42",
-          "playcount": "12502"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "913426",
@@ -8871,9 +8860,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "119",
-          "playcount": "4096"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "779608",
@@ -9440,25 +9427,6 @@
             }
           ],
           "isOwnMapset": true
-        },
-        {
-          "beatmapset_id": "453814",
-          "title": "Road of Resistance",
-          "artist": "BABYMETAL",
-          "creator": "Lona-",
-          "approved_date": "2026-08-15 10:44:46",
-          "difficulties": [
-            {
-              "beatmap_id": "973092",
-              "version": "The Passionate Heart's Burning at the Back of Our Mind",
-              "difficultyrating": "6.27681",
-              "mode": "2",
-              "isGuestDiff": false
-            }
-          ],
-          "isOwnMapset": true,
-          "favourite_count": "21",
-          "playcount": "729"
         }
       ],
       "guestDifficulties": [],
@@ -9470,7 +9438,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 77
       },
-      "lastUpdated": "2026-08-23T03:08:33.737Z"
+      "lastUpdated": "2026-09-06T07:01:47.466Z"
     },
     {
       "user_id": "8352623",
@@ -12523,7 +12491,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 57
       },
-      "lastUpdated": "2026-08-23T03:08:33.737Z"
+      "lastUpdated": "2026-09-06T07:01:47.466Z"
     },
     {
       "user_id": "9738159",
@@ -14108,7 +14076,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 29
       },
-      "lastUpdated": "2026-08-23T03:08:33.737Z"
+      "lastUpdated": "2026-09-06T07:01:47.466Z"
     },
     {
       "user_id": "3475189",
@@ -15432,9 +15400,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "437",
-          "playcount": "182908"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "739053",
@@ -15451,9 +15417,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "383",
-          "playcount": "80416"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1075607",
@@ -15470,9 +15434,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "343",
-          "playcount": "88642"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "1743421",
@@ -15489,9 +15451,7 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true,
-          "favourite_count": "332",
-          "playcount": "59131"
+          "isOwnMapset": true
         },
         {
           "beatmapset_id": "621278",
@@ -15801,7 +15761,7 @@
         "totalGuestDiffs": 0,
         "ownDifficulties": 29
       },
-      "lastUpdated": "2026-08-23T03:08:33.737Z"
+      "lastUpdated": "2026-09-06T07:01:47.466Z"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "defaultCountry": "KR",
-  "generatedAt": "2026-09-05T06:52:48.628Z",
+  "generatedAt": "2026-09-06T07:01:52.963Z",
   "source": "https://osu.ppy.sh/rankings/osu/country",
   "countries": [
     {
@@ -1405,7 +1405,7 @@
       "nativeName": "Norway",
       "hasData": true,
       "mapperCount": 5,
-      "lastUpdated": "2026-08-23T03:08:33.737Z"
+      "lastUpdated": "2026-09-06T07:01:47.466Z"
     },
     {
       "code": "OM",
@@ -1765,7 +1765,7 @@
       "nativeName": "Spain",
       "hasData": true,
       "mapperCount": 7,
-      "lastUpdated": "2026-08-23T03:08:31.889Z"
+      "lastUpdated": "2026-09-06T07:01:45.231Z"
     },
     {
       "code": "LK",
@@ -2008,7 +2008,7 @@
       "nativeName": "Uruguay",
       "hasData": true,
       "mapperCount": 6,
-      "lastUpdated": "2026-09-01T08:28:21.840Z"
+      "lastUpdated": "2026-09-06T07:01:49.295Z"
     },
     {
       "code": "UZ",
