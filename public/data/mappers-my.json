@@ -68,7 +68,7 @@
           "video": "0",
           "download_unavailable": "0",
           "audio_unavailable": "0",
-          "playcount": "75",
+          "playcount": "85",
           "passcount": "23",
           "packs": null,
           "max_combo": "1218",
@@ -7306,7 +7306,9 @@
               "isGuestDiff": false
             }
           ],
-          "isOwnMapset": true
+          "isOwnMapset": true,
+          "favourite_count": "6",
+          "playcount": "85"
         }
       ],
       "guestDifficulties": [],
